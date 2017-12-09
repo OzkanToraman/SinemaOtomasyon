@@ -1,0 +1,904 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SinemaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BiletSatis">
+          <Key>
+            <PropertyRef Name="BiletID" />
+          </Key>
+          <Property Name="BiletID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BiletFiyat" Type="money" Nullable="false" />
+          <Property Name="Satıldı" Type="bit" Nullable="false" />
+          <Property Name="SeyirciID" Type="int" Nullable="false" />
+          <Property Name="GosterimID" Type="int" Nullable="false" />
+          <Property Name="PersonelID" Type="int" Nullable="false" />
+          <Property Name="KoltukID" Type="int" Nullable="false" />
+          <Property Name="BiletTurID" Type="int" Nullable="false" />
+          <Property Name="OdemeSekliID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BiletTuru">
+          <Key>
+            <PropertyRef Name="BiletTurID" />
+          </Key>
+          <Property Name="BiletTurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BiletTuru" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Cinsiyet">
+          <Key>
+            <PropertyRef Name="CinsiyetID" />
+          </Key>
+          <Property Name="CinsiyetID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CinsiyetAD" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Film">
+          <Key>
+            <PropertyRef Name="FilmID" />
+          </Key>
+          <Property Name="FilmID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FilmAd" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Yonetmen" Type="varchar" MaxLength="120" Nullable="false" />
+          <Property Name="Oyuncular" Type="varchar" MaxLength="150" />
+          <Property Name="VizyonGrsTarih" Type="datetime" Nullable="false" />
+          <Property Name="VizyonCksTarih" Type="datetime" Nullable="false" />
+          <Property Name="FilmSuresi_dk" Type="int" />
+          <Property Name="Vizyonda" Type="bit" Nullable="false" />
+          <Property Name="FilmTurID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FilmTuru">
+          <Key>
+            <PropertyRef Name="FilmTurID" />
+          </Key>
+          <Property Name="FilmTurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FilmTurAd" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Gosterim">
+          <Key>
+            <PropertyRef Name="GosterimID" />
+          </Key>
+          <Property Name="GosterimID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GosterimTarih" Type="datetime" Nullable="false" />
+          <Property Name="FilmID" Type="int" Nullable="false" />
+          <Property Name="SalonID" Type="int" Nullable="false" />
+          <Property Name="SeansID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Koltuk">
+          <Key>
+            <PropertyRef Name="KoltukID" />
+          </Key>
+          <Property Name="KoltukID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KoltukAD" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="KoltukFiyatSapma" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OdemeSekli">
+          <Key>
+            <PropertyRef Name="OdemeSekliID" />
+          </Key>
+          <Property Name="OdemeSekliID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OdemeSekli" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Personel">
+          <Key>
+            <PropertyRef Name="PersonelID" />
+          </Key>
+          <Property Name="PersonelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Soyad" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SicilNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Sifre" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Telefon" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="Adres" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="CalismaHali" Type="bit" Nullable="false" />
+          <Property Name="UnvanID" Type="int" Nullable="false" />
+          <Property Name="CinsiyetID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Salon">
+          <Key>
+            <PropertyRef Name="SalonID" />
+          </Key>
+          <Property Name="SalonID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SalonAD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SalonFiyatSapma" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Seans">
+          <Key>
+            <PropertyRef Name="SeansID" />
+          </Key>
+          <Property Name="SeansID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SeansAD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SeansFiyatSapma" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Seyirci">
+          <Key>
+            <PropertyRef Name="SeyirciID" />
+          </Key>
+          <Property Name="SeyirciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SeyirciAd" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SeyirciSoyad" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SeyirciAdres" Type="varchar" MaxLength="250" />
+          <Property Name="SeyirciTelefon" Type="varchar" MaxLength="15" />
+          <Property Name="Meslek" Type="varchar" MaxLength="50" />
+          <Property Name="Üyelik" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Unvan">
+          <Key>
+            <PropertyRef Name="UnvanID" />
+          </Key>
+          <Property Name="UnvanID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UnvanAD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Departman" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_BiletSatis_BiletTuru">
+          <End Role="BiletTuru" Type="Self.BiletTuru" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BiletTuru">
+              <PropertyRef Name="BiletTurID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="BiletTurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BiletSatis_Gosterim">
+          <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gosterim">
+              <PropertyRef Name="GosterimID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="GosterimID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BiletSatis_Koltuk">
+          <End Role="Koltuk" Type="Self.Koltuk" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Koltuk">
+              <PropertyRef Name="KoltukID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="KoltukID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BiletSatis_OdemeSekli">
+          <End Role="OdemeSekli" Type="Self.OdemeSekli" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OdemeSekli">
+              <PropertyRef Name="OdemeSekliID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="OdemeSekliID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BiletSatis_Personel">
+          <End Role="Personel" Type="Self.Personel" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="PersonelID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="PersonelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BiletSatis_Seyirci">
+          <End Role="Seyirci" Type="Self.Seyirci" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Seyirci">
+              <PropertyRef Name="SeyirciID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="SeyirciID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Film_FilmTuru">
+          <End Role="FilmTuru" Type="Self.FilmTuru" Multiplicity="1" />
+          <End Role="Film" Type="Self.Film" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FilmTuru">
+              <PropertyRef Name="FilmTurID" />
+            </Principal>
+            <Dependent Role="Film">
+              <PropertyRef Name="FilmTurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Gosterim_Film">
+          <End Role="Film" Type="Self.Film" Multiplicity="1" />
+          <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Film">
+              <PropertyRef Name="FilmID" />
+            </Principal>
+            <Dependent Role="Gosterim">
+              <PropertyRef Name="FilmID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Gosterim_Salon">
+          <End Role="Salon" Type="Self.Salon" Multiplicity="1" />
+          <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Salon">
+              <PropertyRef Name="SalonID" />
+            </Principal>
+            <Dependent Role="Gosterim">
+              <PropertyRef Name="SalonID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Gosterim_Seans">
+          <End Role="Seans" Type="Self.Seans" Multiplicity="1" />
+          <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Seans">
+              <PropertyRef Name="SeansID" />
+            </Principal>
+            <Dependent Role="Gosterim">
+              <PropertyRef Name="SeansID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Personel_Cinsiyet">
+          <End Role="Cinsiyet" Type="Self.Cinsiyet" Multiplicity="1" />
+          <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cinsiyet">
+              <PropertyRef Name="CinsiyetID" />
+            </Principal>
+            <Dependent Role="Personel">
+              <PropertyRef Name="CinsiyetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Personel_Unvan">
+          <End Role="Unvan" Type="Self.Unvan" Multiplicity="1" />
+          <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Unvan">
+              <PropertyRef Name="UnvanID" />
+            </Principal>
+            <Dependent Role="Personel">
+              <PropertyRef Name="UnvanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SinemaModelStoreContainer">
+          <EntitySet Name="BiletSatis" EntityType="Self.BiletSatis" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BiletTuru" EntityType="Self.BiletTuru" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cinsiyet" EntityType="Self.Cinsiyet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Film" EntityType="Self.Film" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FilmTuru" EntityType="Self.FilmTuru" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Gosterim" EntityType="Self.Gosterim" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Koltuk" EntityType="Self.Koltuk" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OdemeSekli" EntityType="Self.OdemeSekli" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Personel" EntityType="Self.Personel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Salon" EntityType="Self.Salon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Seans" EntityType="Self.Seans" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Seyirci" EntityType="Self.Seyirci" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Unvan" EntityType="Self.Unvan" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_BiletSatis_BiletTuru" Association="Self.FK_BiletSatis_BiletTuru">
+            <End Role="BiletTuru" EntitySet="BiletTuru" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BiletSatis_Gosterim" Association="Self.FK_BiletSatis_Gosterim">
+            <End Role="Gosterim" EntitySet="Gosterim" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BiletSatis_Koltuk" Association="Self.FK_BiletSatis_Koltuk">
+            <End Role="Koltuk" EntitySet="Koltuk" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BiletSatis_OdemeSekli" Association="Self.FK_BiletSatis_OdemeSekli">
+            <End Role="OdemeSekli" EntitySet="OdemeSekli" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BiletSatis_Personel" Association="Self.FK_BiletSatis_Personel">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BiletSatis_Seyirci" Association="Self.FK_BiletSatis_Seyirci">
+            <End Role="Seyirci" EntitySet="Seyirci" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Film_FilmTuru" Association="Self.FK_Film_FilmTuru">
+            <End Role="FilmTuru" EntitySet="FilmTuru" />
+            <End Role="Film" EntitySet="Film" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Gosterim_Film" Association="Self.FK_Gosterim_Film">
+            <End Role="Film" EntitySet="Film" />
+            <End Role="Gosterim" EntitySet="Gosterim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Gosterim_Salon" Association="Self.FK_Gosterim_Salon">
+            <End Role="Salon" EntitySet="Salon" />
+            <End Role="Gosterim" EntitySet="Gosterim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Gosterim_Seans" Association="Self.FK_Gosterim_Seans">
+            <End Role="Seans" EntitySet="Seans" />
+            <End Role="Gosterim" EntitySet="Gosterim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Personel_Cinsiyet" Association="Self.FK_Personel_Cinsiyet">
+            <End Role="Cinsiyet" EntitySet="Cinsiyet" />
+            <End Role="Personel" EntitySet="Personel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Personel_Unvan" Association="Self.FK_Personel_Unvan">
+            <End Role="Unvan" EntitySet="Unvan" />
+            <End Role="Personel" EntitySet="Personel" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SinemaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BiletSati">
+          <Key>
+            <PropertyRef Name="BiletID" />
+          </Key>
+          <Property Name="BiletID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BiletFiyat" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="Satıldı" Type="Boolean" Nullable="false" />
+          <Property Name="SeyirciID" Type="Int32" Nullable="false" />
+          <Property Name="GosterimID" Type="Int32" Nullable="false" />
+          <Property Name="PersonelID" Type="Int32" Nullable="false" />
+          <Property Name="KoltukID" Type="Int32" Nullable="false" />
+          <Property Name="BiletTurID" Type="Int32" Nullable="false" />
+          <Property Name="OdemeSekliID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BiletTuru" Relationship="Self.FK_BiletSatis_BiletTuru" FromRole="BiletSatis" ToRole="BiletTuru" />
+          <NavigationProperty Name="Gosterim" Relationship="Self.FK_BiletSatis_Gosterim" FromRole="BiletSatis" ToRole="Gosterim" />
+          <NavigationProperty Name="Koltuk" Relationship="Self.FK_BiletSatis_Koltuk" FromRole="BiletSatis" ToRole="Koltuk" />
+          <NavigationProperty Name="OdemeSekli" Relationship="Self.FK_BiletSatis_OdemeSekli" FromRole="BiletSatis" ToRole="OdemeSekli" />
+          <NavigationProperty Name="Personel" Relationship="Self.FK_BiletSatis_Personel" FromRole="BiletSatis" ToRole="Personel" />
+          <NavigationProperty Name="Seyirci" Relationship="Self.FK_BiletSatis_Seyirci" FromRole="BiletSatis" ToRole="Seyirci" />
+        </EntityType>
+        <EntityType Name="BiletTuru">
+          <Key>
+            <PropertyRef Name="BiletTurID" />
+          </Key>
+          <Property Name="BiletTurID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BiletTuru1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_BiletTuru" FromRole="BiletTuru" ToRole="BiletSatis" />
+        </EntityType>
+        <EntityType Name="Cinsiyet">
+          <Key>
+            <PropertyRef Name="CinsiyetID" />
+          </Key>
+          <Property Name="CinsiyetID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CinsiyetAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Personels" Relationship="Self.FK_Personel_Cinsiyet" FromRole="Cinsiyet" ToRole="Personel" />
+        </EntityType>
+        <EntityType Name="Film">
+          <Key>
+            <PropertyRef Name="FilmID" />
+          </Key>
+          <Property Name="FilmID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FilmAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Yonetmen" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Oyuncular" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="VizyonGrsTarih" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="VizyonCksTarih" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FilmSuresi_dk" Type="Int32" />
+          <Property Name="Vizyonda" Type="Boolean" Nullable="false" />
+          <Property Name="FilmTurID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="FilmTuru" Relationship="Self.FK_Film_FilmTuru" FromRole="Film" ToRole="FilmTuru" />
+          <NavigationProperty Name="Gosterims" Relationship="Self.FK_Gosterim_Film" FromRole="Film" ToRole="Gosterim" />
+        </EntityType>
+        <EntityType Name="FilmTuru">
+          <Key>
+            <PropertyRef Name="FilmTurID" />
+          </Key>
+          <Property Name="FilmTurID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FilmTurAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Films" Relationship="Self.FK_Film_FilmTuru" FromRole="FilmTuru" ToRole="Film" />
+        </EntityType>
+        <EntityType Name="Gosterim">
+          <Key>
+            <PropertyRef Name="GosterimID" />
+          </Key>
+          <Property Name="GosterimID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GosterimTarih" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FilmID" Type="Int32" Nullable="false" />
+          <Property Name="SalonID" Type="Int32" Nullable="false" />
+          <Property Name="SeansID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Gosterim" FromRole="Gosterim" ToRole="BiletSatis" />
+          <NavigationProperty Name="Film" Relationship="Self.FK_Gosterim_Film" FromRole="Gosterim" ToRole="Film" />
+          <NavigationProperty Name="Salon" Relationship="Self.FK_Gosterim_Salon" FromRole="Gosterim" ToRole="Salon" />
+          <NavigationProperty Name="Sean" Relationship="Self.FK_Gosterim_Seans" FromRole="Gosterim" ToRole="Seans" />
+        </EntityType>
+        <EntityType Name="Koltuk">
+          <Key>
+            <PropertyRef Name="KoltukID" />
+          </Key>
+          <Property Name="KoltukID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KoltukAD" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="KoltukFiyatSapma" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Koltuk" FromRole="Koltuk" ToRole="BiletSatis" />
+        </EntityType>
+        <EntityType Name="OdemeSekli">
+          <Key>
+            <PropertyRef Name="OdemeSekliID" />
+          </Key>
+          <Property Name="OdemeSekliID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OdemeSekli1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_OdemeSekli" FromRole="OdemeSekli" ToRole="BiletSatis" />
+        </EntityType>
+        <EntityType Name="Personel">
+          <Key>
+            <PropertyRef Name="PersonelID" />
+          </Key>
+          <Property Name="PersonelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SicilNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sifre" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Telefon" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Adres" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CalismaHali" Type="Boolean" Nullable="false" />
+          <Property Name="UnvanID" Type="Int32" Nullable="false" />
+          <Property Name="CinsiyetID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Personel" FromRole="Personel" ToRole="BiletSatis" />
+          <NavigationProperty Name="Cinsiyet" Relationship="Self.FK_Personel_Cinsiyet" FromRole="Personel" ToRole="Cinsiyet" />
+          <NavigationProperty Name="Unvan" Relationship="Self.FK_Personel_Unvan" FromRole="Personel" ToRole="Unvan" />
+        </EntityType>
+        <EntityType Name="Salon">
+          <Key>
+            <PropertyRef Name="SalonID" />
+          </Key>
+          <Property Name="SalonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SalonAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SalonFiyatSapma" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <NavigationProperty Name="Gosterims" Relationship="Self.FK_Gosterim_Salon" FromRole="Salon" ToRole="Gosterim" />
+        </EntityType>
+        <EntityType Name="Sean">
+          <Key>
+            <PropertyRef Name="SeansID" />
+          </Key>
+          <Property Name="SeansID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SeansAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SeansFiyatSapma" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <NavigationProperty Name="Gosterims" Relationship="Self.FK_Gosterim_Seans" FromRole="Seans" ToRole="Gosterim" />
+        </EntityType>
+        <EntityType Name="Seyirci">
+          <Key>
+            <PropertyRef Name="SeyirciID" />
+          </Key>
+          <Property Name="SeyirciID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SeyirciAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SeyirciSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SeyirciAdres" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="SeyirciTelefon" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Meslek" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Üyelik" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Seyirci" FromRole="Seyirci" ToRole="BiletSatis" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Unvan">
+          <Key>
+            <PropertyRef Name="UnvanID" />
+          </Key>
+          <Property Name="UnvanID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UnvanAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Departman" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Personels" Relationship="Self.FK_Personel_Unvan" FromRole="Unvan" ToRole="Personel" />
+        </EntityType>
+        <Association Name="FK_BiletSatis_BiletTuru">
+          <End Role="BiletTuru" Type="Self.BiletTuru" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BiletTuru">
+              <PropertyRef Name="BiletTurID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="BiletTurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BiletSatis_Gosterim">
+          <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gosterim">
+              <PropertyRef Name="GosterimID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="GosterimID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BiletSatis_Koltuk">
+          <End Role="Koltuk" Type="Self.Koltuk" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Koltuk">
+              <PropertyRef Name="KoltukID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="KoltukID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BiletSatis_OdemeSekli">
+          <End Role="OdemeSekli" Type="Self.OdemeSekli" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OdemeSekli">
+              <PropertyRef Name="OdemeSekliID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="OdemeSekliID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BiletSatis_Personel">
+          <End Role="Personel" Type="Self.Personel" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="PersonelID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="PersonelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BiletSatis_Seyirci">
+          <End Role="Seyirci" Type="Self.Seyirci" Multiplicity="1" />
+          <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Seyirci">
+              <PropertyRef Name="SeyirciID" />
+            </Principal>
+            <Dependent Role="BiletSatis">
+              <PropertyRef Name="SeyirciID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Personel_Cinsiyet">
+          <End Role="Cinsiyet" Type="Self.Cinsiyet" Multiplicity="1" />
+          <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cinsiyet">
+              <PropertyRef Name="CinsiyetID" />
+            </Principal>
+            <Dependent Role="Personel">
+              <PropertyRef Name="CinsiyetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Film_FilmTuru">
+          <End Role="FilmTuru" Type="Self.FilmTuru" Multiplicity="1" />
+          <End Role="Film" Type="Self.Film" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FilmTuru">
+              <PropertyRef Name="FilmTurID" />
+            </Principal>
+            <Dependent Role="Film">
+              <PropertyRef Name="FilmTurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Gosterim_Film">
+          <End Role="Film" Type="Self.Film" Multiplicity="1" />
+          <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Film">
+              <PropertyRef Name="FilmID" />
+            </Principal>
+            <Dependent Role="Gosterim">
+              <PropertyRef Name="FilmID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Gosterim_Salon">
+          <End Role="Salon" Type="Self.Salon" Multiplicity="1" />
+          <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Salon">
+              <PropertyRef Name="SalonID" />
+            </Principal>
+            <Dependent Role="Gosterim">
+              <PropertyRef Name="SalonID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Gosterim_Seans">
+          <End Role="Seans" Type="Self.Sean" Multiplicity="1" />
+          <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Seans">
+              <PropertyRef Name="SeansID" />
+            </Principal>
+            <Dependent Role="Gosterim">
+              <PropertyRef Name="SeansID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Personel_Unvan">
+          <End Role="Unvan" Type="Self.Unvan" Multiplicity="1" />
+          <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Unvan">
+              <PropertyRef Name="UnvanID" />
+            </Principal>
+            <Dependent Role="Personel">
+              <PropertyRef Name="UnvanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SinemaContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BiletSatis" EntityType="Self.BiletSati" />
+          <EntitySet Name="BiletTurus" EntityType="Self.BiletTuru" />
+          <EntitySet Name="Cinsiyets" EntityType="Self.Cinsiyet" />
+          <EntitySet Name="Films" EntityType="Self.Film" />
+          <EntitySet Name="FilmTurus" EntityType="Self.FilmTuru" />
+          <EntitySet Name="Gosterims" EntityType="Self.Gosterim" />
+          <EntitySet Name="Koltuks" EntityType="Self.Koltuk" />
+          <EntitySet Name="OdemeSeklis" EntityType="Self.OdemeSekli" />
+          <EntitySet Name="Personels" EntityType="Self.Personel" />
+          <EntitySet Name="Salons" EntityType="Self.Salon" />
+          <EntitySet Name="Seans" EntityType="Self.Sean" />
+          <EntitySet Name="Seyircis" EntityType="Self.Seyirci" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Unvans" EntityType="Self.Unvan" />
+          <AssociationSet Name="FK_BiletSatis_BiletTuru" Association="Self.FK_BiletSatis_BiletTuru">
+            <End Role="BiletTuru" EntitySet="BiletTurus" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BiletSatis_Gosterim" Association="Self.FK_BiletSatis_Gosterim">
+            <End Role="Gosterim" EntitySet="Gosterims" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BiletSatis_Koltuk" Association="Self.FK_BiletSatis_Koltuk">
+            <End Role="Koltuk" EntitySet="Koltuks" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BiletSatis_OdemeSekli" Association="Self.FK_BiletSatis_OdemeSekli">
+            <End Role="OdemeSekli" EntitySet="OdemeSeklis" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BiletSatis_Personel" Association="Self.FK_BiletSatis_Personel">
+            <End Role="Personel" EntitySet="Personels" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BiletSatis_Seyirci" Association="Self.FK_BiletSatis_Seyirci">
+            <End Role="Seyirci" EntitySet="Seyircis" />
+            <End Role="BiletSatis" EntitySet="BiletSatis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Personel_Cinsiyet" Association="Self.FK_Personel_Cinsiyet">
+            <End Role="Cinsiyet" EntitySet="Cinsiyets" />
+            <End Role="Personel" EntitySet="Personels" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Film_FilmTuru" Association="Self.FK_Film_FilmTuru">
+            <End Role="FilmTuru" EntitySet="FilmTurus" />
+            <End Role="Film" EntitySet="Films" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Gosterim_Film" Association="Self.FK_Gosterim_Film">
+            <End Role="Film" EntitySet="Films" />
+            <End Role="Gosterim" EntitySet="Gosterims" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Gosterim_Salon" Association="Self.FK_Gosterim_Salon">
+            <End Role="Salon" EntitySet="Salons" />
+            <End Role="Gosterim" EntitySet="Gosterims" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Gosterim_Seans" Association="Self.FK_Gosterim_Seans">
+            <End Role="Seans" EntitySet="Seans" />
+            <End Role="Gosterim" EntitySet="Gosterims" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Personel_Unvan" Association="Self.FK_Personel_Unvan">
+            <End Role="Unvan" EntitySet="Unvans" />
+            <End Role="Personel" EntitySet="Personels" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SinemaModelStoreContainer" CdmEntityContainer="SinemaContext">
+          <EntitySetMapping Name="BiletSatis">
+            <EntityTypeMapping TypeName="SinemaModel.BiletSati">
+              <MappingFragment StoreEntitySet="BiletSatis">
+                <ScalarProperty Name="BiletID" ColumnName="BiletID" />
+                <ScalarProperty Name="BiletFiyat" ColumnName="BiletFiyat" />
+                <ScalarProperty Name="Satıldı" ColumnName="Satıldı" />
+                <ScalarProperty Name="SeyirciID" ColumnName="SeyirciID" />
+                <ScalarProperty Name="GosterimID" ColumnName="GosterimID" />
+                <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
+                <ScalarProperty Name="KoltukID" ColumnName="KoltukID" />
+                <ScalarProperty Name="BiletTurID" ColumnName="BiletTurID" />
+                <ScalarProperty Name="OdemeSekliID" ColumnName="OdemeSekliID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BiletTurus">
+            <EntityTypeMapping TypeName="SinemaModel.BiletTuru">
+              <MappingFragment StoreEntitySet="BiletTuru">
+                <ScalarProperty Name="BiletTurID" ColumnName="BiletTurID" />
+                <ScalarProperty Name="BiletTuru1" ColumnName="BiletTuru" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cinsiyets">
+            <EntityTypeMapping TypeName="SinemaModel.Cinsiyet">
+              <MappingFragment StoreEntitySet="Cinsiyet">
+                <ScalarProperty Name="CinsiyetID" ColumnName="CinsiyetID" />
+                <ScalarProperty Name="CinsiyetAD" ColumnName="CinsiyetAD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Films">
+            <EntityTypeMapping TypeName="SinemaModel.Film">
+              <MappingFragment StoreEntitySet="Film">
+                <ScalarProperty Name="FilmID" ColumnName="FilmID" />
+                <ScalarProperty Name="FilmAd" ColumnName="FilmAd" />
+                <ScalarProperty Name="Yonetmen" ColumnName="Yonetmen" />
+                <ScalarProperty Name="Oyuncular" ColumnName="Oyuncular" />
+                <ScalarProperty Name="VizyonGrsTarih" ColumnName="VizyonGrsTarih" />
+                <ScalarProperty Name="VizyonCksTarih" ColumnName="VizyonCksTarih" />
+                <ScalarProperty Name="FilmSuresi_dk" ColumnName="FilmSuresi_dk" />
+                <ScalarProperty Name="Vizyonda" ColumnName="Vizyonda" />
+                <ScalarProperty Name="FilmTurID" ColumnName="FilmTurID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FilmTurus">
+            <EntityTypeMapping TypeName="SinemaModel.FilmTuru">
+              <MappingFragment StoreEntitySet="FilmTuru">
+                <ScalarProperty Name="FilmTurID" ColumnName="FilmTurID" />
+                <ScalarProperty Name="FilmTurAd" ColumnName="FilmTurAd" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Gosterims">
+            <EntityTypeMapping TypeName="SinemaModel.Gosterim">
+              <MappingFragment StoreEntitySet="Gosterim">
+                <ScalarProperty Name="GosterimID" ColumnName="GosterimID" />
+                <ScalarProperty Name="GosterimTarih" ColumnName="GosterimTarih" />
+                <ScalarProperty Name="FilmID" ColumnName="FilmID" />
+                <ScalarProperty Name="SalonID" ColumnName="SalonID" />
+                <ScalarProperty Name="SeansID" ColumnName="SeansID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Koltuks">
+            <EntityTypeMapping TypeName="SinemaModel.Koltuk">
+              <MappingFragment StoreEntitySet="Koltuk">
+                <ScalarProperty Name="KoltukID" ColumnName="KoltukID" />
+                <ScalarProperty Name="KoltukAD" ColumnName="KoltukAD" />
+                <ScalarProperty Name="KoltukFiyatSapma" ColumnName="KoltukFiyatSapma" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OdemeSeklis">
+            <EntityTypeMapping TypeName="SinemaModel.OdemeSekli">
+              <MappingFragment StoreEntitySet="OdemeSekli">
+                <ScalarProperty Name="OdemeSekliID" ColumnName="OdemeSekliID" />
+                <ScalarProperty Name="OdemeSekli1" ColumnName="OdemeSekli" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Personels">
+            <EntityTypeMapping TypeName="SinemaModel.Personel">
+              <MappingFragment StoreEntitySet="Personel">
+                <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="SicilNo" ColumnName="SicilNo" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="CalismaHali" ColumnName="CalismaHali" />
+                <ScalarProperty Name="UnvanID" ColumnName="UnvanID" />
+                <ScalarProperty Name="CinsiyetID" ColumnName="CinsiyetID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Salons">
+            <EntityTypeMapping TypeName="SinemaModel.Salon">
+              <MappingFragment StoreEntitySet="Salon">
+                <ScalarProperty Name="SalonID" ColumnName="SalonID" />
+                <ScalarProperty Name="SalonAD" ColumnName="SalonAD" />
+                <ScalarProperty Name="SalonFiyatSapma" ColumnName="SalonFiyatSapma" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Seans">
+            <EntityTypeMapping TypeName="SinemaModel.Sean">
+              <MappingFragment StoreEntitySet="Seans">
+                <ScalarProperty Name="SeansID" ColumnName="SeansID" />
+                <ScalarProperty Name="SeansAD" ColumnName="SeansAD" />
+                <ScalarProperty Name="SeansFiyatSapma" ColumnName="SeansFiyatSapma" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Seyircis">
+            <EntityTypeMapping TypeName="SinemaModel.Seyirci">
+              <MappingFragment StoreEntitySet="Seyirci">
+                <ScalarProperty Name="SeyirciID" ColumnName="SeyirciID" />
+                <ScalarProperty Name="SeyirciAd" ColumnName="SeyirciAd" />
+                <ScalarProperty Name="SeyirciSoyad" ColumnName="SeyirciSoyad" />
+                <ScalarProperty Name="SeyirciAdres" ColumnName="SeyirciAdres" />
+                <ScalarProperty Name="SeyirciTelefon" ColumnName="SeyirciTelefon" />
+                <ScalarProperty Name="Meslek" ColumnName="Meslek" />
+                <ScalarProperty Name="Üyelik" ColumnName="Üyelik" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="SinemaModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Unvans">
+            <EntityTypeMapping TypeName="SinemaModel.Unvan">
+              <MappingFragment StoreEntitySet="Unvan">
+                <ScalarProperty Name="UnvanID" ColumnName="UnvanID" />
+                <ScalarProperty Name="UnvanAD" ColumnName="UnvanAD" />
+                <ScalarProperty Name="Departman" ColumnName="Departman" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

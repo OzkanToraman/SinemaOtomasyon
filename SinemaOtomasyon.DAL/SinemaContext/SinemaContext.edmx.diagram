@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f6e2a75cfdfa49ddbc9399b94f0f91eb" Name="Diagram1">
+        <EntityTypeShape EntityType="SinemaModel.BiletSati" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.BiletTuru" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Cinsiyet" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Film" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.FilmTuru" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Gosterim" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Koltuk" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.OdemeSekli" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Personel" Width="1.5" PointX="5.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Salon" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Sean" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Seyirci" Width="1.5" PointX="5.25" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.sysdiagram" Width="1.5" PointX="7.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Unvan" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <AssociationConnector Association="SinemaModel.FK_BiletSatis_BiletTuru" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_BiletSatis_Gosterim" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_BiletSatis_Koltuk" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_BiletSatis_OdemeSekli" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_BiletSatis_Personel" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_BiletSatis_Seyirci" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_Personel_Cinsiyet" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_Film_FilmTuru" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_Gosterim_Film" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_Gosterim_Salon" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_Gosterim_Seans" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_Personel_Unvan" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
