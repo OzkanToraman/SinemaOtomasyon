@@ -33,132 +33,132 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button187 = new System.Windows.Forms.Button();
-            this.button186 = new System.Windows.Forms.Button();
-            this.button138 = new System.Windows.Forms.Button();
-            this.button90 = new System.Windows.Forms.Button();
-            this.button184 = new System.Windows.Forms.Button();
-            this.button136 = new System.Windows.Forms.Button();
-            this.button183 = new System.Windows.Forms.Button();
-            this.button135 = new System.Windows.Forms.Button();
-            this.button182 = new System.Windows.Forms.Button();
-            this.button89 = new System.Windows.Forms.Button();
-            this.button134 = new System.Windows.Forms.Button();
-            this.button181 = new System.Windows.Forms.Button();
-            this.button65 = new System.Windows.Forms.Button();
-            this.button133 = new System.Windows.Forms.Button();
-            this.button64 = new System.Windows.Forms.Button();
-            this.button180 = new System.Windows.Forms.Button();
-            this.button88 = new System.Windows.Forms.Button();
-            this.button132 = new System.Windows.Forms.Button();
-            this.button179 = new System.Windows.Forms.Button();
-            this.button63 = new System.Windows.Forms.Button();
-            this.button131 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button178 = new System.Windows.Forms.Button();
-            this.button87 = new System.Windows.Forms.Button();
-            this.button130 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button177 = new System.Windows.Forms.Button();
-            this.button62 = new System.Windows.Forms.Button();
-            this.button129 = new System.Windows.Forms.Button();
-            this.button176 = new System.Windows.Forms.Button();
-            this.button86 = new System.Windows.Forms.Button();
-            this.button128 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button175 = new System.Windows.Forms.Button();
-            this.button61 = new System.Windows.Forms.Button();
-            this.button127 = new System.Windows.Forms.Button();
-            this.button174 = new System.Windows.Forms.Button();
-            this.button85 = new System.Windows.Forms.Button();
-            this.button126 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button173 = new System.Windows.Forms.Button();
-            this.button60 = new System.Windows.Forms.Button();
-            this.button125 = new System.Windows.Forms.Button();
-            this.button172 = new System.Windows.Forms.Button();
-            this.button84 = new System.Windows.Forms.Button();
-            this.button124 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button171 = new System.Windows.Forms.Button();
-            this.button59 = new System.Windows.Forms.Button();
-            this.button123 = new System.Windows.Forms.Button();
-            this.button170 = new System.Windows.Forms.Button();
-            this.button83 = new System.Windows.Forms.Button();
-            this.button122 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button169 = new System.Windows.Forms.Button();
-            this.button58 = new System.Windows.Forms.Button();
-            this.button121 = new System.Windows.Forms.Button();
-            this.button168 = new System.Windows.Forms.Button();
-            this.button82 = new System.Windows.Forms.Button();
-            this.button120 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button159 = new System.Windows.Forms.Button();
-            this.button111 = new System.Windows.Forms.Button();
-            this.button158 = new System.Windows.Forms.Button();
-            this.button77 = new System.Windows.Forms.Button();
-            this.button110 = new System.Windows.Forms.Button();
-            this.button157 = new System.Windows.Forms.Button();
-            this.button52 = new System.Windows.Forms.Button();
-            this.button109 = new System.Windows.Forms.Button();
-            this.button156 = new System.Windows.Forms.Button();
-            this.button76 = new System.Windows.Forms.Button();
-            this.button108 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button155 = new System.Windows.Forms.Button();
-            this.button51 = new System.Windows.Forms.Button();
-            this.button107 = new System.Windows.Forms.Button();
-            this.button154 = new System.Windows.Forms.Button();
-            this.button75 = new System.Windows.Forms.Button();
-            this.button106 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button153 = new System.Windows.Forms.Button();
-            this.button50 = new System.Windows.Forms.Button();
-            this.button105 = new System.Windows.Forms.Button();
-            this.button152 = new System.Windows.Forms.Button();
-            this.button74 = new System.Windows.Forms.Button();
-            this.button104 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button151 = new System.Windows.Forms.Button();
-            this.button49 = new System.Windows.Forms.Button();
-            this.button103 = new System.Windows.Forms.Button();
-            this.button150 = new System.Windows.Forms.Button();
-            this.button73 = new System.Windows.Forms.Button();
-            this.button102 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button149 = new System.Windows.Forms.Button();
-            this.button48 = new System.Windows.Forms.Button();
-            this.button101 = new System.Windows.Forms.Button();
-            this.button148 = new System.Windows.Forms.Button();
-            this.button72 = new System.Windows.Forms.Button();
-            this.button100 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button147 = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
-            this.button99 = new System.Windows.Forms.Button();
-            this.button146 = new System.Windows.Forms.Button();
-            this.button71 = new System.Windows.Forms.Button();
-            this.button98 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button145 = new System.Windows.Forms.Button();
-            this.button46 = new System.Windows.Forms.Button();
-            this.button144 = new System.Windows.Forms.Button();
-            this.button96 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button142 = new System.Windows.Forms.Button();
-            this.button69 = new System.Windows.Forms.Button();
-            this.button94 = new System.Windows.Forms.Button();
-            this.button141 = new System.Windows.Forms.Button();
-            this.button93 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.button140 = new System.Windows.Forms.Button();
-            this.button68 = new System.Windows.Forms.Button();
-            this.button92 = new System.Windows.Forms.Button();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.F20 = new System.Windows.Forms.Button();
+            this.G19 = new System.Windows.Forms.Button();
+            this.E19 = new System.Windows.Forms.Button();
+            this.C19 = new System.Windows.Forms.Button();
+            this.G18 = new System.Windows.Forms.Button();
+            this.E18 = new System.Windows.Forms.Button();
+            this.F19 = new System.Windows.Forms.Button();
+            this.D19 = new System.Windows.Forms.Button();
+            this.F18 = new System.Windows.Forms.Button();
+            this.C18 = new System.Windows.Forms.Button();
+            this.D18 = new System.Windows.Forms.Button();
+            this.G17 = new System.Windows.Forms.Button();
+            this.B19 = new System.Windows.Forms.Button();
+            this.E17 = new System.Windows.Forms.Button();
+            this.B18 = new System.Windows.Forms.Button();
+            this.F17 = new System.Windows.Forms.Button();
+            this.C17 = new System.Windows.Forms.Button();
+            this.D17 = new System.Windows.Forms.Button();
+            this.G16 = new System.Windows.Forms.Button();
+            this.B17 = new System.Windows.Forms.Button();
+            this.E16 = new System.Windows.Forms.Button();
+            this.A18 = new System.Windows.Forms.Button();
+            this.F16 = new System.Windows.Forms.Button();
+            this.C16 = new System.Windows.Forms.Button();
+            this.D16 = new System.Windows.Forms.Button();
+            this.A17 = new System.Windows.Forms.Button();
+            this.G15 = new System.Windows.Forms.Button();
+            this.B16 = new System.Windows.Forms.Button();
+            this.E15 = new System.Windows.Forms.Button();
+            this.F15 = new System.Windows.Forms.Button();
+            this.C15 = new System.Windows.Forms.Button();
+            this.D15 = new System.Windows.Forms.Button();
+            this.A16 = new System.Windows.Forms.Button();
+            this.G14 = new System.Windows.Forms.Button();
+            this.B15 = new System.Windows.Forms.Button();
+            this.E14 = new System.Windows.Forms.Button();
+            this.F14 = new System.Windows.Forms.Button();
+            this.C14 = new System.Windows.Forms.Button();
+            this.D14 = new System.Windows.Forms.Button();
+            this.A15 = new System.Windows.Forms.Button();
+            this.G13 = new System.Windows.Forms.Button();
+            this.B14 = new System.Windows.Forms.Button();
+            this.E13 = new System.Windows.Forms.Button();
+            this.F13 = new System.Windows.Forms.Button();
+            this.C13 = new System.Windows.Forms.Button();
+            this.D13 = new System.Windows.Forms.Button();
+            this.A14 = new System.Windows.Forms.Button();
+            this.G11 = new System.Windows.Forms.Button();
+            this.B13 = new System.Windows.Forms.Button();
+            this.E11 = new System.Windows.Forms.Button();
+            this.F11 = new System.Windows.Forms.Button();
+            this.C11 = new System.Windows.Forms.Button();
+            this.D11 = new System.Windows.Forms.Button();
+            this.A13 = new System.Windows.Forms.Button();
+            this.G12 = new System.Windows.Forms.Button();
+            this.B11 = new System.Windows.Forms.Button();
+            this.E12 = new System.Windows.Forms.Button();
+            this.F12 = new System.Windows.Forms.Button();
+            this.C12 = new System.Windows.Forms.Button();
+            this.D12 = new System.Windows.Forms.Button();
+            this.A11 = new System.Windows.Forms.Button();
+            this.B12 = new System.Windows.Forms.Button();
+            this.A12 = new System.Windows.Forms.Button();
+            this.G10 = new System.Windows.Forms.Button();
+            this.E10 = new System.Windows.Forms.Button();
+            this.F10 = new System.Windows.Forms.Button();
+            this.C10 = new System.Windows.Forms.Button();
+            this.D10 = new System.Windows.Forms.Button();
+            this.G9 = new System.Windows.Forms.Button();
+            this.B10 = new System.Windows.Forms.Button();
+            this.E9 = new System.Windows.Forms.Button();
+            this.F9 = new System.Windows.Forms.Button();
+            this.C9 = new System.Windows.Forms.Button();
+            this.D9 = new System.Windows.Forms.Button();
+            this.A10 = new System.Windows.Forms.Button();
+            this.G8 = new System.Windows.Forms.Button();
+            this.B9 = new System.Windows.Forms.Button();
+            this.E8 = new System.Windows.Forms.Button();
+            this.F8 = new System.Windows.Forms.Button();
+            this.C8 = new System.Windows.Forms.Button();
+            this.D8 = new System.Windows.Forms.Button();
+            this.A9 = new System.Windows.Forms.Button();
+            this.G7 = new System.Windows.Forms.Button();
+            this.B8 = new System.Windows.Forms.Button();
+            this.E7 = new System.Windows.Forms.Button();
+            this.F7 = new System.Windows.Forms.Button();
+            this.C7 = new System.Windows.Forms.Button();
+            this.D7 = new System.Windows.Forms.Button();
+            this.A8 = new System.Windows.Forms.Button();
+            this.G6 = new System.Windows.Forms.Button();
+            this.B7 = new System.Windows.Forms.Button();
+            this.E6 = new System.Windows.Forms.Button();
+            this.F6 = new System.Windows.Forms.Button();
+            this.C6 = new System.Windows.Forms.Button();
+            this.D6 = new System.Windows.Forms.Button();
+            this.A7 = new System.Windows.Forms.Button();
+            this.G5 = new System.Windows.Forms.Button();
+            this.B6 = new System.Windows.Forms.Button();
+            this.E5 = new System.Windows.Forms.Button();
+            this.F5 = new System.Windows.Forms.Button();
+            this.C5 = new System.Windows.Forms.Button();
+            this.D5 = new System.Windows.Forms.Button();
+            this.A6 = new System.Windows.Forms.Button();
+            this.G4 = new System.Windows.Forms.Button();
+            this.B5 = new System.Windows.Forms.Button();
+            this.E4 = new System.Windows.Forms.Button();
+            this.F4 = new System.Windows.Forms.Button();
+            this.C4 = new System.Windows.Forms.Button();
+            this.D4 = new System.Windows.Forms.Button();
+            this.A5 = new System.Windows.Forms.Button();
+            this.G1 = new System.Windows.Forms.Button();
+            this.B4 = new System.Windows.Forms.Button();
+            this.G2 = new System.Windows.Forms.Button();
+            this.E2 = new System.Windows.Forms.Button();
+            this.A4 = new System.Windows.Forms.Button();
+            this.F2 = new System.Windows.Forms.Button();
+            this.C2 = new System.Windows.Forms.Button();
+            this.D2 = new System.Windows.Forms.Button();
+            this.G3 = new System.Windows.Forms.Button();
+            this.E3 = new System.Windows.Forms.Button();
+            this.B2 = new System.Windows.Forms.Button();
+            this.F3 = new System.Windows.Forms.Button();
+            this.C3 = new System.Windows.Forms.Button();
+            this.D3 = new System.Windows.Forms.Button();
+            this.B3 = new System.Windows.Forms.Button();
+            this.A3 = new System.Windows.Forms.Button();
             this.cmsDelete = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.iptalEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -183,8 +183,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.F1 = new System.Windows.Forms.Button();
+            this.G20 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -251,1265 +251,1265 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label9.Name = "label9";
             // 
-            // button187
-            // 
-            this.button187.BackColor = System.Drawing.Color.Gray;
-            this.button187.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button187.FlatAppearance.BorderSize = 0;
-            this.button187.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button187, "button187");
-            this.button187.Name = "button187";
-            this.button187.UseVisualStyleBackColor = false;
-            // 
-            // button186
-            // 
-            this.button186.BackColor = System.Drawing.Color.Gray;
-            this.button186.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button186.FlatAppearance.BorderSize = 0;
-            this.button186.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button186, "button186");
-            this.button186.Name = "button186";
-            this.button186.UseVisualStyleBackColor = false;
-            // 
-            // button138
-            // 
-            this.button138.BackColor = System.Drawing.Color.Gray;
-            this.button138.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button138.FlatAppearance.BorderSize = 0;
-            this.button138.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button138, "button138");
-            this.button138.Name = "button138";
-            this.button138.UseVisualStyleBackColor = false;
-            // 
-            // button90
-            // 
-            this.button90.BackColor = System.Drawing.Color.Gray;
-            this.button90.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button90.FlatAppearance.BorderSize = 0;
-            this.button90.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button90, "button90");
-            this.button90.Name = "button90";
-            this.button90.UseVisualStyleBackColor = false;
-            // 
-            // button184
-            // 
-            this.button184.BackColor = System.Drawing.Color.Gray;
-            this.button184.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button184.FlatAppearance.BorderSize = 0;
-            this.button184.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button184, "button184");
-            this.button184.Name = "button184";
-            this.button184.UseVisualStyleBackColor = false;
-            // 
-            // button136
-            // 
-            this.button136.BackColor = System.Drawing.Color.Gray;
-            this.button136.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button136.FlatAppearance.BorderSize = 0;
-            this.button136.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button136, "button136");
-            this.button136.Name = "button136";
-            this.button136.UseVisualStyleBackColor = false;
-            // 
-            // button183
-            // 
-            this.button183.BackColor = System.Drawing.Color.Gray;
-            this.button183.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button183.FlatAppearance.BorderSize = 0;
-            this.button183.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button183, "button183");
-            this.button183.Name = "button183";
-            this.button183.UseVisualStyleBackColor = false;
-            // 
-            // button135
-            // 
-            this.button135.BackColor = System.Drawing.Color.Gray;
-            this.button135.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button135.FlatAppearance.BorderSize = 0;
-            this.button135.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button135, "button135");
-            this.button135.Name = "button135";
-            this.button135.UseVisualStyleBackColor = false;
-            // 
-            // button182
-            // 
-            this.button182.BackColor = System.Drawing.Color.Gray;
-            this.button182.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button182.FlatAppearance.BorderSize = 0;
-            this.button182.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button182, "button182");
-            this.button182.Name = "button182";
-            this.button182.UseVisualStyleBackColor = false;
-            // 
-            // button89
-            // 
-            this.button89.BackColor = System.Drawing.Color.Gray;
-            this.button89.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button89.FlatAppearance.BorderSize = 0;
-            this.button89.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button89, "button89");
-            this.button89.Name = "button89";
-            this.button89.UseVisualStyleBackColor = false;
-            // 
-            // button134
-            // 
-            this.button134.BackColor = System.Drawing.Color.Gray;
-            this.button134.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button134.FlatAppearance.BorderSize = 0;
-            this.button134.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button134, "button134");
-            this.button134.Name = "button134";
-            this.button134.UseVisualStyleBackColor = false;
-            // 
-            // button181
-            // 
-            this.button181.BackColor = System.Drawing.Color.Gray;
-            this.button181.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button181.FlatAppearance.BorderSize = 0;
-            this.button181.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button181, "button181");
-            this.button181.Name = "button181";
-            this.button181.UseVisualStyleBackColor = false;
-            // 
-            // button65
-            // 
-            this.button65.BackColor = System.Drawing.Color.Gray;
-            this.button65.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button65.FlatAppearance.BorderSize = 0;
-            this.button65.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button65, "button65");
-            this.button65.Name = "button65";
-            this.button65.UseVisualStyleBackColor = false;
-            // 
-            // button133
-            // 
-            this.button133.BackColor = System.Drawing.Color.Gray;
-            this.button133.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button133.FlatAppearance.BorderSize = 0;
-            this.button133.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button133, "button133");
-            this.button133.Name = "button133";
-            this.button133.UseVisualStyleBackColor = false;
-            // 
-            // button64
-            // 
-            this.button64.BackColor = System.Drawing.Color.Gray;
-            this.button64.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button64.FlatAppearance.BorderSize = 0;
-            this.button64.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button64, "button64");
-            this.button64.Name = "button64";
-            this.button64.UseVisualStyleBackColor = false;
-            // 
-            // button180
-            // 
-            this.button180.BackColor = System.Drawing.Color.Gray;
-            this.button180.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button180.FlatAppearance.BorderSize = 0;
-            this.button180.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button180, "button180");
-            this.button180.Name = "button180";
-            this.button180.UseVisualStyleBackColor = false;
-            // 
-            // button88
-            // 
-            this.button88.BackColor = System.Drawing.Color.Gray;
-            this.button88.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button88.FlatAppearance.BorderSize = 0;
-            this.button88.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button88, "button88");
-            this.button88.Name = "button88";
-            this.button88.UseVisualStyleBackColor = false;
-            // 
-            // button132
-            // 
-            this.button132.BackColor = System.Drawing.Color.Gray;
-            this.button132.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button132.FlatAppearance.BorderSize = 0;
-            this.button132.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button132, "button132");
-            this.button132.Name = "button132";
-            this.button132.UseVisualStyleBackColor = false;
-            // 
-            // button179
-            // 
-            this.button179.BackColor = System.Drawing.Color.Gray;
-            this.button179.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button179.FlatAppearance.BorderSize = 0;
-            this.button179.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button179, "button179");
-            this.button179.Name = "button179";
-            this.button179.UseVisualStyleBackColor = false;
-            // 
-            // button63
-            // 
-            this.button63.BackColor = System.Drawing.Color.Gray;
-            this.button63.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button63.FlatAppearance.BorderSize = 0;
-            this.button63.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button63, "button63");
-            this.button63.Name = "button63";
-            this.button63.UseVisualStyleBackColor = false;
-            // 
-            // button131
-            // 
-            this.button131.BackColor = System.Drawing.Color.Gray;
-            this.button131.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button131.FlatAppearance.BorderSize = 0;
-            this.button131.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button131, "button131");
-            this.button131.Name = "button131";
-            this.button131.UseVisualStyleBackColor = false;
-            // 
-            // button41
-            // 
-            this.button41.BackColor = System.Drawing.Color.Gray;
-            this.button41.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button41.FlatAppearance.BorderSize = 0;
-            this.button41.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button41, "button41");
-            this.button41.Name = "button41";
-            this.button41.UseVisualStyleBackColor = false;
-            // 
-            // button178
-            // 
-            this.button178.BackColor = System.Drawing.Color.Gray;
-            this.button178.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button178.FlatAppearance.BorderSize = 0;
-            this.button178.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button178, "button178");
-            this.button178.Name = "button178";
-            this.button178.UseVisualStyleBackColor = false;
-            // 
-            // button87
-            // 
-            this.button87.BackColor = System.Drawing.Color.Gray;
-            this.button87.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button87.FlatAppearance.BorderSize = 0;
-            this.button87.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button87, "button87");
-            this.button87.Name = "button87";
-            this.button87.UseVisualStyleBackColor = false;
-            // 
-            // button130
-            // 
-            this.button130.BackColor = System.Drawing.Color.Gray;
-            this.button130.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button130.FlatAppearance.BorderSize = 0;
-            this.button130.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button130, "button130");
-            this.button130.Name = "button130";
-            this.button130.UseVisualStyleBackColor = false;
-            // 
-            // button40
-            // 
-            this.button40.BackColor = System.Drawing.Color.Gray;
-            this.button40.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button40.FlatAppearance.BorderSize = 0;
-            this.button40.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button40, "button40");
-            this.button40.Name = "button40";
-            this.button40.UseVisualStyleBackColor = false;
-            // 
-            // button177
-            // 
-            this.button177.BackColor = System.Drawing.Color.Gray;
-            this.button177.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button177.FlatAppearance.BorderSize = 0;
-            this.button177.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button177, "button177");
-            this.button177.Name = "button177";
-            this.button177.UseVisualStyleBackColor = false;
-            // 
-            // button62
-            // 
-            this.button62.BackColor = System.Drawing.Color.Gray;
-            this.button62.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button62.FlatAppearance.BorderSize = 0;
-            this.button62.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button62, "button62");
-            this.button62.Name = "button62";
-            this.button62.UseVisualStyleBackColor = false;
-            // 
-            // button129
-            // 
-            this.button129.BackColor = System.Drawing.Color.Gray;
-            this.button129.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button129.FlatAppearance.BorderSize = 0;
-            this.button129.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button129, "button129");
-            this.button129.Name = "button129";
-            this.button129.UseVisualStyleBackColor = false;
-            // 
-            // button176
-            // 
-            this.button176.BackColor = System.Drawing.Color.Gray;
-            this.button176.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button176.FlatAppearance.BorderSize = 0;
-            this.button176.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button176, "button176");
-            this.button176.Name = "button176";
-            this.button176.UseVisualStyleBackColor = false;
-            // 
-            // button86
-            // 
-            this.button86.BackColor = System.Drawing.Color.Gray;
-            this.button86.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button86.FlatAppearance.BorderSize = 0;
-            this.button86.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button86, "button86");
-            this.button86.Name = "button86";
-            this.button86.UseVisualStyleBackColor = false;
-            // 
-            // button128
-            // 
-            this.button128.BackColor = System.Drawing.Color.Gray;
-            this.button128.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button128.FlatAppearance.BorderSize = 0;
-            this.button128.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button128, "button128");
-            this.button128.Name = "button128";
-            this.button128.UseVisualStyleBackColor = false;
-            // 
-            // button39
-            // 
-            this.button39.BackColor = System.Drawing.Color.Gray;
-            this.button39.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button39.FlatAppearance.BorderSize = 0;
-            this.button39.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button39, "button39");
-            this.button39.Name = "button39";
-            this.button39.UseVisualStyleBackColor = false;
-            // 
-            // button175
-            // 
-            this.button175.BackColor = System.Drawing.Color.Gray;
-            this.button175.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button175.FlatAppearance.BorderSize = 0;
-            this.button175.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button175, "button175");
-            this.button175.Name = "button175";
-            this.button175.UseVisualStyleBackColor = false;
-            // 
-            // button61
-            // 
-            this.button61.BackColor = System.Drawing.Color.Gray;
-            this.button61.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button61.FlatAppearance.BorderSize = 0;
-            this.button61.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button61, "button61");
-            this.button61.Name = "button61";
-            this.button61.UseVisualStyleBackColor = false;
-            // 
-            // button127
-            // 
-            this.button127.BackColor = System.Drawing.Color.Gray;
-            this.button127.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button127.FlatAppearance.BorderSize = 0;
-            this.button127.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button127, "button127");
-            this.button127.Name = "button127";
-            this.button127.UseVisualStyleBackColor = false;
-            // 
-            // button174
-            // 
-            this.button174.BackColor = System.Drawing.Color.Gray;
-            this.button174.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button174.FlatAppearance.BorderSize = 0;
-            this.button174.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button174, "button174");
-            this.button174.Name = "button174";
-            this.button174.UseVisualStyleBackColor = false;
-            // 
-            // button85
-            // 
-            this.button85.BackColor = System.Drawing.Color.Gray;
-            this.button85.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button85.FlatAppearance.BorderSize = 0;
-            this.button85.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button85, "button85");
-            this.button85.Name = "button85";
-            this.button85.UseVisualStyleBackColor = false;
-            // 
-            // button126
-            // 
-            this.button126.BackColor = System.Drawing.Color.Gray;
-            this.button126.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button126.FlatAppearance.BorderSize = 0;
-            this.button126.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button126, "button126");
-            this.button126.Name = "button126";
-            this.button126.UseVisualStyleBackColor = false;
-            // 
-            // button38
-            // 
-            this.button38.BackColor = System.Drawing.Color.Gray;
-            this.button38.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button38.FlatAppearance.BorderSize = 0;
-            this.button38.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button38, "button38");
-            this.button38.Name = "button38";
-            this.button38.UseVisualStyleBackColor = false;
-            // 
-            // button173
-            // 
-            this.button173.BackColor = System.Drawing.Color.Gray;
-            this.button173.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button173.FlatAppearance.BorderSize = 0;
-            this.button173.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button173, "button173");
-            this.button173.Name = "button173";
-            this.button173.UseVisualStyleBackColor = false;
-            // 
-            // button60
-            // 
-            this.button60.BackColor = System.Drawing.Color.Gray;
-            this.button60.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button60.FlatAppearance.BorderSize = 0;
-            this.button60.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button60, "button60");
-            this.button60.Name = "button60";
-            this.button60.UseVisualStyleBackColor = false;
-            // 
-            // button125
-            // 
-            this.button125.BackColor = System.Drawing.Color.Gray;
-            this.button125.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button125.FlatAppearance.BorderSize = 0;
-            this.button125.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button125, "button125");
-            this.button125.Name = "button125";
-            this.button125.UseVisualStyleBackColor = false;
-            // 
-            // button172
-            // 
-            this.button172.BackColor = System.Drawing.Color.Gray;
-            this.button172.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button172.FlatAppearance.BorderSize = 0;
-            this.button172.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button172, "button172");
-            this.button172.Name = "button172";
-            this.button172.UseVisualStyleBackColor = false;
-            // 
-            // button84
-            // 
-            this.button84.BackColor = System.Drawing.Color.Gray;
-            this.button84.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button84.FlatAppearance.BorderSize = 0;
-            this.button84.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button84, "button84");
-            this.button84.Name = "button84";
-            this.button84.UseVisualStyleBackColor = false;
-            // 
-            // button124
-            // 
-            this.button124.BackColor = System.Drawing.Color.Gray;
-            this.button124.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button124.FlatAppearance.BorderSize = 0;
-            this.button124.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button124, "button124");
-            this.button124.Name = "button124";
-            this.button124.UseVisualStyleBackColor = false;
-            // 
-            // button37
-            // 
-            this.button37.BackColor = System.Drawing.Color.Gray;
-            this.button37.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button37.FlatAppearance.BorderSize = 0;
-            this.button37.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button37, "button37");
-            this.button37.Name = "button37";
-            this.button37.UseVisualStyleBackColor = false;
-            // 
-            // button171
-            // 
-            this.button171.BackColor = System.Drawing.Color.Gray;
-            this.button171.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button171.FlatAppearance.BorderSize = 0;
-            this.button171.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button171, "button171");
-            this.button171.Name = "button171";
-            this.button171.UseVisualStyleBackColor = false;
-            // 
-            // button59
-            // 
-            this.button59.BackColor = System.Drawing.Color.Gray;
-            this.button59.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button59.FlatAppearance.BorderSize = 0;
-            this.button59.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button59, "button59");
-            this.button59.Name = "button59";
-            this.button59.UseVisualStyleBackColor = false;
-            // 
-            // button123
-            // 
-            this.button123.BackColor = System.Drawing.Color.Gray;
-            this.button123.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button123.FlatAppearance.BorderSize = 0;
-            this.button123.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button123, "button123");
-            this.button123.Name = "button123";
-            this.button123.UseVisualStyleBackColor = false;
-            // 
-            // button170
-            // 
-            this.button170.BackColor = System.Drawing.Color.Gray;
-            this.button170.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button170.FlatAppearance.BorderSize = 0;
-            this.button170.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button170, "button170");
-            this.button170.Name = "button170";
-            this.button170.UseVisualStyleBackColor = false;
-            // 
-            // button83
-            // 
-            this.button83.BackColor = System.Drawing.Color.Gray;
-            this.button83.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button83.FlatAppearance.BorderSize = 0;
-            this.button83.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button83, "button83");
-            this.button83.Name = "button83";
-            this.button83.UseVisualStyleBackColor = false;
-            // 
-            // button122
-            // 
-            this.button122.BackColor = System.Drawing.Color.Gray;
-            this.button122.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button122.FlatAppearance.BorderSize = 0;
-            this.button122.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button122, "button122");
-            this.button122.Name = "button122";
-            this.button122.UseVisualStyleBackColor = false;
-            // 
-            // button36
-            // 
-            this.button36.BackColor = System.Drawing.Color.Gray;
-            this.button36.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button36.FlatAppearance.BorderSize = 0;
-            this.button36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button36, "button36");
-            this.button36.Name = "button36";
-            this.button36.UseVisualStyleBackColor = false;
-            // 
-            // button169
-            // 
-            this.button169.BackColor = System.Drawing.Color.Gray;
-            this.button169.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button169.FlatAppearance.BorderSize = 0;
-            this.button169.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button169, "button169");
-            this.button169.Name = "button169";
-            this.button169.UseVisualStyleBackColor = false;
-            // 
-            // button58
-            // 
-            this.button58.BackColor = System.Drawing.Color.Gray;
-            this.button58.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button58.FlatAppearance.BorderSize = 0;
-            this.button58.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button58, "button58");
-            this.button58.Name = "button58";
-            this.button58.UseVisualStyleBackColor = false;
-            // 
-            // button121
-            // 
-            this.button121.BackColor = System.Drawing.Color.Gray;
-            this.button121.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button121.FlatAppearance.BorderSize = 0;
-            this.button121.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button121, "button121");
-            this.button121.Name = "button121";
-            this.button121.UseVisualStyleBackColor = false;
-            // 
-            // button168
-            // 
-            this.button168.BackColor = System.Drawing.Color.Gray;
-            this.button168.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button168.FlatAppearance.BorderSize = 0;
-            this.button168.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button168, "button168");
-            this.button168.Name = "button168";
-            this.button168.UseVisualStyleBackColor = false;
-            // 
-            // button82
-            // 
-            this.button82.BackColor = System.Drawing.Color.Gray;
-            this.button82.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button82.FlatAppearance.BorderSize = 0;
-            this.button82.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button82, "button82");
-            this.button82.Name = "button82";
-            this.button82.UseVisualStyleBackColor = false;
-            // 
-            // button120
-            // 
-            this.button120.BackColor = System.Drawing.Color.Gray;
-            this.button120.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button120.FlatAppearance.BorderSize = 0;
-            this.button120.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button120, "button120");
-            this.button120.Name = "button120";
-            this.button120.UseVisualStyleBackColor = false;
-            // 
-            // button35
-            // 
-            this.button35.BackColor = System.Drawing.Color.Gray;
-            this.button35.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button35.FlatAppearance.BorderSize = 0;
-            this.button35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button35, "button35");
-            this.button35.Name = "button35";
-            this.button35.UseVisualStyleBackColor = false;
-            // 
-            // button57
-            // 
-            this.button57.BackColor = System.Drawing.Color.Gray;
-            this.button57.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button57.FlatAppearance.BorderSize = 0;
-            this.button57.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button57, "button57");
-            this.button57.Name = "button57";
-            this.button57.UseVisualStyleBackColor = false;
-            // 
-            // button34
-            // 
-            this.button34.BackColor = System.Drawing.Color.Gray;
-            this.button34.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button34.FlatAppearance.BorderSize = 0;
-            this.button34.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button34, "button34");
-            this.button34.Name = "button34";
-            this.button34.UseVisualStyleBackColor = false;
-            // 
-            // button159
-            // 
-            this.button159.BackColor = System.Drawing.Color.Gray;
-            this.button159.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button159.FlatAppearance.BorderSize = 0;
-            this.button159.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button159, "button159");
-            this.button159.Name = "button159";
-            this.button159.UseVisualStyleBackColor = false;
-            // 
-            // button111
-            // 
-            this.button111.BackColor = System.Drawing.Color.Gray;
-            this.button111.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button111.FlatAppearance.BorderSize = 0;
-            this.button111.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button111, "button111");
-            this.button111.Name = "button111";
-            this.button111.UseVisualStyleBackColor = false;
-            // 
-            // button158
-            // 
-            this.button158.BackColor = System.Drawing.Color.Gray;
-            this.button158.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button158.FlatAppearance.BorderSize = 0;
-            this.button158.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button158, "button158");
-            this.button158.Name = "button158";
-            this.button158.UseVisualStyleBackColor = false;
-            // 
-            // button77
-            // 
-            this.button77.BackColor = System.Drawing.Color.Gray;
-            this.button77.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button77.FlatAppearance.BorderSize = 0;
-            this.button77.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button77, "button77");
-            this.button77.Name = "button77";
-            this.button77.UseVisualStyleBackColor = false;
-            // 
-            // button110
-            // 
-            this.button110.BackColor = System.Drawing.Color.Gray;
-            this.button110.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button110.FlatAppearance.BorderSize = 0;
-            this.button110.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button110, "button110");
-            this.button110.Name = "button110";
-            this.button110.UseVisualStyleBackColor = false;
-            // 
-            // button157
-            // 
-            this.button157.BackColor = System.Drawing.Color.Gray;
-            this.button157.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button157.FlatAppearance.BorderSize = 0;
-            this.button157.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button157, "button157");
-            this.button157.Name = "button157";
-            this.button157.UseVisualStyleBackColor = false;
-            // 
-            // button52
-            // 
-            this.button52.BackColor = System.Drawing.Color.Gray;
-            this.button52.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button52.FlatAppearance.BorderSize = 0;
-            this.button52.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button52, "button52");
-            this.button52.Name = "button52";
-            this.button52.UseVisualStyleBackColor = false;
-            // 
-            // button109
-            // 
-            this.button109.BackColor = System.Drawing.Color.Gray;
-            this.button109.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button109.FlatAppearance.BorderSize = 0;
-            this.button109.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button109, "button109");
-            this.button109.Name = "button109";
-            this.button109.UseVisualStyleBackColor = false;
-            // 
-            // button156
-            // 
-            this.button156.BackColor = System.Drawing.Color.Gray;
-            this.button156.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button156.FlatAppearance.BorderSize = 0;
-            this.button156.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button156, "button156");
-            this.button156.Name = "button156";
-            this.button156.UseVisualStyleBackColor = false;
-            // 
-            // button76
-            // 
-            this.button76.BackColor = System.Drawing.Color.Gray;
-            this.button76.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button76.FlatAppearance.BorderSize = 0;
-            this.button76.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button76, "button76");
-            this.button76.Name = "button76";
-            this.button76.UseVisualStyleBackColor = false;
-            // 
-            // button108
-            // 
-            this.button108.BackColor = System.Drawing.Color.Gray;
-            this.button108.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button108.FlatAppearance.BorderSize = 0;
-            this.button108.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button108, "button108");
-            this.button108.Name = "button108";
-            this.button108.UseVisualStyleBackColor = false;
-            // 
-            // button29
-            // 
-            this.button29.BackColor = System.Drawing.Color.Gray;
-            this.button29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button29.FlatAppearance.BorderSize = 0;
-            this.button29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button29, "button29");
-            this.button29.Name = "button29";
-            this.button29.UseVisualStyleBackColor = false;
-            // 
-            // button155
-            // 
-            this.button155.BackColor = System.Drawing.Color.Gray;
-            this.button155.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button155.FlatAppearance.BorderSize = 0;
-            this.button155.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button155, "button155");
-            this.button155.Name = "button155";
-            this.button155.UseVisualStyleBackColor = false;
-            // 
-            // button51
-            // 
-            this.button51.BackColor = System.Drawing.Color.Gray;
-            this.button51.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button51.FlatAppearance.BorderSize = 0;
-            this.button51.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button51, "button51");
-            this.button51.Name = "button51";
-            this.button51.UseVisualStyleBackColor = false;
-            // 
-            // button107
-            // 
-            this.button107.BackColor = System.Drawing.Color.Gray;
-            this.button107.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button107.FlatAppearance.BorderSize = 0;
-            this.button107.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button107, "button107");
-            this.button107.Name = "button107";
-            this.button107.UseVisualStyleBackColor = false;
-            // 
-            // button154
-            // 
-            this.button154.BackColor = System.Drawing.Color.Gray;
-            this.button154.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button154.FlatAppearance.BorderSize = 0;
-            this.button154.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button154, "button154");
-            this.button154.Name = "button154";
-            this.button154.UseVisualStyleBackColor = false;
-            // 
-            // button75
-            // 
-            this.button75.BackColor = System.Drawing.Color.Gray;
-            this.button75.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button75.FlatAppearance.BorderSize = 0;
-            this.button75.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button75, "button75");
-            this.button75.Name = "button75";
-            this.button75.UseVisualStyleBackColor = false;
-            // 
-            // button106
-            // 
-            this.button106.BackColor = System.Drawing.Color.Gray;
-            this.button106.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button106.FlatAppearance.BorderSize = 0;
-            this.button106.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button106, "button106");
-            this.button106.Name = "button106";
-            this.button106.UseVisualStyleBackColor = false;
-            // 
-            // button28
-            // 
-            this.button28.BackColor = System.Drawing.Color.Gray;
-            this.button28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button28.FlatAppearance.BorderSize = 0;
-            this.button28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button28, "button28");
-            this.button28.Name = "button28";
-            this.button28.UseVisualStyleBackColor = false;
-            // 
-            // button153
-            // 
-            this.button153.BackColor = System.Drawing.Color.Gray;
-            this.button153.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button153.FlatAppearance.BorderSize = 0;
-            this.button153.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button153, "button153");
-            this.button153.Name = "button153";
-            this.button153.UseVisualStyleBackColor = false;
-            // 
-            // button50
-            // 
-            this.button50.BackColor = System.Drawing.Color.Gray;
-            this.button50.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button50.FlatAppearance.BorderSize = 0;
-            this.button50.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button50, "button50");
-            this.button50.Name = "button50";
-            this.button50.UseVisualStyleBackColor = false;
-            // 
-            // button105
-            // 
-            this.button105.BackColor = System.Drawing.Color.Gray;
-            this.button105.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button105.FlatAppearance.BorderSize = 0;
-            this.button105.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button105, "button105");
-            this.button105.Name = "button105";
-            this.button105.UseVisualStyleBackColor = false;
-            // 
-            // button152
-            // 
-            this.button152.BackColor = System.Drawing.Color.Gray;
-            this.button152.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button152.FlatAppearance.BorderSize = 0;
-            this.button152.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button152, "button152");
-            this.button152.Name = "button152";
-            this.button152.UseVisualStyleBackColor = false;
-            // 
-            // button74
-            // 
-            this.button74.BackColor = System.Drawing.Color.Gray;
-            this.button74.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button74.FlatAppearance.BorderSize = 0;
-            this.button74.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button74, "button74");
-            this.button74.Name = "button74";
-            this.button74.UseVisualStyleBackColor = false;
-            // 
-            // button104
-            // 
-            this.button104.BackColor = System.Drawing.Color.Gray;
-            this.button104.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button104.FlatAppearance.BorderSize = 0;
-            this.button104.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button104, "button104");
-            this.button104.Name = "button104";
-            this.button104.UseVisualStyleBackColor = false;
-            // 
-            // button27
-            // 
-            this.button27.BackColor = System.Drawing.Color.Gray;
-            this.button27.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button27.FlatAppearance.BorderSize = 0;
-            this.button27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button27, "button27");
-            this.button27.Name = "button27";
-            this.button27.UseVisualStyleBackColor = false;
-            // 
-            // button151
-            // 
-            this.button151.BackColor = System.Drawing.Color.Gray;
-            this.button151.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button151.FlatAppearance.BorderSize = 0;
-            this.button151.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button151, "button151");
-            this.button151.Name = "button151";
-            this.button151.UseVisualStyleBackColor = false;
-            // 
-            // button49
-            // 
-            this.button49.BackColor = System.Drawing.Color.Gray;
-            this.button49.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button49.FlatAppearance.BorderSize = 0;
-            this.button49.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button49, "button49");
-            this.button49.Name = "button49";
-            this.button49.UseVisualStyleBackColor = false;
-            // 
-            // button103
-            // 
-            this.button103.BackColor = System.Drawing.Color.Gray;
-            this.button103.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button103.FlatAppearance.BorderSize = 0;
-            this.button103.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button103, "button103");
-            this.button103.Name = "button103";
-            this.button103.UseVisualStyleBackColor = false;
-            // 
-            // button150
-            // 
-            this.button150.BackColor = System.Drawing.Color.Gray;
-            this.button150.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button150.FlatAppearance.BorderSize = 0;
-            this.button150.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button150, "button150");
-            this.button150.Name = "button150";
-            this.button150.UseVisualStyleBackColor = false;
-            // 
-            // button73
-            // 
-            this.button73.BackColor = System.Drawing.Color.Gray;
-            this.button73.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button73.FlatAppearance.BorderSize = 0;
-            this.button73.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button73, "button73");
-            this.button73.Name = "button73";
-            this.button73.UseVisualStyleBackColor = false;
-            // 
-            // button102
-            // 
-            this.button102.BackColor = System.Drawing.Color.Gray;
-            this.button102.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button102.FlatAppearance.BorderSize = 0;
-            this.button102.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button102, "button102");
-            this.button102.Name = "button102";
-            this.button102.UseVisualStyleBackColor = false;
-            // 
-            // button26
-            // 
-            this.button26.BackColor = System.Drawing.Color.Gray;
-            this.button26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button26.FlatAppearance.BorderSize = 0;
-            this.button26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button26, "button26");
-            this.button26.Name = "button26";
-            this.button26.UseVisualStyleBackColor = false;
-            // 
-            // button149
-            // 
-            this.button149.BackColor = System.Drawing.Color.Gray;
-            this.button149.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button149.FlatAppearance.BorderSize = 0;
-            this.button149.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button149, "button149");
-            this.button149.Name = "button149";
-            this.button149.UseVisualStyleBackColor = false;
-            // 
-            // button48
-            // 
-            this.button48.BackColor = System.Drawing.Color.Gray;
-            this.button48.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button48.FlatAppearance.BorderSize = 0;
-            this.button48.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button48, "button48");
-            this.button48.Name = "button48";
-            this.button48.UseVisualStyleBackColor = false;
-            // 
-            // button101
-            // 
-            this.button101.BackColor = System.Drawing.Color.Gray;
-            this.button101.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button101.FlatAppearance.BorderSize = 0;
-            this.button101.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button101, "button101");
-            this.button101.Name = "button101";
-            this.button101.UseVisualStyleBackColor = false;
-            // 
-            // button148
-            // 
-            this.button148.BackColor = System.Drawing.Color.Gray;
-            this.button148.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button148.FlatAppearance.BorderSize = 0;
-            this.button148.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button148, "button148");
-            this.button148.Name = "button148";
-            this.button148.UseVisualStyleBackColor = false;
-            // 
-            // button72
-            // 
-            this.button72.BackColor = System.Drawing.Color.Gray;
-            this.button72.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button72.FlatAppearance.BorderSize = 0;
-            this.button72.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button72, "button72");
-            this.button72.Name = "button72";
-            this.button72.UseVisualStyleBackColor = false;
-            // 
-            // button100
-            // 
-            this.button100.BackColor = System.Drawing.Color.Gray;
-            this.button100.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button100.FlatAppearance.BorderSize = 0;
-            this.button100.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button100, "button100");
-            this.button100.Name = "button100";
-            this.button100.UseVisualStyleBackColor = false;
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.Color.Gray;
-            this.button25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button25, "button25");
-            this.button25.Name = "button25";
-            this.button25.UseVisualStyleBackColor = false;
-            // 
-            // button147
-            // 
-            this.button147.BackColor = System.Drawing.Color.Gray;
-            this.button147.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button147.FlatAppearance.BorderSize = 0;
-            this.button147.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button147, "button147");
-            this.button147.Name = "button147";
-            this.button147.UseVisualStyleBackColor = false;
-            // 
-            // button47
-            // 
-            this.button47.BackColor = System.Drawing.Color.Gray;
-            this.button47.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button47.FlatAppearance.BorderSize = 0;
-            this.button47.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button47, "button47");
-            this.button47.Name = "button47";
-            this.button47.UseVisualStyleBackColor = false;
-            // 
-            // button99
-            // 
-            this.button99.BackColor = System.Drawing.Color.Gray;
-            this.button99.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button99.FlatAppearance.BorderSize = 0;
-            this.button99.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button99, "button99");
-            this.button99.Name = "button99";
-            this.button99.UseVisualStyleBackColor = false;
-            // 
-            // button146
-            // 
-            this.button146.BackColor = System.Drawing.Color.Gray;
-            this.button146.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button146.FlatAppearance.BorderSize = 0;
-            this.button146.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button146, "button146");
-            this.button146.Name = "button146";
-            this.button146.UseVisualStyleBackColor = false;
-            // 
-            // button71
-            // 
-            this.button71.BackColor = System.Drawing.Color.Gray;
-            this.button71.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button71.FlatAppearance.BorderSize = 0;
-            this.button71.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button71, "button71");
-            this.button71.Name = "button71";
-            this.button71.UseVisualStyleBackColor = false;
-            // 
-            // button98
-            // 
-            this.button98.BackColor = System.Drawing.Color.Gray;
-            this.button98.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button98.FlatAppearance.BorderSize = 0;
-            this.button98.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button98, "button98");
-            this.button98.Name = "button98";
-            this.button98.UseVisualStyleBackColor = false;
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.Color.Gray;
-            this.button24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button24, "button24");
-            this.button24.Name = "button24";
-            this.button24.UseVisualStyleBackColor = false;
-            // 
-            // button145
-            // 
-            this.button145.BackColor = System.Drawing.Color.Gray;
-            this.button145.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button145.FlatAppearance.BorderSize = 0;
-            this.button145.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button145, "button145");
-            this.button145.Name = "button145";
-            this.button145.UseVisualStyleBackColor = false;
-            // 
-            // button46
-            // 
-            this.button46.BackColor = System.Drawing.Color.Gray;
-            this.button46.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button46.FlatAppearance.BorderSize = 0;
-            this.button46.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button46, "button46");
-            this.button46.Name = "button46";
-            this.button46.UseVisualStyleBackColor = false;
-            // 
-            // button144
-            // 
-            this.button144.BackColor = System.Drawing.Color.Gray;
-            this.button144.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button144.FlatAppearance.BorderSize = 0;
-            this.button144.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button144, "button144");
-            this.button144.Name = "button144";
-            this.button144.UseVisualStyleBackColor = false;
-            // 
-            // button96
-            // 
-            this.button96.BackColor = System.Drawing.Color.Gray;
-            this.button96.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button96.FlatAppearance.BorderSize = 0;
-            this.button96.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button96, "button96");
-            this.button96.Name = "button96";
-            this.button96.UseVisualStyleBackColor = false;
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.Color.Gray;
-            this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button23, "button23");
-            this.button23.Name = "button23";
-            this.button23.UseVisualStyleBackColor = false;
-            // 
-            // button142
-            // 
-            this.button142.BackColor = System.Drawing.Color.Gray;
-            this.button142.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button142.FlatAppearance.BorderSize = 0;
-            this.button142.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button142, "button142");
-            this.button142.Name = "button142";
-            this.button142.UseVisualStyleBackColor = false;
-            // 
-            // button69
-            // 
-            this.button69.BackColor = System.Drawing.Color.Gray;
-            this.button69.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button69.FlatAppearance.BorderSize = 0;
-            this.button69.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button69, "button69");
-            this.button69.Name = "button69";
-            this.button69.UseVisualStyleBackColor = false;
-            // 
-            // button94
-            // 
-            this.button94.BackColor = System.Drawing.Color.Gray;
-            this.button94.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button94.FlatAppearance.BorderSize = 0;
-            this.button94.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button94, "button94");
-            this.button94.Name = "button94";
-            this.button94.UseVisualStyleBackColor = false;
-            // 
-            // button141
-            // 
-            this.button141.BackColor = System.Drawing.Color.Gray;
-            this.button141.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button141.FlatAppearance.BorderSize = 0;
-            this.button141.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button141, "button141");
-            this.button141.Name = "button141";
-            this.button141.UseVisualStyleBackColor = false;
-            // 
-            // button93
-            // 
-            this.button93.BackColor = System.Drawing.Color.Gray;
-            this.button93.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button93.FlatAppearance.BorderSize = 0;
-            this.button93.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button93, "button93");
-            this.button93.Name = "button93";
-            this.button93.UseVisualStyleBackColor = false;
-            // 
-            // button45
-            // 
-            this.button45.BackColor = System.Drawing.Color.Gray;
-            this.button45.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button45.FlatAppearance.BorderSize = 0;
-            this.button45.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button45, "button45");
-            this.button45.Name = "button45";
-            this.button45.UseVisualStyleBackColor = false;
-            // 
-            // button140
-            // 
-            this.button140.BackColor = System.Drawing.Color.Gray;
-            this.button140.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button140.FlatAppearance.BorderSize = 0;
-            this.button140.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button140, "button140");
-            this.button140.Name = "button140";
-            this.button140.UseVisualStyleBackColor = false;
-            // 
-            // button68
-            // 
-            this.button68.BackColor = System.Drawing.Color.Gray;
-            this.button68.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button68.FlatAppearance.BorderSize = 0;
-            this.button68.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button68, "button68");
-            this.button68.Name = "button68";
-            this.button68.UseVisualStyleBackColor = false;
-            // 
-            // button92
-            // 
-            this.button92.BackColor = System.Drawing.Color.Gray;
-            this.button92.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button92.FlatAppearance.BorderSize = 0;
-            this.button92.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button92, "button92");
-            this.button92.Name = "button92";
-            this.button92.UseVisualStyleBackColor = false;
-            // 
-            // button44
-            // 
-            this.button44.BackColor = System.Drawing.Color.Gray;
-            this.button44.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button44.FlatAppearance.BorderSize = 0;
-            this.button44.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button44, "button44");
-            this.button44.Name = "button44";
-            this.button44.UseVisualStyleBackColor = false;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.Gray;
-            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button22, "button22");
-            this.button22.Name = "button22";
-            this.button22.UseVisualStyleBackColor = false;
+            // F20
+            // 
+            this.F20.BackColor = System.Drawing.Color.Gray;
+            this.F20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F20.FlatAppearance.BorderSize = 0;
+            this.F20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F20, "F20");
+            this.F20.Name = "F20";
+            this.F20.UseVisualStyleBackColor = false;
+            // 
+            // G19
+            // 
+            this.G19.BackColor = System.Drawing.Color.Gray;
+            this.G19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G19.FlatAppearance.BorderSize = 0;
+            this.G19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G19, "G19");
+            this.G19.Name = "G19";
+            this.G19.UseVisualStyleBackColor = false;
+            // 
+            // E19
+            // 
+            this.E19.BackColor = System.Drawing.Color.Gray;
+            this.E19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E19.FlatAppearance.BorderSize = 0;
+            this.E19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E19, "E19");
+            this.E19.Name = "E19";
+            this.E19.UseVisualStyleBackColor = false;
+            // 
+            // C19
+            // 
+            this.C19.BackColor = System.Drawing.Color.Gray;
+            this.C19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C19.FlatAppearance.BorderSize = 0;
+            this.C19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C19, "C19");
+            this.C19.Name = "C19";
+            this.C19.UseVisualStyleBackColor = false;
+            // 
+            // G18
+            // 
+            this.G18.BackColor = System.Drawing.Color.Gray;
+            this.G18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G18.FlatAppearance.BorderSize = 0;
+            this.G18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G18, "G18");
+            this.G18.Name = "G18";
+            this.G18.UseVisualStyleBackColor = false;
+            // 
+            // E18
+            // 
+            this.E18.BackColor = System.Drawing.Color.Gray;
+            this.E18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E18.FlatAppearance.BorderSize = 0;
+            this.E18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E18, "E18");
+            this.E18.Name = "E18";
+            this.E18.UseVisualStyleBackColor = false;
+            // 
+            // F19
+            // 
+            this.F19.BackColor = System.Drawing.Color.Gray;
+            this.F19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F19.FlatAppearance.BorderSize = 0;
+            this.F19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F19, "F19");
+            this.F19.Name = "F19";
+            this.F19.UseVisualStyleBackColor = false;
+            // 
+            // D19
+            // 
+            this.D19.BackColor = System.Drawing.Color.Gray;
+            this.D19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D19.FlatAppearance.BorderSize = 0;
+            this.D19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D19, "D19");
+            this.D19.Name = "D19";
+            this.D19.UseVisualStyleBackColor = false;
+            // 
+            // F18
+            // 
+            this.F18.BackColor = System.Drawing.Color.Gray;
+            this.F18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F18.FlatAppearance.BorderSize = 0;
+            this.F18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F18, "F18");
+            this.F18.Name = "F18";
+            this.F18.UseVisualStyleBackColor = false;
+            // 
+            // C18
+            // 
+            this.C18.BackColor = System.Drawing.Color.Gray;
+            this.C18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C18.FlatAppearance.BorderSize = 0;
+            this.C18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C18, "C18");
+            this.C18.Name = "C18";
+            this.C18.UseVisualStyleBackColor = false;
+            // 
+            // D18
+            // 
+            this.D18.BackColor = System.Drawing.Color.Gray;
+            this.D18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D18.FlatAppearance.BorderSize = 0;
+            this.D18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D18, "D18");
+            this.D18.Name = "D18";
+            this.D18.UseVisualStyleBackColor = false;
+            // 
+            // G17
+            // 
+            this.G17.BackColor = System.Drawing.Color.Gray;
+            this.G17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G17.FlatAppearance.BorderSize = 0;
+            this.G17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G17, "G17");
+            this.G17.Name = "G17";
+            this.G17.UseVisualStyleBackColor = false;
+            // 
+            // B19
+            // 
+            this.B19.BackColor = System.Drawing.Color.Gray;
+            this.B19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B19.FlatAppearance.BorderSize = 0;
+            this.B19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B19, "B19");
+            this.B19.Name = "B19";
+            this.B19.UseVisualStyleBackColor = false;
+            // 
+            // E17
+            // 
+            this.E17.BackColor = System.Drawing.Color.Gray;
+            this.E17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E17.FlatAppearance.BorderSize = 0;
+            this.E17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E17, "E17");
+            this.E17.Name = "E17";
+            this.E17.UseVisualStyleBackColor = false;
+            // 
+            // B18
+            // 
+            this.B18.BackColor = System.Drawing.Color.Gray;
+            this.B18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B18.FlatAppearance.BorderSize = 0;
+            this.B18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B18, "B18");
+            this.B18.Name = "B18";
+            this.B18.UseVisualStyleBackColor = false;
+            // 
+            // F17
+            // 
+            this.F17.BackColor = System.Drawing.Color.Gray;
+            this.F17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F17.FlatAppearance.BorderSize = 0;
+            this.F17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F17, "F17");
+            this.F17.Name = "F17";
+            this.F17.UseVisualStyleBackColor = false;
+            // 
+            // C17
+            // 
+            this.C17.BackColor = System.Drawing.Color.Gray;
+            this.C17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C17.FlatAppearance.BorderSize = 0;
+            this.C17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C17, "C17");
+            this.C17.Name = "C17";
+            this.C17.UseVisualStyleBackColor = false;
+            // 
+            // D17
+            // 
+            this.D17.BackColor = System.Drawing.Color.Gray;
+            this.D17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D17.FlatAppearance.BorderSize = 0;
+            this.D17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D17, "D17");
+            this.D17.Name = "D17";
+            this.D17.UseVisualStyleBackColor = false;
+            // 
+            // G16
+            // 
+            this.G16.BackColor = System.Drawing.Color.Gray;
+            this.G16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G16.FlatAppearance.BorderSize = 0;
+            this.G16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G16, "G16");
+            this.G16.Name = "G16";
+            this.G16.UseVisualStyleBackColor = false;
+            // 
+            // B17
+            // 
+            this.B17.BackColor = System.Drawing.Color.Gray;
+            this.B17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B17.FlatAppearance.BorderSize = 0;
+            this.B17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B17, "B17");
+            this.B17.Name = "B17";
+            this.B17.UseVisualStyleBackColor = false;
+            // 
+            // E16
+            // 
+            this.E16.BackColor = System.Drawing.Color.Gray;
+            this.E16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E16.FlatAppearance.BorderSize = 0;
+            this.E16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E16, "E16");
+            this.E16.Name = "E16";
+            this.E16.UseVisualStyleBackColor = false;
+            // 
+            // A18
+            // 
+            this.A18.BackColor = System.Drawing.Color.Gray;
+            this.A18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A18.FlatAppearance.BorderSize = 0;
+            this.A18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A18, "A18");
+            this.A18.Name = "A18";
+            this.A18.UseVisualStyleBackColor = false;
+            // 
+            // F16
+            // 
+            this.F16.BackColor = System.Drawing.Color.Gray;
+            this.F16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F16.FlatAppearance.BorderSize = 0;
+            this.F16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F16, "F16");
+            this.F16.Name = "F16";
+            this.F16.UseVisualStyleBackColor = false;
+            // 
+            // C16
+            // 
+            this.C16.BackColor = System.Drawing.Color.Gray;
+            this.C16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C16.FlatAppearance.BorderSize = 0;
+            this.C16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C16, "C16");
+            this.C16.Name = "C16";
+            this.C16.UseVisualStyleBackColor = false;
+            // 
+            // D16
+            // 
+            this.D16.BackColor = System.Drawing.Color.Gray;
+            this.D16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D16.FlatAppearance.BorderSize = 0;
+            this.D16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D16, "D16");
+            this.D16.Name = "D16";
+            this.D16.UseVisualStyleBackColor = false;
+            // 
+            // A17
+            // 
+            this.A17.BackColor = System.Drawing.Color.Gray;
+            this.A17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A17.FlatAppearance.BorderSize = 0;
+            this.A17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A17, "A17");
+            this.A17.Name = "A17";
+            this.A17.UseVisualStyleBackColor = false;
+            // 
+            // G15
+            // 
+            this.G15.BackColor = System.Drawing.Color.Gray;
+            this.G15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G15.FlatAppearance.BorderSize = 0;
+            this.G15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G15, "G15");
+            this.G15.Name = "G15";
+            this.G15.UseVisualStyleBackColor = false;
+            // 
+            // B16
+            // 
+            this.B16.BackColor = System.Drawing.Color.Gray;
+            this.B16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B16.FlatAppearance.BorderSize = 0;
+            this.B16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B16, "B16");
+            this.B16.Name = "B16";
+            this.B16.UseVisualStyleBackColor = false;
+            // 
+            // E15
+            // 
+            this.E15.BackColor = System.Drawing.Color.Gray;
+            this.E15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E15.FlatAppearance.BorderSize = 0;
+            this.E15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E15, "E15");
+            this.E15.Name = "E15";
+            this.E15.UseVisualStyleBackColor = false;
+            // 
+            // F15
+            // 
+            this.F15.BackColor = System.Drawing.Color.Gray;
+            this.F15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F15.FlatAppearance.BorderSize = 0;
+            this.F15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F15, "F15");
+            this.F15.Name = "F15";
+            this.F15.UseVisualStyleBackColor = false;
+            // 
+            // C15
+            // 
+            this.C15.BackColor = System.Drawing.Color.Gray;
+            this.C15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C15.FlatAppearance.BorderSize = 0;
+            this.C15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C15, "C15");
+            this.C15.Name = "C15";
+            this.C15.UseVisualStyleBackColor = false;
+            // 
+            // D15
+            // 
+            this.D15.BackColor = System.Drawing.Color.Gray;
+            this.D15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D15.FlatAppearance.BorderSize = 0;
+            this.D15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D15, "D15");
+            this.D15.Name = "D15";
+            this.D15.UseVisualStyleBackColor = false;
+            // 
+            // A16
+            // 
+            this.A16.BackColor = System.Drawing.Color.Gray;
+            this.A16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A16.FlatAppearance.BorderSize = 0;
+            this.A16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A16, "A16");
+            this.A16.Name = "A16";
+            this.A16.UseVisualStyleBackColor = false;
+            // 
+            // G14
+            // 
+            this.G14.BackColor = System.Drawing.Color.Gray;
+            this.G14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G14.FlatAppearance.BorderSize = 0;
+            this.G14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G14, "G14");
+            this.G14.Name = "G14";
+            this.G14.UseVisualStyleBackColor = false;
+            // 
+            // B15
+            // 
+            this.B15.BackColor = System.Drawing.Color.Gray;
+            this.B15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B15.FlatAppearance.BorderSize = 0;
+            this.B15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B15, "B15");
+            this.B15.Name = "B15";
+            this.B15.UseVisualStyleBackColor = false;
+            // 
+            // E14
+            // 
+            this.E14.BackColor = System.Drawing.Color.Gray;
+            this.E14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E14.FlatAppearance.BorderSize = 0;
+            this.E14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E14, "E14");
+            this.E14.Name = "E14";
+            this.E14.UseVisualStyleBackColor = false;
+            // 
+            // F14
+            // 
+            this.F14.BackColor = System.Drawing.Color.Gray;
+            this.F14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F14.FlatAppearance.BorderSize = 0;
+            this.F14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F14, "F14");
+            this.F14.Name = "F14";
+            this.F14.UseVisualStyleBackColor = false;
+            // 
+            // C14
+            // 
+            this.C14.BackColor = System.Drawing.Color.Gray;
+            this.C14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C14.FlatAppearance.BorderSize = 0;
+            this.C14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C14, "C14");
+            this.C14.Name = "C14";
+            this.C14.UseVisualStyleBackColor = false;
+            // 
+            // D14
+            // 
+            this.D14.BackColor = System.Drawing.Color.Gray;
+            this.D14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D14.FlatAppearance.BorderSize = 0;
+            this.D14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D14, "D14");
+            this.D14.Name = "D14";
+            this.D14.UseVisualStyleBackColor = false;
+            // 
+            // A15
+            // 
+            this.A15.BackColor = System.Drawing.Color.Gray;
+            this.A15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A15.FlatAppearance.BorderSize = 0;
+            this.A15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A15, "A15");
+            this.A15.Name = "A15";
+            this.A15.UseVisualStyleBackColor = false;
+            // 
+            // G13
+            // 
+            this.G13.BackColor = System.Drawing.Color.Gray;
+            this.G13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G13.FlatAppearance.BorderSize = 0;
+            this.G13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G13, "G13");
+            this.G13.Name = "G13";
+            this.G13.UseVisualStyleBackColor = false;
+            // 
+            // B14
+            // 
+            this.B14.BackColor = System.Drawing.Color.Gray;
+            this.B14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B14.FlatAppearance.BorderSize = 0;
+            this.B14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B14, "B14");
+            this.B14.Name = "B14";
+            this.B14.UseVisualStyleBackColor = false;
+            // 
+            // E13
+            // 
+            this.E13.BackColor = System.Drawing.Color.Gray;
+            this.E13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E13.FlatAppearance.BorderSize = 0;
+            this.E13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E13, "E13");
+            this.E13.Name = "E13";
+            this.E13.UseVisualStyleBackColor = false;
+            // 
+            // F13
+            // 
+            this.F13.BackColor = System.Drawing.Color.Gray;
+            this.F13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F13.FlatAppearance.BorderSize = 0;
+            this.F13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F13, "F13");
+            this.F13.Name = "F13";
+            this.F13.UseVisualStyleBackColor = false;
+            // 
+            // C13
+            // 
+            this.C13.BackColor = System.Drawing.Color.Gray;
+            this.C13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C13.FlatAppearance.BorderSize = 0;
+            this.C13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C13, "C13");
+            this.C13.Name = "C13";
+            this.C13.UseVisualStyleBackColor = false;
+            // 
+            // D13
+            // 
+            this.D13.BackColor = System.Drawing.Color.Gray;
+            this.D13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D13.FlatAppearance.BorderSize = 0;
+            this.D13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D13, "D13");
+            this.D13.Name = "D13";
+            this.D13.UseVisualStyleBackColor = false;
+            // 
+            // A14
+            // 
+            this.A14.BackColor = System.Drawing.Color.Gray;
+            this.A14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A14.FlatAppearance.BorderSize = 0;
+            this.A14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A14, "A14");
+            this.A14.Name = "A14";
+            this.A14.UseVisualStyleBackColor = false;
+            // 
+            // G11
+            // 
+            this.G11.BackColor = System.Drawing.Color.Gray;
+            this.G11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G11.FlatAppearance.BorderSize = 0;
+            this.G11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G11, "G11");
+            this.G11.Name = "G11";
+            this.G11.UseVisualStyleBackColor = false;
+            // 
+            // B13
+            // 
+            this.B13.BackColor = System.Drawing.Color.Gray;
+            this.B13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B13.FlatAppearance.BorderSize = 0;
+            this.B13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B13, "B13");
+            this.B13.Name = "B13";
+            this.B13.UseVisualStyleBackColor = false;
+            // 
+            // E11
+            // 
+            this.E11.BackColor = System.Drawing.Color.Gray;
+            this.E11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E11.FlatAppearance.BorderSize = 0;
+            this.E11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E11, "E11");
+            this.E11.Name = "E11";
+            this.E11.UseVisualStyleBackColor = false;
+            // 
+            // F11
+            // 
+            this.F11.BackColor = System.Drawing.Color.Gray;
+            this.F11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F11.FlatAppearance.BorderSize = 0;
+            this.F11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F11, "F11");
+            this.F11.Name = "F11";
+            this.F11.UseVisualStyleBackColor = false;
+            // 
+            // C11
+            // 
+            this.C11.BackColor = System.Drawing.Color.Gray;
+            this.C11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C11.FlatAppearance.BorderSize = 0;
+            this.C11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C11, "C11");
+            this.C11.Name = "C11";
+            this.C11.UseVisualStyleBackColor = false;
+            // 
+            // D11
+            // 
+            this.D11.BackColor = System.Drawing.Color.Gray;
+            this.D11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D11.FlatAppearance.BorderSize = 0;
+            this.D11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D11, "D11");
+            this.D11.Name = "D11";
+            this.D11.UseVisualStyleBackColor = false;
+            // 
+            // A13
+            // 
+            this.A13.BackColor = System.Drawing.Color.Gray;
+            this.A13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A13.FlatAppearance.BorderSize = 0;
+            this.A13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A13, "A13");
+            this.A13.Name = "A13";
+            this.A13.UseVisualStyleBackColor = false;
+            // 
+            // G12
+            // 
+            this.G12.BackColor = System.Drawing.Color.Gray;
+            this.G12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G12.FlatAppearance.BorderSize = 0;
+            this.G12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G12, "G12");
+            this.G12.Name = "G12";
+            this.G12.UseVisualStyleBackColor = false;
+            // 
+            // B11
+            // 
+            this.B11.BackColor = System.Drawing.Color.Gray;
+            this.B11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B11.FlatAppearance.BorderSize = 0;
+            this.B11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B11, "B11");
+            this.B11.Name = "B11";
+            this.B11.UseVisualStyleBackColor = false;
+            // 
+            // E12
+            // 
+            this.E12.BackColor = System.Drawing.Color.Gray;
+            this.E12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E12.FlatAppearance.BorderSize = 0;
+            this.E12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E12, "E12");
+            this.E12.Name = "E12";
+            this.E12.UseVisualStyleBackColor = false;
+            // 
+            // F12
+            // 
+            this.F12.BackColor = System.Drawing.Color.Gray;
+            this.F12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F12.FlatAppearance.BorderSize = 0;
+            this.F12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F12, "F12");
+            this.F12.Name = "F12";
+            this.F12.UseVisualStyleBackColor = false;
+            // 
+            // C12
+            // 
+            this.C12.BackColor = System.Drawing.Color.Gray;
+            this.C12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C12.FlatAppearance.BorderSize = 0;
+            this.C12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C12, "C12");
+            this.C12.Name = "C12";
+            this.C12.UseVisualStyleBackColor = false;
+            // 
+            // D12
+            // 
+            this.D12.BackColor = System.Drawing.Color.Gray;
+            this.D12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D12.FlatAppearance.BorderSize = 0;
+            this.D12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D12, "D12");
+            this.D12.Name = "D12";
+            this.D12.UseVisualStyleBackColor = false;
+            // 
+            // A11
+            // 
+            this.A11.BackColor = System.Drawing.Color.Gray;
+            this.A11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A11.FlatAppearance.BorderSize = 0;
+            this.A11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A11, "A11");
+            this.A11.Name = "A11";
+            this.A11.UseVisualStyleBackColor = false;
+            // 
+            // B12
+            // 
+            this.B12.BackColor = System.Drawing.Color.Gray;
+            this.B12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B12.FlatAppearance.BorderSize = 0;
+            this.B12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B12, "B12");
+            this.B12.Name = "B12";
+            this.B12.UseVisualStyleBackColor = false;
+            // 
+            // A12
+            // 
+            this.A12.BackColor = System.Drawing.Color.Gray;
+            this.A12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A12.FlatAppearance.BorderSize = 0;
+            this.A12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A12, "A12");
+            this.A12.Name = "A12";
+            this.A12.UseVisualStyleBackColor = false;
+            // 
+            // G10
+            // 
+            this.G10.BackColor = System.Drawing.Color.Gray;
+            this.G10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G10.FlatAppearance.BorderSize = 0;
+            this.G10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G10, "G10");
+            this.G10.Name = "G10";
+            this.G10.UseVisualStyleBackColor = false;
+            // 
+            // E10
+            // 
+            this.E10.BackColor = System.Drawing.Color.Gray;
+            this.E10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E10.FlatAppearance.BorderSize = 0;
+            this.E10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E10, "E10");
+            this.E10.Name = "E10";
+            this.E10.UseVisualStyleBackColor = false;
+            // 
+            // F10
+            // 
+            this.F10.BackColor = System.Drawing.Color.Gray;
+            this.F10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F10.FlatAppearance.BorderSize = 0;
+            this.F10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F10, "F10");
+            this.F10.Name = "F10";
+            this.F10.UseVisualStyleBackColor = false;
+            // 
+            // C10
+            // 
+            this.C10.BackColor = System.Drawing.Color.Gray;
+            this.C10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C10.FlatAppearance.BorderSize = 0;
+            this.C10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C10, "C10");
+            this.C10.Name = "C10";
+            this.C10.UseVisualStyleBackColor = false;
+            // 
+            // D10
+            // 
+            this.D10.BackColor = System.Drawing.Color.Gray;
+            this.D10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D10.FlatAppearance.BorderSize = 0;
+            this.D10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D10, "D10");
+            this.D10.Name = "D10";
+            this.D10.UseVisualStyleBackColor = false;
+            // 
+            // G9
+            // 
+            this.G9.BackColor = System.Drawing.Color.Gray;
+            this.G9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G9.FlatAppearance.BorderSize = 0;
+            this.G9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G9, "G9");
+            this.G9.Name = "G9";
+            this.G9.UseVisualStyleBackColor = false;
+            // 
+            // B10
+            // 
+            this.B10.BackColor = System.Drawing.Color.Gray;
+            this.B10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B10.FlatAppearance.BorderSize = 0;
+            this.B10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B10, "B10");
+            this.B10.Name = "B10";
+            this.B10.UseVisualStyleBackColor = false;
+            // 
+            // E9
+            // 
+            this.E9.BackColor = System.Drawing.Color.Gray;
+            this.E9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E9.FlatAppearance.BorderSize = 0;
+            this.E9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E9, "E9");
+            this.E9.Name = "E9";
+            this.E9.UseVisualStyleBackColor = false;
+            // 
+            // F9
+            // 
+            this.F9.BackColor = System.Drawing.Color.Gray;
+            this.F9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F9.FlatAppearance.BorderSize = 0;
+            this.F9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F9, "F9");
+            this.F9.Name = "F9";
+            this.F9.UseVisualStyleBackColor = false;
+            // 
+            // C9
+            // 
+            this.C9.BackColor = System.Drawing.Color.Gray;
+            this.C9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C9.FlatAppearance.BorderSize = 0;
+            this.C9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C9, "C9");
+            this.C9.Name = "C9";
+            this.C9.UseVisualStyleBackColor = false;
+            // 
+            // D9
+            // 
+            this.D9.BackColor = System.Drawing.Color.Gray;
+            this.D9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D9.FlatAppearance.BorderSize = 0;
+            this.D9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D9, "D9");
+            this.D9.Name = "D9";
+            this.D9.UseVisualStyleBackColor = false;
+            // 
+            // A10
+            // 
+            this.A10.BackColor = System.Drawing.Color.Gray;
+            this.A10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A10.FlatAppearance.BorderSize = 0;
+            this.A10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A10, "A10");
+            this.A10.Name = "A10";
+            this.A10.UseVisualStyleBackColor = false;
+            // 
+            // G8
+            // 
+            this.G8.BackColor = System.Drawing.Color.Gray;
+            this.G8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G8.FlatAppearance.BorderSize = 0;
+            this.G8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G8, "G8");
+            this.G8.Name = "G8";
+            this.G8.UseVisualStyleBackColor = false;
+            // 
+            // B9
+            // 
+            this.B9.BackColor = System.Drawing.Color.Gray;
+            this.B9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B9.FlatAppearance.BorderSize = 0;
+            this.B9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B9, "B9");
+            this.B9.Name = "B9";
+            this.B9.UseVisualStyleBackColor = false;
+            // 
+            // E8
+            // 
+            this.E8.BackColor = System.Drawing.Color.Gray;
+            this.E8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E8.FlatAppearance.BorderSize = 0;
+            this.E8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E8, "E8");
+            this.E8.Name = "E8";
+            this.E8.UseVisualStyleBackColor = false;
+            // 
+            // F8
+            // 
+            this.F8.BackColor = System.Drawing.Color.Gray;
+            this.F8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F8.FlatAppearance.BorderSize = 0;
+            this.F8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F8, "F8");
+            this.F8.Name = "F8";
+            this.F8.UseVisualStyleBackColor = false;
+            // 
+            // C8
+            // 
+            this.C8.BackColor = System.Drawing.Color.Gray;
+            this.C8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C8.FlatAppearance.BorderSize = 0;
+            this.C8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C8, "C8");
+            this.C8.Name = "C8";
+            this.C8.UseVisualStyleBackColor = false;
+            // 
+            // D8
+            // 
+            this.D8.BackColor = System.Drawing.Color.Gray;
+            this.D8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D8.FlatAppearance.BorderSize = 0;
+            this.D8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D8, "D8");
+            this.D8.Name = "D8";
+            this.D8.UseVisualStyleBackColor = false;
+            // 
+            // A9
+            // 
+            this.A9.BackColor = System.Drawing.Color.Gray;
+            this.A9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A9.FlatAppearance.BorderSize = 0;
+            this.A9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A9, "A9");
+            this.A9.Name = "A9";
+            this.A9.UseVisualStyleBackColor = false;
+            // 
+            // G7
+            // 
+            this.G7.BackColor = System.Drawing.Color.Gray;
+            this.G7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G7.FlatAppearance.BorderSize = 0;
+            this.G7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G7, "G7");
+            this.G7.Name = "G7";
+            this.G7.UseVisualStyleBackColor = false;
+            // 
+            // B8
+            // 
+            this.B8.BackColor = System.Drawing.Color.Gray;
+            this.B8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B8.FlatAppearance.BorderSize = 0;
+            this.B8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B8, "B8");
+            this.B8.Name = "B8";
+            this.B8.UseVisualStyleBackColor = false;
+            // 
+            // E7
+            // 
+            this.E7.BackColor = System.Drawing.Color.Gray;
+            this.E7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E7.FlatAppearance.BorderSize = 0;
+            this.E7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E7, "E7");
+            this.E7.Name = "E7";
+            this.E7.UseVisualStyleBackColor = false;
+            // 
+            // F7
+            // 
+            this.F7.BackColor = System.Drawing.Color.Gray;
+            this.F7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F7.FlatAppearance.BorderSize = 0;
+            this.F7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F7, "F7");
+            this.F7.Name = "F7";
+            this.F7.UseVisualStyleBackColor = false;
+            // 
+            // C7
+            // 
+            this.C7.BackColor = System.Drawing.Color.Gray;
+            this.C7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C7.FlatAppearance.BorderSize = 0;
+            this.C7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C7, "C7");
+            this.C7.Name = "C7";
+            this.C7.UseVisualStyleBackColor = false;
+            // 
+            // D7
+            // 
+            this.D7.BackColor = System.Drawing.Color.Gray;
+            this.D7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D7.FlatAppearance.BorderSize = 0;
+            this.D7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D7, "D7");
+            this.D7.Name = "D7";
+            this.D7.UseVisualStyleBackColor = false;
+            // 
+            // A8
+            // 
+            this.A8.BackColor = System.Drawing.Color.Gray;
+            this.A8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A8.FlatAppearance.BorderSize = 0;
+            this.A8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A8, "A8");
+            this.A8.Name = "A8";
+            this.A8.UseVisualStyleBackColor = false;
+            // 
+            // G6
+            // 
+            this.G6.BackColor = System.Drawing.Color.Gray;
+            this.G6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G6.FlatAppearance.BorderSize = 0;
+            this.G6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G6, "G6");
+            this.G6.Name = "G6";
+            this.G6.UseVisualStyleBackColor = false;
+            // 
+            // B7
+            // 
+            this.B7.BackColor = System.Drawing.Color.Gray;
+            this.B7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B7.FlatAppearance.BorderSize = 0;
+            this.B7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B7, "B7");
+            this.B7.Name = "B7";
+            this.B7.UseVisualStyleBackColor = false;
+            // 
+            // E6
+            // 
+            this.E6.BackColor = System.Drawing.Color.Gray;
+            this.E6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E6.FlatAppearance.BorderSize = 0;
+            this.E6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E6, "E6");
+            this.E6.Name = "E6";
+            this.E6.UseVisualStyleBackColor = false;
+            // 
+            // F6
+            // 
+            this.F6.BackColor = System.Drawing.Color.Gray;
+            this.F6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F6.FlatAppearance.BorderSize = 0;
+            this.F6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F6, "F6");
+            this.F6.Name = "F6";
+            this.F6.UseVisualStyleBackColor = false;
+            // 
+            // C6
+            // 
+            this.C6.BackColor = System.Drawing.Color.Gray;
+            this.C6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C6.FlatAppearance.BorderSize = 0;
+            this.C6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C6, "C6");
+            this.C6.Name = "C6";
+            this.C6.UseVisualStyleBackColor = false;
+            // 
+            // D6
+            // 
+            this.D6.BackColor = System.Drawing.Color.Gray;
+            this.D6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D6.FlatAppearance.BorderSize = 0;
+            this.D6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D6, "D6");
+            this.D6.Name = "D6";
+            this.D6.UseVisualStyleBackColor = false;
+            // 
+            // A7
+            // 
+            this.A7.BackColor = System.Drawing.Color.Gray;
+            this.A7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A7.FlatAppearance.BorderSize = 0;
+            this.A7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A7, "A7");
+            this.A7.Name = "A7";
+            this.A7.UseVisualStyleBackColor = false;
+            // 
+            // G5
+            // 
+            this.G5.BackColor = System.Drawing.Color.Gray;
+            this.G5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G5.FlatAppearance.BorderSize = 0;
+            this.G5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G5, "G5");
+            this.G5.Name = "G5";
+            this.G5.UseVisualStyleBackColor = false;
+            // 
+            // B6
+            // 
+            this.B6.BackColor = System.Drawing.Color.Gray;
+            this.B6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B6.FlatAppearance.BorderSize = 0;
+            this.B6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B6, "B6");
+            this.B6.Name = "B6";
+            this.B6.UseVisualStyleBackColor = false;
+            // 
+            // E5
+            // 
+            this.E5.BackColor = System.Drawing.Color.Gray;
+            this.E5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E5.FlatAppearance.BorderSize = 0;
+            this.E5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E5, "E5");
+            this.E5.Name = "E5";
+            this.E5.UseVisualStyleBackColor = false;
+            // 
+            // F5
+            // 
+            this.F5.BackColor = System.Drawing.Color.Gray;
+            this.F5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F5.FlatAppearance.BorderSize = 0;
+            this.F5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F5, "F5");
+            this.F5.Name = "F5";
+            this.F5.UseVisualStyleBackColor = false;
+            // 
+            // C5
+            // 
+            this.C5.BackColor = System.Drawing.Color.Gray;
+            this.C5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C5.FlatAppearance.BorderSize = 0;
+            this.C5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C5, "C5");
+            this.C5.Name = "C5";
+            this.C5.UseVisualStyleBackColor = false;
+            // 
+            // D5
+            // 
+            this.D5.BackColor = System.Drawing.Color.Gray;
+            this.D5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D5.FlatAppearance.BorderSize = 0;
+            this.D5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D5, "D5");
+            this.D5.Name = "D5";
+            this.D5.UseVisualStyleBackColor = false;
+            // 
+            // A6
+            // 
+            this.A6.BackColor = System.Drawing.Color.Gray;
+            this.A6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A6.FlatAppearance.BorderSize = 0;
+            this.A6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A6, "A6");
+            this.A6.Name = "A6";
+            this.A6.UseVisualStyleBackColor = false;
+            // 
+            // G4
+            // 
+            this.G4.BackColor = System.Drawing.Color.Gray;
+            this.G4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G4.FlatAppearance.BorderSize = 0;
+            this.G4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G4, "G4");
+            this.G4.Name = "G4";
+            this.G4.UseVisualStyleBackColor = false;
+            // 
+            // B5
+            // 
+            this.B5.BackColor = System.Drawing.Color.Gray;
+            this.B5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B5.FlatAppearance.BorderSize = 0;
+            this.B5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B5, "B5");
+            this.B5.Name = "B5";
+            this.B5.UseVisualStyleBackColor = false;
+            // 
+            // E4
+            // 
+            this.E4.BackColor = System.Drawing.Color.Gray;
+            this.E4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E4.FlatAppearance.BorderSize = 0;
+            this.E4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E4, "E4");
+            this.E4.Name = "E4";
+            this.E4.UseVisualStyleBackColor = false;
+            // 
+            // F4
+            // 
+            this.F4.BackColor = System.Drawing.Color.Gray;
+            this.F4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F4.FlatAppearance.BorderSize = 0;
+            this.F4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F4, "F4");
+            this.F4.Name = "F4";
+            this.F4.UseVisualStyleBackColor = false;
+            // 
+            // C4
+            // 
+            this.C4.BackColor = System.Drawing.Color.Gray;
+            this.C4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C4.FlatAppearance.BorderSize = 0;
+            this.C4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C4, "C4");
+            this.C4.Name = "C4";
+            this.C4.UseVisualStyleBackColor = false;
+            // 
+            // D4
+            // 
+            this.D4.BackColor = System.Drawing.Color.Gray;
+            this.D4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D4.FlatAppearance.BorderSize = 0;
+            this.D4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D4, "D4");
+            this.D4.Name = "D4";
+            this.D4.UseVisualStyleBackColor = false;
+            // 
+            // A5
+            // 
+            this.A5.BackColor = System.Drawing.Color.Gray;
+            this.A5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A5.FlatAppearance.BorderSize = 0;
+            this.A5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A5, "A5");
+            this.A5.Name = "A5";
+            this.A5.UseVisualStyleBackColor = false;
+            // 
+            // G1
+            // 
+            this.G1.BackColor = System.Drawing.Color.Gray;
+            this.G1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G1.FlatAppearance.BorderSize = 0;
+            this.G1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G1, "G1");
+            this.G1.Name = "G1";
+            this.G1.UseVisualStyleBackColor = false;
+            // 
+            // B4
+            // 
+            this.B4.BackColor = System.Drawing.Color.Gray;
+            this.B4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B4.FlatAppearance.BorderSize = 0;
+            this.B4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B4, "B4");
+            this.B4.Name = "B4";
+            this.B4.UseVisualStyleBackColor = false;
+            // 
+            // G2
+            // 
+            this.G2.BackColor = System.Drawing.Color.Gray;
+            this.G2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G2.FlatAppearance.BorderSize = 0;
+            this.G2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G2, "G2");
+            this.G2.Name = "G2";
+            this.G2.UseVisualStyleBackColor = false;
+            // 
+            // E2
+            // 
+            this.E2.BackColor = System.Drawing.Color.Gray;
+            this.E2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E2.FlatAppearance.BorderSize = 0;
+            this.E2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E2, "E2");
+            this.E2.Name = "E2";
+            this.E2.UseVisualStyleBackColor = false;
+            // 
+            // A4
+            // 
+            this.A4.BackColor = System.Drawing.Color.Gray;
+            this.A4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A4.FlatAppearance.BorderSize = 0;
+            this.A4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A4, "A4");
+            this.A4.Name = "A4";
+            this.A4.UseVisualStyleBackColor = false;
+            // 
+            // F2
+            // 
+            this.F2.BackColor = System.Drawing.Color.Gray;
+            this.F2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F2.FlatAppearance.BorderSize = 0;
+            this.F2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F2, "F2");
+            this.F2.Name = "F2";
+            this.F2.UseVisualStyleBackColor = false;
+            // 
+            // C2
+            // 
+            this.C2.BackColor = System.Drawing.Color.Gray;
+            this.C2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C2.FlatAppearance.BorderSize = 0;
+            this.C2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C2, "C2");
+            this.C2.Name = "C2";
+            this.C2.UseVisualStyleBackColor = false;
+            // 
+            // D2
+            // 
+            this.D2.BackColor = System.Drawing.Color.Gray;
+            this.D2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D2.FlatAppearance.BorderSize = 0;
+            this.D2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D2, "D2");
+            this.D2.Name = "D2";
+            this.D2.UseVisualStyleBackColor = false;
+            // 
+            // G3
+            // 
+            this.G3.BackColor = System.Drawing.Color.Gray;
+            this.G3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G3.FlatAppearance.BorderSize = 0;
+            this.G3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G3, "G3");
+            this.G3.Name = "G3";
+            this.G3.UseVisualStyleBackColor = false;
+            // 
+            // E3
+            // 
+            this.E3.BackColor = System.Drawing.Color.Gray;
+            this.E3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E3.FlatAppearance.BorderSize = 0;
+            this.E3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.E3, "E3");
+            this.E3.Name = "E3";
+            this.E3.UseVisualStyleBackColor = false;
+            // 
+            // B2
+            // 
+            this.B2.BackColor = System.Drawing.Color.Gray;
+            this.B2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B2.FlatAppearance.BorderSize = 0;
+            this.B2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B2, "B2");
+            this.B2.Name = "B2";
+            this.B2.UseVisualStyleBackColor = false;
+            // 
+            // F3
+            // 
+            this.F3.BackColor = System.Drawing.Color.Gray;
+            this.F3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F3.FlatAppearance.BorderSize = 0;
+            this.F3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F3, "F3");
+            this.F3.Name = "F3";
+            this.F3.UseVisualStyleBackColor = false;
+            // 
+            // C3
+            // 
+            this.C3.BackColor = System.Drawing.Color.Gray;
+            this.C3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C3.FlatAppearance.BorderSize = 0;
+            this.C3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.C3, "C3");
+            this.C3.Name = "C3";
+            this.C3.UseVisualStyleBackColor = false;
+            // 
+            // D3
+            // 
+            this.D3.BackColor = System.Drawing.Color.Gray;
+            this.D3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D3.FlatAppearance.BorderSize = 0;
+            this.D3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.D3, "D3");
+            this.D3.Name = "D3";
+            this.D3.UseVisualStyleBackColor = false;
+            // 
+            // B3
+            // 
+            this.B3.BackColor = System.Drawing.Color.Gray;
+            this.B3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B3.FlatAppearance.BorderSize = 0;
+            this.B3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.B3, "B3");
+            this.B3.Name = "B3";
+            this.B3.UseVisualStyleBackColor = false;
+            // 
+            // A3
+            // 
+            this.A3.BackColor = System.Drawing.Color.Gray;
+            this.A3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A3.FlatAppearance.BorderSize = 0;
+            this.A3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.A3, "A3");
+            this.A3.Name = "A3";
+            this.A3.UseVisualStyleBackColor = false;
             // 
             // cmsDelete
             // 
@@ -1677,25 +1677,25 @@
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // F1
             // 
-            this.button5.BackColor = System.Drawing.Color.Gray;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = false;
+            this.F1.BackColor = System.Drawing.Color.Gray;
+            this.F1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.F1.FlatAppearance.BorderSize = 0;
+            this.F1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.F1, "F1");
+            this.F1.Name = "F1";
+            this.F1.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // G20
             // 
-            this.button6.BackColor = System.Drawing.Color.Gray;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = false;
+            this.G20.BackColor = System.Drawing.Color.Gray;
+            this.G20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.G20.FlatAppearance.BorderSize = 0;
+            this.G20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.G20, "G20");
+            this.G20.Name = "G20";
+            this.G20.UseVisualStyleBackColor = false;
             // 
             // label18
             // 
@@ -2040,134 +2040,134 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button187);
-            this.Controls.Add(this.button186);
-            this.Controls.Add(this.button138);
-            this.Controls.Add(this.button90);
-            this.Controls.Add(this.button184);
-            this.Controls.Add(this.button136);
-            this.Controls.Add(this.button183);
-            this.Controls.Add(this.button135);
-            this.Controls.Add(this.button182);
-            this.Controls.Add(this.button89);
-            this.Controls.Add(this.button134);
-            this.Controls.Add(this.button181);
-            this.Controls.Add(this.button65);
-            this.Controls.Add(this.button133);
-            this.Controls.Add(this.button64);
-            this.Controls.Add(this.button180);
-            this.Controls.Add(this.button88);
-            this.Controls.Add(this.button132);
-            this.Controls.Add(this.button179);
-            this.Controls.Add(this.button63);
-            this.Controls.Add(this.button131);
-            this.Controls.Add(this.button41);
-            this.Controls.Add(this.button178);
-            this.Controls.Add(this.button87);
-            this.Controls.Add(this.button130);
-            this.Controls.Add(this.button40);
-            this.Controls.Add(this.button177);
-            this.Controls.Add(this.button62);
-            this.Controls.Add(this.button129);
-            this.Controls.Add(this.button176);
-            this.Controls.Add(this.button86);
-            this.Controls.Add(this.button128);
-            this.Controls.Add(this.button39);
-            this.Controls.Add(this.button175);
-            this.Controls.Add(this.button61);
-            this.Controls.Add(this.button127);
-            this.Controls.Add(this.button174);
-            this.Controls.Add(this.button85);
-            this.Controls.Add(this.button126);
-            this.Controls.Add(this.button38);
-            this.Controls.Add(this.button173);
-            this.Controls.Add(this.button60);
-            this.Controls.Add(this.button125);
-            this.Controls.Add(this.button172);
-            this.Controls.Add(this.button84);
-            this.Controls.Add(this.button124);
-            this.Controls.Add(this.button37);
-            this.Controls.Add(this.button171);
-            this.Controls.Add(this.button59);
-            this.Controls.Add(this.button123);
-            this.Controls.Add(this.button170);
-            this.Controls.Add(this.button83);
-            this.Controls.Add(this.button122);
-            this.Controls.Add(this.button36);
-            this.Controls.Add(this.button169);
-            this.Controls.Add(this.button58);
-            this.Controls.Add(this.button121);
-            this.Controls.Add(this.button168);
-            this.Controls.Add(this.button82);
-            this.Controls.Add(this.button120);
-            this.Controls.Add(this.button35);
-            this.Controls.Add(this.button57);
-            this.Controls.Add(this.button34);
-            this.Controls.Add(this.button159);
-            this.Controls.Add(this.button111);
-            this.Controls.Add(this.button158);
-            this.Controls.Add(this.button77);
-            this.Controls.Add(this.button110);
-            this.Controls.Add(this.button157);
-            this.Controls.Add(this.button52);
-            this.Controls.Add(this.button109);
-            this.Controls.Add(this.button156);
-            this.Controls.Add(this.button76);
-            this.Controls.Add(this.button108);
-            this.Controls.Add(this.button29);
-            this.Controls.Add(this.button155);
-            this.Controls.Add(this.button51);
-            this.Controls.Add(this.button107);
-            this.Controls.Add(this.button154);
-            this.Controls.Add(this.button75);
-            this.Controls.Add(this.button106);
-            this.Controls.Add(this.button28);
-            this.Controls.Add(this.button153);
-            this.Controls.Add(this.button50);
-            this.Controls.Add(this.button105);
-            this.Controls.Add(this.button152);
-            this.Controls.Add(this.button74);
-            this.Controls.Add(this.button104);
-            this.Controls.Add(this.button27);
-            this.Controls.Add(this.button151);
-            this.Controls.Add(this.button49);
-            this.Controls.Add(this.button103);
-            this.Controls.Add(this.button150);
-            this.Controls.Add(this.button73);
-            this.Controls.Add(this.button102);
-            this.Controls.Add(this.button26);
-            this.Controls.Add(this.button149);
-            this.Controls.Add(this.button48);
-            this.Controls.Add(this.button101);
-            this.Controls.Add(this.button148);
-            this.Controls.Add(this.button72);
-            this.Controls.Add(this.button100);
-            this.Controls.Add(this.button25);
-            this.Controls.Add(this.button147);
-            this.Controls.Add(this.button47);
-            this.Controls.Add(this.button99);
-            this.Controls.Add(this.button146);
-            this.Controls.Add(this.button71);
-            this.Controls.Add(this.button98);
-            this.Controls.Add(this.button24);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button145);
-            this.Controls.Add(this.button46);
-            this.Controls.Add(this.button144);
-            this.Controls.Add(this.button96);
-            this.Controls.Add(this.button23);
-            this.Controls.Add(this.button142);
-            this.Controls.Add(this.button69);
-            this.Controls.Add(this.button94);
-            this.Controls.Add(this.button141);
-            this.Controls.Add(this.button93);
-            this.Controls.Add(this.button45);
-            this.Controls.Add(this.button140);
-            this.Controls.Add(this.button68);
-            this.Controls.Add(this.button92);
-            this.Controls.Add(this.button44);
-            this.Controls.Add(this.button22);
+            this.Controls.Add(this.G20);
+            this.Controls.Add(this.F20);
+            this.Controls.Add(this.G19);
+            this.Controls.Add(this.E19);
+            this.Controls.Add(this.C19);
+            this.Controls.Add(this.G18);
+            this.Controls.Add(this.E18);
+            this.Controls.Add(this.F19);
+            this.Controls.Add(this.D19);
+            this.Controls.Add(this.F18);
+            this.Controls.Add(this.C18);
+            this.Controls.Add(this.D18);
+            this.Controls.Add(this.G17);
+            this.Controls.Add(this.B19);
+            this.Controls.Add(this.E17);
+            this.Controls.Add(this.B18);
+            this.Controls.Add(this.F17);
+            this.Controls.Add(this.C17);
+            this.Controls.Add(this.D17);
+            this.Controls.Add(this.G16);
+            this.Controls.Add(this.B17);
+            this.Controls.Add(this.E16);
+            this.Controls.Add(this.A18);
+            this.Controls.Add(this.F16);
+            this.Controls.Add(this.C16);
+            this.Controls.Add(this.D16);
+            this.Controls.Add(this.A17);
+            this.Controls.Add(this.G15);
+            this.Controls.Add(this.B16);
+            this.Controls.Add(this.E15);
+            this.Controls.Add(this.F15);
+            this.Controls.Add(this.C15);
+            this.Controls.Add(this.D15);
+            this.Controls.Add(this.A16);
+            this.Controls.Add(this.G14);
+            this.Controls.Add(this.B15);
+            this.Controls.Add(this.E14);
+            this.Controls.Add(this.F14);
+            this.Controls.Add(this.C14);
+            this.Controls.Add(this.D14);
+            this.Controls.Add(this.A15);
+            this.Controls.Add(this.G13);
+            this.Controls.Add(this.B14);
+            this.Controls.Add(this.E13);
+            this.Controls.Add(this.F13);
+            this.Controls.Add(this.C13);
+            this.Controls.Add(this.D13);
+            this.Controls.Add(this.A14);
+            this.Controls.Add(this.G11);
+            this.Controls.Add(this.B13);
+            this.Controls.Add(this.E11);
+            this.Controls.Add(this.F11);
+            this.Controls.Add(this.C11);
+            this.Controls.Add(this.D11);
+            this.Controls.Add(this.A13);
+            this.Controls.Add(this.G12);
+            this.Controls.Add(this.B11);
+            this.Controls.Add(this.E12);
+            this.Controls.Add(this.F12);
+            this.Controls.Add(this.C12);
+            this.Controls.Add(this.D12);
+            this.Controls.Add(this.A11);
+            this.Controls.Add(this.B12);
+            this.Controls.Add(this.A12);
+            this.Controls.Add(this.G10);
+            this.Controls.Add(this.E10);
+            this.Controls.Add(this.F10);
+            this.Controls.Add(this.C10);
+            this.Controls.Add(this.D10);
+            this.Controls.Add(this.G9);
+            this.Controls.Add(this.B10);
+            this.Controls.Add(this.E9);
+            this.Controls.Add(this.F9);
+            this.Controls.Add(this.C9);
+            this.Controls.Add(this.D9);
+            this.Controls.Add(this.A10);
+            this.Controls.Add(this.G8);
+            this.Controls.Add(this.B9);
+            this.Controls.Add(this.E8);
+            this.Controls.Add(this.F8);
+            this.Controls.Add(this.C8);
+            this.Controls.Add(this.D8);
+            this.Controls.Add(this.A9);
+            this.Controls.Add(this.G7);
+            this.Controls.Add(this.B8);
+            this.Controls.Add(this.E7);
+            this.Controls.Add(this.F7);
+            this.Controls.Add(this.C7);
+            this.Controls.Add(this.D7);
+            this.Controls.Add(this.A8);
+            this.Controls.Add(this.G6);
+            this.Controls.Add(this.B7);
+            this.Controls.Add(this.E6);
+            this.Controls.Add(this.F6);
+            this.Controls.Add(this.C6);
+            this.Controls.Add(this.D6);
+            this.Controls.Add(this.A7);
+            this.Controls.Add(this.G5);
+            this.Controls.Add(this.B6);
+            this.Controls.Add(this.E5);
+            this.Controls.Add(this.F5);
+            this.Controls.Add(this.C5);
+            this.Controls.Add(this.D5);
+            this.Controls.Add(this.A6);
+            this.Controls.Add(this.G4);
+            this.Controls.Add(this.B5);
+            this.Controls.Add(this.E4);
+            this.Controls.Add(this.F4);
+            this.Controls.Add(this.C4);
+            this.Controls.Add(this.D4);
+            this.Controls.Add(this.A5);
+            this.Controls.Add(this.F1);
+            this.Controls.Add(this.G1);
+            this.Controls.Add(this.B4);
+            this.Controls.Add(this.G2);
+            this.Controls.Add(this.E2);
+            this.Controls.Add(this.A4);
+            this.Controls.Add(this.F2);
+            this.Controls.Add(this.C2);
+            this.Controls.Add(this.D2);
+            this.Controls.Add(this.G3);
+            this.Controls.Add(this.E3);
+            this.Controls.Add(this.B2);
+            this.Controls.Add(this.F3);
+            this.Controls.Add(this.C3);
+            this.Controls.Add(this.D3);
+            this.Controls.Add(this.B3);
+            this.Controls.Add(this.A3);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormSalon3";
@@ -2193,132 +2193,132 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button187;
-        private System.Windows.Forms.Button button186;
-        private System.Windows.Forms.Button button138;
-        private System.Windows.Forms.Button button90;
-        private System.Windows.Forms.Button button184;
-        private System.Windows.Forms.Button button136;
-        private System.Windows.Forms.Button button183;
-        private System.Windows.Forms.Button button135;
-        private System.Windows.Forms.Button button182;
-        private System.Windows.Forms.Button button89;
-        private System.Windows.Forms.Button button134;
-        private System.Windows.Forms.Button button181;
-        private System.Windows.Forms.Button button65;
-        private System.Windows.Forms.Button button133;
-        private System.Windows.Forms.Button button64;
-        private System.Windows.Forms.Button button180;
-        private System.Windows.Forms.Button button88;
-        private System.Windows.Forms.Button button132;
-        private System.Windows.Forms.Button button179;
-        private System.Windows.Forms.Button button63;
-        private System.Windows.Forms.Button button131;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Button button178;
-        private System.Windows.Forms.Button button87;
-        private System.Windows.Forms.Button button130;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Button button177;
-        private System.Windows.Forms.Button button62;
-        private System.Windows.Forms.Button button129;
-        private System.Windows.Forms.Button button176;
-        private System.Windows.Forms.Button button86;
-        private System.Windows.Forms.Button button128;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button175;
-        private System.Windows.Forms.Button button61;
-        private System.Windows.Forms.Button button127;
-        private System.Windows.Forms.Button button174;
-        private System.Windows.Forms.Button button85;
-        private System.Windows.Forms.Button button126;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button173;
-        private System.Windows.Forms.Button button60;
-        private System.Windows.Forms.Button button125;
-        private System.Windows.Forms.Button button172;
-        private System.Windows.Forms.Button button84;
-        private System.Windows.Forms.Button button124;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button171;
-        private System.Windows.Forms.Button button59;
-        private System.Windows.Forms.Button button123;
-        private System.Windows.Forms.Button button170;
-        private System.Windows.Forms.Button button83;
-        private System.Windows.Forms.Button button122;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button169;
-        private System.Windows.Forms.Button button58;
-        private System.Windows.Forms.Button button121;
-        private System.Windows.Forms.Button button168;
-        private System.Windows.Forms.Button button82;
-        private System.Windows.Forms.Button button120;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button57;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button159;
-        private System.Windows.Forms.Button button111;
-        private System.Windows.Forms.Button button158;
-        private System.Windows.Forms.Button button77;
-        private System.Windows.Forms.Button button110;
-        private System.Windows.Forms.Button button157;
-        private System.Windows.Forms.Button button52;
-        private System.Windows.Forms.Button button109;
-        private System.Windows.Forms.Button button156;
-        private System.Windows.Forms.Button button76;
-        private System.Windows.Forms.Button button108;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button155;
-        private System.Windows.Forms.Button button51;
-        private System.Windows.Forms.Button button107;
-        private System.Windows.Forms.Button button154;
-        private System.Windows.Forms.Button button75;
-        private System.Windows.Forms.Button button106;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button153;
-        private System.Windows.Forms.Button button50;
-        private System.Windows.Forms.Button button105;
-        private System.Windows.Forms.Button button152;
-        private System.Windows.Forms.Button button74;
-        private System.Windows.Forms.Button button104;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button151;
-        private System.Windows.Forms.Button button49;
-        private System.Windows.Forms.Button button103;
-        private System.Windows.Forms.Button button150;
-        private System.Windows.Forms.Button button73;
-        private System.Windows.Forms.Button button102;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button149;
-        private System.Windows.Forms.Button button48;
-        private System.Windows.Forms.Button button101;
-        private System.Windows.Forms.Button button148;
-        private System.Windows.Forms.Button button72;
-        private System.Windows.Forms.Button button100;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button147;
-        private System.Windows.Forms.Button button47;
-        private System.Windows.Forms.Button button99;
-        private System.Windows.Forms.Button button146;
-        private System.Windows.Forms.Button button71;
-        private System.Windows.Forms.Button button98;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button145;
-        private System.Windows.Forms.Button button46;
-        private System.Windows.Forms.Button button144;
-        private System.Windows.Forms.Button button96;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button142;
-        private System.Windows.Forms.Button button69;
-        private System.Windows.Forms.Button button94;
-        private System.Windows.Forms.Button button141;
-        private System.Windows.Forms.Button button93;
-        private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button140;
-        private System.Windows.Forms.Button button68;
-        private System.Windows.Forms.Button button92;
-        private System.Windows.Forms.Button button44;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button F20;
+        private System.Windows.Forms.Button G19;
+        private System.Windows.Forms.Button E19;
+        private System.Windows.Forms.Button C19;
+        private System.Windows.Forms.Button G18;
+        private System.Windows.Forms.Button E18;
+        private System.Windows.Forms.Button F19;
+        private System.Windows.Forms.Button D19;
+        private System.Windows.Forms.Button F18;
+        private System.Windows.Forms.Button C18;
+        private System.Windows.Forms.Button D18;
+        private System.Windows.Forms.Button G17;
+        private System.Windows.Forms.Button B19;
+        private System.Windows.Forms.Button E17;
+        private System.Windows.Forms.Button B18;
+        private System.Windows.Forms.Button F17;
+        private System.Windows.Forms.Button C17;
+        private System.Windows.Forms.Button D17;
+        private System.Windows.Forms.Button G16;
+        private System.Windows.Forms.Button B17;
+        private System.Windows.Forms.Button E16;
+        private System.Windows.Forms.Button A18;
+        private System.Windows.Forms.Button F16;
+        private System.Windows.Forms.Button C16;
+        private System.Windows.Forms.Button D16;
+        private System.Windows.Forms.Button A17;
+        private System.Windows.Forms.Button G15;
+        private System.Windows.Forms.Button B16;
+        private System.Windows.Forms.Button E15;
+        private System.Windows.Forms.Button F15;
+        private System.Windows.Forms.Button C15;
+        private System.Windows.Forms.Button D15;
+        private System.Windows.Forms.Button A16;
+        private System.Windows.Forms.Button G14;
+        private System.Windows.Forms.Button B15;
+        private System.Windows.Forms.Button E14;
+        private System.Windows.Forms.Button F14;
+        private System.Windows.Forms.Button C14;
+        private System.Windows.Forms.Button D14;
+        private System.Windows.Forms.Button A15;
+        private System.Windows.Forms.Button G13;
+        private System.Windows.Forms.Button B14;
+        private System.Windows.Forms.Button E13;
+        private System.Windows.Forms.Button F13;
+        private System.Windows.Forms.Button C13;
+        private System.Windows.Forms.Button D13;
+        private System.Windows.Forms.Button A14;
+        private System.Windows.Forms.Button G11;
+        private System.Windows.Forms.Button B13;
+        private System.Windows.Forms.Button E11;
+        private System.Windows.Forms.Button F11;
+        private System.Windows.Forms.Button C11;
+        private System.Windows.Forms.Button D11;
+        private System.Windows.Forms.Button A13;
+        private System.Windows.Forms.Button G12;
+        private System.Windows.Forms.Button B11;
+        private System.Windows.Forms.Button E12;
+        private System.Windows.Forms.Button F12;
+        private System.Windows.Forms.Button C12;
+        private System.Windows.Forms.Button D12;
+        private System.Windows.Forms.Button A11;
+        private System.Windows.Forms.Button B12;
+        private System.Windows.Forms.Button A12;
+        private System.Windows.Forms.Button G10;
+        private System.Windows.Forms.Button E10;
+        private System.Windows.Forms.Button F10;
+        private System.Windows.Forms.Button C10;
+        private System.Windows.Forms.Button D10;
+        private System.Windows.Forms.Button G9;
+        private System.Windows.Forms.Button B10;
+        private System.Windows.Forms.Button E9;
+        private System.Windows.Forms.Button F9;
+        private System.Windows.Forms.Button C9;
+        private System.Windows.Forms.Button D9;
+        private System.Windows.Forms.Button A10;
+        private System.Windows.Forms.Button G8;
+        private System.Windows.Forms.Button B9;
+        private System.Windows.Forms.Button E8;
+        private System.Windows.Forms.Button F8;
+        private System.Windows.Forms.Button C8;
+        private System.Windows.Forms.Button D8;
+        private System.Windows.Forms.Button A9;
+        private System.Windows.Forms.Button G7;
+        private System.Windows.Forms.Button B8;
+        private System.Windows.Forms.Button E7;
+        private System.Windows.Forms.Button F7;
+        private System.Windows.Forms.Button C7;
+        private System.Windows.Forms.Button D7;
+        private System.Windows.Forms.Button A8;
+        private System.Windows.Forms.Button G6;
+        private System.Windows.Forms.Button B7;
+        private System.Windows.Forms.Button E6;
+        private System.Windows.Forms.Button F6;
+        private System.Windows.Forms.Button C6;
+        private System.Windows.Forms.Button D6;
+        private System.Windows.Forms.Button A7;
+        private System.Windows.Forms.Button G5;
+        private System.Windows.Forms.Button B6;
+        private System.Windows.Forms.Button E5;
+        private System.Windows.Forms.Button F5;
+        private System.Windows.Forms.Button C5;
+        private System.Windows.Forms.Button D5;
+        private System.Windows.Forms.Button A6;
+        private System.Windows.Forms.Button G4;
+        private System.Windows.Forms.Button B5;
+        private System.Windows.Forms.Button E4;
+        private System.Windows.Forms.Button F4;
+        private System.Windows.Forms.Button C4;
+        private System.Windows.Forms.Button D4;
+        private System.Windows.Forms.Button A5;
+        private System.Windows.Forms.Button G1;
+        private System.Windows.Forms.Button B4;
+        private System.Windows.Forms.Button G2;
+        private System.Windows.Forms.Button E2;
+        private System.Windows.Forms.Button A4;
+        private System.Windows.Forms.Button F2;
+        private System.Windows.Forms.Button C2;
+        private System.Windows.Forms.Button D2;
+        private System.Windows.Forms.Button G3;
+        private System.Windows.Forms.Button E3;
+        private System.Windows.Forms.Button B2;
+        private System.Windows.Forms.Button F3;
+        private System.Windows.Forms.Button C3;
+        private System.Windows.Forms.Button D3;
+        private System.Windows.Forms.Button B3;
+        private System.Windows.Forms.Button A3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label28;
@@ -2340,8 +2340,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ContextMenuStrip cmsDelete;
         private System.Windows.Forms.ToolStripMenuItem iptalEtToolStripMenuItem;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button F1;
+        private System.Windows.Forms.Button G20;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;

@@ -22,8 +22,7 @@ namespace SinemaOtomasyon.DAL.SinemaContext
     
         public int SalonID { get; set; }
         public string SalonAD { get; set; }
-        public decimal SalonFiyatSapma { get; set; }
-    
+            
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Gosterim> Gosterims { get; set; }
     }

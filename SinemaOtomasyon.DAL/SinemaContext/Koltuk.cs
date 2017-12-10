@@ -22,7 +22,7 @@ namespace SinemaOtomasyon.DAL.SinemaContext
     
         public int KoltukID { get; set; }
         public string KoltukAD { get; set; }
-        public decimal KoltukFiyatSapma { get; set; }
+        
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BiletSati> BiletSatis { get; set; }

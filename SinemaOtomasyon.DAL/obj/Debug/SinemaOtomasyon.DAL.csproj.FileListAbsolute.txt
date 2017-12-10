@@ -8,3 +8,13 @@ c:\users\ozkan\documents\visual studio 2015\Projects\SinemaOtomasyon\SinemaOtoma
 c:\users\ozkan\documents\visual studio 2015\Projects\SinemaOtomasyon\SinemaOtomasyon.DAL\obj\Debug\SinemaOtomasyon.DAL.csprojResolveAssemblyReference.cache
 c:\users\ozkan\documents\visual studio 2015\Projects\SinemaOtomasyon\SinemaOtomasyon.DAL\obj\Debug\SinemaOtomasyon.DAL.dll
 c:\users\ozkan\documents\visual studio 2015\Projects\SinemaOtomasyon\SinemaOtomasyon.DAL\obj\Debug\SinemaOtomasyon.DAL.pdb
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.DAL\bin\Debug\SinemaOtomasyon.DAL.dll.config
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.DAL\bin\Debug\SinemaOtomasyon.DAL.dll
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.DAL\bin\Debug\SinemaOtomasyon.DAL.pdb
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.DAL\obj\Debug\SinemaOtomasyon.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.DAL\obj\Debug\SinemaOtomasyon.DAL.dll
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.DAL\obj\Debug\SinemaOtomasyon.DAL.pdb
