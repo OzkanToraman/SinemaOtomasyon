@@ -190,6 +190,7 @@
     <None Include="Resources\button_perde.png" />
     <None Include="Resources\emptySeat.png" />
     <None Include="Resources\greenSeat.png" />
+    <None Include="Resources\arrow-down.png" />
     <Content Include="Resources\loginbutton.png" />
     <None Include="Resources\Afisler\thesilenceofthelambs.jpg" />
     <None Include="Resources\loginbutton1.png" />

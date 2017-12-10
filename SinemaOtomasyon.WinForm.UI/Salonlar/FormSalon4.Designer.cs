@@ -169,9 +169,28 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.button37 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button2
@@ -1825,7 +1844,7 @@
             this.label11.Font = new System.Drawing.Font("Arial", 10F);
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(655, 33);
+            this.label11.Location = new System.Drawing.Point(655, 35);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(96, 16);
             this.label11.TabIndex = 218;
@@ -1838,7 +1857,7 @@
             this.label10.Font = new System.Drawing.Font("Arial", 10F);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(502, 33);
+            this.label10.Location = new System.Drawing.Point(502, 35);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(92, 16);
             this.label10.TabIndex = 217;
@@ -1851,7 +1870,7 @@
             this.label9.Font = new System.Drawing.Font("Arial", 10F);
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(349, 33);
+            this.label9.Location = new System.Drawing.Point(349, 35);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(87, 16);
             this.label9.TabIndex = 216;
@@ -1862,7 +1881,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.greenSeat;
             this.pictureBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox3.Location = new System.Drawing.Point(618, 23);
+            this.pictureBox3.Location = new System.Drawing.Point(618, 25);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 35);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1874,7 +1893,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.redSeat;
             this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox2.Location = new System.Drawing.Point(466, 23);
+            this.pictureBox2.Location = new System.Drawing.Point(466, 25);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1886,7 +1905,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.emptySeat;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(313, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(313, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1895,25 +1914,27 @@
             // 
             // button24
             // 
-            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button24.Enabled = false;
             this.button24.FlatAppearance.BorderSize = 0;
             this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button24.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.button24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button24.Location = new System.Drawing.Point(885, 75);
+            this.button24.Location = new System.Drawing.Point(885, 74);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(117, 35);
             this.button24.TabIndex = 60;
-            this.button24.Text = "KAPI";
+            this.button24.Text = "K A P I";
             this.button24.UseVisualStyleBackColor = false;
             // 
             // button25
             // 
-            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button25.Enabled = false;
             this.button25.FlatAppearance.BorderSize = 0;
             this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1924,7 +1945,7 @@
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(117, 35);
             this.button25.TabIndex = 60;
-            this.button25.Text = "KAPI";
+            this.button25.Text = "K A P I";
             this.button25.UseVisualStyleBackColor = false;
             // 
             // label1
@@ -1933,7 +1954,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(313, 435);
+            this.label1.Location = new System.Drawing.Point(313, 437);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 35);
             this.label1.TabIndex = 208;
@@ -1946,7 +1967,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(354, 435);
+            this.label2.Location = new System.Drawing.Point(354, 437);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 35);
             this.label2.TabIndex = 208;
@@ -1959,7 +1980,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(395, 435);
+            this.label3.Location = new System.Drawing.Point(395, 437);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 35);
             this.label3.TabIndex = 208;
@@ -1972,7 +1993,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(516, 435);
+            this.label4.Location = new System.Drawing.Point(516, 437);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 35);
             this.label4.TabIndex = 208;
@@ -1985,7 +2006,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(557, 435);
+            this.label5.Location = new System.Drawing.Point(557, 437);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 35);
             this.label5.TabIndex = 208;
@@ -1998,7 +2019,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(598, 435);
+            this.label6.Location = new System.Drawing.Point(598, 437);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 35);
             this.label6.TabIndex = 208;
@@ -2011,7 +2032,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(639, 435);
+            this.label7.Location = new System.Drawing.Point(639, 437);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 35);
             this.label7.TabIndex = 208;
@@ -2024,7 +2045,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(680, 435);
+            this.label8.Location = new System.Drawing.Point(680, 437);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 35);
             this.label8.TabIndex = 208;
@@ -2037,7 +2058,7 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(723, 435);
+            this.label12.Location = new System.Drawing.Point(723, 437);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(35, 35);
             this.label12.TabIndex = 208;
@@ -2050,7 +2071,7 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(762, 435);
+            this.label13.Location = new System.Drawing.Point(762, 437);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(35, 35);
             this.label13.TabIndex = 208;
@@ -2063,7 +2084,7 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(803, 435);
+            this.label14.Location = new System.Drawing.Point(803, 437);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(35, 35);
             this.label14.TabIndex = 208;
@@ -2076,7 +2097,7 @@
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label15.Location = new System.Drawing.Point(844, 435);
+            this.label15.Location = new System.Drawing.Point(844, 437);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(35, 35);
             this.label15.TabIndex = 208;
@@ -2089,7 +2110,7 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label16.Location = new System.Drawing.Point(885, 435);
+            this.label16.Location = new System.Drawing.Point(885, 437);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(35, 35);
             this.label16.TabIndex = 208;
@@ -2102,7 +2123,7 @@
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label17.Location = new System.Drawing.Point(921, 435);
+            this.label17.Location = new System.Drawing.Point(921, 437);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(35, 35);
             this.label17.TabIndex = 208;
@@ -2115,12 +2136,213 @@
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label18.Location = new System.Drawing.Point(962, 435);
+            this.label18.Location = new System.Drawing.Point(962, 437);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(35, 35);
             this.label18.TabIndex = 208;
             this.label18.Text = "15";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button30
+            // 
+            this.button30.ForeColor = System.Drawing.Color.Black;
+            this.button30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button30.Location = new System.Drawing.Point(795, 572);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(98, 153);
+            this.button30.TabIndex = 232;
+            this.button30.Text = "Bilet Ayır";
+            this.button30.UseVisualStyleBackColor = true;
+            // 
+            // button31
+            // 
+            this.button31.ForeColor = System.Drawing.Color.Black;
+            this.button31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button31.Location = new System.Drawing.Point(638, 694);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(127, 30);
+            this.button31.TabIndex = 231;
+            this.button31.Text = "Üye Oluştur";
+            this.button31.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(458, 675);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(158, 49);
+            this.textBox4.TabIndex = 219;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(458, 571);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(158, 20);
+            this.textBox1.TabIndex = 220;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(458, 623);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(158, 20);
+            this.dateTimePicker1.TabIndex = 229;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.radioButton3);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox1.Location = new System.Drawing.Point(638, 567);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(127, 121);
+            this.groupBox1.TabIndex = 230;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Bilet Türü";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.radioButton3.Location = new System.Drawing.Point(7, 83);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(44, 17);
+            this.radioButton3.TabIndex = 0;
+            this.radioButton3.Text = "Üye";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.radioButton2.Location = new System.Drawing.Point(7, 56);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(89, 17);
+            this.radioButton2.TabIndex = 0;
+            this.radioButton2.Text = "Tam ( 10 TL )";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.radioButton1.Location = new System.Drawing.Point(7, 31);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(99, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Öğrenci ( 6 TL )";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(458, 597);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(158, 20);
+            this.textBox2.TabIndex = 221;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox5.ForeColor = System.Drawing.Color.White;
+            this.textBox5.Location = new System.Drawing.Point(339, 527);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(639, 23);
+            this.textBox5.TabIndex = 222;
+            this.textBox5.Text = "Dead Men  /  Salon :3  /  Seans : 11:45  /  Seçili Koltuk : A4,A5";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Arial", 10F);
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label31.Location = new System.Drawing.Point(387, 676);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(49, 16);
+            this.label31.TabIndex = 224;
+            this.label31.Text = "Adres:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(458, 649);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(158, 20);
+            this.textBox3.TabIndex = 223;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.Transparent;
+            this.label32.Font = new System.Drawing.Font("Arial", 10F);
+            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label32.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label32.Location = new System.Drawing.Point(393, 623);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(43, 16);
+            this.label32.TabIndex = 225;
+            this.label32.Text = "Tarih:";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Font = new System.Drawing.Font("Arial", 10F);
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label28.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label28.Location = new System.Drawing.Point(407, 572);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(29, 16);
+            this.label28.TabIndex = 226;
+            this.label28.Text = "Ad:";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Arial", 10F);
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label30.Location = new System.Drawing.Point(378, 650);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(58, 16);
+            this.label30.TabIndex = 227;
+            this.label30.Text = "Telefon:";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Arial", 10F);
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label29.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label29.Location = new System.Drawing.Point(384, 598);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(52, 16);
+            this.label29.TabIndex = 228;
+            this.label29.Text = "Soyad:";
+            // 
+            // button37
+            // 
+            this.button37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button37.FlatAppearance.BorderSize = 0;
+            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button37.Font = new System.Drawing.Font("Arial", 10F);
+            this.button37.ForeColor = System.Drawing.Color.Black;
+            this.button37.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button37.Location = new System.Drawing.Point(967, 24);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(35, 36);
+            this.button37.TabIndex = 233;
+            this.button37.Text = "←";
+            this.button37.UseVisualStyleBackColor = false;
             // 
             // FormSalon4
             // 
@@ -2128,6 +2350,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.backgroundpattern1;
             this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.Controls.Add(this.button37);
+            this.Controls.Add(this.button30);
+            this.Controls.Add(this.button31);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label31);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label32);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.label29);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -2280,6 +2517,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2427,5 +2666,23 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Button button37;
     }
 }

@@ -126,7 +126,7 @@
     <value>Arial, 10pt</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 38</value>
+    <value>494, 38</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 16</value>
@@ -147,7 +147,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>48</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -156,7 +156,7 @@
     <value>Arial, 10pt</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>300, 38</value>
+    <value>341, 38</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 16</value>
@@ -177,7 +177,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>50</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -186,7 +186,7 @@
     <value>Arial, 10pt</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 38</value>
+    <value>188, 38</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 16</value>
@@ -207,254 +207,14 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="label27.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
-  </data>
-  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 89</value>
-  </data>
-  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="label27.TabIndex" type="System.Int32, mscorlib">
-    <value>189</value>
-  </data>
-  <data name="label27.Text" xml:space="preserve">
-    <value>H</value>
-  </data>
-  <data name="label27.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label27.Name" xml:space="preserve">
-    <value>label27</value>
-  </data>
-  <data name="&gt;&gt;label27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="label26.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
-  </data>
-  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 130</value>
-  </data>
-  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="label26.TabIndex" type="System.Int32, mscorlib">
-    <value>192</value>
-  </data>
-  <data name="label26.Text" xml:space="preserve">
-    <value>G</value>
-  </data>
-  <data name="label26.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label26.Name" xml:space="preserve">
-    <value>label26</value>
-  </data>
-  <data name="&gt;&gt;label26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="label25.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
-  </data>
-  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 171</value>
-  </data>
-  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="label25.TabIndex" type="System.Int32, mscorlib">
-    <value>184</value>
-  </data>
-  <data name="label25.Text" xml:space="preserve">
-    <value>F</value>
-  </data>
-  <data name="label25.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label25.Name" xml:space="preserve">
-    <value>label25</value>
-  </data>
-  <data name="&gt;&gt;label25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="label24.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
-  </data>
-  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 212</value>
-  </data>
-  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="label24.TabIndex" type="System.Int32, mscorlib">
-    <value>198</value>
-  </data>
-  <data name="label24.Text" xml:space="preserve">
-    <value>E</value>
-  </data>
-  <data name="label24.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label24.Name" xml:space="preserve">
-    <value>label24</value>
-  </data>
-  <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
-  </data>
-  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 291</value>
-  </data>
-  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="label23.TabIndex" type="System.Int32, mscorlib">
-    <value>204</value>
-  </data>
-  <data name="label23.Text" xml:space="preserve">
-    <value>D</value>
-  </data>
-  <data name="label23.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label23.Name" xml:space="preserve">
-    <value>label23</value>
-  </data>
-  <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
-  </data>
-  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 332</value>
-  </data>
-  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="label22.TabIndex" type="System.Int32, mscorlib">
-    <value>202</value>
-  </data>
-  <data name="label22.Text" xml:space="preserve">
-    <value>C</value>
-  </data>
-  <data name="label22.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label22.Name" xml:space="preserve">
-    <value>label22</value>
-  </data>
-  <data name="&gt;&gt;label22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="label21.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
-  </data>
-  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 373</value>
-  </data>
-  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="label21.TabIndex" type="System.Int32, mscorlib">
-    <value>199</value>
-  </data>
-  <data name="label21.Text" xml:space="preserve">
-    <value>B</value>
-  </data>
-  <data name="label21.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label21.Name" xml:space="preserve">
-    <value>label21</value>
-  </data>
-  <data name="&gt;&gt;label21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="label20.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
-  </data>
-  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 414</value>
-  </data>
-  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="label20.TabIndex" type="System.Int32, mscorlib">
-    <value>197</value>
-  </data>
-  <data name="label20.Text" xml:space="preserve">
-    <value>A</value>
-  </data>
-  <data name="label20.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label20.Name" xml:space="preserve">
-    <value>label20</value>
-  </data>
-  <data name="&gt;&gt;label20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>52</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button187.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="button187.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1071, 92</value>
+    <value>1071, 133</value>
   </data>
   <data name="button187.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
@@ -472,7 +232,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button187.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>60</value>
   </data>
   <data name="button186.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -496,7 +256,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button186.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>61</value>
   </data>
   <data name="button138.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -520,7 +280,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button138.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>62</value>
   </data>
   <data name="button90.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -544,7 +304,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button90.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>63</value>
   </data>
   <data name="button184.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -568,7 +328,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button184.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>64</value>
   </data>
   <data name="button136.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -592,7 +352,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button136.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>65</value>
   </data>
   <data name="button183.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -616,7 +376,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button183.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>66</value>
   </data>
   <data name="button135.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -640,7 +400,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button135.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>67</value>
   </data>
   <data name="button182.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -664,7 +424,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button182.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>68</value>
   </data>
   <data name="button89.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -688,7 +448,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button89.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>69</value>
   </data>
   <data name="button134.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -712,7 +472,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button134.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>70</value>
   </data>
   <data name="button181.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -736,7 +496,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button181.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>71</value>
   </data>
   <data name="button65.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -760,7 +520,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button65.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>72</value>
   </data>
   <data name="button133.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -784,7 +544,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button133.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>73</value>
   </data>
   <data name="button64.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -808,7 +568,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button64.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>74</value>
   </data>
   <data name="button180.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -832,7 +592,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button180.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>75</value>
   </data>
   <data name="button88.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -856,7 +616,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button88.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>76</value>
   </data>
   <data name="button132.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -880,31 +640,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button132.ZOrder" xml:space="preserve">
-    <value>48</value>
-  </data>
-  <data name="button42.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1030, 376</value>
-  </data>
-  <data name="button42.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button42.TabIndex" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="&gt;&gt;button42.Name" xml:space="preserve">
-    <value>button42</value>
-  </data>
-  <data name="&gt;&gt;button42.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button42.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button42.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>77</value>
   </data>
   <data name="button179.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -928,7 +664,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button179.ZOrder" xml:space="preserve">
-    <value>50</value>
+    <value>78</value>
   </data>
   <data name="button63.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -952,7 +688,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button63.ZOrder" xml:space="preserve">
-    <value>51</value>
+    <value>79</value>
   </data>
   <data name="button131.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -976,7 +712,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button131.ZOrder" xml:space="preserve">
-    <value>52</value>
+    <value>80</value>
   </data>
   <data name="button41.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1000,7 +736,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button41.ZOrder" xml:space="preserve">
-    <value>53</value>
+    <value>81</value>
   </data>
   <data name="button178.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1024,7 +760,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button178.ZOrder" xml:space="preserve">
-    <value>54</value>
+    <value>82</value>
   </data>
   <data name="button87.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1048,7 +784,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button87.ZOrder" xml:space="preserve">
-    <value>55</value>
+    <value>83</value>
   </data>
   <data name="button130.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1072,7 +808,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button130.ZOrder" xml:space="preserve">
-    <value>56</value>
+    <value>84</value>
   </data>
   <data name="button40.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1096,7 +832,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button40.ZOrder" xml:space="preserve">
-    <value>57</value>
+    <value>85</value>
   </data>
   <data name="button177.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1120,7 +856,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button177.ZOrder" xml:space="preserve">
-    <value>58</value>
+    <value>86</value>
   </data>
   <data name="button62.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1144,7 +880,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button62.ZOrder" xml:space="preserve">
-    <value>59</value>
+    <value>87</value>
   </data>
   <data name="button129.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1168,31 +904,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button129.ZOrder" xml:space="preserve">
-    <value>60</value>
-  </data>
-  <data name="A21.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>989, 417</value>
-  </data>
-  <data name="A21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A21.TabIndex" type="System.Int32, mscorlib">
-    <value>169</value>
-  </data>
-  <data name="&gt;&gt;A21.Name" xml:space="preserve">
-    <value>A21</value>
-  </data>
-  <data name="&gt;&gt;A21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A21.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A21.ZOrder" xml:space="preserve">
-    <value>61</value>
+    <value>88</value>
   </data>
   <data name="button176.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1216,7 +928,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button176.ZOrder" xml:space="preserve">
-    <value>62</value>
+    <value>89</value>
   </data>
   <data name="button86.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1240,7 +952,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button86.ZOrder" xml:space="preserve">
-    <value>63</value>
+    <value>90</value>
   </data>
   <data name="button128.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1264,7 +976,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button128.ZOrder" xml:space="preserve">
-    <value>64</value>
+    <value>91</value>
   </data>
   <data name="button39.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1288,7 +1000,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button39.ZOrder" xml:space="preserve">
-    <value>65</value>
+    <value>92</value>
   </data>
   <data name="button175.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1312,7 +1024,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button175.ZOrder" xml:space="preserve">
-    <value>66</value>
+    <value>93</value>
   </data>
   <data name="button61.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1336,7 +1048,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button61.ZOrder" xml:space="preserve">
-    <value>67</value>
+    <value>94</value>
   </data>
   <data name="button127.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1360,31 +1072,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button127.ZOrder" xml:space="preserve">
-    <value>68</value>
-  </data>
-  <data name="A20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>948, 417</value>
-  </data>
-  <data name="A20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A20.TabIndex" type="System.Int32, mscorlib">
-    <value>176</value>
-  </data>
-  <data name="&gt;&gt;A20.Name" xml:space="preserve">
-    <value>A20</value>
-  </data>
-  <data name="&gt;&gt;A20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A20.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A20.ZOrder" xml:space="preserve">
-    <value>69</value>
+    <value>95</value>
   </data>
   <data name="button174.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1408,7 +1096,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button174.ZOrder" xml:space="preserve">
-    <value>70</value>
+    <value>96</value>
   </data>
   <data name="button85.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1432,7 +1120,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button85.ZOrder" xml:space="preserve">
-    <value>71</value>
+    <value>97</value>
   </data>
   <data name="button126.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1456,7 +1144,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button126.ZOrder" xml:space="preserve">
-    <value>72</value>
+    <value>98</value>
   </data>
   <data name="button38.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1480,7 +1168,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button38.ZOrder" xml:space="preserve">
-    <value>73</value>
+    <value>99</value>
   </data>
   <data name="button173.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1504,7 +1192,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button173.ZOrder" xml:space="preserve">
-    <value>74</value>
+    <value>100</value>
   </data>
   <data name="button60.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1528,7 +1216,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button60.ZOrder" xml:space="preserve">
-    <value>75</value>
+    <value>101</value>
   </data>
   <data name="button125.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1552,31 +1240,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button125.ZOrder" xml:space="preserve">
-    <value>76</value>
-  </data>
-  <data name="A19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>907, 417</value>
-  </data>
-  <data name="A19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A19.TabIndex" type="System.Int32, mscorlib">
-    <value>164</value>
-  </data>
-  <data name="&gt;&gt;A19.Name" xml:space="preserve">
-    <value>A19</value>
-  </data>
-  <data name="&gt;&gt;A19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A19.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A19.ZOrder" xml:space="preserve">
-    <value>77</value>
+    <value>102</value>
   </data>
   <data name="button172.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1600,7 +1264,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button172.ZOrder" xml:space="preserve">
-    <value>78</value>
+    <value>103</value>
   </data>
   <data name="button84.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1624,7 +1288,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button84.ZOrder" xml:space="preserve">
-    <value>79</value>
+    <value>104</value>
   </data>
   <data name="button124.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1648,7 +1312,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button124.ZOrder" xml:space="preserve">
-    <value>80</value>
+    <value>105</value>
   </data>
   <data name="button37.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1672,7 +1336,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button37.ZOrder" xml:space="preserve">
-    <value>81</value>
+    <value>106</value>
   </data>
   <data name="button171.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1696,7 +1360,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button171.ZOrder" xml:space="preserve">
-    <value>82</value>
+    <value>107</value>
   </data>
   <data name="button59.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1720,7 +1384,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button59.ZOrder" xml:space="preserve">
-    <value>83</value>
+    <value>108</value>
   </data>
   <data name="button123.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1744,31 +1408,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button123.ZOrder" xml:space="preserve">
-    <value>84</value>
-  </data>
-  <data name="A18.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>866, 417</value>
-  </data>
-  <data name="A18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A18.TabIndex" type="System.Int32, mscorlib">
-    <value>154</value>
-  </data>
-  <data name="&gt;&gt;A18.Name" xml:space="preserve">
-    <value>A18</value>
-  </data>
-  <data name="&gt;&gt;A18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A18.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A18.ZOrder" xml:space="preserve">
-    <value>85</value>
+    <value>109</value>
   </data>
   <data name="button170.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1792,7 +1432,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button170.ZOrder" xml:space="preserve">
-    <value>86</value>
+    <value>110</value>
   </data>
   <data name="button83.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1816,7 +1456,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button83.ZOrder" xml:space="preserve">
-    <value>87</value>
+    <value>111</value>
   </data>
   <data name="button122.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1840,7 +1480,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button122.ZOrder" xml:space="preserve">
-    <value>88</value>
+    <value>112</value>
   </data>
   <data name="button36.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1864,7 +1504,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button36.ZOrder" xml:space="preserve">
-    <value>89</value>
+    <value>113</value>
   </data>
   <data name="button169.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1888,7 +1528,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button169.ZOrder" xml:space="preserve">
-    <value>90</value>
+    <value>114</value>
   </data>
   <data name="button58.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1912,7 +1552,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button58.ZOrder" xml:space="preserve">
-    <value>91</value>
+    <value>115</value>
   </data>
   <data name="button121.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1936,31 +1576,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button121.ZOrder" xml:space="preserve">
-    <value>92</value>
-  </data>
-  <data name="A17.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>825, 417</value>
-  </data>
-  <data name="A17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A17.TabIndex" type="System.Int32, mscorlib">
-    <value>162</value>
-  </data>
-  <data name="&gt;&gt;A17.Name" xml:space="preserve">
-    <value>A17</value>
-  </data>
-  <data name="&gt;&gt;A17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A17.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A17.ZOrder" xml:space="preserve">
-    <value>93</value>
+    <value>116</value>
   </data>
   <data name="button168.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1984,7 +1600,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button168.ZOrder" xml:space="preserve">
-    <value>94</value>
+    <value>117</value>
   </data>
   <data name="button82.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2008,7 +1624,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button82.ZOrder" xml:space="preserve">
-    <value>95</value>
+    <value>118</value>
   </data>
   <data name="button120.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2032,7 +1648,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button120.ZOrder" xml:space="preserve">
-    <value>96</value>
+    <value>119</value>
   </data>
   <data name="button35.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2056,31 +1672,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button35.ZOrder" xml:space="preserve">
-    <value>97</value>
-  </data>
-  <data name="button167.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button167.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 92</value>
-  </data>
-  <data name="button167.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button167.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;button167.Name" xml:space="preserve">
-    <value>button167</value>
-  </data>
-  <data name="&gt;&gt;button167.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button167.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button167.ZOrder" xml:space="preserve">
-    <value>98</value>
+    <value>120</value>
   </data>
   <data name="button57.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2104,127 +1696,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button57.ZOrder" xml:space="preserve">
-    <value>99</value>
-  </data>
-  <data name="button119.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button119.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 174</value>
-  </data>
-  <data name="button119.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button119.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;button119.Name" xml:space="preserve">
-    <value>button119</value>
-  </data>
-  <data name="&gt;&gt;button119.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button119.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button119.ZOrder" xml:space="preserve">
-    <value>100</value>
-  </data>
-  <data name="A16.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>784, 417</value>
-  </data>
-  <data name="A16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A16.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;A16.Name" xml:space="preserve">
-    <value>A16</value>
-  </data>
-  <data name="&gt;&gt;A16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A16.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A16.ZOrder" xml:space="preserve">
-    <value>101</value>
-  </data>
-  <data name="button166.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button166.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 133</value>
-  </data>
-  <data name="button166.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button166.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;button166.Name" xml:space="preserve">
-    <value>button166</value>
-  </data>
-  <data name="&gt;&gt;button166.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button166.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button166.ZOrder" xml:space="preserve">
-    <value>102</value>
-  </data>
-  <data name="button81.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button81.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 294</value>
-  </data>
-  <data name="button81.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button81.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;button81.Name" xml:space="preserve">
-    <value>button81</value>
-  </data>
-  <data name="&gt;&gt;button81.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button81.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button81.ZOrder" xml:space="preserve">
-    <value>103</value>
-  </data>
-  <data name="button118.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button118.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 215</value>
-  </data>
-  <data name="button118.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button118.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;button118.Name" xml:space="preserve">
-    <value>button118</value>
-  </data>
-  <data name="&gt;&gt;button118.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button118.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button118.ZOrder" xml:space="preserve">
-    <value>104</value>
+    <value>121</value>
   </data>
   <data name="button34.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2248,247 +1720,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button34.ZOrder" xml:space="preserve">
-    <value>105</value>
-  </data>
-  <data name="button56.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button56.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 335</value>
-  </data>
-  <data name="button56.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button56.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="&gt;&gt;button56.Name" xml:space="preserve">
-    <value>button56</value>
-  </data>
-  <data name="&gt;&gt;button56.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button56.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button56.ZOrder" xml:space="preserve">
-    <value>106</value>
-  </data>
-  <data name="A14.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>702, 417</value>
-  </data>
-  <data name="A14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A14.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;A14.Name" xml:space="preserve">
-    <value>A14</value>
-  </data>
-  <data name="&gt;&gt;A14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A14.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A14.ZOrder" xml:space="preserve">
-    <value>107</value>
-  </data>
-  <data name="button33.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 376</value>
-  </data>
-  <data name="button33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button33.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;button33.Name" xml:space="preserve">
-    <value>button33</value>
-  </data>
-  <data name="&gt;&gt;button33.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button33.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button33.ZOrder" xml:space="preserve">
-    <value>108</value>
-  </data>
-  <data name="A15.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>743, 417</value>
-  </data>
-  <data name="A15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A15.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
-  <data name="&gt;&gt;A15.Name" xml:space="preserve">
-    <value>A15</value>
-  </data>
-  <data name="&gt;&gt;A15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A15.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A15.ZOrder" xml:space="preserve">
-    <value>109</value>
-  </data>
-  <data name="button161.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button161.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 92</value>
-  </data>
-  <data name="button161.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button161.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="&gt;&gt;button161.Name" xml:space="preserve">
-    <value>button161</value>
-  </data>
-  <data name="&gt;&gt;button161.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button161.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button161.ZOrder" xml:space="preserve">
-    <value>110</value>
-  </data>
-  <data name="button113.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button113.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 174</value>
-  </data>
-  <data name="button113.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button113.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="&gt;&gt;button113.Name" xml:space="preserve">
-    <value>button113</value>
-  </data>
-  <data name="&gt;&gt;button113.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button113.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button113.ZOrder" xml:space="preserve">
-    <value>111</value>
-  </data>
-  <data name="A13.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 417</value>
-  </data>
-  <data name="A13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A13.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="&gt;&gt;A13.Name" xml:space="preserve">
-    <value>A13</value>
-  </data>
-  <data name="&gt;&gt;A13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A13.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A13.ZOrder" xml:space="preserve">
-    <value>112</value>
-  </data>
-  <data name="button160.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button160.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 133</value>
-  </data>
-  <data name="button160.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button160.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="&gt;&gt;button160.Name" xml:space="preserve">
-    <value>button160</value>
-  </data>
-  <data name="&gt;&gt;button160.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button160.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button160.ZOrder" xml:space="preserve">
-    <value>113</value>
-  </data>
-  <data name="button78.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button78.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 294</value>
-  </data>
-  <data name="button78.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button78.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="&gt;&gt;button78.Name" xml:space="preserve">
-    <value>button78</value>
-  </data>
-  <data name="&gt;&gt;button78.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button78.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button78.ZOrder" xml:space="preserve">
-    <value>114</value>
-  </data>
-  <data name="button112.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button112.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 215</value>
-  </data>
-  <data name="button112.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button112.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="&gt;&gt;button112.Name" xml:space="preserve">
-    <value>button112</value>
-  </data>
-  <data name="&gt;&gt;button112.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button112.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button112.ZOrder" xml:space="preserve">
-    <value>115</value>
+    <value>122</value>
   </data>
   <data name="button159.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2512,31 +1744,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button159.ZOrder" xml:space="preserve">
-    <value>116</value>
-  </data>
-  <data name="button53.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 335</value>
-  </data>
-  <data name="button53.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button53.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
-  </data>
-  <data name="&gt;&gt;button53.Name" xml:space="preserve">
-    <value>button53</value>
-  </data>
-  <data name="&gt;&gt;button53.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button53.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button53.ZOrder" xml:space="preserve">
-    <value>117</value>
+    <value>123</value>
   </data>
   <data name="button111.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2560,7 +1768,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button111.ZOrder" xml:space="preserve">
-    <value>118</value>
+    <value>124</value>
   </data>
   <data name="button158.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2584,7 +1792,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button158.ZOrder" xml:space="preserve">
-    <value>119</value>
+    <value>125</value>
   </data>
   <data name="button77.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2608,7 +1816,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button77.ZOrder" xml:space="preserve">
-    <value>120</value>
+    <value>126</value>
   </data>
   <data name="button110.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2632,31 +1840,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button110.ZOrder" xml:space="preserve">
-    <value>121</value>
-  </data>
-  <data name="button30.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 376</value>
-  </data>
-  <data name="button30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button30.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;button30.Name" xml:space="preserve">
-    <value>button30</value>
-  </data>
-  <data name="&gt;&gt;button30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button30.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button30.ZOrder" xml:space="preserve">
-    <value>122</value>
+    <value>127</value>
   </data>
   <data name="button157.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2680,7 +1864,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button157.ZOrder" xml:space="preserve">
-    <value>123</value>
+    <value>128</value>
   </data>
   <data name="button52.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2704,7 +1888,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button52.ZOrder" xml:space="preserve">
-    <value>124</value>
+    <value>129</value>
   </data>
   <data name="button109.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2728,7 +1912,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button109.ZOrder" xml:space="preserve">
-    <value>125</value>
+    <value>130</value>
   </data>
   <data name="button156.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2752,7 +1936,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button156.ZOrder" xml:space="preserve">
-    <value>126</value>
+    <value>131</value>
   </data>
   <data name="button76.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2776,7 +1960,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button76.ZOrder" xml:space="preserve">
-    <value>127</value>
+    <value>132</value>
   </data>
   <data name="button108.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2800,7 +1984,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button108.ZOrder" xml:space="preserve">
-    <value>128</value>
+    <value>133</value>
   </data>
   <data name="button29.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2824,7 +2008,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button29.ZOrder" xml:space="preserve">
-    <value>129</value>
+    <value>134</value>
   </data>
   <data name="button155.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2848,7 +2032,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button155.ZOrder" xml:space="preserve">
-    <value>130</value>
+    <value>135</value>
   </data>
   <data name="button51.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2872,7 +2056,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button51.ZOrder" xml:space="preserve">
-    <value>131</value>
+    <value>136</value>
   </data>
   <data name="button107.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2896,31 +2080,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button107.ZOrder" xml:space="preserve">
-    <value>132</value>
-  </data>
-  <data name="A12.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 417</value>
-  </data>
-  <data name="A12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A12.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;A12.Name" xml:space="preserve">
-    <value>A12</value>
-  </data>
-  <data name="&gt;&gt;A12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A12.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A12.ZOrder" xml:space="preserve">
-    <value>133</value>
+    <value>137</value>
   </data>
   <data name="button154.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2944,7 +2104,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button154.ZOrder" xml:space="preserve">
-    <value>134</value>
+    <value>138</value>
   </data>
   <data name="button75.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2968,7 +2128,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button75.ZOrder" xml:space="preserve">
-    <value>135</value>
+    <value>139</value>
   </data>
   <data name="button106.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2992,7 +2152,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button106.ZOrder" xml:space="preserve">
-    <value>136</value>
+    <value>140</value>
   </data>
   <data name="button28.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3016,7 +2176,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button28.ZOrder" xml:space="preserve">
-    <value>137</value>
+    <value>141</value>
   </data>
   <data name="button153.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3040,7 +2200,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button153.ZOrder" xml:space="preserve">
-    <value>138</value>
+    <value>142</value>
   </data>
   <data name="button50.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3064,7 +2224,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button50.ZOrder" xml:space="preserve">
-    <value>139</value>
+    <value>143</value>
   </data>
   <data name="button105.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3088,31 +2248,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button105.ZOrder" xml:space="preserve">
-    <value>140</value>
-  </data>
-  <data name="A11.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>521, 417</value>
-  </data>
-  <data name="A11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A11.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;A11.Name" xml:space="preserve">
-    <value>A11</value>
-  </data>
-  <data name="&gt;&gt;A11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A11.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A11.ZOrder" xml:space="preserve">
-    <value>141</value>
+    <value>144</value>
   </data>
   <data name="button152.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3136,7 +2272,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button152.ZOrder" xml:space="preserve">
-    <value>142</value>
+    <value>145</value>
   </data>
   <data name="button74.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3160,7 +2296,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button74.ZOrder" xml:space="preserve">
-    <value>143</value>
+    <value>146</value>
   </data>
   <data name="button104.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3184,7 +2320,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button104.ZOrder" xml:space="preserve">
-    <value>144</value>
+    <value>147</value>
   </data>
   <data name="button27.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3208,7 +2344,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button27.ZOrder" xml:space="preserve">
-    <value>145</value>
+    <value>148</value>
   </data>
   <data name="button151.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3232,7 +2368,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button151.ZOrder" xml:space="preserve">
-    <value>146</value>
+    <value>149</value>
   </data>
   <data name="button49.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3256,7 +2392,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button49.ZOrder" xml:space="preserve">
-    <value>147</value>
+    <value>150</value>
   </data>
   <data name="button103.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3280,31 +2416,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button103.ZOrder" xml:space="preserve">
-    <value>148</value>
-  </data>
-  <data name="A10.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>480, 417</value>
-  </data>
-  <data name="A10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A10.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
-  </data>
-  <data name="&gt;&gt;A10.Name" xml:space="preserve">
-    <value>A10</value>
-  </data>
-  <data name="&gt;&gt;A10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A10.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A10.ZOrder" xml:space="preserve">
-    <value>149</value>
+    <value>151</value>
   </data>
   <data name="button150.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3328,7 +2440,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button150.ZOrder" xml:space="preserve">
-    <value>150</value>
+    <value>152</value>
   </data>
   <data name="button73.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3352,7 +2464,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button73.ZOrder" xml:space="preserve">
-    <value>151</value>
+    <value>153</value>
   </data>
   <data name="button102.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3376,7 +2488,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button102.ZOrder" xml:space="preserve">
-    <value>152</value>
+    <value>154</value>
   </data>
   <data name="button26.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3400,7 +2512,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button26.ZOrder" xml:space="preserve">
-    <value>153</value>
+    <value>155</value>
   </data>
   <data name="button149.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3424,7 +2536,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button149.ZOrder" xml:space="preserve">
-    <value>154</value>
+    <value>156</value>
   </data>
   <data name="button48.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3448,7 +2560,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button48.ZOrder" xml:space="preserve">
-    <value>155</value>
+    <value>157</value>
   </data>
   <data name="button101.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3472,31 +2584,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button101.ZOrder" xml:space="preserve">
-    <value>156</value>
-  </data>
-  <data name="A9.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 417</value>
-  </data>
-  <data name="A9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A9.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="&gt;&gt;A9.Name" xml:space="preserve">
-    <value>A9</value>
-  </data>
-  <data name="&gt;&gt;A9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A9.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A9.ZOrder" xml:space="preserve">
-    <value>157</value>
+    <value>158</value>
   </data>
   <data name="button148.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3520,7 +2608,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button148.ZOrder" xml:space="preserve">
-    <value>158</value>
+    <value>159</value>
   </data>
   <data name="button72.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3544,7 +2632,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button72.ZOrder" xml:space="preserve">
-    <value>159</value>
+    <value>160</value>
   </data>
   <data name="button100.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3568,7 +2656,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button100.ZOrder" xml:space="preserve">
-    <value>160</value>
+    <value>161</value>
   </data>
   <data name="button25.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3592,7 +2680,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button25.ZOrder" xml:space="preserve">
-    <value>161</value>
+    <value>162</value>
   </data>
   <data name="button147.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3616,7 +2704,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button147.ZOrder" xml:space="preserve">
-    <value>162</value>
+    <value>163</value>
   </data>
   <data name="button47.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3640,7 +2728,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button47.ZOrder" xml:space="preserve">
-    <value>163</value>
+    <value>164</value>
   </data>
   <data name="button99.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3664,30 +2752,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button99.ZOrder" xml:space="preserve">
-    <value>164</value>
-  </data>
-  <data name="A8.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 417</value>
-  </data>
-  <data name="A8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A8.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="&gt;&gt;A8.Name" xml:space="preserve">
-    <value>A8</value>
-  </data>
-  <data name="&gt;&gt;A8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A8.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A8.ZOrder" xml:space="preserve">
     <value>165</value>
   </data>
   <data name="button146.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -3834,30 +2898,6 @@
   <data name="&gt;&gt;button46.ZOrder" xml:space="preserve">
     <value>172</value>
   </data>
-  <data name="A7.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 417</value>
-  </data>
-  <data name="A7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A7.TabIndex" type="System.Int32, mscorlib">
-    <value>69</value>
-  </data>
-  <data name="&gt;&gt;A7.Name" xml:space="preserve">
-    <value>A7</value>
-  </data>
-  <data name="&gt;&gt;A7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A7.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A7.ZOrder" xml:space="preserve">
-    <value>173</value>
-  </data>
   <data name="button144.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -3880,7 +2920,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button144.ZOrder" xml:space="preserve">
-    <value>174</value>
+    <value>173</value>
   </data>
   <data name="button96.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3904,7 +2944,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button96.ZOrder" xml:space="preserve">
-    <value>175</value>
+    <value>174</value>
   </data>
   <data name="button23.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3928,7 +2968,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button23.ZOrder" xml:space="preserve">
-    <value>176</value>
+    <value>175</value>
   </data>
   <data name="button142.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3952,7 +2992,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button142.ZOrder" xml:space="preserve">
-    <value>177</value>
+    <value>176</value>
   </data>
   <data name="button69.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3976,7 +3016,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button69.ZOrder" xml:space="preserve">
-    <value>178</value>
+    <value>177</value>
   </data>
   <data name="button94.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4000,7 +3040,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button94.ZOrder" xml:space="preserve">
-    <value>179</value>
+    <value>178</value>
   </data>
   <data name="button141.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4024,7 +3064,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button141.ZOrder" xml:space="preserve">
-    <value>180</value>
+    <value>179</value>
   </data>
   <data name="button93.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4048,7 +3088,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button93.ZOrder" xml:space="preserve">
-    <value>181</value>
+    <value>180</value>
   </data>
   <data name="button45.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4072,7 +3112,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button45.ZOrder" xml:space="preserve">
-    <value>182</value>
+    <value>181</value>
   </data>
   <data name="button140.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4096,7 +3136,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button140.ZOrder" xml:space="preserve">
-    <value>183</value>
+    <value>182</value>
   </data>
   <data name="button68.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4120,7 +3160,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button68.ZOrder" xml:space="preserve">
-    <value>184</value>
+    <value>183</value>
   </data>
   <data name="button92.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4144,31 +3184,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button92.ZOrder" xml:space="preserve">
-    <value>185</value>
-  </data>
-  <data name="A6.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 417</value>
-  </data>
-  <data name="A6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A6.TabIndex" type="System.Int32, mscorlib">
-    <value>76</value>
-  </data>
-  <data name="&gt;&gt;A6.Name" xml:space="preserve">
-    <value>A6</value>
-  </data>
-  <data name="&gt;&gt;A6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A6.ZOrder" xml:space="preserve">
-    <value>186</value>
+    <value>184</value>
   </data>
   <data name="button44.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4192,31 +3208,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button44.ZOrder" xml:space="preserve">
-    <value>187</value>
-  </data>
-  <data name="button43.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 376</value>
-  </data>
-  <data name="button43.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="button43.TabIndex" type="System.Int32, mscorlib">
-    <value>78</value>
-  </data>
-  <data name="&gt;&gt;button43.Name" xml:space="preserve">
-    <value>button43</value>
-  </data>
-  <data name="&gt;&gt;button43.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button43.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button43.ZOrder" xml:space="preserve">
-    <value>188</value>
+    <value>185</value>
   </data>
   <data name="button22.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4240,31 +3232,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button22.ZOrder" xml:space="preserve">
-    <value>189</value>
-  </data>
-  <data name="A5.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 417</value>
-  </data>
-  <data name="A5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A5.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="&gt;&gt;A5.Name" xml:space="preserve">
-    <value>A5</value>
-  </data>
-  <data name="&gt;&gt;A5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A5.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A5.ZOrder" xml:space="preserve">
-    <value>190</value>
+    <value>186</value>
   </data>
   <metadata name="cmsDelete.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -4284,32 +3252,8 @@
   <data name="&gt;&gt;cmsDelete.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="A4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="A4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 417</value>
-  </data>
-  <data name="A4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 35</value>
-  </data>
-  <data name="A4.TabIndex" type="System.Int32, mscorlib">
-    <value>108</value>
-  </data>
-  <data name="&gt;&gt;A4.Name" xml:space="preserve">
-    <value>A4</value>
-  </data>
-  <data name="&gt;&gt;A4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;A4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;A4.ZOrder" xml:space="preserve">
-    <value>191</value>
-  </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 583</value>
+    <value>434, 547</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 20</value>
@@ -4327,7 +3271,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>42</value>
   </data>
   <data name="label28.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4336,7 +3280,7 @@
     <value>Arial, 10pt</value>
   </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>374, 584</value>
+    <value>383, 548</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 16</value>
@@ -4357,10 +3301,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>53</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 609</value>
+    <value>434, 573</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 20</value>
@@ -4378,7 +3322,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>45</value>
   </data>
   <data name="label29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4387,7 +3331,7 @@
     <value>Arial, 10pt</value>
   </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>351, 610</value>
+    <value>360, 574</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 16</value>
@@ -4408,10 +3352,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>57</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 661</value>
+    <value>434, 625</value>
   </data>
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 20</value>
@@ -4429,7 +3373,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>49</value>
   </data>
   <data name="label30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4438,7 +3382,7 @@
     <value>Arial, 10pt</value>
   </data>
   <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>345, 662</value>
+    <value>354, 626</value>
   </data>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 16</value>
@@ -4459,10 +3403,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>55</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 687</value>
+    <value>434, 651</value>
   </data>
   <data name="textBox4.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4483,7 +3427,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>41</value>
   </data>
   <data name="label31.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4492,7 +3436,7 @@
     <value>Arial, 10pt</value>
   </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 688</value>
+    <value>363, 652</value>
   </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 16</value>
@@ -4513,13 +3457,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>47</value>
   </data>
   <data name="textBox5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 539</value>
+    <value>315, 503</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>639, 23</value>
@@ -4543,7 +3487,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>46</value>
   </data>
   <data name="label32.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4552,7 +3496,7 @@
     <value>Arial, 10pt</value>
   </data>
   <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>360, 635</value>
+    <value>369, 599</value>
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 16</value>
@@ -4573,10 +3517,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>51</value>
   </data>
   <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 635</value>
+    <value>434, 599</value>
   </data>
   <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 20</value>
@@ -4594,7 +3538,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>43</value>
   </data>
   <data name="radioButton3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4678,7 +3622,7 @@
     <value>2</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>605, 579</value>
+    <value>614, 543</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 121</value>
@@ -4699,10 +3643,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>44</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>605, 706</value>
+    <value>614, 670</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 30</value>
@@ -4723,10 +3667,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>40</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>762, 584</value>
+    <value>771, 548</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 153</value>
@@ -4747,10 +3691,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>39</value>
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 28</value>
+    <value>457, 28</value>
   </data>
   <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
@@ -4771,10 +3715,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>54</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 28</value>
+    <value>305, 28</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
@@ -4795,10 +3739,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>56</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 28</value>
+    <value>152, 28</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
@@ -4819,7 +3763,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>58</value>
   </data>
   <data name="button1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4828,7 +3772,7 @@
     <value>Flat</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 501</value>
+    <value>275, 465</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>716, 20</value>
@@ -4846,7 +3790,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>192</value>
+    <value>187</value>
   </data>
   <data name="button4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4858,7 +3802,7 @@
     <value>NoControl</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1112, 38</value>
+    <value>1071, 38</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 36</value>
@@ -4879,7 +3823,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>38</value>
   </data>
   <data name="button5.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4888,7 +3832,7 @@
     <value>NoControl</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 92</value>
+    <value>152, 133</value>
   </data>
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
@@ -4915,7 +3859,7 @@
     <value>NoControl</value>
   </data>
   <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1112, 92</value>
+    <value>1071, 92</value>
   </data>
   <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
@@ -4933,7 +3877,1237 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>59</value>
+  </data>
+  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>781, 413</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+    <value>220</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>740, 413</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>221</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label17.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>704, 413</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>222</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label16.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>521, 414</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>225</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label13.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 414</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>226</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label12.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 414</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>227</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 414</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>228</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>30</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 414</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>229</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 414</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>230</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 414</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>231</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 413</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>232</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 413</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>233</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 413</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>234</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="label19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>825, 413</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>223</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label19.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="label20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>866, 413</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>222</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label20.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label33.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>902, 413</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label33.TabIndex" type="System.Int32, mscorlib">
+    <value>221</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label33.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="label34.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>943, 413</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label34.TabIndex" type="System.Int32, mscorlib">
+    <value>220</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label34.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label34.Name" xml:space="preserve">
+    <value>label34</value>
+  </data>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label35.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>989, 413</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label35.TabIndex" type="System.Int32, mscorlib">
+    <value>222</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label35.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label35.Name" xml:space="preserve">
+    <value>label35</value>
+  </data>
+  <data name="&gt;&gt;label35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label35.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="label36.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1025, 413</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label36.TabIndex" type="System.Int32, mscorlib">
+    <value>221</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="label36.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="label37.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1066, 413</value>
+  </data>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label37.TabIndex" type="System.Int32, mscorlib">
+    <value>220</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="label37.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label37.Name" xml:space="preserve">
+    <value>label37</value>
+  </data>
+  <data name="&gt;&gt;label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="button7.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button7.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 92</value>
+  </data>
+  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 35</value>
+  </data>
+  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+    <value>235</value>
+  </data>
+  <data name="button7.Text" xml:space="preserve">
+    <value>K A P I</value>
+  </data>
+  <data name="&gt;&gt;button7.Name" xml:space="preserve">
+    <value>button7</value>
+  </data>
+  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label26.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 92</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label26.TabIndex" type="System.Int32, mscorlib">
+    <value>238</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>G</value>
+  </data>
+  <data name="label26.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label25.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 133</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>236</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="label25.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label24.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 174</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+    <value>240</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="label24.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 253</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>243</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="label23.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 294</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label22.TabIndex" type="System.Int32, mscorlib">
+    <value>242</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="label22.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label21.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 335</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>241</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="label21.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 376</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>239</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="label14.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1126, 376</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>239</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="label15.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label27.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1126, 335</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label27.TabIndex" type="System.Int32, mscorlib">
+    <value>241</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="label27.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label38.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1126, 294</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label38.TabIndex" type="System.Int32, mscorlib">
+    <value>242</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="label38.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label38.Name" xml:space="preserve">
+    <value>label38</value>
+  </data>
+  <data name="&gt;&gt;label38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label38.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label39.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1126, 253</value>
+  </data>
+  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label39.TabIndex" type="System.Int32, mscorlib">
+    <value>243</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="label39.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label39.Name" xml:space="preserve">
+    <value>label39</value>
+  </data>
+  <data name="&gt;&gt;label39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label39.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label40.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label40.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1126, 174</value>
+  </data>
+  <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label40.TabIndex" type="System.Int32, mscorlib">
+    <value>240</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="label40.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label40.Name" xml:space="preserve">
+    <value>label40</value>
+  </data>
+  <data name="&gt;&gt;label40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label40.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label41.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label41.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1126, 133</value>
+  </data>
+  <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label41.TabIndex" type="System.Int32, mscorlib">
+    <value>236</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="label41.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label41.Name" xml:space="preserve">
+    <value>label41</value>
+  </data>
+  <data name="&gt;&gt;label41.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label41.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label42.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="label42.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1126, 92</value>
+  </data>
+  <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 35</value>
+  </data>
+  <data name="label42.TabIndex" type="System.Int32, mscorlib">
+    <value>238</value>
+  </data>
+  <data name="label42.Text" xml:space="preserve">
+    <value>G</value>
+  </data>
+  <data name="label42.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label42.Name" xml:space="preserve">
+    <value>label42</value>
+  </data>
+  <data name="&gt;&gt;label42.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label42.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label42.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button8.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button8.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 174</value>
+  </data>
+  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 76</value>
+  </data>
+  <data name="button8.TabIndex" type="System.Int32, mscorlib">
+    <value>235</value>
+  </data>
+  <data name="button8.Text" xml:space="preserve">
+    <value>K A P  I</value>
+  </data>
+  <data name="&gt;&gt;button8.Name" xml:space="preserve">
+    <value>button8</value>
+  </data>
+  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="button9.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button9.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1071, 174</value>
+  </data>
+  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 76</value>
+  </data>
+  <data name="button9.TabIndex" type="System.Int32, mscorlib">
+    <value>235</value>
+  </data>
+  <data name="button9.Text" xml:space="preserve">
+    <value>K A P  I </value>
+  </data>
+  <data name="&gt;&gt;button9.Name" xml:space="preserve">
+    <value>button9</value>
+  </data>
+  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
