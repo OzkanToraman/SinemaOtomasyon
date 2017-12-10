@@ -58,3 +58,4 @@ C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.FormSalon3.resources
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.Properties.Resources.resources
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.csproj.GenerateResource.Cache
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.Salonlar.FormSalon4.resources

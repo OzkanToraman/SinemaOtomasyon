@@ -16,7 +16,7 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormParent());
+            Application.Run(new FormSalon4());
         }
     }
 }
