@@ -1937,7 +1937,7 @@
             // 
             this.button55.ForeColor = System.Drawing.Color.Black;
             this.button55.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button55.Location = new System.Drawing.Point(769, 569);
+            this.button55.Location = new System.Drawing.Point(764, 567);
             this.button55.Name = "button55";
             this.button55.Size = new System.Drawing.Size(98, 153);
             this.button55.TabIndex = 261;
