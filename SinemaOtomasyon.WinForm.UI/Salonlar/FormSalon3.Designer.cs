@@ -222,6 +222,7 @@
             this.label42 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.label43 = new System.Windows.Forms.Label();
             this.cmsDelete.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -1967,12 +1968,20 @@
             this.button9.Name = "button9";
             this.button9.UseVisualStyleBackColor = false;
             // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.BackColor = System.Drawing.Color.Transparent;
+            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label43.Name = "label43";
+            // 
             // FormSalon3
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.backgroundpattern1;
+            this.Controls.Add(this.label43);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label41);
@@ -2370,5 +2379,6 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label43;
     }
 }

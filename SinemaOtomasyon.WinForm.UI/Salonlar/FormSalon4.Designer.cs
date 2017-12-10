@@ -187,6 +187,7 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.button37 = new System.Windows.Forms.Button();
+            this.label35 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -2344,12 +2345,25 @@
             this.button37.Text = "←";
             this.button37.UseVisualStyleBackColor = false;
             // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.Font = new System.Drawing.Font("Arial", 10F);
+            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label35.Location = new System.Drawing.Point(774, 34);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(132, 16);
+            this.label35.TabIndex = 234;
+            this.label35.Text = "Toplam Koltuk : 109";
+            // 
             // FormSalon4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.backgroundpattern1;
             this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.Controls.Add(this.label35);
             this.Controls.Add(this.button37);
             this.Controls.Add(this.button30);
             this.Controls.Add(this.button31);
@@ -2684,5 +2698,6 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Label label35;
     }
 }
