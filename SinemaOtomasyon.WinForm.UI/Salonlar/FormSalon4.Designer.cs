@@ -518,7 +518,7 @@
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button5.Location = new System.Drawing.Point(512, 116);
+            this.button5.Location = new System.Drawing.Point(516, 116);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(35, 35);
             this.button5.TabIndex = 60;
@@ -532,7 +532,7 @@
             this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button11.Location = new System.Drawing.Point(553, 116);
+            this.button11.Location = new System.Drawing.Point(557, 116);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(35, 35);
             this.button11.TabIndex = 60;
@@ -546,7 +546,7 @@
             this.button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button17.Location = new System.Drawing.Point(512, 157);
+            this.button17.Location = new System.Drawing.Point(516, 157);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(35, 35);
             this.button17.TabIndex = 60;
@@ -560,7 +560,7 @@
             this.button23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button23.Location = new System.Drawing.Point(594, 116);
+            this.button23.Location = new System.Drawing.Point(598, 116);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(35, 35);
             this.button23.TabIndex = 60;
@@ -574,7 +574,7 @@
             this.button29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button29.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button29.Location = new System.Drawing.Point(512, 198);
+            this.button29.Location = new System.Drawing.Point(516, 198);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(35, 35);
             this.button29.TabIndex = 60;
@@ -588,7 +588,7 @@
             this.button35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button35.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button35.Location = new System.Drawing.Point(553, 157);
+            this.button35.Location = new System.Drawing.Point(557, 157);
             this.button35.Name = "button35";
             this.button35.Size = new System.Drawing.Size(35, 35);
             this.button35.TabIndex = 60;
@@ -602,7 +602,7 @@
             this.button36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button36.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button36.Location = new System.Drawing.Point(512, 239);
+            this.button36.Location = new System.Drawing.Point(516, 239);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(35, 35);
             this.button36.TabIndex = 60;
@@ -616,7 +616,7 @@
             this.button41.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button41.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button41.Location = new System.Drawing.Point(512, 280);
+            this.button41.Location = new System.Drawing.Point(516, 280);
             this.button41.Name = "button41";
             this.button41.Size = new System.Drawing.Size(35, 35);
             this.button41.TabIndex = 60;
@@ -630,7 +630,7 @@
             this.button42.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button42.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button42.Location = new System.Drawing.Point(553, 198);
+            this.button42.Location = new System.Drawing.Point(557, 198);
             this.button42.Name = "button42";
             this.button42.Size = new System.Drawing.Size(35, 35);
             this.button42.TabIndex = 60;
@@ -644,7 +644,7 @@
             this.button43.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button43.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button43.Location = new System.Drawing.Point(512, 321);
+            this.button43.Location = new System.Drawing.Point(516, 321);
             this.button43.Name = "button43";
             this.button43.Size = new System.Drawing.Size(35, 35);
             this.button43.TabIndex = 60;
@@ -658,7 +658,7 @@
             this.button47.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button47.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button47.Location = new System.Drawing.Point(594, 157);
+            this.button47.Location = new System.Drawing.Point(598, 157);
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(35, 35);
             this.button47.TabIndex = 60;
@@ -672,7 +672,7 @@
             this.button49.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button49.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button49.Location = new System.Drawing.Point(512, 362);
+            this.button49.Location = new System.Drawing.Point(516, 362);
             this.button49.Name = "button49";
             this.button49.Size = new System.Drawing.Size(35, 35);
             this.button49.TabIndex = 60;
@@ -686,7 +686,7 @@
             this.button50.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button50.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button50.Location = new System.Drawing.Point(553, 239);
+            this.button50.Location = new System.Drawing.Point(557, 239);
             this.button50.Name = "button50";
             this.button50.Size = new System.Drawing.Size(35, 35);
             this.button50.TabIndex = 60;
@@ -700,7 +700,7 @@
             this.button51.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button51.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button51.Location = new System.Drawing.Point(512, 403);
+            this.button51.Location = new System.Drawing.Point(516, 403);
             this.button51.Name = "button51";
             this.button51.Size = new System.Drawing.Size(35, 35);
             this.button51.TabIndex = 60;
@@ -714,7 +714,7 @@
             this.button52.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button52.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button52.Location = new System.Drawing.Point(553, 280);
+            this.button52.Location = new System.Drawing.Point(557, 280);
             this.button52.Name = "button52";
             this.button52.Size = new System.Drawing.Size(35, 35);
             this.button52.TabIndex = 60;
@@ -728,7 +728,7 @@
             this.button53.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button53.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button53.Location = new System.Drawing.Point(594, 198);
+            this.button53.Location = new System.Drawing.Point(598, 198);
             this.button53.Name = "button53";
             this.button53.Size = new System.Drawing.Size(35, 35);
             this.button53.TabIndex = 60;
@@ -742,7 +742,7 @@
             this.button54.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button54.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button54.Location = new System.Drawing.Point(553, 321);
+            this.button54.Location = new System.Drawing.Point(557, 321);
             this.button54.Name = "button54";
             this.button54.Size = new System.Drawing.Size(35, 35);
             this.button54.TabIndex = 60;
@@ -756,7 +756,7 @@
             this.button55.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button55.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button55.Location = new System.Drawing.Point(553, 362);
+            this.button55.Location = new System.Drawing.Point(557, 362);
             this.button55.Name = "button55";
             this.button55.Size = new System.Drawing.Size(35, 35);
             this.button55.TabIndex = 60;
@@ -770,7 +770,7 @@
             this.button56.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button56.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button56.Location = new System.Drawing.Point(594, 239);
+            this.button56.Location = new System.Drawing.Point(598, 239);
             this.button56.Name = "button56";
             this.button56.Size = new System.Drawing.Size(35, 35);
             this.button56.TabIndex = 60;
@@ -784,7 +784,7 @@
             this.button57.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button57.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button57.Location = new System.Drawing.Point(553, 403);
+            this.button57.Location = new System.Drawing.Point(557, 403);
             this.button57.Name = "button57";
             this.button57.Size = new System.Drawing.Size(35, 35);
             this.button57.TabIndex = 60;
@@ -798,7 +798,7 @@
             this.button58.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button58.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button58.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button58.Location = new System.Drawing.Point(594, 280);
+            this.button58.Location = new System.Drawing.Point(598, 280);
             this.button58.Name = "button58";
             this.button58.Size = new System.Drawing.Size(35, 35);
             this.button58.TabIndex = 60;
@@ -812,7 +812,7 @@
             this.button59.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button59.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button59.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button59.Location = new System.Drawing.Point(594, 321);
+            this.button59.Location = new System.Drawing.Point(598, 321);
             this.button59.Name = "button59";
             this.button59.Size = new System.Drawing.Size(35, 35);
             this.button59.TabIndex = 60;
@@ -826,7 +826,7 @@
             this.button60.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button60.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button60.Location = new System.Drawing.Point(594, 362);
+            this.button60.Location = new System.Drawing.Point(598, 362);
             this.button60.Name = "button60";
             this.button60.Size = new System.Drawing.Size(35, 35);
             this.button60.TabIndex = 60;
@@ -840,7 +840,7 @@
             this.button61.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button61.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button61.Location = new System.Drawing.Point(594, 403);
+            this.button61.Location = new System.Drawing.Point(598, 403);
             this.button61.Name = "button61";
             this.button61.Size = new System.Drawing.Size(35, 35);
             this.button61.TabIndex = 60;
@@ -854,7 +854,7 @@
             this.button62.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button62.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button62.Location = new System.Drawing.Point(637, 116);
+            this.button62.Location = new System.Drawing.Point(639, 116);
             this.button62.Name = "button62";
             this.button62.Size = new System.Drawing.Size(35, 35);
             this.button62.TabIndex = 60;
@@ -868,7 +868,7 @@
             this.button63.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button63.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button63.Location = new System.Drawing.Point(678, 116);
+            this.button63.Location = new System.Drawing.Point(680, 116);
             this.button63.Name = "button63";
             this.button63.Size = new System.Drawing.Size(35, 35);
             this.button63.TabIndex = 60;
@@ -882,7 +882,7 @@
             this.button64.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button64.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button64.Location = new System.Drawing.Point(637, 157);
+            this.button64.Location = new System.Drawing.Point(639, 157);
             this.button64.Name = "button64";
             this.button64.Size = new System.Drawing.Size(35, 35);
             this.button64.TabIndex = 60;
@@ -896,7 +896,7 @@
             this.button65.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button65.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button65.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button65.Location = new System.Drawing.Point(719, 116);
+            this.button65.Location = new System.Drawing.Point(721, 116);
             this.button65.Name = "button65";
             this.button65.Size = new System.Drawing.Size(35, 35);
             this.button65.TabIndex = 60;
@@ -910,7 +910,7 @@
             this.button66.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button66.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button66.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button66.Location = new System.Drawing.Point(637, 198);
+            this.button66.Location = new System.Drawing.Point(639, 198);
             this.button66.Name = "button66";
             this.button66.Size = new System.Drawing.Size(35, 35);
             this.button66.TabIndex = 60;
@@ -924,7 +924,7 @@
             this.button67.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button67.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button67.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button67.Location = new System.Drawing.Point(678, 157);
+            this.button67.Location = new System.Drawing.Point(680, 157);
             this.button67.Name = "button67";
             this.button67.Size = new System.Drawing.Size(35, 35);
             this.button67.TabIndex = 60;
@@ -938,7 +938,7 @@
             this.button68.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button68.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button68.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button68.Location = new System.Drawing.Point(637, 239);
+            this.button68.Location = new System.Drawing.Point(639, 239);
             this.button68.Name = "button68";
             this.button68.Size = new System.Drawing.Size(35, 35);
             this.button68.TabIndex = 60;
@@ -952,7 +952,7 @@
             this.button69.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button69.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button69.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button69.Location = new System.Drawing.Point(637, 280);
+            this.button69.Location = new System.Drawing.Point(639, 280);
             this.button69.Name = "button69";
             this.button69.Size = new System.Drawing.Size(35, 35);
             this.button69.TabIndex = 60;
@@ -966,7 +966,7 @@
             this.button70.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button70.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button70.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button70.Location = new System.Drawing.Point(678, 198);
+            this.button70.Location = new System.Drawing.Point(680, 198);
             this.button70.Name = "button70";
             this.button70.Size = new System.Drawing.Size(35, 35);
             this.button70.TabIndex = 60;
@@ -980,7 +980,7 @@
             this.button71.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button71.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button71.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button71.Location = new System.Drawing.Point(637, 321);
+            this.button71.Location = new System.Drawing.Point(639, 321);
             this.button71.Name = "button71";
             this.button71.Size = new System.Drawing.Size(35, 35);
             this.button71.TabIndex = 60;
@@ -994,7 +994,7 @@
             this.button72.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button72.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button72.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button72.Location = new System.Drawing.Point(719, 157);
+            this.button72.Location = new System.Drawing.Point(721, 157);
             this.button72.Name = "button72";
             this.button72.Size = new System.Drawing.Size(35, 35);
             this.button72.TabIndex = 60;
@@ -1008,7 +1008,7 @@
             this.button73.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button73.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button73.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button73.Location = new System.Drawing.Point(637, 362);
+            this.button73.Location = new System.Drawing.Point(639, 362);
             this.button73.Name = "button73";
             this.button73.Size = new System.Drawing.Size(35, 35);
             this.button73.TabIndex = 60;
@@ -1022,7 +1022,7 @@
             this.button74.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button74.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button74.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button74.Location = new System.Drawing.Point(678, 239);
+            this.button74.Location = new System.Drawing.Point(680, 239);
             this.button74.Name = "button74";
             this.button74.Size = new System.Drawing.Size(35, 35);
             this.button74.TabIndex = 60;
@@ -1036,7 +1036,7 @@
             this.button75.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button75.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button75.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button75.Location = new System.Drawing.Point(637, 403);
+            this.button75.Location = new System.Drawing.Point(639, 403);
             this.button75.Name = "button75";
             this.button75.Size = new System.Drawing.Size(35, 35);
             this.button75.TabIndex = 60;
@@ -1050,7 +1050,7 @@
             this.button76.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button76.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button76.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button76.Location = new System.Drawing.Point(678, 280);
+            this.button76.Location = new System.Drawing.Point(680, 280);
             this.button76.Name = "button76";
             this.button76.Size = new System.Drawing.Size(35, 35);
             this.button76.TabIndex = 60;
@@ -1064,7 +1064,7 @@
             this.button77.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button77.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button77.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button77.Location = new System.Drawing.Point(719, 198);
+            this.button77.Location = new System.Drawing.Point(721, 198);
             this.button77.Name = "button77";
             this.button77.Size = new System.Drawing.Size(35, 35);
             this.button77.TabIndex = 60;
@@ -1078,7 +1078,7 @@
             this.button78.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button78.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button78.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button78.Location = new System.Drawing.Point(678, 321);
+            this.button78.Location = new System.Drawing.Point(680, 321);
             this.button78.Name = "button78";
             this.button78.Size = new System.Drawing.Size(35, 35);
             this.button78.TabIndex = 60;
@@ -1092,7 +1092,7 @@
             this.button79.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button79.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button79.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button79.Location = new System.Drawing.Point(678, 362);
+            this.button79.Location = new System.Drawing.Point(680, 362);
             this.button79.Name = "button79";
             this.button79.Size = new System.Drawing.Size(35, 35);
             this.button79.TabIndex = 60;
@@ -1106,7 +1106,7 @@
             this.button80.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button80.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button80.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button80.Location = new System.Drawing.Point(719, 239);
+            this.button80.Location = new System.Drawing.Point(721, 239);
             this.button80.Name = "button80";
             this.button80.Size = new System.Drawing.Size(35, 35);
             this.button80.TabIndex = 60;
@@ -1120,7 +1120,7 @@
             this.button81.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button81.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button81.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button81.Location = new System.Drawing.Point(678, 403);
+            this.button81.Location = new System.Drawing.Point(680, 403);
             this.button81.Name = "button81";
             this.button81.Size = new System.Drawing.Size(35, 35);
             this.button81.TabIndex = 60;
@@ -1134,7 +1134,7 @@
             this.button82.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button82.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button82.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button82.Location = new System.Drawing.Point(719, 280);
+            this.button82.Location = new System.Drawing.Point(721, 280);
             this.button82.Name = "button82";
             this.button82.Size = new System.Drawing.Size(35, 35);
             this.button82.TabIndex = 60;
@@ -1148,7 +1148,7 @@
             this.button83.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button83.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button83.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button83.Location = new System.Drawing.Point(719, 321);
+            this.button83.Location = new System.Drawing.Point(721, 321);
             this.button83.Name = "button83";
             this.button83.Size = new System.Drawing.Size(35, 35);
             this.button83.TabIndex = 60;
@@ -1162,7 +1162,7 @@
             this.button84.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button84.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button84.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button84.Location = new System.Drawing.Point(719, 362);
+            this.button84.Location = new System.Drawing.Point(721, 362);
             this.button84.Name = "button84";
             this.button84.Size = new System.Drawing.Size(35, 35);
             this.button84.TabIndex = 60;
@@ -1176,7 +1176,7 @@
             this.button85.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.button85.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button85.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button85.Location = new System.Drawing.Point(719, 403);
+            this.button85.Location = new System.Drawing.Point(721, 403);
             this.button85.Name = "button85";
             this.button85.Size = new System.Drawing.Size(35, 35);
             this.button85.TabIndex = 60;
@@ -1972,7 +1972,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(512, 435);
+            this.label4.Location = new System.Drawing.Point(516, 435);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 35);
             this.label4.TabIndex = 208;
@@ -1985,7 +1985,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(553, 435);
+            this.label5.Location = new System.Drawing.Point(557, 435);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 35);
             this.label5.TabIndex = 208;
@@ -1998,7 +1998,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(594, 435);
+            this.label6.Location = new System.Drawing.Point(598, 435);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 35);
             this.label6.TabIndex = 208;
@@ -2011,7 +2011,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(637, 435);
+            this.label7.Location = new System.Drawing.Point(639, 435);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 35);
             this.label7.TabIndex = 208;
@@ -2024,7 +2024,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(678, 435);
+            this.label8.Location = new System.Drawing.Point(680, 435);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 35);
             this.label8.TabIndex = 208;
@@ -2037,7 +2037,7 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(721, 435);
+            this.label12.Location = new System.Drawing.Point(723, 435);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(35, 35);
             this.label12.TabIndex = 208;
