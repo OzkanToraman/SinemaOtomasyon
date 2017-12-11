@@ -17,13 +17,13 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public FilmTuru()
         {
-            this.Films = new HashSet<Film>();
+            this.Film = new HashSet<Film>();
         }
     
         public int FilmTurID { get; set; }
         public string FilmTurAd { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Film> Films { get; set; }
+        public virtual ICollection<Film> Film { get; set; }
     }
 }

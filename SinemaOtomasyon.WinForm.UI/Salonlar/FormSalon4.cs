@@ -21,5 +21,18 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
         {
 
         }
+
+        private void A1_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (btn.BackColor == Color.Gray)
+            {
+                btn.BackColor = Color.Green;
+            }
+            else if (btn.BackColor == Color.Green)
+            {
+                btn.BackColor = Color.Gray;
+            }
+        }
     }
 }

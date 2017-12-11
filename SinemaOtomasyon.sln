@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinemaOtomasyon.BLL", "Sine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinemaOtomasyon.WinForm.UI", "SinemaOtomasyon.WinForm.UI\SinemaOtomasyon.WinForm.UI.csproj", "{1D4079CB-9C90-45AD-9BE9-3410BC59558B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinemaOtomasyon.Unit.Of.Work", "SinemaOtomasyon.Unit.Of.Work\SinemaOtomasyon.Unit.Of.Work.csproj", "{1F930FFA-7218-4013-8A95-F1F3E5C64F09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1D4079CB-9C90-45AD-9BE9-3410BC59558B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D4079CB-9C90-45AD-9BE9-3410BC59558B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D4079CB-9C90-45AD-9BE9-3410BC59558B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F930FFA-7218-4013-8A95-F1F3E5C64F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F930FFA-7218-4013-8A95-F1F3E5C64F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F930FFA-7218-4013-8A95-F1F3E5C64F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F930FFA-7218-4013-8A95-F1F3E5C64F09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

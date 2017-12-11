@@ -8,3 +8,13 @@ c:\users\ozkan\documents\visual studio 2015\Projects\SinemaOtomasyon\SinemaOtoma
 c:\users\ozkan\documents\visual studio 2015\Projects\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.csprojResolveAssemblyReference.cache
 c:\users\ozkan\documents\visual studio 2015\Projects\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.dll
 c:\users\ozkan\documents\visual studio 2015\Projects\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.pdb
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\SinemaOtomasyon.Core.dll.config
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\SinemaOtomasyon.Core.dll
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\SinemaOtomasyon.Core.pdb
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\EntityFramework.dll
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\EntityFramework.xml
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.csprojResolveAssemblyReference.cache
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.dll
+C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.pdb

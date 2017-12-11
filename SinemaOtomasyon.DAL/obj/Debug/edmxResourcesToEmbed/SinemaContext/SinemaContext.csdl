@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="SinemaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="BiletSati">
+  <EntityType Name="BiletSatis">
     <Key>
       <PropertyRef Name="BiletID" />
     </Key>
@@ -34,7 +34,7 @@
     </Key>
     <Property Name="CinsiyetID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="CinsiyetAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Personels" Relationship="Self.FK_Personel_Cinsiyet" FromRole="Cinsiyet" ToRole="Personel" />
+    <NavigationProperty Name="Personel" Relationship="Self.FK_Personel_Cinsiyet" FromRole="Cinsiyet" ToRole="Personel" />
   </EntityType>
   <EntityType Name="Film">
     <Key>
@@ -50,7 +50,7 @@
     <Property Name="Vizyonda" Type="Boolean" Nullable="false" />
     <Property Name="FilmTurID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="FilmTuru" Relationship="Self.FK_Film_FilmTuru" FromRole="Film" ToRole="FilmTuru" />
-    <NavigationProperty Name="Gosterims" Relationship="Self.FK_Gosterim_Film" FromRole="Film" ToRole="Gosterim" />
+    <NavigationProperty Name="Gosterim" Relationship="Self.FK_Gosterim_Film" FromRole="Film" ToRole="Gosterim" />
   </EntityType>
   <EntityType Name="FilmTuru">
     <Key>
@@ -58,7 +58,7 @@
     </Key>
     <Property Name="FilmTurID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="FilmTurAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Films" Relationship="Self.FK_Film_FilmTuru" FromRole="FilmTuru" ToRole="Film" />
+    <NavigationProperty Name="Film" Relationship="Self.FK_Film_FilmTuru" FromRole="FilmTuru" ToRole="Film" />
   </EntityType>
   <EntityType Name="Gosterim">
     <Key>
@@ -72,7 +72,7 @@
     <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Gosterim" FromRole="Gosterim" ToRole="BiletSatis" />
     <NavigationProperty Name="Film" Relationship="Self.FK_Gosterim_Film" FromRole="Gosterim" ToRole="Film" />
     <NavigationProperty Name="Salon" Relationship="Self.FK_Gosterim_Salon" FromRole="Gosterim" ToRole="Salon" />
-    <NavigationProperty Name="Sean" Relationship="Self.FK_Gosterim_Seans" FromRole="Gosterim" ToRole="Seans" />
+    <NavigationProperty Name="Seans" Relationship="Self.FK_Gosterim_Seans" FromRole="Gosterim" ToRole="Seans" />
   </EntityType>
   <EntityType Name="Koltuk">
     <Key>
@@ -117,16 +117,16 @@
     <Property Name="SalonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="SalonAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="SalonFiyatSapma" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <NavigationProperty Name="Gosterims" Relationship="Self.FK_Gosterim_Salon" FromRole="Salon" ToRole="Gosterim" />
+    <NavigationProperty Name="Gosterim" Relationship="Self.FK_Gosterim_Salon" FromRole="Salon" ToRole="Gosterim" />
   </EntityType>
-  <EntityType Name="Sean">
+  <EntityType Name="Seans">
     <Key>
       <PropertyRef Name="SeansID" />
     </Key>
     <Property Name="SeansID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="SeansAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="SeansFiyatSapma" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <NavigationProperty Name="Gosterims" Relationship="Self.FK_Gosterim_Seans" FromRole="Seans" ToRole="Gosterim" />
+    <NavigationProperty Name="Gosterim" Relationship="Self.FK_Gosterim_Seans" FromRole="Seans" ToRole="Gosterim" />
   </EntityType>
   <EntityType Name="Seyirci">
     <Key>
@@ -141,16 +141,6 @@
     <Property Name="Üyelik" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Seyirci" FromRole="Seyirci" ToRole="BiletSatis" />
   </EntityType>
-  <EntityType Name="sysdiagram">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-  </EntityType>
   <EntityType Name="Unvan">
     <Key>
       <PropertyRef Name="UnvanID" />
@@ -158,11 +148,11 @@
     <Property Name="UnvanID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="UnvanAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Departman" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Personels" Relationship="Self.FK_Personel_Unvan" FromRole="Unvan" ToRole="Personel" />
+    <NavigationProperty Name="Personel" Relationship="Self.FK_Personel_Unvan" FromRole="Unvan" ToRole="Personel" />
   </EntityType>
   <Association Name="FK_BiletSatis_BiletTuru">
     <End Role="BiletTuru" Type="Self.BiletTuru" Multiplicity="1" />
-    <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+    <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="BiletTuru">
         <PropertyRef Name="BiletTurID" />
@@ -174,7 +164,7 @@
   </Association>
   <Association Name="FK_BiletSatis_Gosterim">
     <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="1" />
-    <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+    <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Gosterim">
         <PropertyRef Name="GosterimID" />
@@ -186,7 +176,7 @@
   </Association>
   <Association Name="FK_BiletSatis_Koltuk">
     <End Role="Koltuk" Type="Self.Koltuk" Multiplicity="1" />
-    <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+    <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Koltuk">
         <PropertyRef Name="KoltukID" />
@@ -198,7 +188,7 @@
   </Association>
   <Association Name="FK_BiletSatis_OdemeSekli">
     <End Role="OdemeSekli" Type="Self.OdemeSekli" Multiplicity="1" />
-    <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+    <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="OdemeSekli">
         <PropertyRef Name="OdemeSekliID" />
@@ -210,7 +200,7 @@
   </Association>
   <Association Name="FK_BiletSatis_Personel">
     <End Role="Personel" Type="Self.Personel" Multiplicity="1" />
-    <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+    <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Personel">
         <PropertyRef Name="PersonelID" />
@@ -222,7 +212,7 @@
   </Association>
   <Association Name="FK_BiletSatis_Seyirci">
     <End Role="Seyirci" Type="Self.Seyirci" Multiplicity="1" />
-    <End Role="BiletSatis" Type="Self.BiletSati" Multiplicity="*" />
+    <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Seyirci">
         <PropertyRef Name="SeyirciID" />
@@ -281,7 +271,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Gosterim_Seans">
-    <End Role="Seans" Type="Self.Sean" Multiplicity="1" />
+    <End Role="Seans" Type="Self.Seans" Multiplicity="1" />
     <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Seans">
@@ -305,67 +295,66 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="SinemaContext" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="BiletSatis" EntityType="Self.BiletSati" />
-    <EntitySet Name="BiletTurus" EntityType="Self.BiletTuru" />
-    <EntitySet Name="Cinsiyets" EntityType="Self.Cinsiyet" />
-    <EntitySet Name="Films" EntityType="Self.Film" />
-    <EntitySet Name="FilmTurus" EntityType="Self.FilmTuru" />
-    <EntitySet Name="Gosterims" EntityType="Self.Gosterim" />
-    <EntitySet Name="Koltuks" EntityType="Self.Koltuk" />
-    <EntitySet Name="OdemeSeklis" EntityType="Self.OdemeSekli" />
-    <EntitySet Name="Personels" EntityType="Self.Personel" />
-    <EntitySet Name="Salons" EntityType="Self.Salon" />
-    <EntitySet Name="Seans" EntityType="Self.Sean" />
-    <EntitySet Name="Seyircis" EntityType="Self.Seyirci" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
-    <EntitySet Name="Unvans" EntityType="Self.Unvan" />
+    <EntitySet Name="BiletSatis" EntityType="Self.BiletSatis" />
+    <EntitySet Name="BiletTuru" EntityType="Self.BiletTuru" />
+    <EntitySet Name="Cinsiyet" EntityType="Self.Cinsiyet" />
+    <EntitySet Name="Film" EntityType="Self.Film" />
+    <EntitySet Name="FilmTuru" EntityType="Self.FilmTuru" />
+    <EntitySet Name="Gosterim" EntityType="Self.Gosterim" />
+    <EntitySet Name="Koltuk" EntityType="Self.Koltuk" />
+    <EntitySet Name="OdemeSekli" EntityType="Self.OdemeSekli" />
+    <EntitySet Name="Personel" EntityType="Self.Personel" />
+    <EntitySet Name="Salon" EntityType="Self.Salon" />
+    <EntitySet Name="Seans" EntityType="Self.Seans" />
+    <EntitySet Name="Seyirci" EntityType="Self.Seyirci" />
+    <EntitySet Name="Unvan" EntityType="Self.Unvan" />
     <AssociationSet Name="FK_BiletSatis_BiletTuru" Association="Self.FK_BiletSatis_BiletTuru">
-      <End Role="BiletTuru" EntitySet="BiletTurus" />
+      <End Role="BiletTuru" EntitySet="BiletTuru" />
       <End Role="BiletSatis" EntitySet="BiletSatis" />
     </AssociationSet>
     <AssociationSet Name="FK_BiletSatis_Gosterim" Association="Self.FK_BiletSatis_Gosterim">
-      <End Role="Gosterim" EntitySet="Gosterims" />
+      <End Role="Gosterim" EntitySet="Gosterim" />
       <End Role="BiletSatis" EntitySet="BiletSatis" />
     </AssociationSet>
     <AssociationSet Name="FK_BiletSatis_Koltuk" Association="Self.FK_BiletSatis_Koltuk">
-      <End Role="Koltuk" EntitySet="Koltuks" />
+      <End Role="Koltuk" EntitySet="Koltuk" />
       <End Role="BiletSatis" EntitySet="BiletSatis" />
     </AssociationSet>
     <AssociationSet Name="FK_BiletSatis_OdemeSekli" Association="Self.FK_BiletSatis_OdemeSekli">
-      <End Role="OdemeSekli" EntitySet="OdemeSeklis" />
+      <End Role="OdemeSekli" EntitySet="OdemeSekli" />
       <End Role="BiletSatis" EntitySet="BiletSatis" />
     </AssociationSet>
     <AssociationSet Name="FK_BiletSatis_Personel" Association="Self.FK_BiletSatis_Personel">
-      <End Role="Personel" EntitySet="Personels" />
+      <End Role="Personel" EntitySet="Personel" />
       <End Role="BiletSatis" EntitySet="BiletSatis" />
     </AssociationSet>
     <AssociationSet Name="FK_BiletSatis_Seyirci" Association="Self.FK_BiletSatis_Seyirci">
-      <End Role="Seyirci" EntitySet="Seyircis" />
+      <End Role="Seyirci" EntitySet="Seyirci" />
       <End Role="BiletSatis" EntitySet="BiletSatis" />
     </AssociationSet>
     <AssociationSet Name="FK_Personel_Cinsiyet" Association="Self.FK_Personel_Cinsiyet">
-      <End Role="Cinsiyet" EntitySet="Cinsiyets" />
-      <End Role="Personel" EntitySet="Personels" />
+      <End Role="Cinsiyet" EntitySet="Cinsiyet" />
+      <End Role="Personel" EntitySet="Personel" />
     </AssociationSet>
     <AssociationSet Name="FK_Film_FilmTuru" Association="Self.FK_Film_FilmTuru">
-      <End Role="FilmTuru" EntitySet="FilmTurus" />
-      <End Role="Film" EntitySet="Films" />
+      <End Role="FilmTuru" EntitySet="FilmTuru" />
+      <End Role="Film" EntitySet="Film" />
     </AssociationSet>
     <AssociationSet Name="FK_Gosterim_Film" Association="Self.FK_Gosterim_Film">
-      <End Role="Film" EntitySet="Films" />
-      <End Role="Gosterim" EntitySet="Gosterims" />
+      <End Role="Film" EntitySet="Film" />
+      <End Role="Gosterim" EntitySet="Gosterim" />
     </AssociationSet>
     <AssociationSet Name="FK_Gosterim_Salon" Association="Self.FK_Gosterim_Salon">
-      <End Role="Salon" EntitySet="Salons" />
-      <End Role="Gosterim" EntitySet="Gosterims" />
+      <End Role="Salon" EntitySet="Salon" />
+      <End Role="Gosterim" EntitySet="Gosterim" />
     </AssociationSet>
     <AssociationSet Name="FK_Gosterim_Seans" Association="Self.FK_Gosterim_Seans">
       <End Role="Seans" EntitySet="Seans" />
-      <End Role="Gosterim" EntitySet="Gosterims" />
+      <End Role="Gosterim" EntitySet="Gosterim" />
     </AssociationSet>
     <AssociationSet Name="FK_Personel_Unvan" Association="Self.FK_Personel_Unvan">
-      <End Role="Unvan" EntitySet="Unvans" />
-      <End Role="Personel" EntitySet="Personels" />
+      <End Role="Unvan" EntitySet="Unvan" />
+      <End Role="Personel" EntitySet="Personel" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

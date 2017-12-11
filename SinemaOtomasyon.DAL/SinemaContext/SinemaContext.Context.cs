@@ -25,19 +25,18 @@ namespace SinemaOtomasyon.DAL.SinemaContext
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<BiletSati> BiletSatis { get; set; }
-        public virtual DbSet<BiletTuru> BiletTurus { get; set; }
-        public virtual DbSet<Cinsiyet> Cinsiyets { get; set; }
-        public virtual DbSet<Film> Films { get; set; }
-        public virtual DbSet<FilmTuru> FilmTurus { get; set; }
-        public virtual DbSet<Gosterim> Gosterims { get; set; }
-        public virtual DbSet<Koltuk> Koltuks { get; set; }
-        public virtual DbSet<OdemeSekli> OdemeSeklis { get; set; }
-        public virtual DbSet<Personel> Personels { get; set; }
-        public virtual DbSet<Salon> Salons { get; set; }
-        public virtual DbSet<Sean> Seans { get; set; }
-        public virtual DbSet<Seyirci> Seyircis { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-        public virtual DbSet<Unvan> Unvans { get; set; }
+        public virtual DbSet<BiletSatis> BiletSatis { get; set; }
+        public virtual DbSet<BiletTuru> BiletTuru { get; set; }
+        public virtual DbSet<Cinsiyet> Cinsiyet { get; set; }
+        public virtual DbSet<Film> Film { get; set; }
+        public virtual DbSet<FilmTuru> FilmTuru { get; set; }
+        public virtual DbSet<Gosterim> Gosterim { get; set; }
+        public virtual DbSet<Koltuk> Koltuk { get; set; }
+        public virtual DbSet<OdemeSekli> OdemeSekli { get; set; }
+        public virtual DbSet<Personel> Personel { get; set; }
+        public virtual DbSet<Salon> Salon { get; set; }
+        public virtual DbSet<Seans> Seans { get; set; }
+        public virtual DbSet<Seyirci> Seyirci { get; set; }
+        public virtual DbSet<Unvan> Unvan { get; set; }
     }
 }

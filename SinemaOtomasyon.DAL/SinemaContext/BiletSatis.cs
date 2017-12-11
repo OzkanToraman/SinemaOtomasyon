@@ -12,7 +12,7 @@ namespace SinemaOtomasyon.DAL.SinemaContext
     using System;
     using System.Collections.Generic;
     
-    public partial class BiletSati
+    public partial class BiletSatis
     {
         public int BiletID { get; set; }
         public decimal BiletFiyat { get; set; }

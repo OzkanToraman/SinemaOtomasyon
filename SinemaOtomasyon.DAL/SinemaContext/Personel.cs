@@ -17,7 +17,7 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Personel()
         {
-            this.BiletSatis = new HashSet<BiletSati>();
+            this.BiletSatis = new HashSet<BiletSatis>();
         }
     
         public int PersonelID { get; set; }
@@ -33,7 +33,7 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         public int CinsiyetID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BiletSati> BiletSatis { get; set; }
+        public virtual ICollection<BiletSatis> BiletSatis { get; set; }
         public virtual Cinsiyet Cinsiyet { get; set; }
         public virtual Unvan Unvan { get; set; }
     }

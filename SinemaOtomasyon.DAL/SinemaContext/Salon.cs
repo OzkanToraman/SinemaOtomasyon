@@ -17,13 +17,14 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Salon()
         {
-            this.Gosterims = new HashSet<Gosterim>();
+            this.Gosterim = new HashSet<Gosterim>();
         }
     
         public int SalonID { get; set; }
         public string SalonAD { get; set; }
-            
+        public decimal SalonFiyatSapma { get; set; }
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Gosterim> Gosterims { get; set; }
+        public virtual ICollection<Gosterim> Gosterim { get; set; }
     }
 }

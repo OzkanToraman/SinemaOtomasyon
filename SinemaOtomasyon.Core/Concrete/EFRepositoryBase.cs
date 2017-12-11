@@ -16,6 +16,7 @@ namespace SinemaOtomasyon.Core.Concrete
         protected DbContext _dbContext;
         protected DbSet<T> _dbSet;
 
+
         public EFRepositoryBase(DbContext Context)
         {
             _dbContext = Context;
@@ -25,14 +26,14 @@ namespace SinemaOtomasyon.Core.Concrete
         public void Add(T model)
         {
             _dbSet.Add(model);
-            _dbContext.SaveChanges();
+            //_dbContext.SaveChanges();
         }
 
         public void Delete(int id)
         {
             var entity = _dbSet.Find(id);
             _dbSet.Remove(entity);
-            _dbContext.SaveChanges();
+            //_dbContext.SaveChanges();
         }
 
         public T GetById(int id)
@@ -49,7 +50,7 @@ namespace SinemaOtomasyon.Core.Concrete
         {
             var entity = _dbSet.Find(model);
             _dbContext.Entry(entity).CurrentValues.SetValues(model);
-            _dbContext.SaveChanges();
+            //_dbContext.SaveChanges();
         }
     }
 }

@@ -12,18 +12,19 @@ namespace SinemaOtomasyon.DAL.SinemaContext
     using System;
     using System.Collections.Generic;
     
-    public partial class Sean
+    public partial class Seans
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Sean()
+        public Seans()
         {
-            this.Gosterims = new HashSet<Gosterim>();
+            this.Gosterim = new HashSet<Gosterim>();
         }
     
         public int SeansID { get; set; }
         public string SeansAD { get; set; }
-            
+        public decimal SeansFiyatSapma { get; set; }
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Gosterim> Gosterims { get; set; }
+        public virtual ICollection<Gosterim> Gosterim { get; set; }
     }
 }

@@ -54,6 +54,8 @@
     <Compile Include="Repositories\Abstracts\IPersonelRepository.cs" />
     <Compile Include="Repositories\Concretes\FilmRepository.cs" />
     <Compile Include="Repositories\Concretes\PersonelRepository.cs" />
+    <Compile Include="UOW\Abstract\IUnitOfWork.cs" />
+    <Compile Include="UOW\Concrete\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

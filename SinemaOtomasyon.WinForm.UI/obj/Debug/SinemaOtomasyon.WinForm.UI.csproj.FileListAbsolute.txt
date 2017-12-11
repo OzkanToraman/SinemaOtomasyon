@@ -50,7 +50,6 @@ C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\bin\Debug
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\bin\Debug\FluentValidation.xml
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\bin\Debug\Ninject.xml
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.csprojResolveAssemblyReference.cache
-C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.Form1.resources
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.FormFilmSeansSalonSec.resources
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.FormLogin.resources
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.FormParent.resources

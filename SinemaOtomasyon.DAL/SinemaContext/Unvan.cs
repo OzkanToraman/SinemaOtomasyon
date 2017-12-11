@@ -17,7 +17,7 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Unvan()
         {
-            this.Personels = new HashSet<Personel>();
+            this.Personel = new HashSet<Personel>();
         }
     
         public int UnvanID { get; set; }
@@ -25,6 +25,6 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         public string Departman { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Personel> Personels { get; set; }
+        public virtual ICollection<Personel> Personel { get; set; }
     }
 }
