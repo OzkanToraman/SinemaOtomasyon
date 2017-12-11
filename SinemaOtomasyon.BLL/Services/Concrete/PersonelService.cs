@@ -26,8 +26,6 @@ namespace SinemaOtomasyon.BLL.Services.Concrete
 
             if (result.IsValid)
             {
-                _personelRepo.Add(p);
-
                 return new ResultModel<Personel>
                 {
                     Errors = null,
@@ -35,13 +33,16 @@ namespace SinemaOtomasyon.BLL.Services.Concrete
                     Message = "Giriş Başarılı"
                 };
             }
+                return new ResultModel<Personel>
+                {
+                    Errors = result.Errors.Select(x => x.ErrorMessage).ToList(),
+                    IsValid = false,
+                    Message = "Giriş Başarısız"
+                };
 
-            return new ResultModel<Personel>
-            {
-                Errors = result.Errors.Select(x => x.ErrorMessage).ToList(),
-                IsValid = false,
-                Message = "Giriş Başarısız"
-            };
+           
         }
+
+        
     }
 }

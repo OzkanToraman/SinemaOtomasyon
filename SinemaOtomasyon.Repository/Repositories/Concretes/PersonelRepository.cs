@@ -15,5 +15,12 @@ namespace SinemaOtomasyon.Repository.Repositories.Concretes
         public PersonelRepository(DbContext Context) : base(Context)
         {
         }
+
+
+        public bool Sorgu(string username, string pass)
+        {
+            return Convert.ToBoolean(_dbSet.Where(x => x.Email == username && x.Sifre == pass).Count());
+        }
     }
 }
+

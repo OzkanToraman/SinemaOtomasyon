@@ -2292,7 +2292,6 @@
             this.Name = "FormSalon2";
             this.ShowIcon = false;
             this.Text = "Salon 2";
-            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormSalon2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
