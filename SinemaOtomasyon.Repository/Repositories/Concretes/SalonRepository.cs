@@ -10,12 +10,10 @@ using System.Data.Entity;
 
 namespace SinemaOtomasyon.Repository.Repositories.Concretes
 {
-    public class FilmRepository : EFRepositoryBase<Film, SinemaContext>, IFilmRepository
+    public class SalonRepository : EFRepositoryBase<Salon, SinemaContext>, ISalonRepository
     {
-        public FilmRepository(DbContext Context) : base(Context)
+        public SalonRepository(DbContext Context) : base(Context)
         {
         }
-
-
     }
 }

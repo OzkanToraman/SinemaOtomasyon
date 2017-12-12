@@ -47,6 +47,7 @@ namespace SinemaOtomasyon.WinForm.UI
                 {
                     MessageBox.Show("Hatalı kullanıcı adı ya da şifre!", "HATA!");
                     txtUser.Focus();
+                    txtUser.SelectAll();          
                 }
                 else
                 {
@@ -56,9 +57,15 @@ namespace SinemaOtomasyon.WinForm.UI
 
         }
 
+        private void txtPass_Click(object sender, EventArgs e)
+        {
+            txtPass.SelectAll();
+        }
 
-
-
+        private void txtUser_Click(object sender, EventArgs e)
+        {
+            txtUser.SelectAll();
+        }
     }
 }
 

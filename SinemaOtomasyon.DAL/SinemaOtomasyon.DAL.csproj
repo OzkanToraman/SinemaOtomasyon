@@ -121,7 +121,9 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="GosterimModel\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="SinemaContext\SinemaContext.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

@@ -5,14 +5,18 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SinemaOtomasyon.Core.Abstract;
+using SinemaOtomasyon.DAL.SinemaContext;
+using SinemaOtomasyon.Core.Concrete;
 
 namespace SinemaOtomasyon.Repository.UOW.Concrete
 {
     public class UnitOfWork : IUnitOfWork
-    {
-        protected DbContext _dbContext;
 
-        public UnitOfWork(DbContext context)
+    {
+        protected SinemaContext _dbContext;
+
+        public UnitOfWork(SinemaContext context)
         {
             _dbContext = context;
         }
@@ -21,6 +25,11 @@ namespace SinemaOtomasyon.Repository.UOW.Concrete
         {
             Dispose(true);
             GC.SuppressFinalize(this);
+        }
+
+        public IRepository<Film> FilmRepository()
+        {
+            return new EFRepositoryBase<Film, SinemaContext>(_dbContext);
         }
 
         public int Save()

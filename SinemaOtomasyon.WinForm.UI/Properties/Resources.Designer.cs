@@ -83,6 +83,16 @@ namespace SinemaOtomasyon.WinForm.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap black_patterns_16 {
+            get {
+                object obj = ResourceManager.GetObject("black-patterns-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap button_giris {
             get {
                 object obj = ResourceManager.GetObject("button_giris", resourceCulture);

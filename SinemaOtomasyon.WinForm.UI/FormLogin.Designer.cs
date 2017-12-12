@@ -46,6 +46,7 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(187, 26);
             this.txtUser.TabIndex = 0;
+            this.txtUser.Click += new System.EventHandler(this.txtUser_Click);
             // 
             // txtPass
             // 
@@ -57,6 +58,7 @@
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(187, 26);
             this.txtPass.TabIndex = 1;
+            this.txtPass.Click += new System.EventHandler(this.txtPass_Click);
             // 
             // pictureBox2
             // 

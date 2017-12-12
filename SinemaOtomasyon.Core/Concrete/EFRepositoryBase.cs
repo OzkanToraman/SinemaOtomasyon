@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SinemaOtomasyon.Core.Concrete
 {
-    public abstract class EFRepositoryBase<T, TContext> : IRepository<T>
+    public class EFRepositoryBase<T, TContext> : IRepository<T>
         where T : class, new()
         where TContext : DbContext
     {

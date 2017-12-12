@@ -169,19 +169,19 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnBiletKes = new System.Windows.Forms.Button();
+            this.btnUyeOlustur = new System.Windows.Forms.Button();
+            this.txtAdres = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
+            this.dtpTarih = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.rbUye = new System.Windows.Forms.RadioButton();
+            this.rbTam = new System.Windows.Forms.RadioButton();
+            this.rbOgrenci = new System.Windows.Forms.RadioButton();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtInformation = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTelefon = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -189,6 +189,7 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.label35 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -2254,56 +2255,56 @@
             this.label18.Text = "15";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button30
+            // btnBiletKes
             // 
-            this.button30.ForeColor = System.Drawing.Color.Black;
-            this.button30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button30.Location = new System.Drawing.Point(795, 572);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(98, 153);
-            this.button30.TabIndex = 232;
-            this.button30.Text = "Bilet Ayır";
-            this.button30.UseVisualStyleBackColor = true;
+            this.btnBiletKes.ForeColor = System.Drawing.Color.Black;
+            this.btnBiletKes.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnBiletKes.Location = new System.Drawing.Point(795, 572);
+            this.btnBiletKes.Name = "btnBiletKes";
+            this.btnBiletKes.Size = new System.Drawing.Size(98, 153);
+            this.btnBiletKes.TabIndex = 232;
+            this.btnBiletKes.Text = "Bilet Ayır";
+            this.btnBiletKes.UseVisualStyleBackColor = true;
             // 
-            // button31
+            // btnUyeOlustur
             // 
-            this.button31.ForeColor = System.Drawing.Color.Black;
-            this.button31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button31.Location = new System.Drawing.Point(638, 694);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(127, 30);
-            this.button31.TabIndex = 231;
-            this.button31.Text = "Üye Oluştur";
-            this.button31.UseVisualStyleBackColor = true;
+            this.btnUyeOlustur.ForeColor = System.Drawing.Color.Black;
+            this.btnUyeOlustur.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnUyeOlustur.Location = new System.Drawing.Point(638, 694);
+            this.btnUyeOlustur.Name = "btnUyeOlustur";
+            this.btnUyeOlustur.Size = new System.Drawing.Size(127, 30);
+            this.btnUyeOlustur.TabIndex = 231;
+            this.btnUyeOlustur.Text = "Üye Oluştur";
+            this.btnUyeOlustur.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtAdres
             // 
-            this.textBox4.Location = new System.Drawing.Point(458, 675);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(158, 49);
-            this.textBox4.TabIndex = 219;
+            this.txtAdres.Location = new System.Drawing.Point(458, 675);
+            this.txtAdres.Multiline = true;
+            this.txtAdres.Name = "txtAdres";
+            this.txtAdres.Size = new System.Drawing.Size(158, 49);
+            this.txtAdres.TabIndex = 219;
             // 
-            // textBox1
+            // txtAd
             // 
-            this.textBox1.Location = new System.Drawing.Point(458, 571);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 220;
+            this.txtAd.Location = new System.Drawing.Point(458, 571);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(158, 20);
+            this.txtAd.TabIndex = 220;
             // 
-            // dateTimePicker1
+            // dtpTarih
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(458, 623);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(158, 20);
-            this.dateTimePicker1.TabIndex = 229;
+            this.dtpTarih.Location = new System.Drawing.Point(458, 623);
+            this.dtpTarih.Name = "dtpTarih";
+            this.dtpTarih.Size = new System.Drawing.Size(158, 20);
+            this.dtpTarih.TabIndex = 229;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.rbUye);
+            this.groupBox1.Controls.Add(this.rbTam);
+            this.groupBox1.Controls.Add(this.rbOgrenci);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.groupBox1.Location = new System.Drawing.Point(638, 567);
             this.groupBox1.Name = "groupBox1";
@@ -2312,47 +2313,47 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bilet Türü";
             // 
-            // radioButton3
+            // rbUye
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton3.Location = new System.Drawing.Point(7, 83);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(44, 17);
-            this.radioButton3.TabIndex = 0;
-            this.radioButton3.Text = "Üye";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbUye.AutoSize = true;
+            this.rbUye.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rbUye.Location = new System.Drawing.Point(7, 83);
+            this.rbUye.Name = "rbUye";
+            this.rbUye.Size = new System.Drawing.Size(44, 17);
+            this.rbUye.TabIndex = 0;
+            this.rbUye.Text = "Üye";
+            this.rbUye.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbTam
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton2.Location = new System.Drawing.Point(7, 56);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(89, 17);
-            this.radioButton2.TabIndex = 0;
-            this.radioButton2.Text = "Tam ( 10 TL )";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbTam.AutoSize = true;
+            this.rbTam.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rbTam.Location = new System.Drawing.Point(7, 56);
+            this.rbTam.Name = "rbTam";
+            this.rbTam.Size = new System.Drawing.Size(89, 17);
+            this.rbTam.TabIndex = 0;
+            this.rbTam.Text = "Tam ( 10 TL )";
+            this.rbTam.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbOgrenci
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton1.Location = new System.Drawing.Point(7, 31);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(99, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Öğrenci ( 6 TL )";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbOgrenci.AutoSize = true;
+            this.rbOgrenci.Checked = true;
+            this.rbOgrenci.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rbOgrenci.Location = new System.Drawing.Point(7, 31);
+            this.rbOgrenci.Name = "rbOgrenci";
+            this.rbOgrenci.Size = new System.Drawing.Size(99, 17);
+            this.rbOgrenci.TabIndex = 0;
+            this.rbOgrenci.TabStop = true;
+            this.rbOgrenci.Text = "Öğrenci ( 6 TL )";
+            this.rbOgrenci.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtSoyad
             // 
-            this.textBox2.Location = new System.Drawing.Point(458, 597);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 20);
-            this.textBox2.TabIndex = 221;
+            this.txtSoyad.Location = new System.Drawing.Point(458, 597);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(158, 20);
+            this.txtSoyad.TabIndex = 221;
             // 
             // txtInformation
             // 
@@ -2381,12 +2382,12 @@
             this.label31.TabIndex = 224;
             this.label31.Text = "Adres:";
             // 
-            // textBox3
+            // txtTelefon
             // 
-            this.textBox3.Location = new System.Drawing.Point(458, 649);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(158, 20);
-            this.textBox3.TabIndex = 223;
+            this.txtTelefon.Location = new System.Drawing.Point(458, 649);
+            this.txtTelefon.Name = "txtTelefon";
+            this.txtTelefon.Size = new System.Drawing.Size(158, 20);
+            this.txtTelefon.TabIndex = 223;
             // 
             // label32
             // 
@@ -2454,6 +2455,7 @@
             this.btnBack.TabIndex = 233;
             this.btnBack.Text = "←";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // label35
             // 
@@ -2480,25 +2482,38 @@
             this.label19.Text = "I";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(924, 321);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(78, 35);
+            this.button1.TabIndex = 236;
+            this.button1.Text = "seç";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormSalon4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.backgroundpattern1;
+            this.BackColor = System.Drawing.Color.Silver;
+            this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.button30);
-            this.Controls.Add(this.button31);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnBiletKes);
+            this.Controls.Add(this.btnUyeOlustur);
+            this.Controls.Add(this.txtAdres);
+            this.Controls.Add(this.txtAd);
+            this.Controls.Add(this.dtpTarih);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.txtInformation);
             this.Controls.Add(this.label31);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtTelefon);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label30);
@@ -2803,19 +2818,19 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnBiletKes;
+        private System.Windows.Forms.Button btnUyeOlustur;
+        private System.Windows.Forms.TextBox txtAdres;
+        private System.Windows.Forms.TextBox txtAd;
+        private System.Windows.Forms.DateTimePicker dtpTarih;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RadioButton rbUye;
+        private System.Windows.Forms.RadioButton rbTam;
+        private System.Windows.Forms.RadioButton rbOgrenci;
+        private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.TextBox txtInformation;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label30;
@@ -2823,5 +2838,6 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button1;
     }
 }

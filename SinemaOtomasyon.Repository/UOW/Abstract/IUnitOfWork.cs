@@ -1,4 +1,5 @@
 ﻿using SinemaOtomasyon.Core.Abstract;
+using SinemaOtomasyon.DAL.SinemaContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,11 @@ using System.Threading.Tasks;
 namespace SinemaOtomasyon.Repository.UOW.Abstract
 {
     public interface IUnitOfWork : IDisposable
+
+        
     {
-       int Save();    
+        IRepository<Film> FilmRepository();
+
+        int Save();    
     }
 }

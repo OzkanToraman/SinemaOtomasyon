@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace SinemaOtomasyon.Repository.Repositories.Abstracts
 {
-    public interface IFilmRepository : IRepository<Film>
+    public interface ISalonRepository:IRepository<Salon>
     {
-       
+        
     }
 }

@@ -40,7 +40,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnBiletSatis = new System.Windows.Forms.Button();
             this.pbFilmAfis = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpTarih = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFilmAfis)).BeginInit();
             this.SuspendLayout();
@@ -49,12 +50,20 @@
             // 
             this.dgvFilmler.AllowUserToAddRows = false;
             this.dgvFilmler.AllowUserToDeleteRows = false;
+            this.dgvFilmler.AllowUserToResizeColumns = false;
+            this.dgvFilmler.AllowUserToResizeRows = false;
+            this.dgvFilmler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvFilmler.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvFilmler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFilmler.Location = new System.Drawing.Point(226, 132);
+            this.dgvFilmler.Location = new System.Drawing.Point(350, 132);
+            this.dgvFilmler.MultiSelect = false;
             this.dgvFilmler.Name = "dgvFilmler";
             this.dgvFilmler.ReadOnly = true;
+            this.dgvFilmler.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgvFilmler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvFilmler.Size = new System.Drawing.Size(528, 166);
             this.dgvFilmler.TabIndex = 2;
+            this.dgvFilmler.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvFilmler_CellMouseClick);
             // 
             // cbSeansSec
             // 
@@ -62,7 +71,7 @@
             this.cbSeansSec.FormattingEnabled = true;
             this.cbSeansSec.Items.AddRange(new object[] {
             ""});
-            this.cbSeansSec.Location = new System.Drawing.Point(809, 131);
+            this.cbSeansSec.Location = new System.Drawing.Point(933, 131);
             this.cbSeansSec.Name = "cbSeansSec";
             this.cbSeansSec.Size = new System.Drawing.Size(154, 21);
             this.cbSeansSec.TabIndex = 3;
@@ -73,7 +82,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(806, 164);
+            this.label2.Location = new System.Drawing.Point(930, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 17);
             this.label2.TabIndex = 4;
@@ -107,15 +116,10 @@
             // 
             this.cbSalonSec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSalonSec.FormattingEnabled = true;
-            this.cbSalonSec.Location = new System.Drawing.Point(809, 184);
+            this.cbSalonSec.Location = new System.Drawing.Point(933, 184);
             this.cbSalonSec.Name = "cbSalonSec";
             this.cbSalonSec.Size = new System.Drawing.Size(154, 21);
             this.cbSalonSec.TabIndex = 3;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label6
             // 
@@ -123,7 +127,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label6.Location = new System.Drawing.Point(223, 112);
+            this.label6.Location = new System.Drawing.Point(347, 112);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 17);
             this.label6.TabIndex = 1;
@@ -135,7 +139,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label8.Location = new System.Drawing.Point(806, 110);
+            this.label8.Location = new System.Drawing.Point(930, 110);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(103, 17);
             this.label8.TabIndex = 4;
@@ -149,37 +153,49 @@
             this.btnBiletSatis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnBiletSatis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBiletSatis.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBiletSatis.Location = new System.Drawing.Point(809, 262);
+            this.btnBiletSatis.Location = new System.Drawing.Point(933, 262);
             this.btnBiletSatis.Name = "btnBiletSatis";
             this.btnBiletSatis.Size = new System.Drawing.Size(154, 36);
             this.btnBiletSatis.TabIndex = 5;
-            this.btnBiletSatis.Text = "Bilet Satış İşlemleri";
+            this.btnBiletSatis.Text = "Koltuk Seçimi";
             this.btnBiletSatis.UseVisualStyleBackColor = false;
+            this.btnBiletSatis.Click += new System.EventHandler(this.btnBiletSatis_Click);
             // 
             // pbFilmAfis
             // 
-            this.pbFilmAfis.Location = new System.Drawing.Point(54, 132);
+            this.pbFilmAfis.Location = new System.Drawing.Point(178, 132);
             this.pbFilmAfis.Name = "pbFilmAfis";
             this.pbFilmAfis.Size = new System.Drawing.Size(126, 166);
             this.pbFilmAfis.TabIndex = 6;
             this.pbFilmAfis.TabStop = false;
             // 
-            // dateTimePicker1
+            // dtpTarih
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(809, 225);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(154, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtpTarih.Location = new System.Drawing.Point(933, 225);
+            this.dtpTarih.Name = "dtpTarih";
+            this.dtpTarih.Size = new System.Drawing.Size(154, 20);
+            this.dtpTarih.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label1.Location = new System.Drawing.Point(175, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Afiş :";
             // 
             // FormFilmSeansSalonSec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.backgroundpattern1;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1033, 415);
-            this.Controls.Add(this.dateTimePicker1);
+            this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
+            this.ClientSize = new System.Drawing.Size(1264, 415);
+            this.Controls.Add(this.dtpTarih);
             this.Controls.Add(this.pbFilmAfis);
             this.Controls.Add(this.btnBiletSatis);
             this.Controls.Add(this.label5);
@@ -189,11 +205,13 @@
             this.Controls.Add(this.cbSalonSec);
             this.Controls.Add(this.cbSeansSec);
             this.Controls.Add(this.dgvFilmler);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormFilmSeansSalonSec";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FİLM GÖSTERİM";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormFilmSeansSalonSec_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFilmAfis)).EndInit();
@@ -214,6 +232,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnBiletSatis;
         private System.Windows.Forms.PictureBox pbFilmAfis;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpTarih;
+        private System.Windows.Forms.Label label1;
     }
 }

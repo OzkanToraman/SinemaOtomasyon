@@ -51,9 +51,17 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Abstracts\IFilmRepository.cs" />
+    <Compile Include="Repositories\Abstracts\IGosterimRepository.cs" />
+    <Compile Include="Repositories\Abstracts\IKoltukRepository.cs" />
     <Compile Include="Repositories\Abstracts\IPersonelRepository.cs" />
+    <Compile Include="Repositories\Abstracts\ISalonRepository.cs" />
+    <Compile Include="Repositories\Abstracts\ISeansRepository.cs" />
     <Compile Include="Repositories\Concretes\FilmRepository.cs" />
+    <Compile Include="Repositories\Concretes\GosterimRepository.cs" />
+    <Compile Include="Repositories\Concretes\KoltukRepository.cs" />
     <Compile Include="Repositories\Concretes\PersonelRepository.cs" />
+    <Compile Include="Repositories\Concretes\SalonRepository.cs" />
+    <Compile Include="Repositories\Concretes\SeansRepository.cs" />
     <Compile Include="UOW\Abstract\IUnitOfWork.cs" />
     <Compile Include="UOW\Concrete\UnitOfWork.cs" />
   </ItemGroup>
