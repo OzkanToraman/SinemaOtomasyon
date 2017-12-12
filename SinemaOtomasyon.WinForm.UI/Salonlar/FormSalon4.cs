@@ -20,7 +20,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
         private Film f;
         int SeansId, SalonId;
         string Tarih;
-        
+
 
         public FormSalon4()
         {
@@ -28,7 +28,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             _koltukRepo = container.Get<IKoltukRepository>();
             InitializeComponent();
         }
-        public FormSalon4(Film f,int SeansId,int SalonId,string Tarih)
+        public FormSalon4(Film f, int SeansId, int SalonId, string Tarih)
         {
             InitializeComponent();
             this.f = f;
@@ -47,22 +47,20 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void A1_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             if (btn.BackColor == Color.Gray)
             {
-                btn.BackColor = Color.Green;
+                btn.BackColor = Color.Green;     
             }
             else if (btn.BackColor == Color.Green)
             {
                 btn.BackColor = Color.Gray;
+                
             }
+
+            
         }
     }
 }

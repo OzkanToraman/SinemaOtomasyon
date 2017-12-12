@@ -189,7 +189,8 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.label35 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
+            this.lblSeciliKoltuk = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -2482,16 +2483,30 @@
             this.label19.Text = "I";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // label33
             // 
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(924, 321);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 35);
-            this.button1.TabIndex = 236;
-            this.button1.Text = "seç";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label33.Location = new System.Drawing.Point(65, 87);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(103, 16);
+            this.label33.TabIndex = 237;
+            this.label33.Text = "Seçili Koltuk :";
+            // 
+            // lblSeciliKoltuk
+            // 
+            this.lblSeciliKoltuk.AutoSize = true;
+            this.lblSeciliKoltuk.BackColor = System.Drawing.Color.Transparent;
+            this.lblSeciliKoltuk.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.lblSeciliKoltuk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblSeciliKoltuk.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblSeciliKoltuk.Location = new System.Drawing.Point(174, 84);
+            this.lblSeciliKoltuk.Name = "lblSeciliKoltuk";
+            this.lblSeciliKoltuk.Size = new System.Drawing.Size(0, 16);
+            this.lblSeciliKoltuk.TabIndex = 237;
             // 
             // FormSalon4
             // 
@@ -2500,7 +2515,8 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1264, 761);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblSeciliKoltuk);
+            this.Controls.Add(this.label33);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.btnBack);
@@ -2838,6 +2854,7 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label lblSeciliKoltuk;
     }
 }
