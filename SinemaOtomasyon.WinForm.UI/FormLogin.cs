@@ -42,10 +42,11 @@ namespace SinemaOtomasyon.WinForm.UI
             }
             else
             {
-                bool sonuc = _personelRepo.Sorgu(txtUser.Text.TrimEnd(), txtPass.Text);
-                if (sonuc == false)
+                               
+                if (_personelRepo.Login(txtUser.Text, txtPass.Text).Count() == 0)
                 {
                     MessageBox.Show("Hatalı kullanıcı adı ya da şifre!", "HATA!");
+                    txtUser.Focus();
                 }
                 else
                 {
@@ -53,9 +54,11 @@ namespace SinemaOtomasyon.WinForm.UI
                 }
             }
 
-
-
-
         }
+
+
+
+
     }
 }
+

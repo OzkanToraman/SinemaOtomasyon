@@ -16,10 +16,9 @@ namespace SinemaOtomasyon.Repository.Repositories.Concretes
         {
         }
 
-
-        public bool Sorgu(string username, string pass)
+        public IEnumerable<Personel> Login(string user, string pass)
         {
-            return Convert.ToBoolean(_dbSet.Where(x => x.Email == username && x.Sifre == pass).Count());
+            return _dbContext.Set<Personel>().Where(x => x.Email == user && x.Sifre == pass).ToList();     
         }
     }
 }
