@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace SinemaOtomasyon.Repository.Repositories.Abstracts
 {
     public interface IKoltukRepository:IRepository<Koltuk>

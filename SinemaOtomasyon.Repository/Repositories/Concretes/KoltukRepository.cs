@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using System.Windows.Forms;
 
 namespace SinemaOtomasyon.Repository.Repositories.Concretes
 {

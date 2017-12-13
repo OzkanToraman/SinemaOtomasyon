@@ -191,6 +191,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.lblSeciliKoltuk = new System.Windows.Forms.Label();
+            this.lbKoltuklar = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -2487,12 +2488,12 @@
             // 
             this.label33.AutoSize = true;
             this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.label33.Font = new System.Drawing.Font("Arial", 10F);
             this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label33.Location = new System.Drawing.Point(65, 87);
+            this.label33.Location = new System.Drawing.Point(95, 77);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(103, 16);
+            this.label33.Size = new System.Drawing.Size(92, 16);
             this.label33.TabIndex = 237;
             this.label33.Text = "Seçili Koltuk :";
             // 
@@ -2503,10 +2504,23 @@
             this.lblSeciliKoltuk.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.lblSeciliKoltuk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblSeciliKoltuk.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblSeciliKoltuk.Location = new System.Drawing.Point(174, 84);
+            this.lblSeciliKoltuk.Location = new System.Drawing.Point(187, 70);
             this.lblSeciliKoltuk.Name = "lblSeciliKoltuk";
             this.lblSeciliKoltuk.Size = new System.Drawing.Size(0, 16);
             this.lblSeciliKoltuk.TabIndex = 237;
+            // 
+            // lbKoltuklar
+            // 
+            this.lbKoltuklar.BackColor = System.Drawing.Color.White;
+            this.lbKoltuklar.Font = new System.Drawing.Font("Arial", 10F);
+            this.lbKoltuklar.FormattingEnabled = true;
+            this.lbKoltuklar.ItemHeight = 16;
+            this.lbKoltuklar.Location = new System.Drawing.Point(96, 102);
+            this.lbKoltuklar.Name = "lbKoltuklar";
+            this.lbKoltuklar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbKoltuklar.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.lbKoltuklar.Size = new System.Drawing.Size(100, 308);
+            this.lbKoltuklar.TabIndex = 238;
             // 
             // FormSalon4
             // 
@@ -2515,6 +2529,7 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.Controls.Add(this.lbKoltuklar);
             this.Controls.Add(this.lblSeciliKoltuk);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label19);
@@ -2856,5 +2871,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label lblSeciliKoltuk;
+        private System.Windows.Forms.ListBox lbKoltuklar;
     }
 }

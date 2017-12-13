@@ -20,7 +20,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
         private Film f;
         int SeansId, SalonId;
         string Tarih;
-
+        List<string> butonlar = new List<string>();
 
         public FormSalon4()
         {
@@ -39,7 +39,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
 
         private void FormSalon4_Load(object sender, EventArgs e)
         {
-            txtInformation.Text = f.FilmAd;
+            //txtInformation.Text = f.FilmAd;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -47,20 +47,22 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             this.Close();
         }
 
+
         private void A1_Click(object sender, EventArgs e)
-        {
+        {            
             Button btn = (Button)sender;
             if (btn.BackColor == Color.Gray)
             {
-                btn.BackColor = Color.Green;     
+                btn.BackColor = Color.Green;
+                butonlar.Add(btn.Name);         
             }
             else if (btn.BackColor == Color.Green)
             {
                 btn.BackColor = Color.Gray;
-                
+                butonlar.Remove(btn.Name);
             }
 
-            
+            lbKoltuklar.DataSource = butonlar.ToList();
         }
     }
 }
