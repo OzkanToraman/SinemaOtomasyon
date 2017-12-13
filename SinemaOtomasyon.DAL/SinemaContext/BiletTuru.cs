@@ -7,20 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-
-public partial class BiletTuru
+namespace SinemaOtomasyon.DAL.SinemaContext
 {
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public BiletTuru()
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class BiletTuru
     {
-        this.BiletSatis = new HashSet<BiletSatis>();
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public BiletTuru()
+        {
+            this.BiletSatis = new HashSet<BiletSatis>();
+        }
+    
+        public int BiletTurID { get; set; }
+        public string BiletTuru1 { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<BiletSatis> BiletSatis { get; set; }
     }
-
-    public int BiletTurID { get; set; }
-    public string BiletTuru1 { get; set; }
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-    public virtual ICollection<BiletSatis> BiletSatis { get; set; }
 }

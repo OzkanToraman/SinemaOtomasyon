@@ -103,6 +103,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SinemaContext.edmx</DependentUpon>
     </Compile>
+    <Compile Include="SinemaContext\sysdiagrams.cs">
+      <DependentUpon>SinemaContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="SinemaContext\Unvan.cs">
       <DependentUpon>SinemaContext.tt</DependentUpon>
     </Compile>

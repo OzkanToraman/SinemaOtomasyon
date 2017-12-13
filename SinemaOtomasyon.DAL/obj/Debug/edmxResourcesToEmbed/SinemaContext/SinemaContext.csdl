@@ -49,6 +49,7 @@
     <Property Name="FilmSuresi_dk" Type="Int32" />
     <Property Name="Vizyonda" Type="Boolean" Nullable="false" />
     <Property Name="FilmTurID" Type="Int32" Nullable="false" />
+    <Property Name="Afis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="FilmTuru" Relationship="Self.FK_Film_FilmTuru" FromRole="Film" ToRole="FilmTuru" />
     <NavigationProperty Name="Gosterim" Relationship="Self.FK_Gosterim_Film" FromRole="Film" ToRole="Gosterim" />
   </EntityType>
@@ -140,6 +141,16 @@
     <Property Name="Meslek" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Üyelik" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Seyirci" FromRole="Seyirci" ToRole="BiletSatis" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="Unvan">
     <Key>
@@ -307,6 +318,7 @@
     <EntitySet Name="Salon" EntityType="Self.Salon" />
     <EntitySet Name="Seans" EntityType="Self.Seans" />
     <EntitySet Name="Seyirci" EntityType="Self.Seyirci" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="Unvan" EntityType="Self.Unvan" />
     <AssociationSet Name="FK_BiletSatis_BiletTuru" Association="Self.FK_BiletSatis_BiletTuru">
       <End Role="BiletTuru" EntitySet="BiletTuru" />

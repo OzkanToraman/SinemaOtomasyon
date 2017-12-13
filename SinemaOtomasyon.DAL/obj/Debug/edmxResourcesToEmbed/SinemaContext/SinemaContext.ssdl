@@ -41,6 +41,7 @@
     <Property Name="FilmSuresi_dk" Type="int" />
     <Property Name="Vizyonda" Type="bit" Nullable="false" />
     <Property Name="FilmTurID" Type="int" Nullable="false" />
+    <Property Name="Afis" Type="varchar(max)" />
   </EntityType>
   <EntityType Name="FilmTuru">
     <Key>
@@ -117,6 +118,16 @@
     <Property Name="SeyirciTelefon" Type="varchar" MaxLength="15" />
     <Property Name="Meslek" Type="varchar" MaxLength="50" />
     <Property Name="Üyelik" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
   <EntityType Name="Unvan">
     <Key>
@@ -283,6 +294,7 @@
     <EntitySet Name="Salon" EntityType="Self.Salon" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Seans" EntityType="Self.Seans" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Seyirci" EntityType="Self.Seyirci" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Unvan" EntityType="Self.Unvan" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_BiletSatis_BiletTuru" Association="Self.FK_BiletSatis_BiletTuru">
       <End Role="BiletTuru" EntitySet="BiletTuru" />

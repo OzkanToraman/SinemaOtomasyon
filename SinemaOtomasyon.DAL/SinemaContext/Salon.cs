@@ -7,21 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-
-public partial class Salon
+namespace SinemaOtomasyon.DAL.SinemaContext
 {
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public Salon()
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class Salon
     {
-        this.Gosterim = new HashSet<Gosterim>();
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Salon()
+        {
+            this.Gosterim = new HashSet<Gosterim>();
+        }
+    
+        public int SalonID { get; set; }
+        public string SalonAD { get; set; }
+        public decimal SalonFiyatSapma { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Gosterim> Gosterim { get; set; }
     }
-
-    public int SalonID { get; set; }
-    public string SalonAD { get; set; }
-    public decimal SalonFiyatSapma { get; set; }
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-    public virtual ICollection<Gosterim> Gosterim { get; set; }
 }

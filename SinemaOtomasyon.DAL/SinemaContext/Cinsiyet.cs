@@ -7,20 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-
-public partial class Cinsiyet
+namespace SinemaOtomasyon.DAL.SinemaContext
 {
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public Cinsiyet()
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class Cinsiyet
     {
-        this.Personel = new HashSet<Personel>();
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Cinsiyet()
+        {
+            this.Personel = new HashSet<Personel>();
+        }
+    
+        public int CinsiyetID { get; set; }
+        public string CinsiyetAD { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Personel> Personel { get; set; }
     }
-
-    public int CinsiyetID { get; set; }
-    public string CinsiyetAD { get; set; }
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-    public virtual ICollection<Personel> Personel { get; set; }
 }

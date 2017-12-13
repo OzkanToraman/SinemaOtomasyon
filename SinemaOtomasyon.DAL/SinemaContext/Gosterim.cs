@@ -7,26 +7,29 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-
-public partial class Gosterim
+namespace SinemaOtomasyon.DAL.SinemaContext
 {
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public Gosterim()
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class Gosterim
     {
-        this.BiletSatis = new HashSet<BiletSatis>();
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Gosterim()
+        {
+            this.BiletSatis = new HashSet<BiletSatis>();
+        }
+    
+        public int GosterimID { get; set; }
+        public System.DateTime GosterimTarih { get; set; }
+        public int FilmID { get; set; }
+        public int SalonID { get; set; }
+        public int SeansID { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<BiletSatis> BiletSatis { get; set; }
+        public virtual Film Film { get; set; }
+        public virtual Salon Salon { get; set; }
+        public virtual Seans Seans { get; set; }
     }
-
-    public int GosterimID { get; set; }
-    public System.DateTime GosterimTarih { get; set; }
-    public int FilmID { get; set; }
-    public int SalonID { get; set; }
-    public int SeansID { get; set; }
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-    public virtual ICollection<BiletSatis> BiletSatis { get; set; }
-    public virtual Film Film { get; set; }
-    public virtual Salon Salon { get; set; }
-    public virtual Seans Seans { get; set; }
 }

@@ -7,21 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-
-public partial class Unvan
+namespace SinemaOtomasyon.DAL.SinemaContext
 {
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public Unvan()
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class Unvan
     {
-        this.Personel = new HashSet<Personel>();
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Unvan()
+        {
+            this.Personel = new HashSet<Personel>();
+        }
+    
+        public int UnvanID { get; set; }
+        public string UnvanAD { get; set; }
+        public string Departman { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Personel> Personel { get; set; }
     }
-
-    public int UnvanID { get; set; }
-    public string UnvanAD { get; set; }
-    public string Departman { get; set; }
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-    public virtual ICollection<Personel> Personel { get; set; }
 }

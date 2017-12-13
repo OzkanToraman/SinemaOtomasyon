@@ -46,6 +46,7 @@
           <Property Name="FilmSuresi_dk" Type="int" />
           <Property Name="Vizyonda" Type="bit" Nullable="false" />
           <Property Name="FilmTurID" Type="int" Nullable="false" />
+          <Property Name="Afis" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="FilmTuru">
           <Key>
@@ -122,6 +123,16 @@
           <Property Name="SeyirciTelefon" Type="varchar" MaxLength="15" />
           <Property Name="Meslek" Type="varchar" MaxLength="50" />
           <Property Name="Üyelik" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <EntityType Name="Unvan">
           <Key>
@@ -288,6 +299,7 @@
           <EntitySet Name="Salon" EntityType="Self.Salon" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Seans" EntityType="Self.Seans" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Seyirci" EntityType="Self.Seyirci" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Unvan" EntityType="Self.Unvan" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_BiletSatis_BiletTuru" Association="Self.FK_BiletSatis_BiletTuru">
             <End Role="BiletTuru" EntitySet="BiletTuru" />
@@ -392,6 +404,7 @@
           <Property Name="FilmSuresi_dk" Type="Int32" />
           <Property Name="Vizyonda" Type="Boolean" Nullable="false" />
           <Property Name="FilmTurID" Type="Int32" Nullable="false" />
+          <Property Name="Afis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="FilmTuru" Relationship="Self.FK_Film_FilmTuru" FromRole="Film" ToRole="FilmTuru" />
           <NavigationProperty Name="Gosterim" Relationship="Self.FK_Gosterim_Film" FromRole="Film" ToRole="Gosterim" />
         </EntityType>
@@ -483,6 +496,16 @@
           <Property Name="Meslek" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Üyelik" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Seyirci" FromRole="Seyirci" ToRole="BiletSatis" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="Unvan">
           <Key>
@@ -650,6 +673,7 @@
           <EntitySet Name="Salon" EntityType="Self.Salon" />
           <EntitySet Name="Seans" EntityType="Self.Seans" />
           <EntitySet Name="Seyirci" EntityType="Self.Seyirci" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="Unvan" EntityType="Self.Unvan" />
           <AssociationSet Name="FK_BiletSatis_BiletTuru" Association="Self.FK_BiletSatis_BiletTuru">
             <End Role="BiletTuru" EntitySet="BiletTuru" />
@@ -749,6 +773,7 @@
                 <ScalarProperty Name="FilmSuresi_dk" ColumnName="FilmSuresi_dk" />
                 <ScalarProperty Name="Vizyonda" ColumnName="Vizyonda" />
                 <ScalarProperty Name="FilmTurID" ColumnName="FilmTurID" />
+                <ScalarProperty Name="Afis" ColumnName="Afis" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -833,6 +858,17 @@
                 <ScalarProperty Name="SeyirciTelefon" ColumnName="SeyirciTelefon" />
                 <ScalarProperty Name="Meslek" ColumnName="Meslek" />
                 <ScalarProperty Name="Üyelik" ColumnName="Üyelik" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="SinemaModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

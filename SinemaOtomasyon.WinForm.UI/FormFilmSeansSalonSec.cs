@@ -58,7 +58,7 @@ namespace SinemaOtomasyon.WinForm.UI
                 Oyuncular = x.Oyuncular,
                 Yonetmen = x.Yonetmen,
                 FilmSure = x.FilmSuresi_dk,
-                TurAd = x.FilmTuru.FilmTurAd,
+                TurAd = x.FilmTuru.FilmTurAd
             }).ToList();
 
             dgvFilmler.Columns[0].Visible = false;
@@ -93,8 +93,12 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             //MessageBox.Show("" + (int)dgvFilmler.CurrentRow.Cells[0].Value);
             f = _filmRepo.GetById((int)dgvFilmler.CurrentRow.Cells[0].Value);
-            //pbFilmAfis.Image = Image.FromFile(f.Afis);
-            //MessageBox.Show(f.Afis);
+            if (f.Afis!=null)
+            {
+                pbFilmAfis.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbFilmAfis.Image = Image.FromFile(f.Afis);
+            }
+
 
         }
 

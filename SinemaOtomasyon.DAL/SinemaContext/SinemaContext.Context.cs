@@ -37,6 +37,7 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         public virtual DbSet<Salon> Salon { get; set; }
         public virtual DbSet<Seans> Seans { get; set; }
         public virtual DbSet<Seyirci> Seyirci { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Unvan> Unvan { get; set; }
     }
 }

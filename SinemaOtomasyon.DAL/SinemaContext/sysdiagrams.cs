@@ -12,18 +12,12 @@ namespace SinemaOtomasyon.DAL.SinemaContext
     using System;
     using System.Collections.Generic;
     
-    public partial class FilmTuru
+    public partial class sysdiagrams
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public FilmTuru()
-        {
-            this.Film = new HashSet<Film>();
-        }
-    
-        public int FilmTurID { get; set; }
-        public string FilmTurAd { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Film> Film { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
