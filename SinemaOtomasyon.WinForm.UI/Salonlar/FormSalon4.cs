@@ -2,6 +2,7 @@
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
 using SinemaOtomasyon.Repository.Repositories.Concretes;
+using SinemaOtomasyon.Repository.UOW.Abstract;
 using SinemaOtomasyon.WinForm.UI.Ninject;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,8 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
     public partial class FormSalon4 : Form
     {
         private IKoltukRepository _koltukRepo;
+        private IGosterimRepository _gosterimRepo;
+        private IUnitOfWork _gosterimUOW;
         private Film f;
         int SeansId, SalonId;
         string Tarih;
@@ -28,6 +31,8 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
             _koltukRepo = container.Get<IKoltukRepository>();
+            _gosterimRepo = container.Get<IGosterimRepository>();
+            _gosterimUOW = container.Get<IUnitOfWork>();
             InitializeComponent();
         }
         public FormSalon4(Film f, int SeansId, int SalonId, string Tarih)
@@ -41,7 +46,17 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
 
         private void FormSalon4_Load(object sender, EventArgs e)
         {
+            //Gosterim gosterim = new Gosterim();
+            //gosterim.FilmID = f.FilmID;
+            //gosterim.SalonID = SalonId;
+            //gosterim.SeansID = SeansId;
+            //_gosterimUOW.GosterimRepository().Add(gosterim);
+            //if (_gosterimUOW.Save()>0)
+            //{
+            //    MessageBox.Show("Kayıt başarılı!");
+            //}
             
+
             //txtInformation.Text = f.FilmAd + " / " + "Salon: "+SalonId+" / "+"Seans: "+SeansId+" / ";
         }
 
@@ -55,30 +70,38 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
 
         private void btnBiletKes_Click(object sender, EventArgs e)
         {
-            string koltukAd;
-            var koltukListe = _koltukRepo.GetList().Select(x => new { x.KoltukAD });
-
-            Button koltuk = new Button();
-            for (int i = 0; i < lbKoltuklar.Items.Count; i++)
+            if (lbKoltuklar.Items.Count != 0)
             {
-                koltukAd = lbKoltuklar.Items[i].ToString();
-                koltuk = (Button)Controls[lbKoltuklar.Items[i].ToString()];
-                koltuk.BackColor = Color.Red;
-                koltuk.FlatAppearance.MouseOverBackColor = Color.Red;
-                listBox1.Items.Add(koltukListe.Where(x => x.KoltukAD == koltukAd).FirstOrDefault());
-                listBox1.DisplayMember = "KoltukAd";
+                string koltukAd;
+                var koltukListe = _koltukRepo.GetList().Select(x => new { x.KoltukAD });
+
+                Button koltuk = new Button();
+                for (int i = 0; i < lbKoltuklar.Items.Count; i++)
+                {
+
+                    koltuk = (Button)Controls[lbKoltuklar.Items[i].ToString()];
+                    koltuk.BackColor = Color.Red;
+                    koltuk.FlatAppearance.MouseOverBackColor = Color.Red;
+
+                    koltukAd = lbKoltuklar.Items[i].ToString();
+                    lbSeciliKoltuklar.Items.Add(koltukListe.Where(x => x.KoltukAD == koltukAd).FirstOrDefault());
+                    lbSeciliKoltuklar.DisplayMember = "KoltukAd";
+                }
+
+
+
+                butonlar.Clear();
+                lbKoltuklar.DataSource = butonlar.ToList();
+
+                KoltukSayisiHesapla();
+
+                //FormBiletYazdir frm = new FormBiletYazdir();
+                //frm.ShowDialog();
             }
-
-
-            
-
-
-
-            butonlar.Clear();
-            lbKoltuklar.DataSource = butonlar.ToList();
-
-            KoltukSayisiHesapla();
-
+            else
+            {
+                MessageBox.Show("Önce koltuk seçiniz !");
+            }
         }
 
         private void KoltukSayisiHesapla()
@@ -108,6 +131,10 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             {
                 btn.BackColor = Color.Gray;
                 butonlar.Remove(btn.Name);
+            }
+            else if (btn.BackColor == Color.Red)
+            {
+                btn.FlatAppearance.MouseOverBackColor = Color.Red;
             }
 
             lbKoltuklar.DataSource = butonlar.ToList();

@@ -7,28 +7,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SinemaOtomasyon.DAL.SinemaContext
+using System;
+using System.Collections.Generic;
+
+public partial class Seyirci
 {
-    using System;
-    using System.Collections.Generic;
-    
-    public partial class Seyirci
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public Seyirci()
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Seyirci()
-        {
-            this.BiletSatis = new HashSet<BiletSatis>();
-        }
-    
-        public int SeyirciID { get; set; }
-        public string SeyirciAd { get; set; }
-        public string SeyirciSoyad { get; set; }
-        public string SeyirciAdres { get; set; }
-        public string SeyirciTelefon { get; set; }
-        public string Meslek { get; set; }
-        public bool Üyelik { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BiletSatis> BiletSatis { get; set; }
+        this.BiletSatis = new HashSet<BiletSatis>();
     }
+
+    public int SeyirciID { get; set; }
+    public string SeyirciAd { get; set; }
+    public string SeyirciSoyad { get; set; }
+    public string SeyirciAdres { get; set; }
+    public string SeyirciTelefon { get; set; }
+    public string Meslek { get; set; }
+    public bool Üyelik { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+    public virtual ICollection<BiletSatis> BiletSatis { get; set; }
 }

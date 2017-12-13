@@ -13,6 +13,7 @@ namespace SinemaOtomasyon.Repository.UOW.Abstract
         
     {
         IRepository<Film> FilmRepository();
+        IRepository<Gosterim> GosterimRepository();
 
         int Save();    
     }

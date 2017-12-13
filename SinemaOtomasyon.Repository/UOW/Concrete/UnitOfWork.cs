@@ -32,6 +32,11 @@ namespace SinemaOtomasyon.Repository.UOW.Concrete
             return new EFRepositoryBase<Film, SinemaContext>(_dbContext);
         }
 
+        public IRepository<Gosterim> GosterimRepository()
+        {
+            return new EFRepositoryBase<Gosterim, SinemaContext>(_dbContext);
+        }
+
         public int Save()
         {
             return _dbContext.SaveChanges();

@@ -17,7 +17,7 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSalon4());
+            Application.Run(new FormFilmSeansSalonSec());
         }
     }
 }

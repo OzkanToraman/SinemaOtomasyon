@@ -7,23 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SinemaOtomasyon.DAL.SinemaContext
+using System;
+using System.Collections.Generic;
+
+public partial class OdemeSekli
 {
-    using System;
-    using System.Collections.Generic;
-    
-    public partial class OdemeSekli
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public OdemeSekli()
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public OdemeSekli()
-        {
-            this.BiletSatis = new HashSet<BiletSatis>();
-        }
-    
-        public int OdemeSekliID { get; set; }
-        public string OdemeSekli1 { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BiletSatis> BiletSatis { get; set; }
+        this.BiletSatis = new HashSet<BiletSatis>();
     }
+
+    public int OdemeSekliID { get; set; }
+    public string OdemeSekli1 { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+    public virtual ICollection<BiletSatis> BiletSatis { get; set; }
 }

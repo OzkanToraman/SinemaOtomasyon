@@ -192,7 +192,7 @@
             this.label33 = new System.Windows.Forms.Label();
             this.lblSeciliKoltuk = new System.Windows.Forms.Label();
             this.lbKoltuklar = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbSeciliKoltuklar = new System.Windows.Forms.ListBox();
             this.lblToplamKoltuk = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -2371,7 +2371,7 @@
             this.txtInformation.ReadOnly = true;
             this.txtInformation.Size = new System.Drawing.Size(639, 23);
             this.txtInformation.TabIndex = 222;
-            this.txtInformation.Text = "Dead Men  /  Salon :3  /  Seans : 11:45  /  Seçili Koltuk : A4,A5";
+            this.txtInformation.Text = "Dead Men  /  Salon :3  /  Seans : 11:45  ";
             this.txtInformation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label31
@@ -2525,18 +2525,18 @@
             this.lbKoltuklar.Size = new System.Drawing.Size(100, 308);
             this.lbKoltuklar.TabIndex = 238;
             // 
-            // listBox1
+            // lbSeciliKoltuklar
             // 
-            this.listBox1.BackColor = System.Drawing.Color.White;
-            this.listBox1.Font = new System.Drawing.Font("Arial", 10F);
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(1090, 102);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.listBox1.Size = new System.Drawing.Size(100, 308);
-            this.listBox1.TabIndex = 240;
+            this.lbSeciliKoltuklar.BackColor = System.Drawing.Color.White;
+            this.lbSeciliKoltuklar.Font = new System.Drawing.Font("Arial", 10F);
+            this.lbSeciliKoltuklar.FormattingEnabled = true;
+            this.lbSeciliKoltuklar.ItemHeight = 16;
+            this.lbSeciliKoltuklar.Location = new System.Drawing.Point(1090, 102);
+            this.lbSeciliKoltuklar.Name = "lbSeciliKoltuklar";
+            this.lbSeciliKoltuklar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbSeciliKoltuklar.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.lbSeciliKoltuklar.Size = new System.Drawing.Size(100, 308);
+            this.lbSeciliKoltuklar.TabIndex = 240;
             // 
             // lblToplamKoltuk
             // 
@@ -2557,7 +2557,7 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1264, 761);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbSeciliKoltuklar);
             this.Controls.Add(this.lbKoltuklar);
             this.Controls.Add(this.lblSeciliKoltuk);
             this.Controls.Add(this.label33);
@@ -2902,7 +2902,7 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label lblSeciliKoltuk;
         private System.Windows.Forms.ListBox lbKoltuklar;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbSeciliKoltuklar;
         private System.Windows.Forms.Label lblToplamKoltuk;
     }
 }

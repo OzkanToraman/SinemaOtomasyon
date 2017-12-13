@@ -7,24 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SinemaOtomasyon.DAL.SinemaContext
+using System;
+using System.Collections.Generic;
+
+public partial class Koltuk
 {
-    using System;
-    using System.Collections.Generic;
-    
-    public partial class Koltuk
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public Koltuk()
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Koltuk()
-        {
-            this.BiletSatis = new HashSet<BiletSatis>();
-        }
-    
-        public int KoltukID { get; set; }
-        public string KoltukAD { get; set; }
-        public decimal KoltukFiyatSapma { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BiletSatis> BiletSatis { get; set; }
+        this.BiletSatis = new HashSet<BiletSatis>();
     }
+
+    public int KoltukID { get; set; }
+    public string KoltukAD { get; set; }
+    public decimal KoltukFiyatSapma { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+    public virtual ICollection<BiletSatis> BiletSatis { get; set; }
 }

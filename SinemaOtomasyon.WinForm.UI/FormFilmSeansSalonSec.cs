@@ -38,15 +38,15 @@ namespace SinemaOtomasyon.WinForm.UI
             InitializeComponent();
         }
 
-        
+
 
         private void FormFilmSeansSalonSec_Load(object sender, EventArgs e)
         {
-            
+
             DataGridViewDoldur();
             SeansDoldur();
             SalonDoldur();
-            
+
         }
 
         private void DataGridViewDoldur()
@@ -58,14 +58,13 @@ namespace SinemaOtomasyon.WinForm.UI
                 Oyuncular = x.Oyuncular,
                 Yonetmen = x.Yonetmen,
                 FilmSure = x.FilmSuresi_dk,
-                TurAd = x.FilmTuru.FilmTurAd
+                TurAd = x.FilmTuru.FilmTurAd,
             }).ToList();
 
             dgvFilmler.Columns[0].Visible = false;
-
         }
 
-        
+
         private void SalonDoldur()
         {
             var salonSorgu = _salonRepo.GetList().Select(x => new
@@ -76,8 +75,8 @@ namespace SinemaOtomasyon.WinForm.UI
             cbSalonSec.DataSource = salonSorgu;
             cbSalonSec.DisplayMember = "SalonAD";
             cbSalonSec.ValueMember = "SalonID";
-            cbSalonSec.SelectedIndex = 0;            
-            SalonId = (int)cbSalonSec.SelectedValue;              
+            cbSalonSec.SelectedIndex = 0;
+            SalonId = (int)cbSalonSec.SelectedValue;
         }
 
         private void SeansDoldur()
@@ -94,16 +93,19 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             //MessageBox.Show("" + (int)dgvFilmler.CurrentRow.Cells[0].Value);
             f = _filmRepo.GetById((int)dgvFilmler.CurrentRow.Cells[0].Value);
+            //pbFilmAfis.Image = Image.FromFile(f.Afis);
+            //MessageBox.Show(f.Afis);
+
         }
 
         private void btnBiletSatis_Click(object sender, EventArgs e)
         {
-            if (f!=null)
+            if (f != null)
             {
-                FormSalon4 frm = new FormSalon4(f, SeansId, SalonId,dtpTarih.Value.ToShortDateString());
+                FormSalon4 frm = new FormSalon4(f, SeansId, SalonId, dtpTarih.Value.ToShortDateString());
                 frm.ShowDialog();
             }
-           
+
         }
     }
 }
