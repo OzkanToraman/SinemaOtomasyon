@@ -192,6 +192,8 @@
             this.label33 = new System.Windows.Forms.Label();
             this.lblSeciliKoltuk = new System.Windows.Forms.Label();
             this.lbKoltuklar = new System.Windows.Forms.ListBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lblToplamKoltuk = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -2267,6 +2269,7 @@
             this.btnBiletKes.TabIndex = 232;
             this.btnBiletKes.Text = "Bilet Ayır";
             this.btnBiletKes.UseVisualStyleBackColor = true;
+            this.btnBiletKes.Click += new System.EventHandler(this.btnBiletKes_Click);
             // 
             // btnUyeOlustur
             // 
@@ -2467,9 +2470,9 @@
             this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label35.Location = new System.Drawing.Point(774, 34);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(132, 16);
+            this.label35.Size = new System.Drawing.Size(108, 16);
             this.label35.TabIndex = 234;
-            this.label35.Text = "Toplam Koltuk : 109";
+            this.label35.Text = "Toplam Koltuk : ";
             // 
             // label19
             // 
@@ -2522,6 +2525,31 @@
             this.lbKoltuklar.Size = new System.Drawing.Size(100, 308);
             this.lbKoltuklar.TabIndex = 238;
             // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.White;
+            this.listBox1.Font = new System.Drawing.Font("Arial", 10F);
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(1090, 102);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.listBox1.Size = new System.Drawing.Size(100, 308);
+            this.listBox1.TabIndex = 240;
+            // 
+            // lblToplamKoltuk
+            // 
+            this.lblToplamKoltuk.AutoSize = true;
+            this.lblToplamKoltuk.BackColor = System.Drawing.Color.Transparent;
+            this.lblToplamKoltuk.Font = new System.Drawing.Font("Arial", 10F);
+            this.lblToplamKoltuk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblToplamKoltuk.Location = new System.Drawing.Point(882, 34);
+            this.lblToplamKoltuk.Name = "lblToplamKoltuk";
+            this.lblToplamKoltuk.Size = new System.Drawing.Size(32, 16);
+            this.lblToplamKoltuk.TabIndex = 234;
+            this.lblToplamKoltuk.Text = "109";
+            // 
             // FormSalon4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2529,10 +2557,12 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.lbKoltuklar);
             this.Controls.Add(this.lblSeciliKoltuk);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label19);
+            this.Controls.Add(this.lblToplamKoltuk);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnBiletKes);
@@ -2872,5 +2902,7 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label lblSeciliKoltuk;
         private System.Windows.Forms.ListBox lbKoltuklar;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label lblToplamKoltuk;
     }
 }

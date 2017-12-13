@@ -68,26 +68,26 @@ namespace SinemaOtomasyon.WinForm.UI
         
         private void SalonDoldur()
         {
-            cbSalonSec.DataSource = _salonRepo.GetList().Select(x => new
+            var salonSorgu = _salonRepo.GetList().Select(x => new
             {
-                id = x.SalonID,
-                ad = x.SalonAD
+                x.SalonID,
+                x.SalonAD
             }).ToList();
-
-            cbSalonSec.DisplayMember = "ad";
-            cbSalonSec.ValueMember = "id";
-            cbSalonSec.SelectedIndex = 0;
-            SalonId = (int)cbSalonSec.SelectedValue;
+            cbSalonSec.DataSource = salonSorgu;
+            cbSalonSec.DisplayMember = "SalonAD";
+            cbSalonSec.ValueMember = "SalonID";
+            cbSalonSec.SelectedIndex = 0;            
+            SalonId = (int)cbSalonSec.SelectedValue;              
         }
 
         private void SeansDoldur()
         {
-            var sorgu = _seansRepo.GetList().Select(x => new { id = x.SeansID, ad = x.SeansAD }).ToList();
-            cbSeansSec.DataSource = sorgu;
+            var seansSorgu = _seansRepo.GetList().Select(x => new { id = x.SeansID, ad = x.SeansAD }).ToList();
+            cbSeansSec.DataSource = seansSorgu;
             cbSeansSec.DisplayMember = "ad";
             cbSeansSec.ValueMember = "id";
             cbSeansSec.SelectedIndex = 0;
-            SeansId =(int)cbSeansSec.SelectedValue;
+            SeansId = (int)cbSeansSec.SelectedValue;
         }
 
         private void dgvFilmler_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -100,7 +100,7 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             if (f!=null)
             {
-                FormSalon4 frm = new FormSalon4(f, SeansId, SalonId, dtpTarih.Value.ToShortDateString());
+                FormSalon4 frm = new FormSalon4(f, SeansId, SalonId,dtpTarih.Value.ToShortDateString());
                 frm.ShowDialog();
             }
            

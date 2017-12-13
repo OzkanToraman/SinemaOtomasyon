@@ -16,4 +16,7 @@ namespace SinemaOtomasyon.Repository.Repositories.Concretes
         {
         }
     }
+
+    
+
 }

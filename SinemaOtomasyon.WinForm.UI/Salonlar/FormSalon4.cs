@@ -1,6 +1,7 @@
 ﻿using Ninject;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
+using SinemaOtomasyon.Repository.Repositories.Concretes;
 using SinemaOtomasyon.WinForm.UI.Ninject;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
         string Tarih;
         List<string> butonlar = new List<string>();
 
+
         public FormSalon4()
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
@@ -39,8 +41,10 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
 
         private void FormSalon4_Load(object sender, EventArgs e)
         {
-            //txtInformation.Text = f.FilmAd;
+            
+            //txtInformation.Text = f.FilmAd + " / " + "Salon: "+SalonId+" / "+"Seans: "+SeansId+" / ";
         }
+
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -48,13 +52,57 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
         }
 
 
+
+        private void btnBiletKes_Click(object sender, EventArgs e)
+        {
+            string koltukAd;
+            var koltukListe = _koltukRepo.GetList().Select(x => new { x.KoltukAD });
+
+            Button koltuk = new Button();
+            for (int i = 0; i < lbKoltuklar.Items.Count; i++)
+            {
+                koltukAd = lbKoltuklar.Items[i].ToString();
+                koltuk = (Button)Controls[lbKoltuklar.Items[i].ToString()];
+                koltuk.BackColor = Color.Red;
+                koltuk.FlatAppearance.MouseOverBackColor = Color.Red;
+                listBox1.Items.Add(koltukListe.Where(x => x.KoltukAD == koltukAd).FirstOrDefault());
+                listBox1.DisplayMember = "KoltukAd";
+            }
+
+
+            
+
+
+
+            butonlar.Clear();
+            lbKoltuklar.DataSource = butonlar.ToList();
+
+            KoltukSayisiHesapla();
+
+        }
+
+        private void KoltukSayisiHesapla()
+        {
+            int Count = 0;
+            foreach (Control c in this.Controls)
+            {
+                if (c.BackColor == Color.Gray)
+                {
+                    Count++;
+                }
+            }
+
+            lblToplamKoltuk.Text = Count.ToString();
+        }
+
         private void A1_Click(object sender, EventArgs e)
-        {            
+        {
+
             Button btn = (Button)sender;
             if (btn.BackColor == Color.Gray)
             {
                 btn.BackColor = Color.Green;
-                butonlar.Add(btn.Name);         
+                butonlar.Add(btn.Name);
             }
             else if (btn.BackColor == Color.Green)
             {
@@ -63,6 +111,8 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             }
 
             lbKoltuklar.DataSource = butonlar.ToList();
+
+
         }
     }
 }
