@@ -81,8 +81,7 @@
     </Key>
     <Property Name="KoltukID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="KoltukAD" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="KoltukFiyatSapma" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="DoluMu" Type="Boolean" />
+    <Property Name="DoluMu" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Koltuk" FromRole="Koltuk" ToRole="BiletSatis" />
   </EntityType>
   <EntityType Name="OdemeSekli">
@@ -118,7 +117,6 @@
     </Key>
     <Property Name="SalonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="SalonAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="SalonFiyatSapma" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <NavigationProperty Name="Gosterim" Relationship="Self.FK_Gosterim_Salon" FromRole="Salon" ToRole="Gosterim" />
   </EntityType>
   <EntityType Name="Seans">
@@ -127,7 +125,6 @@
     </Key>
     <Property Name="SeansID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="SeansAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="SeansFiyatSapma" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <NavigationProperty Name="Gosterim" Relationship="Self.FK_Gosterim_Seans" FromRole="Seans" ToRole="Gosterim" />
   </EntityType>
   <EntityType Name="Seyirci">
@@ -139,7 +136,6 @@
     <Property Name="SeyirciSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="SeyirciAdres" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
     <Property Name="SeyirciTelefon" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
-    <Property Name="Meslek" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Üyelik" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Seyirci" FromRole="Seyirci" ToRole="BiletSatis" />
   </EntityType>
@@ -160,6 +156,7 @@
     <Property Name="UnvanID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="UnvanAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Departman" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Rol" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Personel" Relationship="Self.FK_Personel_Unvan" FromRole="Unvan" ToRole="Personel" />
   </EntityType>
   <Association Name="FK_BiletSatis_BiletTuru">

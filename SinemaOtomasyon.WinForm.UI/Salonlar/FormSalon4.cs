@@ -18,6 +18,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
 {
     public partial class FormSalon4 : Form
     {
+
         private IKoltukRepository _koltukRepo;
         private IGosterimRepository _gosterimRepo;
         private IUnitOfWork _gosterimUOW, _koltukUOW;
@@ -89,6 +90,20 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
                 MessageBox.Show("seçili koltuk yok");
             }
         }
+        private void KoltukSayisiHesapla()
+        {
+            int Count = 0;
+            foreach (Control c in this.Controls)
+            {
+                if (c.BackColor == Color.Gray)
+                {
+                    Count++;
+                }
+            }
+
+            lblToplamKoltuk.Text = Count.ToString();
+        }
+
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -170,20 +185,6 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             {
                 MessageBox.Show("başarısız");
             }
-        }
-
-        private void KoltukSayisiHesapla()
-        {
-            int Count = 0;
-            foreach (Control c in this.Controls)
-            {
-                if (c.BackColor == Color.Gray)
-                {
-                    Count++;
-                }
-            }
-
-            lblToplamKoltuk.Text = Count.ToString();
         }
 
         private void A1_Click(object sender, EventArgs e)

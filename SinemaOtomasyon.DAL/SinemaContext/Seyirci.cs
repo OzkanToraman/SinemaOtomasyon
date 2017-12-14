@@ -25,7 +25,6 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         public string SeyirciSoyad { get; set; }
         public string SeyirciAdres { get; set; }
         public string SeyirciTelefon { get; set; }
-        public string Meslek { get; set; }
         public bool Üyelik { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

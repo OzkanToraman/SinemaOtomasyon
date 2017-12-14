@@ -32,9 +32,10 @@
             this.txtPass = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.pbLogin = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUser
@@ -63,7 +64,8 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.img_316131;
+            this.pictureBox2.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.img_316131;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(535, 311);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
@@ -74,34 +76,30 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.locky_1016554;
-            this.pictureBox3.Location = new System.Drawing.Point(532, 352);
+            this.pictureBox3.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.locky_1016554;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(533, 352);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(29, 28);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // btnLogin
+            // pbLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.button_giris;
-            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Location = new System.Drawing.Point(610, 395);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(93, 40);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.pbLogin.BackColor = System.Drawing.Color.Transparent;
+            this.pbLogin.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.button_giris;
+            this.pbLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbLogin.Location = new System.Drawing.Point(612, 397);
+            this.pbLogin.Name = "pbLogin";
+            this.pbLogin.Size = new System.Drawing.Size(100, 50);
+            this.pbLogin.TabIndex = 5;
+            this.pbLogin.TabStop = false;
+            this.pbLogin.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FormLogin
             // 
-            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
@@ -109,19 +107,22 @@
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.FotoJet;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1132, 506);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.pbLogin);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.HelpButton = true;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AGORA SİNEMASI";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,6 +133,6 @@
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.PictureBox pbLogin;
     }
 }

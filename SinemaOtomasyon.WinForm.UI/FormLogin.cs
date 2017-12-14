@@ -20,6 +20,7 @@ namespace SinemaOtomasyon.WinForm.UI
         private IPersonelRepository _personelRepo;
         private IPersonelService _personelService;
 
+
         public FormLogin()
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
@@ -29,8 +30,22 @@ namespace SinemaOtomasyon.WinForm.UI
         }
 
 
+        private void txtPass_Click(object sender, EventArgs e)
+        {
+            txtPass.SelectAll();
+        }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void txtUser_Click(object sender, EventArgs e)
+        {
+            txtUser.SelectAll();
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             Personel p = new Personel();
             p.Email = txtUser.Text;
@@ -42,29 +57,19 @@ namespace SinemaOtomasyon.WinForm.UI
             }
             else
             {
-                               
+
                 if (_personelRepo.Login(txtUser.Text, txtPass.Text).Count() == 0)
+
                 {
                     MessageBox.Show("Hatalı kullanıcı adı ya da şifre!", "HATA!");
                     txtUser.Focus();
-                    txtUser.SelectAll();          
+                    txtUser.SelectAll();
                 }
                 else
                 {
                     MessageBox.Show("başarılı");
                 }
             }
-
-        }
-
-        private void txtPass_Click(object sender, EventArgs e)
-        {
-            txtPass.SelectAll();
-        }
-
-        private void txtUser_Click(object sender, EventArgs e)
-        {
-            txtUser.SelectAll();
         }
     }
 }

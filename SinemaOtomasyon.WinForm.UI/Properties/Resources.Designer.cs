@@ -163,6 +163,16 @@ namespace SinemaOtomasyon.WinForm.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FotoJet1 {
+            get {
+                object obj = ResourceManager.GetObject("FotoJet1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap greenSeat {
             get {
                 object obj = ResourceManager.GetObject("greenSeat", resourceCulture);
@@ -186,26 +196,6 @@ namespace SinemaOtomasyon.WinForm.UI.Properties {
         internal static System.Drawing.Bitmap locky_1016554 {
             get {
                 object obj = ResourceManager.GetObject("locky_1016554", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap login_button_png_30 {
-            get {
-                object obj = ResourceManager.GetObject("login-button-png-30", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap loginbutton {
-            get {
-                object obj = ResourceManager.GetObject("loginbutton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

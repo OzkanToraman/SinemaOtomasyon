@@ -72,7 +72,6 @@
         <MappingFragment StoreEntitySet="Koltuk">
           <ScalarProperty Name="KoltukID" ColumnName="KoltukID" />
           <ScalarProperty Name="KoltukAD" ColumnName="KoltukAD" />
-          <ScalarProperty Name="KoltukFiyatSapma" ColumnName="KoltukFiyatSapma" />
           <ScalarProperty Name="DoluMu" ColumnName="DoluMu" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -107,7 +106,6 @@
         <MappingFragment StoreEntitySet="Salon">
           <ScalarProperty Name="SalonID" ColumnName="SalonID" />
           <ScalarProperty Name="SalonAD" ColumnName="SalonAD" />
-          <ScalarProperty Name="SalonFiyatSapma" ColumnName="SalonFiyatSapma" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -116,7 +114,6 @@
         <MappingFragment StoreEntitySet="Seans">
           <ScalarProperty Name="SeansID" ColumnName="SeansID" />
           <ScalarProperty Name="SeansAD" ColumnName="SeansAD" />
-          <ScalarProperty Name="SeansFiyatSapma" ColumnName="SeansFiyatSapma" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -128,7 +125,6 @@
           <ScalarProperty Name="SeyirciSoyad" ColumnName="SeyirciSoyad" />
           <ScalarProperty Name="SeyirciAdres" ColumnName="SeyirciAdres" />
           <ScalarProperty Name="SeyirciTelefon" ColumnName="SeyirciTelefon" />
-          <ScalarProperty Name="Meslek" ColumnName="Meslek" />
           <ScalarProperty Name="Üyelik" ColumnName="Üyelik" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -150,6 +146,7 @@
           <ScalarProperty Name="UnvanID" ColumnName="UnvanID" />
           <ScalarProperty Name="UnvanAD" ColumnName="UnvanAD" />
           <ScalarProperty Name="Departman" ColumnName="Departman" />
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

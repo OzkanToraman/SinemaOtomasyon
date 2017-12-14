@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace SinemaOtomasyon.Repository.UOW.Abstract
 {
-    public interface IUnitOfWork : IDisposable
-
-        
+    public interface IUnitOfWork : IDisposable  
     {
+        //IRepository<T> GetRepository();
         IRepository<Film> FilmRepository();
         IRepository<Gosterim> GosterimRepository();
         IRepository<Koltuk> KoltukRepository();

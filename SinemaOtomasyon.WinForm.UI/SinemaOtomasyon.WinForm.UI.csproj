@@ -174,7 +174,6 @@
   <ItemGroup>
     <None Include="Resources\locky_1016554.png" />
     <None Include="Resources\img_316131.png" />
-    <None Include="Resources\login-button-png-30.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FotoJet.jpg" />
@@ -192,9 +191,10 @@
     <None Include="Resources\greenSeat.png" />
     <None Include="Resources\arrow-down.png" />
     <None Include="Resources\black-patterns-16.jpg" />
-    <Content Include="Resources\loginbutton.png" />
     <None Include="Resources\Afisler\thesilenceofthelambs.jpg" />
-    <None Include="Resources\loginbutton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FotoJet1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -66,8 +66,7 @@
     </Key>
     <Property Name="KoltukID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="KoltukAD" Type="varchar" MaxLength="8" Nullable="false" />
-    <Property Name="KoltukFiyatSapma" Type="decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="DoluMu" Type="bit" />
+    <Property Name="DoluMu" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="OdemeSekli">
     <Key>
@@ -98,7 +97,6 @@
     </Key>
     <Property Name="SalonID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="SalonAD" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="SalonFiyatSapma" Type="decimal" Precision="18" Scale="0" Nullable="false" />
   </EntityType>
   <EntityType Name="Seans">
     <Key>
@@ -106,7 +104,6 @@
     </Key>
     <Property Name="SeansID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="SeansAD" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="SeansFiyatSapma" Type="decimal" Precision="18" Scale="0" Nullable="false" />
   </EntityType>
   <EntityType Name="Seyirci">
     <Key>
@@ -117,7 +114,6 @@
     <Property Name="SeyirciSoyad" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="SeyirciAdres" Type="varchar" MaxLength="250" />
     <Property Name="SeyirciTelefon" Type="varchar" MaxLength="15" />
-    <Property Name="Meslek" Type="varchar" MaxLength="50" />
     <Property Name="Üyelik" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="sysdiagrams">
@@ -137,6 +133,7 @@
     <Property Name="UnvanID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="UnvanAD" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Departman" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Rol" Type="varchar" MaxLength="20" Nullable="false" />
   </EntityType>
   <Association Name="FK_BiletSatis_BiletTuru">
     <End Role="BiletTuru" Type="Self.BiletTuru" Multiplicity="1" />
