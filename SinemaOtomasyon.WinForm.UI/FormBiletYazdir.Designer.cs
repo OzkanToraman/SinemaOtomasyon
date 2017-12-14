@@ -34,12 +34,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtFilmAd = new System.Windows.Forms.TextBox();
+            this.txtSeans = new System.Windows.Forms.TextBox();
+            this.txtSalon = new System.Windows.Forms.TextBox();
+            this.txtKoltuklar = new System.Windows.Forms.TextBox();
+            this.txtToplam = new System.Windows.Forms.TextBox();
+            this.txtIslemNumarasi = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -115,59 +115,59 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "İşlem Numarası :";
             // 
-            // textBox1
+            // txtFilmAd
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox1.Location = new System.Drawing.Point(169, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(145, 23);
-            this.textBox1.TabIndex = 1;
+            this.txtFilmAd.Font = new System.Drawing.Font("Arial", 10F);
+            this.txtFilmAd.Location = new System.Drawing.Point(169, 113);
+            this.txtFilmAd.Name = "txtFilmAd";
+            this.txtFilmAd.ReadOnly = true;
+            this.txtFilmAd.Size = new System.Drawing.Size(145, 23);
+            this.txtFilmAd.TabIndex = 1;
             // 
-            // textBox2
+            // txtSeans
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox2.Location = new System.Drawing.Point(169, 152);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(145, 23);
-            this.textBox2.TabIndex = 1;
+            this.txtSeans.Font = new System.Drawing.Font("Arial", 10F);
+            this.txtSeans.Location = new System.Drawing.Point(169, 152);
+            this.txtSeans.Name = "txtSeans";
+            this.txtSeans.ReadOnly = true;
+            this.txtSeans.Size = new System.Drawing.Size(145, 23);
+            this.txtSeans.TabIndex = 1;
             // 
-            // textBox3
+            // txtSalon
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox3.Location = new System.Drawing.Point(169, 189);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(145, 23);
-            this.textBox3.TabIndex = 1;
+            this.txtSalon.Font = new System.Drawing.Font("Arial", 10F);
+            this.txtSalon.Location = new System.Drawing.Point(169, 189);
+            this.txtSalon.Name = "txtSalon";
+            this.txtSalon.ReadOnly = true;
+            this.txtSalon.Size = new System.Drawing.Size(145, 23);
+            this.txtSalon.TabIndex = 1;
             // 
-            // textBox4
+            // txtKoltuklar
             // 
-            this.textBox4.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox4.Location = new System.Drawing.Point(169, 228);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(145, 23);
-            this.textBox4.TabIndex = 1;
+            this.txtKoltuklar.Font = new System.Drawing.Font("Arial", 10F);
+            this.txtKoltuklar.Location = new System.Drawing.Point(169, 228);
+            this.txtKoltuklar.Name = "txtKoltuklar";
+            this.txtKoltuklar.ReadOnly = true;
+            this.txtKoltuklar.Size = new System.Drawing.Size(145, 23);
+            this.txtKoltuklar.TabIndex = 1;
             // 
-            // textBox5
+            // txtToplam
             // 
-            this.textBox5.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox5.Location = new System.Drawing.Point(169, 265);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(145, 23);
-            this.textBox5.TabIndex = 1;
+            this.txtToplam.Font = new System.Drawing.Font("Arial", 10F);
+            this.txtToplam.Location = new System.Drawing.Point(169, 265);
+            this.txtToplam.Name = "txtToplam";
+            this.txtToplam.ReadOnly = true;
+            this.txtToplam.Size = new System.Drawing.Size(145, 23);
+            this.txtToplam.TabIndex = 1;
             // 
-            // textBox6
+            // txtIslemNumarasi
             // 
-            this.textBox6.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox6.Location = new System.Drawing.Point(169, 306);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(145, 23);
-            this.textBox6.TabIndex = 1;
+            this.txtIslemNumarasi.Font = new System.Drawing.Font("Arial", 10F);
+            this.txtIslemNumarasi.Location = new System.Drawing.Point(169, 306);
+            this.txtIslemNumarasi.Name = "txtIslemNumarasi";
+            this.txtIslemNumarasi.ReadOnly = true;
+            this.txtIslemNumarasi.Size = new System.Drawing.Size(145, 23);
+            this.txtIslemNumarasi.TabIndex = 1;
             // 
             // label7
             // 
@@ -187,12 +187,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(414, 452);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtIslemNumarasi);
+            this.Controls.Add(this.txtToplam);
+            this.Controls.Add(this.txtKoltuklar);
+            this.Controls.Add(this.txtSalon);
+            this.Controls.Add(this.txtSeans);
+            this.Controls.Add(this.txtFilmAd);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -204,6 +204,7 @@
             this.Name = "FormBiletYazdir";
             this.ShowIcon = false;
             this.Text = "Bilet";
+            this.Load += new System.EventHandler(this.FormBiletYazdir_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,12 +218,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtFilmAd;
+        private System.Windows.Forms.TextBox txtSeans;
+        private System.Windows.Forms.TextBox txtSalon;
+        private System.Windows.Forms.TextBox txtKoltuklar;
+        private System.Windows.Forms.TextBox txtToplam;
+        private System.Windows.Forms.TextBox txtIslemNumarasi;
         private System.Windows.Forms.Label label7;
     }
 }

@@ -53,7 +53,7 @@
             this.dgvFilmler.AllowUserToResizeColumns = false;
             this.dgvFilmler.AllowUserToResizeRows = false;
             this.dgvFilmler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvFilmler.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvFilmler.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvFilmler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFilmler.Location = new System.Drawing.Point(350, 132);
             this.dgvFilmler.MultiSelect = false;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.I1 = new System.Windows.Forms.Button();
             this.I2 = new System.Windows.Forms.Button();
             this.H1 = new System.Windows.Forms.Button();
@@ -193,18 +194,21 @@
             this.lblSeciliKoltuk = new System.Windows.Forms.Label();
             this.lbKoltuklar = new System.Windows.Forms.ListBox();
             this.lblToplamKoltuk = new System.Windows.Forms.Label();
+            this.cmsIptalEt = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.iptalEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.cmsIptalEt.SuspendLayout();
             this.SuspendLayout();
             // 
             // I1
             // 
             this.I1.BackColor = System.Drawing.Color.Gray;
+            this.I1.ContextMenuStrip = this.cmsIptalEt;
             this.I1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.I1.FlatAppearance.BorderSize = 0;
-            this.I1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.I1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.I1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.I1.Location = new System.Drawing.Point(313, 75);
@@ -213,13 +217,14 @@
             this.I1.TabIndex = 60;
             this.I1.UseVisualStyleBackColor = false;
             this.I1.Click += new System.EventHandler(this.A1_Click);
+            this.I1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // I2
             // 
             this.I2.BackColor = System.Drawing.Color.Gray;
+            this.I2.ContextMenuStrip = this.cmsIptalEt;
             this.I2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.I2.FlatAppearance.BorderSize = 0;
-            this.I2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.I2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.I2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.I2.Location = new System.Drawing.Point(354, 75);
@@ -228,13 +233,14 @@
             this.I2.TabIndex = 60;
             this.I2.UseVisualStyleBackColor = false;
             this.I2.Click += new System.EventHandler(this.A1_Click);
+            this.I2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H1
             // 
             this.H1.BackColor = System.Drawing.Color.Gray;
+            this.H1.ContextMenuStrip = this.cmsIptalEt;
             this.H1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H1.FlatAppearance.BorderSize = 0;
-            this.H1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H1.Location = new System.Drawing.Point(313, 116);
@@ -243,13 +249,14 @@
             this.H1.TabIndex = 60;
             this.H1.UseVisualStyleBackColor = false;
             this.H1.Click += new System.EventHandler(this.A1_Click);
+            this.H1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H2
             // 
             this.H2.BackColor = System.Drawing.Color.Gray;
+            this.H2.ContextMenuStrip = this.cmsIptalEt;
             this.H2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H2.FlatAppearance.BorderSize = 0;
-            this.H2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H2.Location = new System.Drawing.Point(354, 116);
@@ -258,13 +265,14 @@
             this.H2.TabIndex = 60;
             this.H2.UseVisualStyleBackColor = false;
             this.H2.Click += new System.EventHandler(this.A1_Click);
+            this.H2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H3
             // 
             this.H3.BackColor = System.Drawing.Color.Gray;
+            this.H3.ContextMenuStrip = this.cmsIptalEt;
             this.H3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H3.FlatAppearance.BorderSize = 0;
-            this.H3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H3.Location = new System.Drawing.Point(395, 116);
@@ -273,13 +281,14 @@
             this.H3.TabIndex = 60;
             this.H3.UseVisualStyleBackColor = false;
             this.H3.Click += new System.EventHandler(this.A1_Click);
+            this.H3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G1
             // 
             this.G1.BackColor = System.Drawing.Color.Gray;
+            this.G1.ContextMenuStrip = this.cmsIptalEt;
             this.G1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G1.FlatAppearance.BorderSize = 0;
-            this.G1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G1.Location = new System.Drawing.Point(313, 157);
@@ -288,13 +297,14 @@
             this.G1.TabIndex = 60;
             this.G1.UseVisualStyleBackColor = false;
             this.G1.Click += new System.EventHandler(this.A1_Click);
+            this.G1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G2
             // 
             this.G2.BackColor = System.Drawing.Color.Gray;
+            this.G2.ContextMenuStrip = this.cmsIptalEt;
             this.G2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G2.FlatAppearance.BorderSize = 0;
-            this.G2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G2.Location = new System.Drawing.Point(354, 157);
@@ -303,13 +313,14 @@
             this.G2.TabIndex = 60;
             this.G2.UseVisualStyleBackColor = false;
             this.G2.Click += new System.EventHandler(this.A1_Click);
+            this.G2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G3
             // 
             this.G3.BackColor = System.Drawing.Color.Gray;
+            this.G3.ContextMenuStrip = this.cmsIptalEt;
             this.G3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G3.FlatAppearance.BorderSize = 0;
-            this.G3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G3.Location = new System.Drawing.Point(395, 157);
@@ -318,13 +329,14 @@
             this.G3.TabIndex = 60;
             this.G3.UseVisualStyleBackColor = false;
             this.G3.Click += new System.EventHandler(this.A1_Click);
+            this.G3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F1
             // 
             this.F1.BackColor = System.Drawing.Color.Gray;
+            this.F1.ContextMenuStrip = this.cmsIptalEt;
             this.F1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F1.FlatAppearance.BorderSize = 0;
-            this.F1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F1.Location = new System.Drawing.Point(313, 198);
@@ -333,13 +345,14 @@
             this.F1.TabIndex = 60;
             this.F1.UseVisualStyleBackColor = false;
             this.F1.Click += new System.EventHandler(this.A1_Click);
+            this.F1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F2
             // 
             this.F2.BackColor = System.Drawing.Color.Gray;
+            this.F2.ContextMenuStrip = this.cmsIptalEt;
             this.F2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F2.FlatAppearance.BorderSize = 0;
-            this.F2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F2.Location = new System.Drawing.Point(354, 198);
@@ -348,13 +361,14 @@
             this.F2.TabIndex = 60;
             this.F2.UseVisualStyleBackColor = false;
             this.F2.Click += new System.EventHandler(this.A1_Click);
+            this.F2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F3
             // 
             this.F3.BackColor = System.Drawing.Color.Gray;
+            this.F3.ContextMenuStrip = this.cmsIptalEt;
             this.F3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F3.FlatAppearance.BorderSize = 0;
-            this.F3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F3.Location = new System.Drawing.Point(395, 198);
@@ -363,13 +377,14 @@
             this.F3.TabIndex = 60;
             this.F3.UseVisualStyleBackColor = false;
             this.F3.Click += new System.EventHandler(this.A1_Click);
+            this.F3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E1
             // 
             this.E1.BackColor = System.Drawing.Color.Gray;
+            this.E1.ContextMenuStrip = this.cmsIptalEt;
             this.E1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E1.FlatAppearance.BorderSize = 0;
-            this.E1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E1.Location = new System.Drawing.Point(313, 239);
@@ -378,13 +393,14 @@
             this.E1.TabIndex = 60;
             this.E1.UseVisualStyleBackColor = false;
             this.E1.Click += new System.EventHandler(this.A1_Click);
+            this.E1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E2
             // 
             this.E2.BackColor = System.Drawing.Color.Gray;
+            this.E2.ContextMenuStrip = this.cmsIptalEt;
             this.E2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E2.FlatAppearance.BorderSize = 0;
-            this.E2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E2.Location = new System.Drawing.Point(354, 239);
@@ -393,13 +409,14 @@
             this.E2.TabIndex = 60;
             this.E2.UseVisualStyleBackColor = false;
             this.E2.Click += new System.EventHandler(this.A1_Click);
+            this.E2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E3
             // 
             this.E3.BackColor = System.Drawing.Color.Gray;
+            this.E3.ContextMenuStrip = this.cmsIptalEt;
             this.E3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E3.FlatAppearance.BorderSize = 0;
-            this.E3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E3.Location = new System.Drawing.Point(395, 239);
@@ -408,13 +425,14 @@
             this.E3.TabIndex = 60;
             this.E3.UseVisualStyleBackColor = false;
             this.E3.Click += new System.EventHandler(this.A1_Click);
+            this.E3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D1
             // 
             this.D1.BackColor = System.Drawing.Color.Gray;
+            this.D1.ContextMenuStrip = this.cmsIptalEt;
             this.D1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D1.FlatAppearance.BorderSize = 0;
-            this.D1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D1.Location = new System.Drawing.Point(313, 280);
@@ -423,13 +441,14 @@
             this.D1.TabIndex = 60;
             this.D1.UseVisualStyleBackColor = false;
             this.D1.Click += new System.EventHandler(this.A1_Click);
+            this.D1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D2
             // 
             this.D2.BackColor = System.Drawing.Color.Gray;
+            this.D2.ContextMenuStrip = this.cmsIptalEt;
             this.D2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D2.FlatAppearance.BorderSize = 0;
-            this.D2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D2.Location = new System.Drawing.Point(354, 280);
@@ -438,13 +457,14 @@
             this.D2.TabIndex = 60;
             this.D2.UseVisualStyleBackColor = false;
             this.D2.Click += new System.EventHandler(this.A1_Click);
+            this.D2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D3
             // 
             this.D3.BackColor = System.Drawing.Color.Gray;
+            this.D3.ContextMenuStrip = this.cmsIptalEt;
             this.D3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D3.FlatAppearance.BorderSize = 0;
-            this.D3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D3.Location = new System.Drawing.Point(395, 280);
@@ -453,13 +473,14 @@
             this.D3.TabIndex = 60;
             this.D3.UseVisualStyleBackColor = false;
             this.D3.Click += new System.EventHandler(this.A1_Click);
+            this.D3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C1
             // 
             this.C1.BackColor = System.Drawing.Color.Gray;
+            this.C1.ContextMenuStrip = this.cmsIptalEt;
             this.C1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C1.FlatAppearance.BorderSize = 0;
-            this.C1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C1.Location = new System.Drawing.Point(313, 321);
@@ -468,13 +489,14 @@
             this.C1.TabIndex = 60;
             this.C1.UseVisualStyleBackColor = false;
             this.C1.Click += new System.EventHandler(this.A1_Click);
+            this.C1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C2
             // 
             this.C2.BackColor = System.Drawing.Color.Gray;
+            this.C2.ContextMenuStrip = this.cmsIptalEt;
             this.C2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C2.FlatAppearance.BorderSize = 0;
-            this.C2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C2.Location = new System.Drawing.Point(354, 321);
@@ -483,13 +505,14 @@
             this.C2.TabIndex = 60;
             this.C2.UseVisualStyleBackColor = false;
             this.C2.Click += new System.EventHandler(this.A1_Click);
+            this.C2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C3
             // 
             this.C3.BackColor = System.Drawing.Color.Gray;
+            this.C3.ContextMenuStrip = this.cmsIptalEt;
             this.C3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C3.FlatAppearance.BorderSize = 0;
-            this.C3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C3.Location = new System.Drawing.Point(395, 321);
@@ -498,13 +521,14 @@
             this.C3.TabIndex = 60;
             this.C3.UseVisualStyleBackColor = false;
             this.C3.Click += new System.EventHandler(this.A1_Click);
+            this.C3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B1
             // 
             this.B1.BackColor = System.Drawing.Color.Gray;
+            this.B1.ContextMenuStrip = this.cmsIptalEt;
             this.B1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B1.FlatAppearance.BorderSize = 0;
-            this.B1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B1.Location = new System.Drawing.Point(313, 362);
@@ -513,13 +537,14 @@
             this.B1.TabIndex = 60;
             this.B1.UseVisualStyleBackColor = false;
             this.B1.Click += new System.EventHandler(this.A1_Click);
+            this.B1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B2
             // 
             this.B2.BackColor = System.Drawing.Color.Gray;
+            this.B2.ContextMenuStrip = this.cmsIptalEt;
             this.B2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B2.FlatAppearance.BorderSize = 0;
-            this.B2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B2.Location = new System.Drawing.Point(354, 362);
@@ -528,13 +553,14 @@
             this.B2.TabIndex = 60;
             this.B2.UseVisualStyleBackColor = false;
             this.B2.Click += new System.EventHandler(this.A1_Click);
+            this.B2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B3
             // 
             this.B3.BackColor = System.Drawing.Color.Gray;
+            this.B3.ContextMenuStrip = this.cmsIptalEt;
             this.B3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B3.FlatAppearance.BorderSize = 0;
-            this.B3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B3.Location = new System.Drawing.Point(395, 362);
@@ -543,6 +569,7 @@
             this.B3.TabIndex = 60;
             this.B3.UseVisualStyleBackColor = false;
             this.B3.Click += new System.EventHandler(this.A1_Click);
+            this.B3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // button48
             // 
@@ -561,9 +588,9 @@
             // H4
             // 
             this.H4.BackColor = System.Drawing.Color.Gray;
+            this.H4.ContextMenuStrip = this.cmsIptalEt;
             this.H4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H4.FlatAppearance.BorderSize = 0;
-            this.H4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H4.Location = new System.Drawing.Point(516, 116);
@@ -572,13 +599,14 @@
             this.H4.TabIndex = 60;
             this.H4.UseVisualStyleBackColor = false;
             this.H4.Click += new System.EventHandler(this.A1_Click);
+            this.H4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H5
             // 
             this.H5.BackColor = System.Drawing.Color.Gray;
+            this.H5.ContextMenuStrip = this.cmsIptalEt;
             this.H5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H5.FlatAppearance.BorderSize = 0;
-            this.H5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H5.Location = new System.Drawing.Point(557, 116);
@@ -587,13 +615,14 @@
             this.H5.TabIndex = 60;
             this.H5.UseVisualStyleBackColor = false;
             this.H5.Click += new System.EventHandler(this.A1_Click);
+            this.H5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G4
             // 
             this.G4.BackColor = System.Drawing.Color.Gray;
+            this.G4.ContextMenuStrip = this.cmsIptalEt;
             this.G4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G4.FlatAppearance.BorderSize = 0;
-            this.G4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G4.Location = new System.Drawing.Point(516, 157);
@@ -602,13 +631,14 @@
             this.G4.TabIndex = 60;
             this.G4.UseVisualStyleBackColor = false;
             this.G4.Click += new System.EventHandler(this.A1_Click);
+            this.G4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H6
             // 
             this.H6.BackColor = System.Drawing.Color.Gray;
+            this.H6.ContextMenuStrip = this.cmsIptalEt;
             this.H6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H6.FlatAppearance.BorderSize = 0;
-            this.H6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H6.Location = new System.Drawing.Point(598, 116);
@@ -617,13 +647,14 @@
             this.H6.TabIndex = 60;
             this.H6.UseVisualStyleBackColor = false;
             this.H6.Click += new System.EventHandler(this.A1_Click);
+            this.H6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F4
             // 
             this.F4.BackColor = System.Drawing.Color.Gray;
+            this.F4.ContextMenuStrip = this.cmsIptalEt;
             this.F4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F4.FlatAppearance.BorderSize = 0;
-            this.F4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F4.Location = new System.Drawing.Point(516, 198);
@@ -632,13 +663,14 @@
             this.F4.TabIndex = 60;
             this.F4.UseVisualStyleBackColor = false;
             this.F4.Click += new System.EventHandler(this.A1_Click);
+            this.F4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G5
             // 
             this.G5.BackColor = System.Drawing.Color.Gray;
+            this.G5.ContextMenuStrip = this.cmsIptalEt;
             this.G5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G5.FlatAppearance.BorderSize = 0;
-            this.G5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G5.Location = new System.Drawing.Point(557, 157);
@@ -647,13 +679,14 @@
             this.G5.TabIndex = 60;
             this.G5.UseVisualStyleBackColor = false;
             this.G5.Click += new System.EventHandler(this.A1_Click);
+            this.G5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E4
             // 
             this.E4.BackColor = System.Drawing.Color.Gray;
+            this.E4.ContextMenuStrip = this.cmsIptalEt;
             this.E4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E4.FlatAppearance.BorderSize = 0;
-            this.E4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E4.Location = new System.Drawing.Point(516, 239);
@@ -662,13 +695,14 @@
             this.E4.TabIndex = 60;
             this.E4.UseVisualStyleBackColor = false;
             this.E4.Click += new System.EventHandler(this.A1_Click);
+            this.E4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D4
             // 
             this.D4.BackColor = System.Drawing.Color.Gray;
+            this.D4.ContextMenuStrip = this.cmsIptalEt;
             this.D4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D4.FlatAppearance.BorderSize = 0;
-            this.D4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D4.Location = new System.Drawing.Point(516, 280);
@@ -677,13 +711,14 @@
             this.D4.TabIndex = 60;
             this.D4.UseVisualStyleBackColor = false;
             this.D4.Click += new System.EventHandler(this.A1_Click);
+            this.D4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F5
             // 
             this.F5.BackColor = System.Drawing.Color.Gray;
+            this.F5.ContextMenuStrip = this.cmsIptalEt;
             this.F5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F5.FlatAppearance.BorderSize = 0;
-            this.F5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F5.Location = new System.Drawing.Point(557, 198);
@@ -692,13 +727,14 @@
             this.F5.TabIndex = 60;
             this.F5.UseVisualStyleBackColor = false;
             this.F5.Click += new System.EventHandler(this.A1_Click);
+            this.F5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C4
             // 
             this.C4.BackColor = System.Drawing.Color.Gray;
+            this.C4.ContextMenuStrip = this.cmsIptalEt;
             this.C4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C4.FlatAppearance.BorderSize = 0;
-            this.C4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C4.Location = new System.Drawing.Point(516, 321);
@@ -707,13 +743,14 @@
             this.C4.TabIndex = 60;
             this.C4.UseVisualStyleBackColor = false;
             this.C4.Click += new System.EventHandler(this.A1_Click);
+            this.C4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G6
             // 
             this.G6.BackColor = System.Drawing.Color.Gray;
+            this.G6.ContextMenuStrip = this.cmsIptalEt;
             this.G6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G6.FlatAppearance.BorderSize = 0;
-            this.G6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G6.Location = new System.Drawing.Point(598, 157);
@@ -722,13 +759,14 @@
             this.G6.TabIndex = 60;
             this.G6.UseVisualStyleBackColor = false;
             this.G6.Click += new System.EventHandler(this.A1_Click);
+            this.G6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B4
             // 
             this.B4.BackColor = System.Drawing.Color.Gray;
+            this.B4.ContextMenuStrip = this.cmsIptalEt;
             this.B4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B4.FlatAppearance.BorderSize = 0;
-            this.B4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B4.Location = new System.Drawing.Point(516, 362);
@@ -737,13 +775,14 @@
             this.B4.TabIndex = 60;
             this.B4.UseVisualStyleBackColor = false;
             this.B4.Click += new System.EventHandler(this.A1_Click);
+            this.B4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E5
             // 
             this.E5.BackColor = System.Drawing.Color.Gray;
+            this.E5.ContextMenuStrip = this.cmsIptalEt;
             this.E5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E5.FlatAppearance.BorderSize = 0;
-            this.E5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E5.Location = new System.Drawing.Point(557, 239);
@@ -752,13 +791,14 @@
             this.E5.TabIndex = 60;
             this.E5.UseVisualStyleBackColor = false;
             this.E5.Click += new System.EventHandler(this.A1_Click);
+            this.E5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A4
             // 
             this.A4.BackColor = System.Drawing.Color.Gray;
+            this.A4.ContextMenuStrip = this.cmsIptalEt;
             this.A4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A4.FlatAppearance.BorderSize = 0;
-            this.A4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A4.Location = new System.Drawing.Point(516, 403);
@@ -767,13 +807,14 @@
             this.A4.TabIndex = 60;
             this.A4.UseVisualStyleBackColor = false;
             this.A4.Click += new System.EventHandler(this.A1_Click);
+            this.A4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D5
             // 
             this.D5.BackColor = System.Drawing.Color.Gray;
+            this.D5.ContextMenuStrip = this.cmsIptalEt;
             this.D5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D5.FlatAppearance.BorderSize = 0;
-            this.D5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D5.Location = new System.Drawing.Point(557, 280);
@@ -782,13 +823,14 @@
             this.D5.TabIndex = 60;
             this.D5.UseVisualStyleBackColor = false;
             this.D5.Click += new System.EventHandler(this.A1_Click);
+            this.D5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F6
             // 
             this.F6.BackColor = System.Drawing.Color.Gray;
+            this.F6.ContextMenuStrip = this.cmsIptalEt;
             this.F6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F6.FlatAppearance.BorderSize = 0;
-            this.F6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F6.Location = new System.Drawing.Point(598, 198);
@@ -797,13 +839,14 @@
             this.F6.TabIndex = 60;
             this.F6.UseVisualStyleBackColor = false;
             this.F6.Click += new System.EventHandler(this.A1_Click);
+            this.F6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C5
             // 
             this.C5.BackColor = System.Drawing.Color.Gray;
+            this.C5.ContextMenuStrip = this.cmsIptalEt;
             this.C5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C5.FlatAppearance.BorderSize = 0;
-            this.C5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C5.Location = new System.Drawing.Point(557, 321);
@@ -812,13 +855,14 @@
             this.C5.TabIndex = 60;
             this.C5.UseVisualStyleBackColor = false;
             this.C5.Click += new System.EventHandler(this.A1_Click);
+            this.C5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B5
             // 
             this.B5.BackColor = System.Drawing.Color.Gray;
+            this.B5.ContextMenuStrip = this.cmsIptalEt;
             this.B5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B5.FlatAppearance.BorderSize = 0;
-            this.B5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B5.Location = new System.Drawing.Point(557, 362);
@@ -827,13 +871,14 @@
             this.B5.TabIndex = 60;
             this.B5.UseVisualStyleBackColor = false;
             this.B5.Click += new System.EventHandler(this.A1_Click);
+            this.B5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E6
             // 
             this.E6.BackColor = System.Drawing.Color.Gray;
+            this.E6.ContextMenuStrip = this.cmsIptalEt;
             this.E6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E6.FlatAppearance.BorderSize = 0;
-            this.E6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E6.Location = new System.Drawing.Point(598, 239);
@@ -842,13 +887,14 @@
             this.E6.TabIndex = 60;
             this.E6.UseVisualStyleBackColor = false;
             this.E6.Click += new System.EventHandler(this.A1_Click);
+            this.E6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A5
             // 
             this.A5.BackColor = System.Drawing.Color.Gray;
+            this.A5.ContextMenuStrip = this.cmsIptalEt;
             this.A5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A5.FlatAppearance.BorderSize = 0;
-            this.A5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A5.Location = new System.Drawing.Point(557, 403);
@@ -857,13 +903,14 @@
             this.A5.TabIndex = 60;
             this.A5.UseVisualStyleBackColor = false;
             this.A5.Click += new System.EventHandler(this.A1_Click);
+            this.A5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D6
             // 
             this.D6.BackColor = System.Drawing.Color.Gray;
+            this.D6.ContextMenuStrip = this.cmsIptalEt;
             this.D6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D6.FlatAppearance.BorderSize = 0;
-            this.D6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D6.Location = new System.Drawing.Point(598, 280);
@@ -872,13 +919,14 @@
             this.D6.TabIndex = 60;
             this.D6.UseVisualStyleBackColor = false;
             this.D6.Click += new System.EventHandler(this.A1_Click);
+            this.D6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C6
             // 
             this.C6.BackColor = System.Drawing.Color.Gray;
+            this.C6.ContextMenuStrip = this.cmsIptalEt;
             this.C6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C6.FlatAppearance.BorderSize = 0;
-            this.C6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C6.Location = new System.Drawing.Point(598, 321);
@@ -887,13 +935,14 @@
             this.C6.TabIndex = 60;
             this.C6.UseVisualStyleBackColor = false;
             this.C6.Click += new System.EventHandler(this.A1_Click);
+            this.C6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B6
             // 
             this.B6.BackColor = System.Drawing.Color.Gray;
+            this.B6.ContextMenuStrip = this.cmsIptalEt;
             this.B6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B6.FlatAppearance.BorderSize = 0;
-            this.B6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B6.Location = new System.Drawing.Point(598, 362);
@@ -902,13 +951,14 @@
             this.B6.TabIndex = 60;
             this.B6.UseVisualStyleBackColor = false;
             this.B6.Click += new System.EventHandler(this.A1_Click);
+            this.B6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A6
             // 
             this.A6.BackColor = System.Drawing.Color.Gray;
+            this.A6.ContextMenuStrip = this.cmsIptalEt;
             this.A6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A6.FlatAppearance.BorderSize = 0;
-            this.A6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A6.Location = new System.Drawing.Point(598, 403);
@@ -917,13 +967,14 @@
             this.A6.TabIndex = 60;
             this.A6.UseVisualStyleBackColor = false;
             this.A6.Click += new System.EventHandler(this.A1_Click);
+            this.A6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H7
             // 
             this.H7.BackColor = System.Drawing.Color.Gray;
+            this.H7.ContextMenuStrip = this.cmsIptalEt;
             this.H7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H7.FlatAppearance.BorderSize = 0;
-            this.H7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H7.Location = new System.Drawing.Point(639, 116);
@@ -932,13 +983,14 @@
             this.H7.TabIndex = 60;
             this.H7.UseVisualStyleBackColor = false;
             this.H7.Click += new System.EventHandler(this.A1_Click);
+            this.H7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H8
             // 
             this.H8.BackColor = System.Drawing.Color.Gray;
+            this.H8.ContextMenuStrip = this.cmsIptalEt;
             this.H8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H8.FlatAppearance.BorderSize = 0;
-            this.H8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H8.Location = new System.Drawing.Point(680, 116);
@@ -947,13 +999,14 @@
             this.H8.TabIndex = 60;
             this.H8.UseVisualStyleBackColor = false;
             this.H8.Click += new System.EventHandler(this.A1_Click);
+            this.H8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G7
             // 
             this.G7.BackColor = System.Drawing.Color.Gray;
+            this.G7.ContextMenuStrip = this.cmsIptalEt;
             this.G7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G7.FlatAppearance.BorderSize = 0;
-            this.G7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G7.Location = new System.Drawing.Point(639, 157);
@@ -962,13 +1015,14 @@
             this.G7.TabIndex = 60;
             this.G7.UseVisualStyleBackColor = false;
             this.G7.Click += new System.EventHandler(this.A1_Click);
+            this.G7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H9
             // 
             this.H9.BackColor = System.Drawing.Color.Gray;
+            this.H9.ContextMenuStrip = this.cmsIptalEt;
             this.H9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H9.FlatAppearance.BorderSize = 0;
-            this.H9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H9.Location = new System.Drawing.Point(721, 116);
@@ -977,13 +1031,14 @@
             this.H9.TabIndex = 60;
             this.H9.UseVisualStyleBackColor = false;
             this.H9.Click += new System.EventHandler(this.A1_Click);
+            this.H9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F7
             // 
             this.F7.BackColor = System.Drawing.Color.Gray;
+            this.F7.ContextMenuStrip = this.cmsIptalEt;
             this.F7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F7.FlatAppearance.BorderSize = 0;
-            this.F7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F7.Location = new System.Drawing.Point(639, 198);
@@ -992,13 +1047,14 @@
             this.F7.TabIndex = 60;
             this.F7.UseVisualStyleBackColor = false;
             this.F7.Click += new System.EventHandler(this.A1_Click);
+            this.F7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G8
             // 
             this.G8.BackColor = System.Drawing.Color.Gray;
+            this.G8.ContextMenuStrip = this.cmsIptalEt;
             this.G8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G8.FlatAppearance.BorderSize = 0;
-            this.G8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G8.Location = new System.Drawing.Point(680, 157);
@@ -1007,13 +1063,14 @@
             this.G8.TabIndex = 60;
             this.G8.UseVisualStyleBackColor = false;
             this.G8.Click += new System.EventHandler(this.A1_Click);
+            this.G8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E7
             // 
             this.E7.BackColor = System.Drawing.Color.Gray;
+            this.E7.ContextMenuStrip = this.cmsIptalEt;
             this.E7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E7.FlatAppearance.BorderSize = 0;
-            this.E7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E7.Location = new System.Drawing.Point(639, 239);
@@ -1022,13 +1079,14 @@
             this.E7.TabIndex = 60;
             this.E7.UseVisualStyleBackColor = false;
             this.E7.Click += new System.EventHandler(this.A1_Click);
+            this.E7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D7
             // 
             this.D7.BackColor = System.Drawing.Color.Gray;
+            this.D7.ContextMenuStrip = this.cmsIptalEt;
             this.D7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D7.FlatAppearance.BorderSize = 0;
-            this.D7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D7.Location = new System.Drawing.Point(639, 280);
@@ -1037,13 +1095,14 @@
             this.D7.TabIndex = 60;
             this.D7.UseVisualStyleBackColor = false;
             this.D7.Click += new System.EventHandler(this.A1_Click);
+            this.D7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F8
             // 
             this.F8.BackColor = System.Drawing.Color.Gray;
+            this.F8.ContextMenuStrip = this.cmsIptalEt;
             this.F8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F8.FlatAppearance.BorderSize = 0;
-            this.F8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F8.Location = new System.Drawing.Point(680, 198);
@@ -1052,13 +1111,14 @@
             this.F8.TabIndex = 60;
             this.F8.UseVisualStyleBackColor = false;
             this.F8.Click += new System.EventHandler(this.A1_Click);
+            this.F8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C7
             // 
             this.C7.BackColor = System.Drawing.Color.Gray;
+            this.C7.ContextMenuStrip = this.cmsIptalEt;
             this.C7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C7.FlatAppearance.BorderSize = 0;
-            this.C7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C7.Location = new System.Drawing.Point(639, 321);
@@ -1067,13 +1127,14 @@
             this.C7.TabIndex = 60;
             this.C7.UseVisualStyleBackColor = false;
             this.C7.Click += new System.EventHandler(this.A1_Click);
+            this.C7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G9
             // 
             this.G9.BackColor = System.Drawing.Color.Gray;
+            this.G9.ContextMenuStrip = this.cmsIptalEt;
             this.G9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G9.FlatAppearance.BorderSize = 0;
-            this.G9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G9.Location = new System.Drawing.Point(721, 157);
@@ -1082,13 +1143,14 @@
             this.G9.TabIndex = 60;
             this.G9.UseVisualStyleBackColor = false;
             this.G9.Click += new System.EventHandler(this.A1_Click);
+            this.G9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B7
             // 
             this.B7.BackColor = System.Drawing.Color.Gray;
+            this.B7.ContextMenuStrip = this.cmsIptalEt;
             this.B7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B7.FlatAppearance.BorderSize = 0;
-            this.B7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B7.Location = new System.Drawing.Point(639, 362);
@@ -1097,13 +1159,14 @@
             this.B7.TabIndex = 60;
             this.B7.UseVisualStyleBackColor = false;
             this.B7.Click += new System.EventHandler(this.A1_Click);
+            this.B7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E8
             // 
             this.E8.BackColor = System.Drawing.Color.Gray;
+            this.E8.ContextMenuStrip = this.cmsIptalEt;
             this.E8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E8.FlatAppearance.BorderSize = 0;
-            this.E8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E8.Location = new System.Drawing.Point(680, 239);
@@ -1112,13 +1175,14 @@
             this.E8.TabIndex = 60;
             this.E8.UseVisualStyleBackColor = false;
             this.E8.Click += new System.EventHandler(this.A1_Click);
+            this.E8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A7
             // 
             this.A7.BackColor = System.Drawing.Color.Gray;
+            this.A7.ContextMenuStrip = this.cmsIptalEt;
             this.A7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A7.FlatAppearance.BorderSize = 0;
-            this.A7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A7.Location = new System.Drawing.Point(639, 403);
@@ -1127,13 +1191,14 @@
             this.A7.TabIndex = 60;
             this.A7.UseVisualStyleBackColor = false;
             this.A7.Click += new System.EventHandler(this.A1_Click);
+            this.A7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D8
             // 
             this.D8.BackColor = System.Drawing.Color.Gray;
+            this.D8.ContextMenuStrip = this.cmsIptalEt;
             this.D8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D8.FlatAppearance.BorderSize = 0;
-            this.D8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D8.Location = new System.Drawing.Point(680, 280);
@@ -1142,13 +1207,14 @@
             this.D8.TabIndex = 60;
             this.D8.UseVisualStyleBackColor = false;
             this.D8.Click += new System.EventHandler(this.A1_Click);
+            this.D8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F9
             // 
             this.F9.BackColor = System.Drawing.Color.Gray;
+            this.F9.ContextMenuStrip = this.cmsIptalEt;
             this.F9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F9.FlatAppearance.BorderSize = 0;
-            this.F9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F9.Location = new System.Drawing.Point(721, 198);
@@ -1157,13 +1223,14 @@
             this.F9.TabIndex = 60;
             this.F9.UseVisualStyleBackColor = false;
             this.F9.Click += new System.EventHandler(this.A1_Click);
+            this.F9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C8
             // 
             this.C8.BackColor = System.Drawing.Color.Gray;
+            this.C8.ContextMenuStrip = this.cmsIptalEt;
             this.C8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C8.FlatAppearance.BorderSize = 0;
-            this.C8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C8.Location = new System.Drawing.Point(680, 321);
@@ -1172,13 +1239,14 @@
             this.C8.TabIndex = 60;
             this.C8.UseVisualStyleBackColor = false;
             this.C8.Click += new System.EventHandler(this.A1_Click);
+            this.C8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B8
             // 
             this.B8.BackColor = System.Drawing.Color.Gray;
+            this.B8.ContextMenuStrip = this.cmsIptalEt;
             this.B8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B8.FlatAppearance.BorderSize = 0;
-            this.B8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B8.Location = new System.Drawing.Point(680, 362);
@@ -1187,13 +1255,14 @@
             this.B8.TabIndex = 60;
             this.B8.UseVisualStyleBackColor = false;
             this.B8.Click += new System.EventHandler(this.A1_Click);
+            this.B8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E9
             // 
             this.E9.BackColor = System.Drawing.Color.Gray;
+            this.E9.ContextMenuStrip = this.cmsIptalEt;
             this.E9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E9.FlatAppearance.BorderSize = 0;
-            this.E9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E9.Location = new System.Drawing.Point(721, 239);
@@ -1202,13 +1271,14 @@
             this.E9.TabIndex = 60;
             this.E9.UseVisualStyleBackColor = false;
             this.E9.Click += new System.EventHandler(this.A1_Click);
+            this.E9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A8
             // 
             this.A8.BackColor = System.Drawing.Color.Gray;
+            this.A8.ContextMenuStrip = this.cmsIptalEt;
             this.A8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A8.FlatAppearance.BorderSize = 0;
-            this.A8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A8.Location = new System.Drawing.Point(680, 403);
@@ -1217,13 +1287,14 @@
             this.A8.TabIndex = 60;
             this.A8.UseVisualStyleBackColor = false;
             this.A8.Click += new System.EventHandler(this.A1_Click);
+            this.A8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D9
             // 
             this.D9.BackColor = System.Drawing.Color.Gray;
+            this.D9.ContextMenuStrip = this.cmsIptalEt;
             this.D9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D9.FlatAppearance.BorderSize = 0;
-            this.D9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D9.Location = new System.Drawing.Point(721, 280);
@@ -1232,13 +1303,14 @@
             this.D9.TabIndex = 60;
             this.D9.UseVisualStyleBackColor = false;
             this.D9.Click += new System.EventHandler(this.A1_Click);
+            this.D9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C9
             // 
             this.C9.BackColor = System.Drawing.Color.Gray;
+            this.C9.ContextMenuStrip = this.cmsIptalEt;
             this.C9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C9.FlatAppearance.BorderSize = 0;
-            this.C9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C9.Location = new System.Drawing.Point(721, 321);
@@ -1247,13 +1319,14 @@
             this.C9.TabIndex = 60;
             this.C9.UseVisualStyleBackColor = false;
             this.C9.Click += new System.EventHandler(this.A1_Click);
+            this.C9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B9
             // 
             this.B9.BackColor = System.Drawing.Color.Gray;
+            this.B9.ContextMenuStrip = this.cmsIptalEt;
             this.B9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B9.FlatAppearance.BorderSize = 0;
-            this.B9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B9.Location = new System.Drawing.Point(721, 362);
@@ -1262,13 +1335,14 @@
             this.B9.TabIndex = 60;
             this.B9.UseVisualStyleBackColor = false;
             this.B9.Click += new System.EventHandler(this.A1_Click);
+            this.B9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A9
             // 
             this.A9.BackColor = System.Drawing.Color.Gray;
+            this.A9.ContextMenuStrip = this.cmsIptalEt;
             this.A9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A9.FlatAppearance.BorderSize = 0;
-            this.A9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A9.Location = new System.Drawing.Point(721, 403);
@@ -1277,13 +1351,14 @@
             this.A9.TabIndex = 60;
             this.A9.UseVisualStyleBackColor = false;
             this.A9.Click += new System.EventHandler(this.A1_Click);
+            this.A9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H10
             // 
             this.H10.BackColor = System.Drawing.Color.Gray;
+            this.H10.ContextMenuStrip = this.cmsIptalEt;
             this.H10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H10.FlatAppearance.BorderSize = 0;
-            this.H10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H10.Location = new System.Drawing.Point(762, 116);
@@ -1292,13 +1367,14 @@
             this.H10.TabIndex = 60;
             this.H10.UseVisualStyleBackColor = false;
             this.H10.Click += new System.EventHandler(this.A1_Click);
+            this.H10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F13
             // 
             this.F13.BackColor = System.Drawing.Color.Gray;
+            this.F13.ContextMenuStrip = this.cmsIptalEt;
             this.F13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F13.FlatAppearance.BorderSize = 0;
-            this.F13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F13.Location = new System.Drawing.Point(885, 198);
@@ -1307,13 +1383,14 @@
             this.F13.TabIndex = 60;
             this.F13.UseVisualStyleBackColor = false;
             this.F13.Click += new System.EventHandler(this.A1_Click);
+            this.F13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G10
             // 
             this.G10.BackColor = System.Drawing.Color.Gray;
+            this.G10.ContextMenuStrip = this.cmsIptalEt;
             this.G10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G10.FlatAppearance.BorderSize = 0;
-            this.G10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G10.Location = new System.Drawing.Point(762, 157);
@@ -1322,13 +1399,14 @@
             this.G10.TabIndex = 60;
             this.G10.UseVisualStyleBackColor = false;
             this.G10.Click += new System.EventHandler(this.A1_Click);
+            this.G10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F14
             // 
             this.F14.BackColor = System.Drawing.Color.Gray;
+            this.F14.ContextMenuStrip = this.cmsIptalEt;
             this.F14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F14.FlatAppearance.BorderSize = 0;
-            this.F14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F14.Location = new System.Drawing.Point(926, 198);
@@ -1337,13 +1415,14 @@
             this.F14.TabIndex = 60;
             this.F14.UseVisualStyleBackColor = false;
             this.F14.Click += new System.EventHandler(this.A1_Click);
+            this.F14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F10
             // 
             this.F10.BackColor = System.Drawing.Color.Gray;
+            this.F10.ContextMenuStrip = this.cmsIptalEt;
             this.F10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F10.FlatAppearance.BorderSize = 0;
-            this.F10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F10.Location = new System.Drawing.Point(762, 198);
@@ -1352,13 +1431,14 @@
             this.F10.TabIndex = 60;
             this.F10.UseVisualStyleBackColor = false;
             this.F10.Click += new System.EventHandler(this.A1_Click);
+            this.F10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E13
             // 
             this.E13.BackColor = System.Drawing.Color.Gray;
+            this.E13.ContextMenuStrip = this.cmsIptalEt;
             this.E13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E13.FlatAppearance.BorderSize = 0;
-            this.E13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E13.Location = new System.Drawing.Point(885, 239);
@@ -1367,13 +1447,14 @@
             this.E13.TabIndex = 60;
             this.E13.UseVisualStyleBackColor = false;
             this.E13.Click += new System.EventHandler(this.A1_Click);
+            this.E13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E10
             // 
             this.E10.BackColor = System.Drawing.Color.Gray;
+            this.E10.ContextMenuStrip = this.cmsIptalEt;
             this.E10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E10.FlatAppearance.BorderSize = 0;
-            this.E10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E10.Location = new System.Drawing.Point(762, 239);
@@ -1382,13 +1463,14 @@
             this.E10.TabIndex = 60;
             this.E10.UseVisualStyleBackColor = false;
             this.E10.Click += new System.EventHandler(this.A1_Click);
+            this.E10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D10
             // 
             this.D10.BackColor = System.Drawing.Color.Gray;
+            this.D10.ContextMenuStrip = this.cmsIptalEt;
             this.D10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D10.FlatAppearance.BorderSize = 0;
-            this.D10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D10.Location = new System.Drawing.Point(762, 280);
@@ -1397,13 +1479,14 @@
             this.D10.TabIndex = 60;
             this.D10.UseVisualStyleBackColor = false;
             this.D10.Click += new System.EventHandler(this.A1_Click);
+            this.D10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F11
             // 
             this.F11.BackColor = System.Drawing.Color.Gray;
+            this.F11.ContextMenuStrip = this.cmsIptalEt;
             this.F11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F11.FlatAppearance.BorderSize = 0;
-            this.F11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F11.Location = new System.Drawing.Point(803, 198);
@@ -1412,13 +1495,14 @@
             this.F11.TabIndex = 60;
             this.F11.UseVisualStyleBackColor = false;
             this.F11.Click += new System.EventHandler(this.A1_Click);
+            this.F11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C10
             // 
             this.C10.BackColor = System.Drawing.Color.Gray;
+            this.C10.ContextMenuStrip = this.cmsIptalEt;
             this.C10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C10.FlatAppearance.BorderSize = 0;
-            this.C10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C10.Location = new System.Drawing.Point(762, 321);
@@ -1427,13 +1511,14 @@
             this.C10.TabIndex = 60;
             this.C10.UseVisualStyleBackColor = false;
             this.C10.Click += new System.EventHandler(this.A1_Click);
+            this.C10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E14
             // 
             this.E14.BackColor = System.Drawing.Color.Gray;
+            this.E14.ContextMenuStrip = this.cmsIptalEt;
             this.E14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E14.FlatAppearance.BorderSize = 0;
-            this.E14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E14.Location = new System.Drawing.Point(926, 239);
@@ -1442,13 +1527,14 @@
             this.E14.TabIndex = 60;
             this.E14.UseVisualStyleBackColor = false;
             this.E14.Click += new System.EventHandler(this.A1_Click);
+            this.E14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B10
             // 
             this.B10.BackColor = System.Drawing.Color.Gray;
+            this.B10.ContextMenuStrip = this.cmsIptalEt;
             this.B10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B10.FlatAppearance.BorderSize = 0;
-            this.B10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B10.Location = new System.Drawing.Point(762, 362);
@@ -1457,13 +1543,14 @@
             this.B10.TabIndex = 60;
             this.B10.UseVisualStyleBackColor = false;
             this.B10.Click += new System.EventHandler(this.A1_Click);
+            this.B10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E11
             // 
             this.E11.BackColor = System.Drawing.Color.Gray;
+            this.E11.ContextMenuStrip = this.cmsIptalEt;
             this.E11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E11.FlatAppearance.BorderSize = 0;
-            this.E11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E11.Location = new System.Drawing.Point(803, 239);
@@ -1472,13 +1559,14 @@
             this.E11.TabIndex = 60;
             this.E11.UseVisualStyleBackColor = false;
             this.E11.Click += new System.EventHandler(this.A1_Click);
+            this.E11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A10
             // 
             this.A10.BackColor = System.Drawing.Color.Gray;
+            this.A10.ContextMenuStrip = this.cmsIptalEt;
             this.A10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A10.FlatAppearance.BorderSize = 0;
-            this.A10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A10.Location = new System.Drawing.Point(762, 403);
@@ -1487,13 +1575,14 @@
             this.A10.TabIndex = 60;
             this.A10.UseVisualStyleBackColor = false;
             this.A10.Click += new System.EventHandler(this.A1_Click);
+            this.A10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D11
             // 
             this.D11.BackColor = System.Drawing.Color.Gray;
+            this.D11.ContextMenuStrip = this.cmsIptalEt;
             this.D11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D11.FlatAppearance.BorderSize = 0;
-            this.D11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D11.Location = new System.Drawing.Point(803, 280);
@@ -1502,13 +1591,14 @@
             this.D11.TabIndex = 60;
             this.D11.UseVisualStyleBackColor = false;
             this.D11.Click += new System.EventHandler(this.A1_Click);
+            this.D11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F12
             // 
             this.F12.BackColor = System.Drawing.Color.Gray;
+            this.F12.ContextMenuStrip = this.cmsIptalEt;
             this.F12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F12.FlatAppearance.BorderSize = 0;
-            this.F12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F12.Location = new System.Drawing.Point(844, 198);
@@ -1517,13 +1607,14 @@
             this.F12.TabIndex = 60;
             this.F12.UseVisualStyleBackColor = false;
             this.F12.Click += new System.EventHandler(this.A1_Click);
+            this.F12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C11
             // 
             this.C11.BackColor = System.Drawing.Color.Gray;
+            this.C11.ContextMenuStrip = this.cmsIptalEt;
             this.C11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C11.FlatAppearance.BorderSize = 0;
-            this.C11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C11.Location = new System.Drawing.Point(803, 321);
@@ -1532,13 +1623,14 @@
             this.C11.TabIndex = 60;
             this.C11.UseVisualStyleBackColor = false;
             this.C11.Click += new System.EventHandler(this.A1_Click);
+            this.C11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B11
             // 
             this.B11.BackColor = System.Drawing.Color.Gray;
+            this.B11.ContextMenuStrip = this.cmsIptalEt;
             this.B11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B11.FlatAppearance.BorderSize = 0;
-            this.B11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B11.Location = new System.Drawing.Point(803, 362);
@@ -1547,13 +1639,14 @@
             this.B11.TabIndex = 60;
             this.B11.UseVisualStyleBackColor = false;
             this.B11.Click += new System.EventHandler(this.A1_Click);
+            this.B11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E12
             // 
             this.E12.BackColor = System.Drawing.Color.Gray;
+            this.E12.ContextMenuStrip = this.cmsIptalEt;
             this.E12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E12.FlatAppearance.BorderSize = 0;
-            this.E12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E12.Location = new System.Drawing.Point(844, 239);
@@ -1562,13 +1655,14 @@
             this.E12.TabIndex = 60;
             this.E12.UseVisualStyleBackColor = false;
             this.E12.Click += new System.EventHandler(this.A1_Click);
+            this.E12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A11
             // 
             this.A11.BackColor = System.Drawing.Color.Gray;
+            this.A11.ContextMenuStrip = this.cmsIptalEt;
             this.A11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A11.FlatAppearance.BorderSize = 0;
-            this.A11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A11.Location = new System.Drawing.Point(803, 403);
@@ -1577,13 +1671,14 @@
             this.A11.TabIndex = 60;
             this.A11.UseVisualStyleBackColor = false;
             this.A11.Click += new System.EventHandler(this.A1_Click);
+            this.A11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // D12
             // 
             this.D12.BackColor = System.Drawing.Color.Gray;
+            this.D12.ContextMenuStrip = this.cmsIptalEt;
             this.D12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.D12.FlatAppearance.BorderSize = 0;
-            this.D12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.D12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.D12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.D12.Location = new System.Drawing.Point(844, 280);
@@ -1592,13 +1687,14 @@
             this.D12.TabIndex = 60;
             this.D12.UseVisualStyleBackColor = false;
             this.D12.Click += new System.EventHandler(this.A1_Click);
+            this.D12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // C12
             // 
             this.C12.BackColor = System.Drawing.Color.Gray;
+            this.C12.ContextMenuStrip = this.cmsIptalEt;
             this.C12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.C12.FlatAppearance.BorderSize = 0;
-            this.C12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.C12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.C12.Location = new System.Drawing.Point(844, 321);
@@ -1607,13 +1703,14 @@
             this.C12.TabIndex = 60;
             this.C12.UseVisualStyleBackColor = false;
             this.C12.Click += new System.EventHandler(this.A1_Click);
+            this.C12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // B12
             // 
             this.B12.BackColor = System.Drawing.Color.Gray;
+            this.B12.ContextMenuStrip = this.cmsIptalEt;
             this.B12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.B12.FlatAppearance.BorderSize = 0;
-            this.B12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.B12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.B12.Location = new System.Drawing.Point(844, 362);
@@ -1622,13 +1719,14 @@
             this.B12.TabIndex = 60;
             this.B12.UseVisualStyleBackColor = false;
             this.B12.Click += new System.EventHandler(this.A1_Click);
+            this.B12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A12
             // 
             this.A12.BackColor = System.Drawing.Color.Gray;
+            this.A12.ContextMenuStrip = this.cmsIptalEt;
             this.A12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A12.FlatAppearance.BorderSize = 0;
-            this.A12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A12.Location = new System.Drawing.Point(844, 403);
@@ -1637,13 +1735,14 @@
             this.A12.TabIndex = 60;
             this.A12.UseVisualStyleBackColor = false;
             this.A12.Click += new System.EventHandler(this.A1_Click);
+            this.A12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // F15
             // 
             this.F15.BackColor = System.Drawing.Color.Gray;
+            this.F15.ContextMenuStrip = this.cmsIptalEt;
             this.F15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.F15.FlatAppearance.BorderSize = 0;
-            this.F15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.F15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.F15.Location = new System.Drawing.Point(967, 198);
@@ -1652,13 +1751,14 @@
             this.F15.TabIndex = 60;
             this.F15.UseVisualStyleBackColor = false;
             this.F15.Click += new System.EventHandler(this.A1_Click);
+            this.F15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // E15
             // 
             this.E15.BackColor = System.Drawing.Color.Gray;
+            this.E15.ContextMenuStrip = this.cmsIptalEt;
             this.E15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.E15.FlatAppearance.BorderSize = 0;
-            this.E15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.E15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.E15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.E15.Location = new System.Drawing.Point(967, 239);
@@ -1667,13 +1767,14 @@
             this.E15.TabIndex = 60;
             this.E15.UseVisualStyleBackColor = false;
             this.E15.Click += new System.EventHandler(this.A1_Click);
+            this.E15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H11
             // 
             this.H11.BackColor = System.Drawing.Color.Gray;
+            this.H11.ContextMenuStrip = this.cmsIptalEt;
             this.H11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H11.FlatAppearance.BorderSize = 0;
-            this.H11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H11.Location = new System.Drawing.Point(803, 116);
@@ -1682,13 +1783,14 @@
             this.H11.TabIndex = 60;
             this.H11.UseVisualStyleBackColor = false;
             this.H11.Click += new System.EventHandler(this.A1_Click);
+            this.H11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G11
             // 
             this.G11.BackColor = System.Drawing.Color.Gray;
+            this.G11.ContextMenuStrip = this.cmsIptalEt;
             this.G11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G11.FlatAppearance.BorderSize = 0;
-            this.G11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G11.Location = new System.Drawing.Point(803, 157);
@@ -1697,13 +1799,14 @@
             this.G11.TabIndex = 60;
             this.G11.UseVisualStyleBackColor = false;
             this.G11.Click += new System.EventHandler(this.A1_Click);
+            this.G11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H12
             // 
             this.H12.BackColor = System.Drawing.Color.Gray;
+            this.H12.ContextMenuStrip = this.cmsIptalEt;
             this.H12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H12.FlatAppearance.BorderSize = 0;
-            this.H12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H12.Location = new System.Drawing.Point(844, 116);
@@ -1712,13 +1815,14 @@
             this.H12.TabIndex = 60;
             this.H12.UseVisualStyleBackColor = false;
             this.H12.Click += new System.EventHandler(this.A1_Click);
+            this.H12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G12
             // 
             this.G12.BackColor = System.Drawing.Color.Gray;
+            this.G12.ContextMenuStrip = this.cmsIptalEt;
             this.G12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G12.FlatAppearance.BorderSize = 0;
-            this.G12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G12.Location = new System.Drawing.Point(844, 157);
@@ -1727,13 +1831,14 @@
             this.G12.TabIndex = 60;
             this.G12.UseVisualStyleBackColor = false;
             this.G12.Click += new System.EventHandler(this.A1_Click);
+            this.G12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A1
             // 
             this.A1.BackColor = System.Drawing.Color.Gray;
+            this.A1.ContextMenuStrip = this.cmsIptalEt;
             this.A1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A1.FlatAppearance.BorderSize = 0;
-            this.A1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A1.Location = new System.Drawing.Point(313, 403);
@@ -1742,13 +1847,14 @@
             this.A1.TabIndex = 60;
             this.A1.UseVisualStyleBackColor = false;
             this.A1.Click += new System.EventHandler(this.A1_Click);
+            this.A1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A2
             // 
             this.A2.BackColor = System.Drawing.Color.Gray;
+            this.A2.ContextMenuStrip = this.cmsIptalEt;
             this.A2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A2.FlatAppearance.BorderSize = 0;
-            this.A2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A2.Location = new System.Drawing.Point(354, 403);
@@ -1757,13 +1863,14 @@
             this.A2.TabIndex = 60;
             this.A2.UseVisualStyleBackColor = false;
             this.A2.Click += new System.EventHandler(this.A1_Click);
+            this.A2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // A3
             // 
             this.A3.BackColor = System.Drawing.Color.Gray;
+            this.A3.ContextMenuStrip = this.cmsIptalEt;
             this.A3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.A3.FlatAppearance.BorderSize = 0;
-            this.A3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.A3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A3.Location = new System.Drawing.Point(395, 403);
@@ -1772,6 +1879,7 @@
             this.A3.TabIndex = 60;
             this.A3.UseVisualStyleBackColor = false;
             this.A3.Click += new System.EventHandler(this.A1_Click);
+            this.A3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // label27
             // 
@@ -1880,9 +1988,9 @@
             // G13
             // 
             this.G13.BackColor = System.Drawing.Color.Gray;
+            this.G13.ContextMenuStrip = this.cmsIptalEt;
             this.G13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G13.FlatAppearance.BorderSize = 0;
-            this.G13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G13.Location = new System.Drawing.Point(885, 157);
@@ -1891,13 +1999,14 @@
             this.G13.TabIndex = 60;
             this.G13.UseVisualStyleBackColor = false;
             this.G13.Click += new System.EventHandler(this.A1_Click);
+            this.G13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G14
             // 
             this.G14.BackColor = System.Drawing.Color.Gray;
+            this.G14.ContextMenuStrip = this.cmsIptalEt;
             this.G14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G14.FlatAppearance.BorderSize = 0;
-            this.G14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G14.Location = new System.Drawing.Point(926, 157);
@@ -1906,13 +2015,14 @@
             this.G14.TabIndex = 60;
             this.G14.UseVisualStyleBackColor = false;
             this.G14.Click += new System.EventHandler(this.A1_Click);
+            this.G14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // G15
             // 
             this.G15.BackColor = System.Drawing.Color.Gray;
+            this.G15.ContextMenuStrip = this.cmsIptalEt;
             this.G15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.G15.FlatAppearance.BorderSize = 0;
-            this.G15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.G15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.G15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.G15.Location = new System.Drawing.Point(967, 157);
@@ -1921,13 +2031,14 @@
             this.G15.TabIndex = 60;
             this.G15.UseVisualStyleBackColor = false;
             this.G15.Click += new System.EventHandler(this.A1_Click);
+            this.G15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H13
             // 
             this.H13.BackColor = System.Drawing.Color.Gray;
+            this.H13.ContextMenuStrip = this.cmsIptalEt;
             this.H13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H13.FlatAppearance.BorderSize = 0;
-            this.H13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H13.Location = new System.Drawing.Point(885, 116);
@@ -1936,13 +2047,14 @@
             this.H13.TabIndex = 60;
             this.H13.UseVisualStyleBackColor = false;
             this.H13.Click += new System.EventHandler(this.A1_Click);
+            this.H13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // H14
             // 
             this.H14.BackColor = System.Drawing.Color.Gray;
+            this.H14.ContextMenuStrip = this.cmsIptalEt;
             this.H14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.H14.FlatAppearance.BorderSize = 0;
-            this.H14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.H14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.H14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.H14.Location = new System.Drawing.Point(926, 116);
@@ -1951,6 +2063,7 @@
             this.H14.TabIndex = 60;
             this.H14.UseVisualStyleBackColor = false;
             this.H14.Click += new System.EventHandler(this.A1_Click);
+            this.H14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
             // 
             // label11
             // 
@@ -2536,6 +2649,20 @@
             this.lblToplamKoltuk.TabIndex = 234;
             this.lblToplamKoltuk.Text = "109";
             // 
+            // cmsIptalEt
+            // 
+            this.cmsIptalEt.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.iptalEtToolStripMenuItem});
+            this.cmsIptalEt.Name = "cmsIptalEt";
+            this.cmsIptalEt.Size = new System.Drawing.Size(111, 26);
+            // 
+            // iptalEtToolStripMenuItem
+            // 
+            this.iptalEtToolStripMenuItem.Name = "iptalEtToolStripMenuItem";
+            this.iptalEtToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.iptalEtToolStripMenuItem.Text = "İptal Et";
+            this.iptalEtToolStripMenuItem.Click += new System.EventHandler(this.iptalEtToolStripMenuItem_Click);
+            // 
             // FormSalon4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2543,6 +2670,7 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.ContextMenuStrip = this.cmsIptalEt;
             this.Controls.Add(this.lbKoltuklar);
             this.Controls.Add(this.lblSeciliKoltuk);
             this.Controls.Add(this.label33);
@@ -2717,6 +2845,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.cmsIptalEt.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2888,5 +3017,7 @@
         private System.Windows.Forms.Label lblSeciliKoltuk;
         private System.Windows.Forms.ListBox lbKoltuklar;
         private System.Windows.Forms.Label lblToplamKoltuk;
+        private System.Windows.Forms.ContextMenuStrip cmsIptalEt;
+        private System.Windows.Forms.ToolStripMenuItem iptalEtToolStripMenuItem;
     }
 }

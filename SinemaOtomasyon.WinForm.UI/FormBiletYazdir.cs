@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SinemaOtomasyon.DAL.SinemaContext;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,22 @@ namespace SinemaOtomasyon.WinForm.UI
 {
     public partial class FormBiletYazdir : Form
     {
+        private Seyirci s;
+
         public FormBiletYazdir()
         {
             InitializeComponent();
+        }
+
+        public FormBiletYazdir(Seyirci s)
+        {            
+            InitializeComponent();
+            this.s = s;
+        }
+
+        private void FormBiletYazdir_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
