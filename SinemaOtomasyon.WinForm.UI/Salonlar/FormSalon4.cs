@@ -20,7 +20,8 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
     {
         private IKoltukRepository _koltukRepo;
         private IGosterimRepository _gosterimRepo;
-        private IUnitOfWork _gosterimUOW;
+        private IUnitOfWork _gosterimUOW,_koltukUOW;
+        
         private Film f;
         int SeansId, SalonId;
         string Tarih;
@@ -29,23 +30,29 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
 
         public FormSalon4()
         {
+          
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
             _koltukRepo = container.Get<IKoltukRepository>();
+            _koltukUOW = container.Get<IUnitOfWork>();
             _gosterimRepo = container.Get<IGosterimRepository>();
             _gosterimUOW = container.Get<IUnitOfWork>();
             InitializeComponent();
         }
+
         public FormSalon4(Film f, int SeansId, int SalonId, string Tarih)
         {
-            InitializeComponent();
             this.f = f;
             this.SeansId = SeansId;
             this.SalonId = SalonId;
             this.Tarih = Tarih;
+            InitializeComponent();
         }
 
         private void FormSalon4_Load(object sender, EventArgs e)
         {
+
+            KoltukKontrol();
+            
             //Gosterim gosterim = new Gosterim();
             //gosterim.FilmID = f.FilmID;
             //gosterim.SalonID = SalonId;
@@ -55,11 +62,32 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             //{
             //    MessageBox.Show("Kayıt başarılı!");
             //}
-            
 
-            //txtInformation.Text = f.FilmAd + " / " + "Salon: "+SalonId+" / "+"Seans: "+SeansId+" / ";
+
+            //txtInformation.Text = f.FilmAd + " / " + "Salon: " + SalonId + " / " + "Seans: " + SeansId + " / ";
         }
 
+        private void KoltukKontrol()
+        {
+            IEnumerable<string> koltuklar = new List<string>();
+            koltuklar = _koltukUOW.KoltukRepository().GetList().Where(x => x.DoluMu == true).Select(x => x.KoltukAD);
+            if (koltuklar.Count() != 0)
+            {
+
+                foreach (var item in koltuklar)
+                {
+                    Button koltuk = new Button();
+                    koltuk = (Button)Controls[item.ToString()];
+                    koltuk.BackColor = Color.Red;
+                    koltuk.FlatAppearance.MouseOverBackColor = Color.Red;
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("seçili koltuk yok");
+            }
+        }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -72,36 +100,48 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
         {
             if (lbKoltuklar.Items.Count != 0)
             {
-                string koltukAd;
-                var koltukListe = _koltukRepo.GetList().Select(x => new { x.KoltukAD });
+
+                var koltukListe = _koltukRepo.GetList();
 
                 Button koltuk = new Button();
                 for (int i = 0; i < lbKoltuklar.Items.Count; i++)
                 {
-
+                    /*Koltuk Rengi Değiştirme*/
                     koltuk = (Button)Controls[lbKoltuklar.Items[i].ToString()];
                     koltuk.BackColor = Color.Red;
                     koltuk.FlatAppearance.MouseOverBackColor = Color.Red;
+                    /**/
 
-                    koltukAd = lbKoltuklar.Items[i].ToString();
-                    lbSeciliKoltuklar.Items.Add(koltukListe.Where(x => x.KoltukAD == koltukAd).FirstOrDefault());
-                    lbSeciliKoltuklar.DisplayMember = "KoltukAd";
+                    /*Seçilen KoltukId'si bulunur ve veritabanından kontrol edilir.Eşleşen Id'lerin DoluMu özelliği doldurulur.*/
+                    string koltukAd = lbKoltuklar.Items[i].ToString();                 
+                    int secilenkoltukId = koltukListe.Where(x => x.KoltukAD == koltukAd).Select(x => x.KoltukID).FirstOrDefault();
+                    _koltukUOW.KoltukRepository().GetById(secilenkoltukId).DoluMu = true;
+                    /**/
+                    /*Database kayıt edilir,kayıt başarılıysa bir mesaj kutusu döner*/
+                    if (_koltukUOW.Save()> 0)
+                    {
+                        MessageBox.Show("başarılı");
+                    }
+                    else
+                    {
+                        MessageBox.Show("başarısız");
+                    }
+                    /**/
+
                 }
-
-
 
                 butonlar.Clear();
                 lbKoltuklar.DataSource = butonlar.ToList();
 
                 KoltukSayisiHesapla();
 
-                //FormBiletYazdir frm = new FormBiletYazdir();
-                //frm.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Önce koltuk seçiniz !");
             }
+
+            KoltukKontrol();
         }
 
         private void KoltukSayisiHesapla()

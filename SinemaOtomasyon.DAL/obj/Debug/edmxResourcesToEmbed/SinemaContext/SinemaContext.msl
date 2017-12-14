@@ -73,6 +73,7 @@
           <ScalarProperty Name="KoltukID" ColumnName="KoltukID" />
           <ScalarProperty Name="KoltukAD" ColumnName="KoltukAD" />
           <ScalarProperty Name="KoltukFiyatSapma" ColumnName="KoltukFiyatSapma" />
+          <ScalarProperty Name="DoluMu" ColumnName="DoluMu" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

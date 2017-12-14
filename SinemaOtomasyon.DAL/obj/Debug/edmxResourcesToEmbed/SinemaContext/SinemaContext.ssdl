@@ -67,6 +67,7 @@
     <Property Name="KoltukID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="KoltukAD" Type="varchar" MaxLength="8" Nullable="false" />
     <Property Name="KoltukFiyatSapma" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DoluMu" Type="bit" />
   </EntityType>
   <EntityType Name="OdemeSekli">
     <Key>

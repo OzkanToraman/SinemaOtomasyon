@@ -192,7 +192,6 @@
             this.label33 = new System.Windows.Forms.Label();
             this.lblSeciliKoltuk = new System.Windows.Forms.Label();
             this.lbKoltuklar = new System.Windows.Forms.ListBox();
-            this.lbSeciliKoltuklar = new System.Windows.Forms.ListBox();
             this.lblToplamKoltuk = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -2525,19 +2524,6 @@
             this.lbKoltuklar.Size = new System.Drawing.Size(100, 308);
             this.lbKoltuklar.TabIndex = 238;
             // 
-            // lbSeciliKoltuklar
-            // 
-            this.lbSeciliKoltuklar.BackColor = System.Drawing.Color.White;
-            this.lbSeciliKoltuklar.Font = new System.Drawing.Font("Arial", 10F);
-            this.lbSeciliKoltuklar.FormattingEnabled = true;
-            this.lbSeciliKoltuklar.ItemHeight = 16;
-            this.lbSeciliKoltuklar.Location = new System.Drawing.Point(1090, 102);
-            this.lbSeciliKoltuklar.Name = "lbSeciliKoltuklar";
-            this.lbSeciliKoltuklar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbSeciliKoltuklar.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.lbSeciliKoltuklar.Size = new System.Drawing.Size(100, 308);
-            this.lbSeciliKoltuklar.TabIndex = 240;
-            // 
             // lblToplamKoltuk
             // 
             this.lblToplamKoltuk.AutoSize = true;
@@ -2557,7 +2543,6 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1264, 761);
-            this.Controls.Add(this.lbSeciliKoltuklar);
             this.Controls.Add(this.lbKoltuklar);
             this.Controls.Add(this.lblSeciliKoltuk);
             this.Controls.Add(this.label33);
@@ -2902,7 +2887,6 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label lblSeciliKoltuk;
         private System.Windows.Forms.ListBox lbKoltuklar;
-        private System.Windows.Forms.ListBox lbSeciliKoltuklar;
         private System.Windows.Forms.Label lblToplamKoltuk;
     }
 }

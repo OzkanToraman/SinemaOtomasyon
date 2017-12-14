@@ -37,6 +37,11 @@ namespace SinemaOtomasyon.Repository.UOW.Concrete
             return new EFRepositoryBase<Gosterim, SinemaContext>(_dbContext);
         }
 
+        public IRepository<Koltuk> KoltukRepository()
+        {
+            return new EFRepositoryBase<Koltuk, SinemaContext>(_dbContext);
+        }
+
         public int Save()
         {
             return _dbContext.SaveChanges();

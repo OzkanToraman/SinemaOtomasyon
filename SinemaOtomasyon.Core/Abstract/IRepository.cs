@@ -18,5 +18,7 @@ namespace SinemaOtomasyon.Core.Abstract
         List<T> GetList();
 
         T GetById(int id);
+
+        int Save();
     }
 }

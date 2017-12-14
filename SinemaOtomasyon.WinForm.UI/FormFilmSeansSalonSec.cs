@@ -106,10 +106,13 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             if (f != null)
             {
+
                 FormSalon4 frm = new FormSalon4(f, SeansId, SalonId, dtpTarih.Value.ToShortDateString());
                 frm.ShowDialog();
             }
 
         }
+
+
     }
 }

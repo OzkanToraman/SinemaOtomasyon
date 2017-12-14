@@ -46,6 +46,11 @@ namespace SinemaOtomasyon.Core.Concrete
             return _dbSet.ToList();
         }
 
+        public int Save()
+        {
+            return _dbContext.SaveChanges();
+        }
+
         public void Update(T model)
         {
             var entity = _dbSet.Find(model);

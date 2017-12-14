@@ -82,6 +82,7 @@
     <Property Name="KoltukID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="KoltukAD" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="KoltukFiyatSapma" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DoluMu" Type="Boolean" />
     <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Koltuk" FromRole="Koltuk" ToRole="BiletSatis" />
   </EntityType>
   <EntityType Name="OdemeSekli">
