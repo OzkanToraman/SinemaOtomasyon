@@ -53,6 +53,11 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
 
         private void FormSalon4_Load(object sender, EventArgs e)
         {
+            Temizle();
+
+            butonlar.Clear();
+            lbKoltuklar.DataSource = butonlar.ToList();
+
             GosterimId = _gosterimRepo.GetList().Where(x => x.SalonID == SalonId && x.SeansID == SeansId).Select(x => x.GosterimID).FirstOrDefault();
             KoltukKontrol();
             KoltukSayisiHesapla();
@@ -77,6 +82,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             }
 
         }
+
         private void KoltukSayisiHesapla()
         {
             int Count = 0;
@@ -101,49 +107,90 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
         {
             if (lbKoltuklar.Items.Count != 0)
             {
-
-                //List<Koltuk> koltukListe = _koltukRepo.GetList();
-
-                Button koltuk = new Button();
-                for (int i = 0; i < lbKoltuklar.Items.Count; i++)
+                if (string.IsNullOrEmpty(txtAd.Text) && string.IsNullOrEmpty(txtSoyad.Text))
                 {
-                    /*Koltuk Rengi Değiştirme*/
-                    koltuk = (Button)Controls[lbKoltuklar.Items[i].ToString()];
-                    koltuk.BackColor = Color.Red;
-                    koltuk.FlatAppearance.MouseOverBackColor = Color.Red;
-                    /**/
-
-                    /*Seçilen KoltukId'si bulunur ve veritabanından kontrol edilir.Eşleşen Id'lerin DoluMu özelliği doldurulur.*/
-                    string koltukAd = lbKoltuklar.Items[i].ToString();
-                    int giseId = _giseRepo.GetList().Where(x => x.GosterimID == GosterimId && x.Koltuk.KoltukAD == koltukAd).Select(x => x.GiseID).FirstOrDefault(); _giseRepo.GetById(giseId).DoluMu = true;
-                    /**/
-                }
-                /*Database kayıt edilir,kayıt başarılıysa bir mesaj kutusu döner*/
-                if (_giseRepo.Save() > 0)
-                {
-                    MessageBox.Show("başarılı");
+                    MessageBox.Show(" Gerekli alanları doldurmalısınız ! ");
+                    txtAd.Focus();
                 }
                 else
-                {
-                    MessageBox.Show("başarısız");
+                {                                      
+                    //for (int i = 0; i < lbKoltuklar.Items.Count; i++)
+                    //{
+                    //    /*Koltuk Rengi Değiştirme*/
+                    //    Button koltuk = new Button();
+                    //    koltuk = (Button)Controls[lbKoltuklar.Items[i].ToString()];
+                    //    koltuk.BackColor = Color.Red;
+                    //    koltuk.FlatAppearance.MouseOverBackColor = Color.Red;
+                    //    /**/
+
+                    //    /*Seçilen KoltukId'si bulunur ve veritabanından kontrol edilir.Eşleşen Id'lerin DoluMu özelliği doldurulur.*/
+                    //    string koltukAd = lbKoltuklar.Items[i].ToString();
+                    //    giseId = _giseRepo.GetList().Where(x => x.GosterimID == GosterimId && x.Koltuk.KoltukAD == koltukAd).Select(x => x.GiseID).FirstOrDefault();
+                    //    //_giseRepo.GetById(giseId).DoluMu = true;
+                    //    /**/
+                    //}
+
+                    KoltukSayisiHesapla();
+
+                    #region Seyirci Bilgileri
+
+                    /*Seyirci bilgileri toplanır*/
+                    Seyirci seyirci = new Seyirci();
+                    seyirci.SeyirciAd = txtAd.Text;
+                    seyirci.SeyirciSoyad = txtSoyad.Text;
+                    seyirci.SeyirciTelefon = txtTelefon.Text;
+                    seyirci.SeyirciAdres = txtAdres.Text;
+                    /**/
+                    #endregion
+
+                    #region Gösterim Bilgileri
+                    /*Gosterim Id'sine bağlı Salon ve Seans bilgisi içerir*/
+                    Gosterim gosterim = new Gosterim();
+                    gosterim = _gosterimRepo.GetById(GosterimId);
+                    /**/
+                    #endregion
+
+                    #region Bilet Tür Bilgisi
+                    /*Radiobutton seçim*/
+                    string biletTuru;
+                    if (rbOgrenci.Checked)
+                    {
+                        biletTuru = "Ogrenci";
+                    }
+                    else if (rbTam.Checked)
+                    {
+                        biletTuru = "Tam";
+                    }
+                    else if (rbUye.Checked)
+                    {
+                        biletTuru = "Üye";
+                    }
+                    else
+                    {
+                        biletTuru = null;
+                    }
+                    /**/
+                    #endregion
+
+
+                    FormBilet frm = new FormBilet(seyirci, f.FilmAd, butonlar, gosterim, biletTuru);
+                    frm.ShowDialog();
+
                 }
-                /**/
-                /*Seçilen koltuklar temizlenir.*/
-                butonlar.Clear();
-                lbKoltuklar.DataSource = butonlar.ToList();
-                /**/
-
-                KoltukSayisiHesapla();
-
-
             }
             else
             {
                 MessageBox.Show("Önce koltuk seçiniz !");
             }
 
-            KoltukKontrol();
+        }
 
+        private void Temizle()
+        {
+            txtAd.Clear();
+            txtSoyad.Clear();
+            txtTelefon.Clear();
+            txtAdres.Clear();
         }
 
         private void A1_MouseDown(object sender, MouseEventArgs e)

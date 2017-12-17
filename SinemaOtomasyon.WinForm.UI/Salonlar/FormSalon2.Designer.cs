@@ -153,34 +153,37 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.H5 = new System.Windows.Forms.Button();
+            this.H7 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
+            this.H3 = new System.Windows.Forms.Button();
+            this.H1 = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.F17 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
-            this.button49 = new System.Windows.Forms.Button();
-            this.button55 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnBiletKes = new System.Windows.Forms.Button();
+            this.btnUyeOlustur = new System.Windows.Forms.Button();
+            this.txtAdres = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
+            this.dtpTarih = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.rbUye = new System.Windows.Forms.RadioButton();
+            this.rbTam = new System.Windows.Forms.RadioButton();
+            this.rbOgrenci = new System.Windows.Forms.RadioButton();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTelefon = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.lbKoltuklar = new System.Windows.Forms.ListBox();
+            this.D16 = new System.Windows.Forms.Button();
+            this.D17 = new System.Windows.Forms.Button();
+            this.E17 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1803,29 +1806,31 @@
             this.label28.Text = "17";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button13
+            // H5
             // 
-            this.button13.BackColor = System.Drawing.Color.Gray;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(450, 106);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(76, 35);
-            this.button13.TabIndex = 2;
-            this.button13.UseVisualStyleBackColor = false;
+            this.H5.BackColor = System.Drawing.Color.Gray;
+            this.H5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.H5.FlatAppearance.BorderSize = 0;
+            this.H5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.H5.Location = new System.Drawing.Point(450, 106);
+            this.H5.Name = "H5";
+            this.H5.Size = new System.Drawing.Size(76, 35);
+            this.H5.TabIndex = 2;
+            this.H5.UseVisualStyleBackColor = false;
+            this.H5.Click += new System.EventHandler(this.A5_Click);
             // 
-            // button17
+            // H7
             // 
-            this.button17.BackColor = System.Drawing.Color.Gray;
-            this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Location = new System.Drawing.Point(532, 106);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(76, 35);
-            this.button17.TabIndex = 2;
-            this.button17.UseVisualStyleBackColor = false;
+            this.H7.BackColor = System.Drawing.Color.Gray;
+            this.H7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.H7.FlatAppearance.BorderSize = 0;
+            this.H7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.H7.Location = new System.Drawing.Point(532, 106);
+            this.H7.Name = "H7";
+            this.H7.Size = new System.Drawing.Size(76, 35);
+            this.H7.TabIndex = 2;
+            this.H7.UseVisualStyleBackColor = false;
+            this.H7.Click += new System.EventHandler(this.A5_Click);
             // 
             // button16
             // 
@@ -1845,29 +1850,31 @@
             this.button16.Text = "K A P I";
             this.button16.UseVisualStyleBackColor = false;
             // 
-            // button26
+            // H3
             // 
-            this.button26.BackColor = System.Drawing.Color.Gray;
-            this.button26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button26.FlatAppearance.BorderSize = 0;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Location = new System.Drawing.Point(368, 106);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(76, 35);
-            this.button26.TabIndex = 2;
-            this.button26.UseVisualStyleBackColor = false;
+            this.H3.BackColor = System.Drawing.Color.Gray;
+            this.H3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.H3.FlatAppearance.BorderSize = 0;
+            this.H3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.H3.Location = new System.Drawing.Point(368, 106);
+            this.H3.Name = "H3";
+            this.H3.Size = new System.Drawing.Size(76, 35);
+            this.H3.TabIndex = 2;
+            this.H3.UseVisualStyleBackColor = false;
+            this.H3.Click += new System.EventHandler(this.A5_Click);
             // 
-            // button31
+            // H1
             // 
-            this.button31.BackColor = System.Drawing.Color.Gray;
-            this.button31.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button31.FlatAppearance.BorderSize = 0;
-            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button31.Location = new System.Drawing.Point(286, 106);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(77, 35);
-            this.button31.TabIndex = 2;
-            this.button31.UseVisualStyleBackColor = false;
+            this.H1.BackColor = System.Drawing.Color.Gray;
+            this.H1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.H1.FlatAppearance.BorderSize = 0;
+            this.H1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.H1.Location = new System.Drawing.Point(286, 106);
+            this.H1.Name = "H1";
+            this.H1.Size = new System.Drawing.Size(77, 35);
+            this.H1.TabIndex = 2;
+            this.H1.UseVisualStyleBackColor = false;
+            this.H1.Click += new System.EventHandler(this.A5_Click);
             // 
             // label27
             // 
@@ -1913,122 +1920,129 @@
             this.button35.Text = "K A P I";
             this.button35.UseVisualStyleBackColor = false;
             // 
-            // button49
+            // btnBack
             // 
-            this.button49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button49.FlatAppearance.BorderSize = 0;
-            this.button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button49.Font = new System.Drawing.Font("Arial", 10F);
-            this.button49.ForeColor = System.Drawing.Color.Black;
-            this.button49.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button49.Location = new System.Drawing.Point(983, 38);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(35, 36);
-            this.button49.TabIndex = 247;
-            this.button49.Text = "←";
-            this.button49.UseVisualStyleBackColor = false;
-            this.button49.Click += new System.EventHandler(this.button49_Click);
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Arial", 10F);
+            this.btnBack.ForeColor = System.Drawing.Color.Black;
+            this.btnBack.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnBack.Location = new System.Drawing.Point(983, 38);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(35, 36);
+            this.btnBack.TabIndex = 247;
+            this.btnBack.Text = "←";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.button49_Click);
             // 
-            // button55
+            // btnBiletKes
             // 
-            this.button55.ForeColor = System.Drawing.Color.Black;
-            this.button55.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button55.Location = new System.Drawing.Point(764, 567);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(98, 153);
-            this.button55.TabIndex = 261;
-            this.button55.Text = "Bilet Ayır";
-            this.button55.UseVisualStyleBackColor = true;
-            this.button55.Click += new System.EventHandler(this.button55_Click);
+            this.btnBiletKes.Font = new System.Drawing.Font("Arial", 9F);
+            this.btnBiletKes.ForeColor = System.Drawing.Color.Black;
+            this.btnBiletKes.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnBiletKes.Location = new System.Drawing.Point(789, 568);
+            this.btnBiletKes.Name = "btnBiletKes";
+            this.btnBiletKes.Size = new System.Drawing.Size(98, 153);
+            this.btnBiletKes.TabIndex = 261;
+            this.btnBiletKes.Text = "Bilet Ayır";
+            this.btnBiletKes.UseVisualStyleBackColor = true;
+            this.btnBiletKes.Click += new System.EventHandler(this.button55_Click);
             // 
-            // button57
+            // btnUyeOlustur
             // 
-            this.button57.ForeColor = System.Drawing.Color.Black;
-            this.button57.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button57.Location = new System.Drawing.Point(612, 691);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(127, 30);
-            this.button57.TabIndex = 260;
-            this.button57.Text = "Üye Oluştur";
-            this.button57.UseVisualStyleBackColor = true;
+            this.btnUyeOlustur.Font = new System.Drawing.Font("Arial", 9F);
+            this.btnUyeOlustur.ForeColor = System.Drawing.Color.Black;
+            this.btnUyeOlustur.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnUyeOlustur.Location = new System.Drawing.Point(637, 692);
+            this.btnUyeOlustur.Name = "btnUyeOlustur";
+            this.btnUyeOlustur.Size = new System.Drawing.Size(127, 30);
+            this.btnUyeOlustur.TabIndex = 260;
+            this.btnUyeOlustur.Text = "Üye Oluştur";
+            this.btnUyeOlustur.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtAdres
             // 
-            this.textBox4.Location = new System.Drawing.Point(432, 672);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(158, 49);
-            this.textBox4.TabIndex = 248;
+            this.txtAdres.Font = new System.Drawing.Font("Arial", 9F);
+            this.txtAdres.Location = new System.Drawing.Point(428, 672);
+            this.txtAdres.Multiline = true;
+            this.txtAdres.Name = "txtAdres";
+            this.txtAdres.Size = new System.Drawing.Size(176, 49);
+            this.txtAdres.TabIndex = 248;
             // 
-            // textBox1
+            // txtAd
             // 
-            this.textBox1.Location = new System.Drawing.Point(432, 568);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 249;
+            this.txtAd.Font = new System.Drawing.Font("Arial", 9F);
+            this.txtAd.Location = new System.Drawing.Point(428, 568);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(176, 21);
+            this.txtAd.TabIndex = 249;
             // 
-            // dateTimePicker1
+            // dtpTarih
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(432, 620);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(158, 20);
-            this.dateTimePicker1.TabIndex = 258;
+            this.dtpTarih.Font = new System.Drawing.Font("Arial", 9F);
+            this.dtpTarih.Location = new System.Drawing.Point(428, 620);
+            this.dtpTarih.Name = "dtpTarih";
+            this.dtpTarih.Size = new System.Drawing.Size(176, 21);
+            this.dtpTarih.TabIndex = 258;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.rbUye);
+            this.groupBox1.Controls.Add(this.rbTam);
+            this.groupBox1.Controls.Add(this.rbOgrenci);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 9F);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.groupBox1.Location = new System.Drawing.Point(612, 564);
+            this.groupBox1.Location = new System.Drawing.Point(637, 565);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(127, 121);
             this.groupBox1.TabIndex = 259;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bilet Türü";
             // 
-            // radioButton3
+            // rbUye
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton3.Location = new System.Drawing.Point(7, 83);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(44, 17);
-            this.radioButton3.TabIndex = 0;
-            this.radioButton3.Text = "Üye";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbUye.AutoSize = true;
+            this.rbUye.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rbUye.Location = new System.Drawing.Point(7, 83);
+            this.rbUye.Name = "rbUye";
+            this.rbUye.Size = new System.Drawing.Size(46, 19);
+            this.rbUye.TabIndex = 0;
+            this.rbUye.Text = "Üye";
+            this.rbUye.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbTam
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton2.Location = new System.Drawing.Point(7, 56);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(89, 17);
-            this.radioButton2.TabIndex = 0;
-            this.radioButton2.Text = "Tam ( 10 TL )";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbTam.AutoSize = true;
+            this.rbTam.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rbTam.Location = new System.Drawing.Point(7, 56);
+            this.rbTam.Name = "rbTam";
+            this.rbTam.Size = new System.Drawing.Size(97, 19);
+            this.rbTam.TabIndex = 0;
+            this.rbTam.Text = "Tam ( 10 TL )";
+            this.rbTam.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbOgrenci
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton1.Location = new System.Drawing.Point(7, 31);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(99, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Öğrenci ( 6 TL )";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbOgrenci.AutoSize = true;
+            this.rbOgrenci.Checked = true;
+            this.rbOgrenci.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rbOgrenci.Location = new System.Drawing.Point(7, 31);
+            this.rbOgrenci.Name = "rbOgrenci";
+            this.rbOgrenci.Size = new System.Drawing.Size(109, 19);
+            this.rbOgrenci.TabIndex = 0;
+            this.rbOgrenci.TabStop = true;
+            this.rbOgrenci.Text = "Öğrenci ( 6 TL )";
+            this.rbOgrenci.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtSoyad
             // 
-            this.textBox2.Location = new System.Drawing.Point(432, 594);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 20);
-            this.textBox2.TabIndex = 250;
+            this.txtSoyad.Font = new System.Drawing.Font("Arial", 9F);
+            this.txtSoyad.Location = new System.Drawing.Point(428, 594);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(176, 21);
+            this.txtSoyad.TabIndex = 250;
             // 
             // textBox5
             // 
@@ -2051,18 +2065,19 @@
             this.label31.Font = new System.Drawing.Font("Arial", 10F);
             this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label31.Location = new System.Drawing.Point(361, 673);
+            this.label31.Location = new System.Drawing.Point(357, 673);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(49, 16);
             this.label31.TabIndex = 253;
             this.label31.Text = "Adres:";
             // 
-            // textBox3
+            // txtTelefon
             // 
-            this.textBox3.Location = new System.Drawing.Point(432, 646);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(158, 20);
-            this.textBox3.TabIndex = 252;
+            this.txtTelefon.Font = new System.Drawing.Font("Arial", 9F);
+            this.txtTelefon.Location = new System.Drawing.Point(428, 646);
+            this.txtTelefon.Name = "txtTelefon";
+            this.txtTelefon.Size = new System.Drawing.Size(176, 21);
+            this.txtTelefon.TabIndex = 252;
             // 
             // label32
             // 
@@ -2071,7 +2086,7 @@
             this.label32.Font = new System.Drawing.Font("Arial", 10F);
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label32.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label32.Location = new System.Drawing.Point(367, 620);
+            this.label32.Location = new System.Drawing.Point(363, 620);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(43, 16);
             this.label32.TabIndex = 254;
@@ -2084,7 +2099,7 @@
             this.label30.Font = new System.Drawing.Font("Arial", 10F);
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label30.Location = new System.Drawing.Point(381, 569);
+            this.label30.Location = new System.Drawing.Point(377, 569);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(29, 16);
             this.label30.TabIndex = 255;
@@ -2097,7 +2112,7 @@
             this.label33.Font = new System.Drawing.Font("Arial", 10F);
             this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label33.Location = new System.Drawing.Point(352, 647);
+            this.label33.Location = new System.Drawing.Point(348, 647);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(58, 16);
             this.label33.TabIndex = 256;
@@ -2110,7 +2125,7 @@
             this.label34.Font = new System.Drawing.Font("Arial", 10F);
             this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label34.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label34.Location = new System.Drawing.Point(358, 595);
+            this.label34.Location = new System.Drawing.Point(354, 595);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(52, 16);
             this.label34.TabIndex = 257;
@@ -2136,6 +2151,45 @@
             this.lbKoltuklar.Size = new System.Drawing.Size(120, 316);
             this.lbKoltuklar.TabIndex = 263;
             // 
+            // D16
+            // 
+            this.D16.BackColor = System.Drawing.Color.Gray;
+            this.D16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D16.FlatAppearance.BorderSize = 0;
+            this.D16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.D16.Location = new System.Drawing.Point(942, 270);
+            this.D16.Name = "D16";
+            this.D16.Size = new System.Drawing.Size(35, 35);
+            this.D16.TabIndex = 2;
+            this.D16.UseVisualStyleBackColor = false;
+            this.D16.Click += new System.EventHandler(this.A5_Click);
+            // 
+            // D17
+            // 
+            this.D17.BackColor = System.Drawing.Color.Gray;
+            this.D17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.D17.FlatAppearance.BorderSize = 0;
+            this.D17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.D17.Location = new System.Drawing.Point(984, 270);
+            this.D17.Name = "D17";
+            this.D17.Size = new System.Drawing.Size(35, 35);
+            this.D17.TabIndex = 2;
+            this.D17.UseVisualStyleBackColor = false;
+            this.D17.Click += new System.EventHandler(this.A5_Click);
+            // 
+            // E17
+            // 
+            this.E17.BackColor = System.Drawing.Color.Gray;
+            this.E17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.E17.FlatAppearance.BorderSize = 0;
+            this.E17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.E17.Location = new System.Drawing.Point(984, 229);
+            this.E17.Name = "E17";
+            this.E17.Size = new System.Drawing.Size(35, 35);
+            this.E17.TabIndex = 2;
+            this.E17.UseVisualStyleBackColor = false;
+            this.E17.Click += new System.EventHandler(this.A5_Click);
+            // 
             // FormSalon2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2146,21 +2200,21 @@
             this.ClientSize = new System.Drawing.Size(1264, 761);
             this.Controls.Add(this.lbKoltuklar);
             this.Controls.Add(this.label35);
-            this.Controls.Add(this.button55);
-            this.Controls.Add(this.button57);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnBiletKes);
+            this.Controls.Add(this.btnUyeOlustur);
+            this.Controls.Add(this.txtAdres);
+            this.Controls.Add(this.txtAd);
+            this.Controls.Add(this.dtpTarih);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label31);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtTelefon);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label34);
-            this.Controls.Add(this.button49);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.button35);
             this.Controls.Add(this.button16);
@@ -2227,7 +2281,7 @@
             this.Controls.Add(this.E8);
             this.Controls.Add(this.C8);
             this.Controls.Add(this.F7);
-            this.Controls.Add(this.button17);
+            this.Controls.Add(this.H7);
             this.Controls.Add(this.A9);
             this.Controls.Add(this.G7);
             this.Controls.Add(this.D7);
@@ -2255,6 +2309,7 @@
             this.Controls.Add(this.F17);
             this.Controls.Add(this.G17);
             this.Controls.Add(this.F16);
+            this.Controls.Add(this.E17);
             this.Controls.Add(this.E16);
             this.Controls.Add(this.E15);
             this.Controls.Add(this.F15);
@@ -2269,6 +2324,8 @@
             this.Controls.Add(this.E13);
             this.Controls.Add(this.E3);
             this.Controls.Add(this.G15);
+            this.Controls.Add(this.D17);
+            this.Controls.Add(this.D16);
             this.Controls.Add(this.D15);
             this.Controls.Add(this.G4);
             this.Controls.Add(this.D14);
@@ -2279,9 +2336,9 @@
             this.Controls.Add(this.C3);
             this.Controls.Add(this.F5);
             this.Controls.Add(this.C14);
-            this.Controls.Add(this.button31);
-            this.Controls.Add(this.button26);
-            this.Controls.Add(this.button13);
+            this.Controls.Add(this.H1);
+            this.Controls.Add(this.H3);
+            this.Controls.Add(this.H5);
             this.Controls.Add(this.button45);
             this.Controls.Add(this.G5);
             this.Controls.Add(this.D5);
@@ -2438,33 +2495,36 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button H5;
+        private System.Windows.Forms.Button H7;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button H3;
+        private System.Windows.Forms.Button H1;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button F17;
         private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button49;
-        private System.Windows.Forms.Button button55;
-        private System.Windows.Forms.Button button57;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnBiletKes;
+        private System.Windows.Forms.Button btnUyeOlustur;
+        private System.Windows.Forms.TextBox txtAdres;
+        private System.Windows.Forms.TextBox txtAd;
+        private System.Windows.Forms.DateTimePicker dtpTarih;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RadioButton rbUye;
+        private System.Windows.Forms.RadioButton rbTam;
+        private System.Windows.Forms.RadioButton rbOgrenci;
+        private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.ListBox lbKoltuklar;
+        private System.Windows.Forms.Button D16;
+        private System.Windows.Forms.Button D17;
+        private System.Windows.Forms.Button E17;
     }
 }

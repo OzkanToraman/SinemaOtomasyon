@@ -184,7 +184,6 @@
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtInformation = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.txtTelefon = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -196,6 +195,9 @@
             this.lblSeciliKoltuk = new System.Windows.Forms.Label();
             this.lbKoltuklar = new System.Windows.Forms.ListBox();
             this.lblToplamKoltuk = new System.Windows.Forms.Label();
+            this.txtTelefon = new System.Windows.Forms.MaskedTextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.cmsIptalEt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -2387,48 +2389,55 @@
             // 
             // btnBiletKes
             // 
+            this.btnBiletKes.Font = new System.Drawing.Font("Arial", 9F);
             this.btnBiletKes.ForeColor = System.Drawing.Color.Black;
             this.btnBiletKes.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBiletKes.Location = new System.Drawing.Point(795, 572);
+            this.btnBiletKes.Location = new System.Drawing.Point(803, 572);
             this.btnBiletKes.Name = "btnBiletKes";
             this.btnBiletKes.Size = new System.Drawing.Size(98, 153);
-            this.btnBiletKes.TabIndex = 232;
-            this.btnBiletKes.Text = "Bilet Ayır";
+            this.btnBiletKes.TabIndex = 7;
+            this.btnBiletKes.Text = "Bilet  Ayır";
             this.btnBiletKes.UseVisualStyleBackColor = true;
             this.btnBiletKes.Click += new System.EventHandler(this.btnBiletKes_Click);
             // 
             // btnUyeOlustur
             // 
+            this.btnUyeOlustur.Font = new System.Drawing.Font("Arial", 9F);
             this.btnUyeOlustur.ForeColor = System.Drawing.Color.Black;
             this.btnUyeOlustur.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnUyeOlustur.Location = new System.Drawing.Point(638, 694);
+            this.btnUyeOlustur.Location = new System.Drawing.Point(650, 694);
             this.btnUyeOlustur.Name = "btnUyeOlustur";
             this.btnUyeOlustur.Size = new System.Drawing.Size(127, 30);
-            this.btnUyeOlustur.TabIndex = 231;
+            this.btnUyeOlustur.TabIndex = 6;
             this.btnUyeOlustur.Text = "Üye Oluştur";
             this.btnUyeOlustur.UseVisualStyleBackColor = true;
             // 
             // txtAdres
             // 
+            this.txtAdres.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtAdres.Font = new System.Drawing.Font("Arial", 9F);
             this.txtAdres.Location = new System.Drawing.Point(458, 675);
             this.txtAdres.Multiline = true;
             this.txtAdres.Name = "txtAdres";
-            this.txtAdres.Size = new System.Drawing.Size(158, 49);
-            this.txtAdres.TabIndex = 219;
+            this.txtAdres.Size = new System.Drawing.Size(166, 49);
+            this.txtAdres.TabIndex = 4;
             // 
             // txtAd
             // 
+            this.txtAd.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtAd.Font = new System.Drawing.Font("Arial", 9F);
             this.txtAd.Location = new System.Drawing.Point(458, 571);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(158, 20);
-            this.txtAd.TabIndex = 220;
+            this.txtAd.Size = new System.Drawing.Size(166, 21);
+            this.txtAd.TabIndex = 0;
             // 
             // dtpTarih
             // 
+            this.dtpTarih.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpTarih.Location = new System.Drawing.Point(458, 623);
             this.dtpTarih.Name = "dtpTarih";
-            this.dtpTarih.Size = new System.Drawing.Size(158, 20);
-            this.dtpTarih.TabIndex = 229;
+            this.dtpTarih.Size = new System.Drawing.Size(166, 21);
+            this.dtpTarih.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -2436,11 +2445,12 @@
             this.groupBox1.Controls.Add(this.rbUye);
             this.groupBox1.Controls.Add(this.rbTam);
             this.groupBox1.Controls.Add(this.rbOgrenci);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 9F);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.groupBox1.Location = new System.Drawing.Point(638, 567);
+            this.groupBox1.Location = new System.Drawing.Point(650, 567);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(127, 121);
-            this.groupBox1.TabIndex = 230;
+            this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bilet Türü";
             // 
@@ -2450,8 +2460,8 @@
             this.rbUye.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rbUye.Location = new System.Drawing.Point(7, 83);
             this.rbUye.Name = "rbUye";
-            this.rbUye.Size = new System.Drawing.Size(44, 17);
-            this.rbUye.TabIndex = 0;
+            this.rbUye.Size = new System.Drawing.Size(46, 19);
+            this.rbUye.TabIndex = 2;
             this.rbUye.Text = "Üye";
             this.rbUye.UseVisualStyleBackColor = true;
             // 
@@ -2461,8 +2471,8 @@
             this.rbTam.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rbTam.Location = new System.Drawing.Point(7, 56);
             this.rbTam.Name = "rbTam";
-            this.rbTam.Size = new System.Drawing.Size(89, 17);
-            this.rbTam.TabIndex = 0;
+            this.rbTam.Size = new System.Drawing.Size(97, 19);
+            this.rbTam.TabIndex = 1;
             this.rbTam.Text = "Tam ( 10 TL )";
             this.rbTam.UseVisualStyleBackColor = true;
             // 
@@ -2473,7 +2483,7 @@
             this.rbOgrenci.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rbOgrenci.Location = new System.Drawing.Point(7, 31);
             this.rbOgrenci.Name = "rbOgrenci";
-            this.rbOgrenci.Size = new System.Drawing.Size(99, 17);
+            this.rbOgrenci.Size = new System.Drawing.Size(109, 19);
             this.rbOgrenci.TabIndex = 0;
             this.rbOgrenci.TabStop = true;
             this.rbOgrenci.Text = "Öğrenci ( 6 TL )";
@@ -2481,10 +2491,12 @@
             // 
             // txtSoyad
             // 
+            this.txtSoyad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtSoyad.Font = new System.Drawing.Font("Arial", 9F);
             this.txtSoyad.Location = new System.Drawing.Point(458, 597);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(158, 20);
-            this.txtSoyad.TabIndex = 221;
+            this.txtSoyad.Size = new System.Drawing.Size(166, 21);
+            this.txtSoyad.TabIndex = 1;
             // 
             // txtInformation
             // 
@@ -2512,13 +2524,6 @@
             this.label31.Size = new System.Drawing.Size(49, 16);
             this.label31.TabIndex = 224;
             this.label31.Text = "Adres:";
-            // 
-            // txtTelefon
-            // 
-            this.txtTelefon.Location = new System.Drawing.Point(458, 649);
-            this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Size = new System.Drawing.Size(158, 20);
-            this.txtTelefon.TabIndex = 223;
             // 
             // label32
             // 
@@ -2644,11 +2649,11 @@
             this.lbKoltuklar.Font = new System.Drawing.Font("Arial", 10F);
             this.lbKoltuklar.FormattingEnabled = true;
             this.lbKoltuklar.ItemHeight = 16;
-            this.lbKoltuklar.Location = new System.Drawing.Point(96, 102);
+            this.lbKoltuklar.Location = new System.Drawing.Point(145, 113);
             this.lbKoltuklar.Name = "lbKoltuklar";
             this.lbKoltuklar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbKoltuklar.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.lbKoltuklar.Size = new System.Drawing.Size(100, 308);
+            this.lbKoltuklar.Size = new System.Drawing.Size(32, 308);
             this.lbKoltuklar.TabIndex = 238;
             // 
             // lblToplamKoltuk
@@ -2663,6 +2668,37 @@
             this.lblToplamKoltuk.TabIndex = 234;
             this.lblToplamKoltuk.Text = "109";
             // 
+            // txtTelefon
+            // 
+            this.txtTelefon.Font = new System.Drawing.Font("Arial", 10F);
+            this.txtTelefon.Location = new System.Drawing.Point(458, 648);
+            this.txtTelefon.Mask = "(999) 000-00-00";
+            this.txtTelefon.Name = "txtTelefon";
+            this.txtTelefon.Size = new System.Drawing.Size(166, 23);
+            this.txtTelefon.TabIndex = 3;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.ForeColor = System.Drawing.Color.Red;
+            this.label34.Location = new System.Drawing.Point(627, 573);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(11, 13);
+            this.label34.TabIndex = 240;
+            this.label34.Text = "*";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Transparent;
+            this.label36.ForeColor = System.Drawing.Color.Red;
+            this.label36.Location = new System.Drawing.Point(627, 598);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(11, 13);
+            this.label36.TabIndex = 240;
+            this.label36.Text = "*";
+            // 
             // FormSalon4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2671,6 +2707,9 @@
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1264, 761);
             this.ContextMenuStrip = this.cmsIptalEt;
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.txtTelefon);
             this.Controls.Add(this.lbKoltuklar);
             this.Controls.Add(this.lblSeciliKoltuk);
             this.Controls.Add(this.label33);
@@ -2687,7 +2726,6 @@
             this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.txtInformation);
             this.Controls.Add(this.label31);
-            this.Controls.Add(this.txtTelefon);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label30);
@@ -3005,7 +3043,6 @@
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.TextBox txtInformation;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label30;
@@ -3019,5 +3056,8 @@
         private System.Windows.Forms.Label lblToplamKoltuk;
         private System.Windows.Forms.ContextMenuStrip cmsIptalEt;
         private System.Windows.Forms.ToolStripMenuItem iptalEtToolStripMenuItem;
+        private System.Windows.Forms.MaskedTextBox txtTelefon;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label36;
     }
 }

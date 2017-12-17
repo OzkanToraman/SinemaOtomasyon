@@ -63,7 +63,6 @@ D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\bin\Debug\SinemaOtomasyon.WinForm.
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.exe
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.pdb
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.csprojResolveAssemblyReference.cache
-D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.FormBiletYazdir.resources
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.FormFilmSeansSalonSec.resources
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.FormLogin.resources
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.FormParent.resources
@@ -90,3 +89,4 @@ D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\bin\Debug\EntityFramework.xml
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\bin\Debug\EntityFramework.SqlServer.xml
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\bin\Debug\FluentValidation.xml
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\bin\Debug\Ninject.xml
+D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.FormBilet.resources

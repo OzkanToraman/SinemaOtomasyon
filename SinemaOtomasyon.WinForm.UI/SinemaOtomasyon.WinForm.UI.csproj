@@ -63,11 +63,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormBiletYazdir.cs">
+    <Compile Include="FormBilet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBiletYazdir.Designer.cs">
-      <DependentUpon>FormBiletYazdir.cs</DependentUpon>
+    <Compile Include="FormBilet.Designer.cs">
+      <DependentUpon>FormBilet.cs</DependentUpon>
     </Compile>
     <Compile Include="FormFilmSeansSalonSec.cs">
       <SubType>Form</SubType>
@@ -113,8 +113,8 @@
     <Compile Include="Salonlar\FormSalon4.Designer.cs">
       <DependentUpon>FormSalon4.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormBiletYazdir.resx">
-      <DependentUpon>FormBiletYazdir.cs</DependentUpon>
+    <EmbeddedResource Include="FormBilet.resx">
+      <DependentUpon>FormBilet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormFilmSeansSalonSec.resx">
       <DependentUpon>FormFilmSeansSalonSec.cs</DependentUpon>
@@ -182,7 +182,6 @@
   <ItemGroup>
     <None Include="Resources\redSeat.png" />
     <None Include="Resources\Afisler\yolayrimi.jpg" />
-    <None Include="Resources\backgroundpattern1.jpg" />
     <None Include="Resources\Afisler\deadmen.jpg" />
     <None Include="Resources\Afisler\findingnemo.jpg" />
     <None Include="Resources\Afisler\forrestgump.jpg" />
@@ -190,12 +189,14 @@
     <None Include="Resources\button_perde.png" />
     <None Include="Resources\emptySeat.png" />
     <None Include="Resources\greenSeat.png" />
-    <None Include="Resources\arrow-down.png" />
     <None Include="Resources\black-patterns-16.jpg" />
     <None Include="Resources\Afisler\thesilenceofthelambs.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FotoJet1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_onayla.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

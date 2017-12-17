@@ -63,26 +63,6 @@ namespace SinemaOtomasyon.WinForm.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap arrow_down {
-            get {
-                object obj = ResourceManager.GetObject("arrow-down", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap backgroundpattern1 {
-            get {
-                object obj = ResourceManager.GetObject("backgroundpattern1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap black_patterns_16 {
             get {
                 object obj = ResourceManager.GetObject("black-patterns-16", resourceCulture);
@@ -96,6 +76,16 @@ namespace SinemaOtomasyon.WinForm.UI.Properties {
         internal static System.Drawing.Bitmap button_giris {
             get {
                 object obj = ResourceManager.GetObject("button_giris", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_onayla {
+            get {
+                object obj = ResourceManager.GetObject("button_onayla", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

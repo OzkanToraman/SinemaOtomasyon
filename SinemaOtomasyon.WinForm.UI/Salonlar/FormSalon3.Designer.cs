@@ -33,19 +33,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.F20 = new System.Windows.Forms.Button();
-            this.G19 = new System.Windows.Forms.Button();
-            this.E19 = new System.Windows.Forms.Button();
-            this.C19 = new System.Windows.Forms.Button();
             this.G18 = new System.Windows.Forms.Button();
-            this.E18 = new System.Windows.Forms.Button();
-            this.F19 = new System.Windows.Forms.Button();
-            this.D19 = new System.Windows.Forms.Button();
             this.F18 = new System.Windows.Forms.Button();
             this.C18 = new System.Windows.Forms.Button();
-            this.D18 = new System.Windows.Forms.Button();
             this.G17 = new System.Windows.Forms.Button();
-            this.B19 = new System.Windows.Forms.Button();
             this.E17 = new System.Windows.Forms.Button();
             this.B18 = new System.Windows.Forms.Button();
             this.F17 = new System.Windows.Forms.Button();
@@ -161,30 +152,29 @@
             this.A3 = new System.Windows.Forms.Button();
             this.cmsDelete = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.iptalEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTelefon = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtAdres = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpTarih = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.rbUye = new System.Windows.Forms.RadioButton();
+            this.rbTam = new System.Windows.Forms.RadioButton();
+            this.rbOgrenci = new System.Windows.Forms.RadioButton();
+            this.btnUyeOlustur = new System.Windows.Forms.Button();
+            this.btnBiletKes = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.F1 = new System.Windows.Forms.Button();
-            this.G20 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -203,8 +193,6 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -251,46 +239,6 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label9.Name = "label9";
             // 
-            // F20
-            // 
-            this.F20.BackColor = System.Drawing.Color.Gray;
-            this.F20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.F20.FlatAppearance.BorderSize = 0;
-            this.F20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.F20, "F20");
-            this.F20.Name = "F20";
-            this.F20.UseVisualStyleBackColor = false;
-            // 
-            // G19
-            // 
-            this.G19.BackColor = System.Drawing.Color.Gray;
-            this.G19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.G19.FlatAppearance.BorderSize = 0;
-            this.G19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.G19, "G19");
-            this.G19.Name = "G19";
-            this.G19.UseVisualStyleBackColor = false;
-            // 
-            // E19
-            // 
-            this.E19.BackColor = System.Drawing.Color.Gray;
-            this.E19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.E19.FlatAppearance.BorderSize = 0;
-            this.E19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.E19, "E19");
-            this.E19.Name = "E19";
-            this.E19.UseVisualStyleBackColor = false;
-            // 
-            // C19
-            // 
-            this.C19.BackColor = System.Drawing.Color.Gray;
-            this.C19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.C19.FlatAppearance.BorderSize = 0;
-            this.C19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.C19, "C19");
-            this.C19.Name = "C19";
-            this.C19.UseVisualStyleBackColor = false;
-            // 
             // G18
             // 
             this.G18.BackColor = System.Drawing.Color.Gray;
@@ -300,36 +248,6 @@
             resources.ApplyResources(this.G18, "G18");
             this.G18.Name = "G18";
             this.G18.UseVisualStyleBackColor = false;
-            // 
-            // E18
-            // 
-            this.E18.BackColor = System.Drawing.Color.Gray;
-            this.E18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.E18.FlatAppearance.BorderSize = 0;
-            this.E18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.E18, "E18");
-            this.E18.Name = "E18";
-            this.E18.UseVisualStyleBackColor = false;
-            // 
-            // F19
-            // 
-            this.F19.BackColor = System.Drawing.Color.Gray;
-            this.F19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.F19.FlatAppearance.BorderSize = 0;
-            this.F19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.F19, "F19");
-            this.F19.Name = "F19";
-            this.F19.UseVisualStyleBackColor = false;
-            // 
-            // D19
-            // 
-            this.D19.BackColor = System.Drawing.Color.Gray;
-            this.D19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.D19.FlatAppearance.BorderSize = 0;
-            this.D19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.D19, "D19");
-            this.D19.Name = "D19";
-            this.D19.UseVisualStyleBackColor = false;
             // 
             // F18
             // 
@@ -351,16 +269,6 @@
             this.C18.Name = "C18";
             this.C18.UseVisualStyleBackColor = false;
             // 
-            // D18
-            // 
-            this.D18.BackColor = System.Drawing.Color.Gray;
-            this.D18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.D18.FlatAppearance.BorderSize = 0;
-            this.D18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.D18, "D18");
-            this.D18.Name = "D18";
-            this.D18.UseVisualStyleBackColor = false;
-            // 
             // G17
             // 
             this.G17.BackColor = System.Drawing.Color.Gray;
@@ -370,16 +278,6 @@
             resources.ApplyResources(this.G17, "G17");
             this.G17.Name = "G17";
             this.G17.UseVisualStyleBackColor = false;
-            // 
-            // B19
-            // 
-            this.B19.BackColor = System.Drawing.Color.Gray;
-            this.B19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.B19.FlatAppearance.BorderSize = 0;
-            this.B19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.B19, "B19");
-            this.B19.Name = "B19";
-            this.B19.UseVisualStyleBackColor = false;
             // 
             // E17
             // 
@@ -1523,10 +1421,10 @@
             this.iptalEtToolStripMenuItem.Name = "iptalEtToolStripMenuItem";
             resources.ApplyResources(this.iptalEtToolStripMenuItem, "iptalEtToolStripMenuItem");
             // 
-            // textBox1
+            // txtAd
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.txtAd, "txtAd");
+            this.txtAd.Name = "txtAd";
             // 
             // label28
             // 
@@ -1535,10 +1433,10 @@
             this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label28.Name = "label28";
             // 
-            // textBox2
+            // txtSoyad
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.txtSoyad, "txtSoyad");
+            this.txtSoyad.Name = "txtSoyad";
             // 
             // label29
             // 
@@ -1547,10 +1445,10 @@
             this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label29.Name = "label29";
             // 
-            // textBox3
+            // txtTelefon
             // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
+            resources.ApplyResources(this.txtTelefon, "txtTelefon");
+            this.txtTelefon.Name = "txtTelefon";
             // 
             // label30
             // 
@@ -1559,10 +1457,10 @@
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label30.Name = "label30";
             // 
-            // textBox4
+            // txtAdres
             // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
+            resources.ApplyResources(this.txtAdres, "txtAdres");
+            this.txtAdres.Name = "txtAdres";
             // 
             // label31
             // 
@@ -1587,53 +1485,53 @@
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label32.Name = "label32";
             // 
-            // dateTimePicker1
+            // dtpTarih
             // 
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
-            this.dateTimePicker1.Name = "dateTimePicker1";
+            resources.ApplyResources(this.dtpTarih, "dtpTarih");
+            this.dtpTarih.Name = "dtpTarih";
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox1.Controls.Add(this.rbUye);
+            this.groupBox1.Controls.Add(this.rbTam);
+            this.groupBox1.Controls.Add(this.rbOgrenci);
             resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // radioButton3
+            // rbUye
             // 
-            resources.ApplyResources(this.radioButton3, "radioButton3");
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.rbUye, "rbUye");
+            this.rbUye.Name = "rbUye";
+            this.rbUye.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbTam
             // 
-            resources.ApplyResources(this.radioButton2, "radioButton2");
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.rbTam, "rbTam");
+            this.rbTam.Name = "rbTam";
+            this.rbTam.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbOgrenci
             // 
-            resources.ApplyResources(this.radioButton1, "radioButton1");
-            this.radioButton1.Checked = true;
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.rbOgrenci, "rbOgrenci");
+            this.rbOgrenci.Checked = true;
+            this.rbOgrenci.Name = "rbOgrenci";
+            this.rbOgrenci.TabStop = true;
+            this.rbOgrenci.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnUyeOlustur
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnUyeOlustur, "btnUyeOlustur");
+            this.btnUyeOlustur.Name = "btnUyeOlustur";
+            this.btnUyeOlustur.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnBiletKes
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnBiletKes, "btnBiletKes");
+            this.btnBiletKes.Name = "btnBiletKes";
+            this.btnBiletKes.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -1668,14 +1566,14 @@
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnBack
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnBack, "btnBack");
+            this.btnBack.ForeColor = System.Drawing.Color.Black;
+            this.btnBack.Name = "btnBack";
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // F1
             // 
@@ -1686,16 +1584,6 @@
             resources.ApplyResources(this.F1, "F1");
             this.F1.Name = "F1";
             this.F1.UseVisualStyleBackColor = false;
-            // 
-            // G20
-            // 
-            this.G20.BackColor = System.Drawing.Color.Gray;
-            this.G20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.G20.FlatAppearance.BorderSize = 0;
-            this.G20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.G20, "G20");
-            this.G20.Name = "G20";
-            this.G20.UseVisualStyleBackColor = false;
             // 
             // label18
             // 
@@ -1822,20 +1710,6 @@
             resources.ApplyResources(this.label35, "label35");
             this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label35.Name = "label35";
-            // 
-            // label36
-            // 
-            this.label36.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label36.Name = "label36";
-            // 
-            // label37
-            // 
-            this.label37.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.label37, "label37");
-            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label37.Name = "label37";
             // 
             // button7
             // 
@@ -1999,9 +1873,7 @@
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.label37);
             this.Controls.Add(this.label34);
-            this.Controls.Add(this.label36);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label35);
@@ -2019,18 +1891,18 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnBiletKes);
+            this.Controls.Add(this.btnUyeOlustur);
+            this.Controls.Add(this.txtAdres);
+            this.Controls.Add(this.txtAd);
+            this.Controls.Add(this.dtpTarih);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtTelefon);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label9);
@@ -2040,20 +1912,10 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.G20);
-            this.Controls.Add(this.F20);
-            this.Controls.Add(this.G19);
-            this.Controls.Add(this.E19);
-            this.Controls.Add(this.C19);
             this.Controls.Add(this.G18);
-            this.Controls.Add(this.E18);
-            this.Controls.Add(this.F19);
-            this.Controls.Add(this.D19);
             this.Controls.Add(this.F18);
             this.Controls.Add(this.C18);
-            this.Controls.Add(this.D18);
             this.Controls.Add(this.G17);
-            this.Controls.Add(this.B19);
             this.Controls.Add(this.E17);
             this.Controls.Add(this.B18);
             this.Controls.Add(this.F17);
@@ -2192,19 +2054,10 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button F20;
-        private System.Windows.Forms.Button G19;
-        private System.Windows.Forms.Button E19;
-        private System.Windows.Forms.Button C19;
         private System.Windows.Forms.Button G18;
-        private System.Windows.Forms.Button E18;
-        private System.Windows.Forms.Button F19;
-        private System.Windows.Forms.Button D19;
         private System.Windows.Forms.Button F18;
         private System.Windows.Forms.Button C18;
-        private System.Windows.Forms.Button D18;
         private System.Windows.Forms.Button G17;
-        private System.Windows.Forms.Button B19;
         private System.Windows.Forms.Button E17;
         private System.Windows.Forms.Button B18;
         private System.Windows.Forms.Button F17;
@@ -2319,28 +2172,27 @@
         private System.Windows.Forms.Button B3;
         private System.Windows.Forms.Button A3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtAdres;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpTarih;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.RadioButton rbUye;
+        private System.Windows.Forms.RadioButton rbTam;
+        private System.Windows.Forms.RadioButton rbOgrenci;
+        private System.Windows.Forms.Button btnUyeOlustur;
+        private System.Windows.Forms.Button btnBiletKes;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.ContextMenuStrip cmsDelete;
         private System.Windows.Forms.ToolStripMenuItem iptalEtToolStripMenuItem;
         private System.Windows.Forms.Button F1;
-        private System.Windows.Forms.Button G20;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
@@ -2359,8 +2211,6 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
