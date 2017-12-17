@@ -54,6 +54,7 @@
           <ScalarProperty Name="Vizyonda" ColumnName="Vizyonda" />
           <ScalarProperty Name="FilmTurID" ColumnName="FilmTurID" />
           <ScalarProperty Name="Afis" ColumnName="Afis" />
+          <ScalarProperty Name="SalonID" ColumnName="SalonID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

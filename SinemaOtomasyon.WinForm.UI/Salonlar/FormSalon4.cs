@@ -62,7 +62,11 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             KoltukKontrol();
             KoltukSayisiHesapla();
 
-            //txtInformation.Text = f.FilmAd + " / " + "Salon: " + SalonId + " / " + "Seans: " + SeansId + " / ";
+            Gosterim gosterimBilgi = new Gosterim();
+            gosterimBilgi = _gosterimRepo.GetById(GosterimId);
+            txtInformation.Text = f.FilmAd + " / " + gosterimBilgi.Salon.SalonAD + " / " + "Seans: " + gosterimBilgi.Seans.SeansAD + " / ";
+
+            lblTarih.Text = DateTime.Now.ToShortDateString();
         }
 
         private void KoltukKontrol()

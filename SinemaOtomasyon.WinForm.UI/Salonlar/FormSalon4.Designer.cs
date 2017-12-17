@@ -176,7 +176,6 @@
             this.btnUyeOlustur = new System.Windows.Forms.Button();
             this.txtAdres = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
-            this.dtpTarih = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbUye = new System.Windows.Forms.RadioButton();
             this.rbTam = new System.Windows.Forms.RadioButton();
@@ -198,6 +197,7 @@
             this.txtTelefon = new System.Windows.Forms.MaskedTextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
+            this.lblTarih = new System.Windows.Forms.Label();
             this.cmsIptalEt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -2426,18 +2426,10 @@
             // 
             this.txtAd.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtAd.Font = new System.Drawing.Font("Arial", 9F);
-            this.txtAd.Location = new System.Drawing.Point(458, 571);
+            this.txtAd.Location = new System.Drawing.Point(458, 593);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(166, 21);
             this.txtAd.TabIndex = 0;
-            // 
-            // dtpTarih
-            // 
-            this.dtpTarih.Font = new System.Drawing.Font("Arial", 9F);
-            this.dtpTarih.Location = new System.Drawing.Point(458, 623);
-            this.dtpTarih.Name = "dtpTarih";
-            this.dtpTarih.Size = new System.Drawing.Size(166, 21);
-            this.dtpTarih.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -2493,7 +2485,7 @@
             // 
             this.txtSoyad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSoyad.Font = new System.Drawing.Font("Arial", 9F);
-            this.txtSoyad.Location = new System.Drawing.Point(458, 597);
+            this.txtSoyad.Location = new System.Drawing.Point(458, 621);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(166, 21);
             this.txtSoyad.TabIndex = 1;
@@ -2532,7 +2524,7 @@
             this.label32.Font = new System.Drawing.Font("Arial", 10F);
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label32.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label32.Location = new System.Drawing.Point(393, 623);
+            this.label32.Location = new System.Drawing.Point(393, 572);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(43, 16);
             this.label32.TabIndex = 225;
@@ -2545,7 +2537,7 @@
             this.label28.Font = new System.Drawing.Font("Arial", 10F);
             this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label28.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label28.Location = new System.Drawing.Point(407, 572);
+            this.label28.Location = new System.Drawing.Point(407, 596);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(29, 16);
             this.label28.TabIndex = 226;
@@ -2571,7 +2563,7 @@
             this.label29.Font = new System.Drawing.Font("Arial", 10F);
             this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label29.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label29.Location = new System.Drawing.Point(384, 598);
+            this.label29.Location = new System.Drawing.Point(384, 622);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(52, 16);
             this.label29.TabIndex = 228;
@@ -2646,14 +2638,16 @@
             // lbKoltuklar
             // 
             this.lbKoltuklar.BackColor = System.Drawing.Color.White;
-            this.lbKoltuklar.Font = new System.Drawing.Font("Arial", 10F);
+            this.lbKoltuklar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbKoltuklar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.lbKoltuklar.ForeColor = System.Drawing.Color.Green;
             this.lbKoltuklar.FormattingEnabled = true;
             this.lbKoltuklar.ItemHeight = 16;
-            this.lbKoltuklar.Location = new System.Drawing.Point(145, 113);
+            this.lbKoltuklar.Location = new System.Drawing.Point(159, 105);
             this.lbKoltuklar.Name = "lbKoltuklar";
             this.lbKoltuklar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbKoltuklar.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.lbKoltuklar.Size = new System.Drawing.Size(32, 308);
+            this.lbKoltuklar.Size = new System.Drawing.Size(28, 322);
             this.lbKoltuklar.TabIndex = 238;
             // 
             // lblToplamKoltuk
@@ -2682,7 +2676,7 @@
             this.label34.AutoSize = true;
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.ForeColor = System.Drawing.Color.Red;
-            this.label34.Location = new System.Drawing.Point(627, 573);
+            this.label34.Location = new System.Drawing.Point(627, 595);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(11, 13);
             this.label34.TabIndex = 240;
@@ -2693,11 +2687,23 @@
             this.label36.AutoSize = true;
             this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.ForeColor = System.Drawing.Color.Red;
-            this.label36.Location = new System.Drawing.Point(627, 598);
+            this.label36.Location = new System.Drawing.Point(627, 622);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(11, 13);
             this.label36.TabIndex = 240;
             this.label36.Text = "*";
+            // 
+            // lblTarih
+            // 
+            this.lblTarih.AutoSize = true;
+            this.lblTarih.BackColor = System.Drawing.Color.Transparent;
+            this.lblTarih.Font = new System.Drawing.Font("Arial", 10F);
+            this.lblTarih.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblTarih.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblTarih.Location = new System.Drawing.Point(458, 573);
+            this.lblTarih.Name = "lblTarih";
+            this.lblTarih.Size = new System.Drawing.Size(0, 16);
+            this.lblTarih.TabIndex = 225;
             // 
             // FormSalon4
             // 
@@ -2721,11 +2727,11 @@
             this.Controls.Add(this.btnUyeOlustur);
             this.Controls.Add(this.txtAdres);
             this.Controls.Add(this.txtAd);
-            this.Controls.Add(this.dtpTarih);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.txtInformation);
             this.Controls.Add(this.label31);
+            this.Controls.Add(this.lblTarih);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label30);
@@ -3035,7 +3041,6 @@
         private System.Windows.Forms.Button btnUyeOlustur;
         private System.Windows.Forms.TextBox txtAdres;
         private System.Windows.Forms.TextBox txtAd;
-        private System.Windows.Forms.DateTimePicker dtpTarih;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbUye;
         private System.Windows.Forms.RadioButton rbTam;
@@ -3059,5 +3064,6 @@
         private System.Windows.Forms.MaskedTextBox txtTelefon;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label lblTarih;
     }
 }

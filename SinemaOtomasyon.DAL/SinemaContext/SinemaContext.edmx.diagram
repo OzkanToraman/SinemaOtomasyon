@@ -4,26 +4,25 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f591abe22e0e4b78bf230deafada2993" Name="Diagram1">
-        <EntityTypeShape EntityType="SinemaModel.BiletSatis" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.BiletTuru" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Cinsiyet" Width="1.5" PointX="5.25" PointY="16.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Fatura" Width="1.5" PointX="9.75" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Film" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.FilmTuru" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Gise" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Gosterim" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Koltuk" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Login" Width="1.5" PointX="5.25" PointY="18.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.OdemeSekli" Width="1.5" PointX="7.5" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Personel" Width="1.5" PointX="7.5" PointY="18" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Salon" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Seans" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Seyirci" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="SinemaModel.Unvan" Width="1.5" PointX="5.25" PointY="21.375" IsExpanded="true" />
+      <Diagram DiagramId="2a107716a2f2407b804f90cde28c3303" Name="Diagram1">
+        <EntityTypeShape EntityType="SinemaModel.BiletSatis" Width="1.5" PointX="3" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.BiletTuru" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Cinsiyet" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Fatura" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Film" Width="1.5" PointX="3.75" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.FilmTuru" Width="1.5" PointX="1.5" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Gise" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Gosterim" Width="1.5" PointX="1.5" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Koltuk" Width="1.5" PointX="1.5" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Login" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.OdemeSekli" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Personel" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Salon" Width="1.5" PointX="1.5" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Seans" Width="1.5" PointX="1.5" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Seyirci" Width="1.5" PointX="0.75" PointY="31.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinemaModel.Unvan" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
         <AssociationConnector Association="SinemaModel.FK_BiletSatis_BiletTuru" ManuallyRouted="false" />
-        <AssociationConnector Association="SinemaModel.FK_BiletSatis_Film" ManuallyRouted="false" />
         <AssociationConnector Association="SinemaModel.FK_BiletSatis_Gise" ManuallyRouted="false" />
         <AssociationConnector Association="SinemaModel.FK_BiletSatis_Seyirci" ManuallyRouted="false" />
         <AssociationConnector Association="SinemaModel.FK_Fatura_BiletSatis1" ManuallyRouted="false" />
@@ -31,6 +30,7 @@
         <AssociationConnector Association="SinemaModel.FK_Fatura_OdemeSekli" ManuallyRouted="false" />
         <AssociationConnector Association="SinemaModel.FK_Fatura_Personel" ManuallyRouted="false" />
         <AssociationConnector Association="SinemaModel.FK_Film_FilmTuru" ManuallyRouted="false" />
+        <AssociationConnector Association="SinemaModel.FK_Film_Salon" ManuallyRouted="false" />
         <AssociationConnector Association="SinemaModel.FK_Gise_Gosterim" ManuallyRouted="false" />
         <AssociationConnector Association="SinemaModel.FK_Gise_Koltuk" ManuallyRouted="false" />
         <AssociationConnector Association="SinemaModel.FK_Gosterim_Salon" ManuallyRouted="false" />

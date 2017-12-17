@@ -14,25 +14,19 @@ namespace SinemaOtomasyon.DAL.SinemaContext
     
     public partial class Film
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Film()
-        {
-            this.BiletSatis = new HashSet<BiletSatis>();
-        }
-    
         public int FilmID { get; set; }
         public string FilmAd { get; set; }
         public string Yonetmen { get; set; }
         public string Oyuncular { get; set; }
         public System.DateTime VizyonGrsTarih { get; set; }
         public System.DateTime VizyonCksTarih { get; set; }
-        public Nullable<int> FilmSuresi_dk { get; set; }
+        public string FilmSuresi_dk { get; set; }
         public bool Vizyonda { get; set; }
         public int FilmTurID { get; set; }
         public string Afis { get; set; }
+        public Nullable<int> SalonID { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BiletSatis> BiletSatis { get; set; }
         public virtual FilmTuru FilmTuru { get; set; }
+        public virtual Salon Salon { get; set; }
     }
 }

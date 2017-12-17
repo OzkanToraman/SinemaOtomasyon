@@ -29,7 +29,6 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         public int FilmID { get; set; }
     
         public virtual BiletTuru BiletTuru { get; set; }
-        public virtual Film Film { get; set; }
         public virtual Gise Gise { get; set; }
         public virtual Seyirci Seyirci { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

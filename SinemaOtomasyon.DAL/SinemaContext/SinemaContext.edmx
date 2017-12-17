@@ -49,12 +49,13 @@
           <Property Name="FilmAd" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Yonetmen" Type="varchar" MaxLength="120" Nullable="false" />
           <Property Name="Oyuncular" Type="varchar" MaxLength="150" />
-          <Property Name="VizyonGrsTarih" Type="datetime" Nullable="false" />
-          <Property Name="VizyonCksTarih" Type="datetime" Nullable="false" />
-          <Property Name="FilmSuresi_dk" Type="int" />
+          <Property Name="VizyonGrsTarih" Type="date" Nullable="false" />
+          <Property Name="VizyonCksTarih" Type="date" Nullable="false" />
+          <Property Name="FilmSuresi_dk" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="Vizyonda" Type="bit" Nullable="false" />
           <Property Name="FilmTurID" Type="int" Nullable="false" />
           <Property Name="Afis" Type="varchar(max)" />
+          <Property Name="SalonID" Type="int" />
         </EntityType>
         <EntityType Name="FilmTuru">
           <Key>
@@ -141,7 +142,7 @@
           <Property Name="SeyirciSoyad" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="SeyirciAdres" Type="varchar" MaxLength="250" />
           <Property Name="SeyirciTelefon" Type="varchar" MaxLength="15" />
-          <Property Name="Üyelik" Type="bit" Nullable="false" />
+          <Property Name="Üyelik" Type="bit" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -171,18 +172,6 @@
             </Principal>
             <Dependent Role="BiletSatis">
               <PropertyRef Name="BiletTurID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_BiletSatis_Film">
-          <End Role="Film" Type="Self.Film" Multiplicity="1" />
-          <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Film">
-              <PropertyRef Name="FilmID" />
-            </Principal>
-            <Dependent Role="BiletSatis">
-              <PropertyRef Name="FilmID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -255,6 +244,18 @@
             </Principal>
             <Dependent Role="Film">
               <PropertyRef Name="FilmTurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Film_Salon">
+          <End Role="Salon" Type="Self.Salon" Multiplicity="0..1" />
+          <End Role="Film" Type="Self.Film" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Salon">
+              <PropertyRef Name="SalonID" />
+            </Principal>
+            <Dependent Role="Film">
+              <PropertyRef Name="SalonID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -364,10 +365,6 @@
             <End Role="BiletTuru" EntitySet="BiletTuru" />
             <End Role="BiletSatis" EntitySet="BiletSatis" />
           </AssociationSet>
-          <AssociationSet Name="FK_BiletSatis_Film" Association="Self.FK_BiletSatis_Film">
-            <End Role="Film" EntitySet="Film" />
-            <End Role="BiletSatis" EntitySet="BiletSatis" />
-          </AssociationSet>
           <AssociationSet Name="FK_BiletSatis_Gise" Association="Self.FK_BiletSatis_Gise">
             <End Role="Gise" EntitySet="Gise" />
             <End Role="BiletSatis" EntitySet="BiletSatis" />
@@ -390,6 +387,10 @@
           </AssociationSet>
           <AssociationSet Name="FK_Film_FilmTuru" Association="Self.FK_Film_FilmTuru">
             <End Role="FilmTuru" EntitySet="FilmTuru" />
+            <End Role="Film" EntitySet="Film" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Film_Salon" Association="Self.FK_Film_Salon">
+            <End Role="Salon" EntitySet="Salon" />
             <End Role="Film" EntitySet="Film" />
           </AssociationSet>
           <AssociationSet Name="FK_Gise_Gosterim" Association="Self.FK_Gise_Gosterim">
@@ -438,7 +439,6 @@
           <Property Name="BiletTurID" Type="Int32" Nullable="false" />
           <Property Name="FilmID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="BiletTuru" Relationship="Self.FK_BiletSatis_BiletTuru" FromRole="BiletSatis" ToRole="BiletTuru" />
-          <NavigationProperty Name="Film" Relationship="Self.FK_BiletSatis_Film" FromRole="BiletSatis" ToRole="Film" />
           <NavigationProperty Name="Gise" Relationship="Self.FK_BiletSatis_Gise" FromRole="BiletSatis" ToRole="Gise" />
           <NavigationProperty Name="Seyirci" Relationship="Self.FK_BiletSatis_Seyirci" FromRole="BiletSatis" ToRole="Seyirci" />
           <NavigationProperty Name="Fatura" Relationship="Self.FK_Fatura_BiletSatis1" FromRole="BiletSatis" ToRole="Fatura" />
@@ -480,14 +480,15 @@
           <Property Name="FilmAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Yonetmen" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Oyuncular" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
-          <Property Name="VizyonGrsTarih" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="VizyonCksTarih" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="FilmSuresi_dk" Type="Int32" />
+          <Property Name="VizyonGrsTarih" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="VizyonCksTarih" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="FilmSuresi_dk" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Vizyonda" Type="Boolean" Nullable="false" />
           <Property Name="FilmTurID" Type="Int32" Nullable="false" />
           <Property Name="Afis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Film" FromRole="Film" ToRole="BiletSatis" />
+          <Property Name="SalonID" Type="Int32" />
           <NavigationProperty Name="FilmTuru" Relationship="Self.FK_Film_FilmTuru" FromRole="Film" ToRole="FilmTuru" />
+          <NavigationProperty Name="Salon" Relationship="Self.FK_Film_Salon" FromRole="Film" ToRole="Salon" />
         </EntityType>
         <EntityType Name="FilmTuru">
           <Key>
@@ -571,6 +572,7 @@
           </Key>
           <Property Name="SalonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="SalonAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Film" Relationship="Self.FK_Film_Salon" FromRole="Salon" ToRole="Film" />
           <NavigationProperty Name="Gosterim" Relationship="Self.FK_Gosterim_Salon" FromRole="Salon" ToRole="Gosterim" />
         </EntityType>
         <EntityType Name="Seans">
@@ -590,7 +592,7 @@
           <Property Name="SeyirciSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="SeyirciAdres" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="SeyirciTelefon" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
-          <Property Name="Üyelik" Type="Boolean" Nullable="false" />
+          <Property Name="Üyelik" Type="Boolean" />
           <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Seyirci" FromRole="Seyirci" ToRole="BiletSatis" />
         </EntityType>
         <EntityType Name="sysdiagrams">
@@ -622,18 +624,6 @@
             </Principal>
             <Dependent Role="BiletSatis">
               <PropertyRef Name="BiletTurID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_BiletSatis_Film">
-          <End Role="Film" Type="Self.Film" Multiplicity="1" />
-          <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Film">
-              <PropertyRef Name="FilmID" />
-            </Principal>
-            <Dependent Role="BiletSatis">
-              <PropertyRef Name="FilmID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -718,6 +708,18 @@
             </Principal>
             <Dependent Role="Film">
               <PropertyRef Name="FilmTurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Film_Salon">
+          <End Role="Salon" Type="Self.Salon" Multiplicity="0..1" />
+          <End Role="Film" Type="Self.Film" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Salon">
+              <PropertyRef Name="SalonID" />
+            </Principal>
+            <Dependent Role="Film">
+              <PropertyRef Name="SalonID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -815,10 +817,6 @@
             <End Role="BiletTuru" EntitySet="BiletTuru" />
             <End Role="BiletSatis" EntitySet="BiletSatis" />
           </AssociationSet>
-          <AssociationSet Name="FK_BiletSatis_Film" Association="Self.FK_BiletSatis_Film">
-            <End Role="Film" EntitySet="Film" />
-            <End Role="BiletSatis" EntitySet="BiletSatis" />
-          </AssociationSet>
           <AssociationSet Name="FK_BiletSatis_Gise" Association="Self.FK_BiletSatis_Gise">
             <End Role="Gise" EntitySet="Gise" />
             <End Role="BiletSatis" EntitySet="BiletSatis" />
@@ -845,6 +843,10 @@
           </AssociationSet>
           <AssociationSet Name="FK_Film_FilmTuru" Association="Self.FK_Film_FilmTuru">
             <End Role="FilmTuru" EntitySet="FilmTuru" />
+            <End Role="Film" EntitySet="Film" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Film_Salon" Association="Self.FK_Film_Salon">
+            <End Role="Salon" EntitySet="Salon" />
             <End Role="Film" EntitySet="Film" />
           </AssociationSet>
           <AssociationSet Name="FK_Gise_Gosterim" Association="Self.FK_Gise_Gosterim">
@@ -931,6 +933,7 @@
                 <ScalarProperty Name="Vizyonda" ColumnName="Vizyonda" />
                 <ScalarProperty Name="FilmTurID" ColumnName="FilmTurID" />
                 <ScalarProperty Name="Afis" ColumnName="Afis" />
+                <ScalarProperty Name="SalonID" ColumnName="SalonID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
