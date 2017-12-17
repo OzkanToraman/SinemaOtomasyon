@@ -56,11 +56,14 @@
     <Compile Include="DTOs\ResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Abstract\IFilmService.cs" />
-    <Compile Include="Services\Abstract\IPersonelService.cs" />
+    <Compile Include="Services\Abstract\ILoginService.cs" />
+    <Compile Include="Services\Abstract\ISeyirciService.cs" />
     <Compile Include="Services\Concrete\FilmService.cs" />
-    <Compile Include="Services\Concrete\PersonelService.cs" />
+    <Compile Include="Services\Concrete\LoginService.cs" />
+    <Compile Include="Services\Concrete\SeyirciService.cs" />
     <Compile Include="Services\Validations\FilmValidator.cs" />
-    <Compile Include="Services\Validations\PersonelValidator.cs" />
+    <Compile Include="Services\Validations\LoginValidator.cs" />
+    <Compile Include="Services\Validations\SeyirciValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

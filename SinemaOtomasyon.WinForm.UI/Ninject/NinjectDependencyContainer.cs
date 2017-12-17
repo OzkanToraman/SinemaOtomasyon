@@ -22,7 +22,6 @@ namespace SinemaOtomasyon.WinForm.UI.Ninject
         public static IKernel RegisterDependency(IKernel kernel)
         {
             kernel.Bind<DbContext>().To<SinemaContext>();
-            kernel.Bind<IPersonelService>().To<PersonelService>();
             kernel.Bind<IPersonelRepository>().To<PersonelRepository>();
             kernel.Bind<IFilmService>().To<FilmService>();
             kernel.Bind<IFilmRepository>().To<FilmRepository>();
@@ -31,6 +30,11 @@ namespace SinemaOtomasyon.WinForm.UI.Ninject
             kernel.Bind<IKoltukRepository>().To<KoltukRepository>();
             kernel.Bind<IGosterimRepository>().To<GosterimRepository>();
             kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
+            kernel.Bind<ILoginRepository>().To<LoginRepository>();
+            kernel.Bind<IGiseRepository>().To<GiseRepository>();
+            kernel.Bind<ILoginService>().To<LoginService>();
+            kernel.Bind<ISeyirciService>().To<SeyirciService>();
+            kernel.Bind<ISeyirciRepository>().To<SeyirciRepository>();
 
             return kernel;
         }

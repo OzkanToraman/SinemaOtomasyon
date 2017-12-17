@@ -8,11 +8,9 @@
           <ScalarProperty Name="BiletFiyat" ColumnName="BiletFiyat" />
           <ScalarProperty Name="Satıldı" ColumnName="Satıldı" />
           <ScalarProperty Name="SeyirciID" ColumnName="SeyirciID" />
-          <ScalarProperty Name="GosterimID" ColumnName="GosterimID" />
-          <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
-          <ScalarProperty Name="KoltukID" ColumnName="KoltukID" />
+          <ScalarProperty Name="GiseID" ColumnName="GiseID" />
           <ScalarProperty Name="BiletTurID" ColumnName="BiletTurID" />
-          <ScalarProperty Name="OdemeSekliID" ColumnName="OdemeSekliID" />
+          <ScalarProperty Name="FilmID" ColumnName="FilmID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -29,6 +27,17 @@
         <MappingFragment StoreEntitySet="Cinsiyet">
           <ScalarProperty Name="CinsiyetID" ColumnName="CinsiyetID" />
           <ScalarProperty Name="CinsiyetAD" ColumnName="CinsiyetAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fatura">
+      <EntityTypeMapping TypeName="SinemaModel.Fatura">
+        <MappingFragment StoreEntitySet="Fatura">
+          <ScalarProperty Name="FaturaID" ColumnName="FaturaID" />
+          <ScalarProperty Name="PersoneID" ColumnName="PersoneID" />
+          <ScalarProperty Name="OdemeSekliID" ColumnName="OdemeSekliID" />
+          <ScalarProperty Name="BiletID" ColumnName="BiletID" />
+          <ScalarProperty Name="FaturaTarih" ColumnName="FaturaTarih" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -56,12 +65,20 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Gise">
+      <EntityTypeMapping TypeName="SinemaModel.Gise">
+        <MappingFragment StoreEntitySet="Gise">
+          <ScalarProperty Name="GiseID" ColumnName="GiseID" />
+          <ScalarProperty Name="KoltukID" ColumnName="KoltukID" />
+          <ScalarProperty Name="GosterimID" ColumnName="GosterimID" />
+          <ScalarProperty Name="DoluMu" ColumnName="DoluMu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Gosterim">
       <EntityTypeMapping TypeName="SinemaModel.Gosterim">
         <MappingFragment StoreEntitySet="Gosterim">
           <ScalarProperty Name="GosterimID" ColumnName="GosterimID" />
-          <ScalarProperty Name="GosterimTarih" ColumnName="GosterimTarih" />
-          <ScalarProperty Name="FilmID" ColumnName="FilmID" />
           <ScalarProperty Name="SalonID" ColumnName="SalonID" />
           <ScalarProperty Name="SeansID" ColumnName="SeansID" />
         </MappingFragment>
@@ -72,7 +89,16 @@
         <MappingFragment StoreEntitySet="Koltuk">
           <ScalarProperty Name="KoltukID" ColumnName="KoltukID" />
           <ScalarProperty Name="KoltukAD" ColumnName="KoltukAD" />
-          <ScalarProperty Name="DoluMu" ColumnName="DoluMu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Login">
+      <EntityTypeMapping TypeName="SinemaModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="LoginID" ColumnName="LoginID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -91,13 +117,12 @@
           <ScalarProperty Name="Ad" ColumnName="Ad" />
           <ScalarProperty Name="Soyad" ColumnName="Soyad" />
           <ScalarProperty Name="SicilNo" ColumnName="SicilNo" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
           <ScalarProperty Name="Telefon" ColumnName="Telefon" />
           <ScalarProperty Name="Adres" ColumnName="Adres" />
           <ScalarProperty Name="CalismaHali" ColumnName="CalismaHali" />
           <ScalarProperty Name="UnvanID" ColumnName="UnvanID" />
           <ScalarProperty Name="CinsiyetID" ColumnName="CinsiyetID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

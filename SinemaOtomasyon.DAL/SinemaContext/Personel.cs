@@ -17,24 +17,24 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Personel()
         {
-            this.BiletSatis = new HashSet<BiletSatis>();
+            this.Fatura = new HashSet<Fatura>();
         }
     
         public int PersonelID { get; set; }
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public string SicilNo { get; set; }
-        public string Email { get; set; }
-        public string Sifre { get; set; }
         public string Telefon { get; set; }
         public string Adres { get; set; }
         public bool CalismaHali { get; set; }
         public int UnvanID { get; set; }
         public int CinsiyetID { get; set; }
+        public string Username { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BiletSatis> BiletSatis { get; set; }
         public virtual Cinsiyet Cinsiyet { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Fatura> Fatura { get; set; }
+        public virtual Login Login { get; set; }
         public virtual Unvan Unvan { get; set; }
     }
 }

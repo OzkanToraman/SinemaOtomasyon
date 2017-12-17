@@ -17,15 +17,15 @@ namespace SinemaOtomasyon.WinForm.UI
 {
     public partial class FormLogin : Form
     {
-        private IPersonelRepository _personelRepo;
-        private IPersonelService _personelService;
+        private ILoginRepository _loginRepo;
+        private ILoginService _loginService;
 
 
         public FormLogin()
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
-            _personelService = container.Get<IPersonelService>();
-            _personelRepo = container.Get<IPersonelRepository>();
+            _loginService = container.Get<ILoginService>();
+            _loginRepo = container.Get<ILoginRepository>();
             InitializeComponent();
         }
 
@@ -47,30 +47,34 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Personel p = new Personel();
-            p.Email = txtUser.Text;
-            p.Sifre = txtPass.Text;
-            var result = _personelService.Login(p);
+            Login p = new Login();
+            p.Username = txtUser.Text;
+            p.Password = txtPass.Text;
+            var result = _loginService.Login(p);
             if (result.IsValid == false)
             {
                 MessageBox.Show(result.Errors.FirstOrDefault().ToString());
             }
             else
             {
-
-                if (_personelRepo.Login(txtUser.Text, txtPass.Text).Count() == 0)
-
+                //MessageBox.Show(_loginRepo.Giris(txtUser.Text, txtPass.Text));
+                Login login = new Login();
+                login = _loginRepo.Giris(txtUser.Text, txtPass.Text);
+                if (login == null)
                 {
-                    MessageBox.Show("Hatalı kullanıcı adı ya da şifre!", "HATA!");
+                    MessageBox.Show("Hatalı Kullanıcı Adı ya da Şifre!", "HATA");
                     txtUser.Focus();
                     txtUser.SelectAll();
                 }
                 else
                 {
-                    MessageBox.Show("başarılı");
+                    MessageBox.Show("Başarılı");
+                    string Role = login.Role;
                 }
-            }
+                
+            }     
         }
     }
 }
+
 

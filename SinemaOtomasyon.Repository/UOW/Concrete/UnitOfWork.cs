@@ -44,7 +44,7 @@ namespace SinemaOtomasyon.Repository.UOW.Concrete
 
         public int Save()
         {
-            return _dbContext.SaveChanges();
+          return _dbContext.SaveChanges();  
         }
 
         private void Dispose(bool disposing)

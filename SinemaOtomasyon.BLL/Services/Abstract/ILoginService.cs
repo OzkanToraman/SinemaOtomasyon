@@ -8,10 +8,8 @@ using System.Threading.Tasks;
 
 namespace SinemaOtomasyon.BLL.Services.Abstract
 {
-    public interface IPersonelService
+    public interface ILoginService
     {
-        ResultModel<Personel> Login(Personel p);
-
-        
+        ResultModel<Login> Login(Login p);
     }
 }

@@ -16,5 +16,6 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             InitializeComponent();
         }
+
     }
 }

@@ -75,8 +75,7 @@ namespace SinemaOtomasyon.WinForm.UI
             cbSalonSec.DataSource = salonSorgu;
             cbSalonSec.DisplayMember = "SalonAD";
             cbSalonSec.ValueMember = "SalonID";
-            cbSalonSec.SelectedIndex = 0;
-            SalonId = (int)cbSalonSec.SelectedValue;
+
         }
 
         private void SeansDoldur()
@@ -85,15 +84,14 @@ namespace SinemaOtomasyon.WinForm.UI
             cbSeansSec.DataSource = seansSorgu;
             cbSeansSec.DisplayMember = "ad";
             cbSeansSec.ValueMember = "id";
-            cbSeansSec.SelectedIndex = 0;
-            SeansId = (int)cbSeansSec.SelectedValue;
+
         }
 
         private void dgvFilmler_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             //MessageBox.Show("" + (int)dgvFilmler.CurrentRow.Cells[0].Value);
             f = _filmRepo.GetById((int)dgvFilmler.CurrentRow.Cells[0].Value);
-            if (f.Afis!=null)
+            if (f.Afis != null)
             {
                 pbFilmAfis.SizeMode = PictureBoxSizeMode.StretchImage;
                 pbFilmAfis.Image = Image.FromFile(f.Afis);
@@ -106,9 +104,29 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             if (f != null)
             {
+                SeansId = (int)cbSeansSec.SelectedValue;
+                SalonId = (int)cbSalonSec.SelectedValue;
+                switch (SalonId)
+                {
+                    case 2:
+                        FormSalon2 frm2 = new FormSalon2();
+                        frm2.ShowDialog();
+                        break;
+                    case 3:
+                        FormSalon3 frm3 = new FormSalon3();
+                        frm3.ShowDialog();
+                        break;
+                    case 4:
+                        FormSalon4 frm4 = new FormSalon4(f, SeansId, SalonId);
+                        frm4.ShowDialog();
+                        break;
+                    default:
+                        break;
+                }
 
-                FormSalon4 frm = new FormSalon4(f, SeansId, SalonId, dtpTarih.Value.ToShortDateString());
-                frm.ShowDialog();
+
+
+
             }
 
         }

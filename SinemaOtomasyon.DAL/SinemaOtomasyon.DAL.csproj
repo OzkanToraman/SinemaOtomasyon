@@ -61,16 +61,25 @@
     <Compile Include="SinemaContext\Cinsiyet.cs">
       <DependentUpon>SinemaContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="SinemaContext\Fatura.cs">
+      <DependentUpon>SinemaContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="SinemaContext\Film.cs">
       <DependentUpon>SinemaContext.tt</DependentUpon>
     </Compile>
     <Compile Include="SinemaContext\FilmTuru.cs">
       <DependentUpon>SinemaContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="SinemaContext\Gise.cs">
+      <DependentUpon>SinemaContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="SinemaContext\Gosterim.cs">
       <DependentUpon>SinemaContext.tt</DependentUpon>
     </Compile>
     <Compile Include="SinemaContext\Koltuk.cs">
+      <DependentUpon>SinemaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SinemaContext\Login.cs">
       <DependentUpon>SinemaContext.tt</DependentUpon>
     </Compile>
     <Compile Include="SinemaContext\OdemeSekli.cs">

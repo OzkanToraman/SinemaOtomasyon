@@ -28,10 +28,13 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         public virtual DbSet<BiletSatis> BiletSatis { get; set; }
         public virtual DbSet<BiletTuru> BiletTuru { get; set; }
         public virtual DbSet<Cinsiyet> Cinsiyet { get; set; }
+        public virtual DbSet<Fatura> Fatura { get; set; }
         public virtual DbSet<Film> Film { get; set; }
         public virtual DbSet<FilmTuru> FilmTuru { get; set; }
+        public virtual DbSet<Gise> Gise { get; set; }
         public virtual DbSet<Gosterim> Gosterim { get; set; }
         public virtual DbSet<Koltuk> Koltuk { get; set; }
+        public virtual DbSet<Login> Login { get; set; }
         public virtual DbSet<OdemeSekli> OdemeSekli { get; set; }
         public virtual DbSet<Personel> Personel { get; set; }
         public virtual DbSet<Salon> Salon { get; set; }

@@ -8,11 +8,9 @@
     <Property Name="BiletFiyat" Type="money" Nullable="false" />
     <Property Name="Satıldı" Type="bit" Nullable="false" />
     <Property Name="SeyirciID" Type="int" Nullable="false" />
-    <Property Name="GosterimID" Type="int" Nullable="false" />
-    <Property Name="PersonelID" Type="int" Nullable="false" />
-    <Property Name="KoltukID" Type="int" Nullable="false" />
+    <Property Name="GiseID" Type="int" Nullable="false" />
     <Property Name="BiletTurID" Type="int" Nullable="false" />
-    <Property Name="OdemeSekliID" Type="int" Nullable="false" />
+    <Property Name="FilmID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="BiletTuru">
     <Key>
@@ -27,6 +25,16 @@
     </Key>
     <Property Name="CinsiyetID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="CinsiyetAD" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fatura">
+    <Key>
+      <PropertyRef Name="FaturaID" />
+    </Key>
+    <Property Name="FaturaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PersoneID" Type="int" Nullable="false" />
+    <Property Name="OdemeSekliID" Type="int" Nullable="false" />
+    <Property Name="BiletID" Type="int" Nullable="false" />
+    <Property Name="FaturaTarih" Type="date" Nullable="false" />
   </EntityType>
   <EntityType Name="Film">
     <Key>
@@ -50,13 +58,20 @@
     <Property Name="FilmTurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="FilmTurAd" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <EntityType Name="Gise">
+    <Key>
+      <PropertyRef Name="GiseID" />
+    </Key>
+    <Property Name="GiseID" Type="int" Nullable="false" />
+    <Property Name="KoltukID" Type="int" Nullable="false" />
+    <Property Name="GosterimID" Type="int" Nullable="false" />
+    <Property Name="DoluMu" Type="bit" Nullable="false" />
+  </EntityType>
   <EntityType Name="Gosterim">
     <Key>
       <PropertyRef Name="GosterimID" />
     </Key>
     <Property Name="GosterimID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="GosterimTarih" Type="datetime" Nullable="false" />
-    <Property Name="FilmID" Type="int" Nullable="false" />
     <Property Name="SalonID" Type="int" Nullable="false" />
     <Property Name="SeansID" Type="int" Nullable="false" />
   </EntityType>
@@ -64,9 +79,17 @@
     <Key>
       <PropertyRef Name="KoltukID" />
     </Key>
-    <Property Name="KoltukID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="KoltukAD" Type="varchar" MaxLength="8" Nullable="false" />
-    <Property Name="DoluMu" Type="bit" Nullable="false" />
+    <Property Name="KoltukID" Type="int" Nullable="false" />
+    <Property Name="KoltukAD" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="LoginID" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="OdemeSekli">
     <Key>
@@ -83,13 +106,12 @@
     <Property Name="Ad" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Soyad" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="SicilNo" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Email" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="Sifre" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="Telefon" Type="varchar" MaxLength="15" Nullable="false" />
     <Property Name="Adres" Type="varchar" MaxLength="250" Nullable="false" />
     <Property Name="CalismaHali" Type="bit" Nullable="false" />
     <Property Name="UnvanID" Type="int" Nullable="false" />
     <Property Name="CinsiyetID" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Salon">
     <Key>
@@ -147,51 +169,27 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_BiletSatis_Gosterim">
-    <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="1" />
+  <Association Name="FK_BiletSatis_Film">
+    <End Role="Film" Type="Self.Film" Multiplicity="1" />
     <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Gosterim">
-        <PropertyRef Name="GosterimID" />
+      <Principal Role="Film">
+        <PropertyRef Name="FilmID" />
       </Principal>
       <Dependent Role="BiletSatis">
-        <PropertyRef Name="GosterimID" />
+        <PropertyRef Name="FilmID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_BiletSatis_Koltuk">
-    <End Role="Koltuk" Type="Self.Koltuk" Multiplicity="1" />
+  <Association Name="FK_BiletSatis_Gise">
+    <End Role="Gise" Type="Self.Gise" Multiplicity="1" />
     <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Koltuk">
-        <PropertyRef Name="KoltukID" />
+      <Principal Role="Gise">
+        <PropertyRef Name="GiseID" />
       </Principal>
       <Dependent Role="BiletSatis">
-        <PropertyRef Name="KoltukID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_BiletSatis_OdemeSekli">
-    <End Role="OdemeSekli" Type="Self.OdemeSekli" Multiplicity="1" />
-    <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="OdemeSekli">
-        <PropertyRef Name="OdemeSekliID" />
-      </Principal>
-      <Dependent Role="BiletSatis">
-        <PropertyRef Name="OdemeSekliID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_BiletSatis_Personel">
-    <End Role="Personel" Type="Self.Personel" Multiplicity="1" />
-    <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Personel">
-        <PropertyRef Name="PersonelID" />
-      </Principal>
-      <Dependent Role="BiletSatis">
-        <PropertyRef Name="PersonelID" />
+        <PropertyRef Name="GiseID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -207,6 +205,42 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Fatura_BiletSatis1">
+    <End Role="BiletSatis" Type="Self.BiletSatis" Multiplicity="1" />
+    <End Role="Fatura" Type="Self.Fatura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BiletSatis">
+        <PropertyRef Name="BiletID" />
+      </Principal>
+      <Dependent Role="Fatura">
+        <PropertyRef Name="BiletID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fatura_OdemeSekli">
+    <End Role="OdemeSekli" Type="Self.OdemeSekli" Multiplicity="1" />
+    <End Role="Fatura" Type="Self.Fatura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OdemeSekli">
+        <PropertyRef Name="OdemeSekliID" />
+      </Principal>
+      <Dependent Role="Fatura">
+        <PropertyRef Name="OdemeSekliID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fatura_Personel">
+    <End Role="Personel" Type="Self.Personel" Multiplicity="1" />
+    <End Role="Fatura" Type="Self.Fatura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personel">
+        <PropertyRef Name="PersonelID" />
+      </Principal>
+      <Dependent Role="Fatura">
+        <PropertyRef Name="PersoneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Film_FilmTuru">
     <End Role="FilmTuru" Type="Self.FilmTuru" Multiplicity="1" />
     <End Role="Film" Type="Self.Film" Multiplicity="*" />
@@ -219,15 +253,27 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Gosterim_Film">
-    <End Role="Film" Type="Self.Film" Multiplicity="1" />
-    <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="*" />
+  <Association Name="FK_Gise_Gosterim">
+    <End Role="Gosterim" Type="Self.Gosterim" Multiplicity="1" />
+    <End Role="Gise" Type="Self.Gise" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Film">
-        <PropertyRef Name="FilmID" />
+      <Principal Role="Gosterim">
+        <PropertyRef Name="GosterimID" />
       </Principal>
-      <Dependent Role="Gosterim">
-        <PropertyRef Name="FilmID" />
+      <Dependent Role="Gise">
+        <PropertyRef Name="GosterimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gise_Koltuk">
+    <End Role="Koltuk" Type="Self.Koltuk" Multiplicity="1" />
+    <End Role="Gise" Type="Self.Gise" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Koltuk">
+        <PropertyRef Name="KoltukID" />
+      </Principal>
+      <Dependent Role="Gise">
+        <PropertyRef Name="KoltukID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -267,6 +313,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Personel_Login">
+    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="Personel">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Personel_Unvan">
     <End Role="Unvan" Type="Self.Unvan" Multiplicity="1" />
     <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
@@ -283,10 +341,13 @@
     <EntitySet Name="BiletSatis" EntityType="Self.BiletSatis" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="BiletTuru" EntityType="Self.BiletTuru" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Cinsiyet" EntityType="Self.Cinsiyet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fatura" EntityType="Self.Fatura" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Film" EntityType="Self.Film" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="FilmTuru" EntityType="Self.FilmTuru" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gise" EntityType="Self.Gise" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Gosterim" EntityType="Self.Gosterim" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Koltuk" EntityType="Self.Koltuk" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="OdemeSekli" EntityType="Self.OdemeSekli" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Personel" EntityType="Self.Personel" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Salon" EntityType="Self.Salon" Schema="dbo" store:Type="Tables" />
@@ -298,33 +359,41 @@
       <End Role="BiletTuru" EntitySet="BiletTuru" />
       <End Role="BiletSatis" EntitySet="BiletSatis" />
     </AssociationSet>
-    <AssociationSet Name="FK_BiletSatis_Gosterim" Association="Self.FK_BiletSatis_Gosterim">
-      <End Role="Gosterim" EntitySet="Gosterim" />
+    <AssociationSet Name="FK_BiletSatis_Film" Association="Self.FK_BiletSatis_Film">
+      <End Role="Film" EntitySet="Film" />
       <End Role="BiletSatis" EntitySet="BiletSatis" />
     </AssociationSet>
-    <AssociationSet Name="FK_BiletSatis_Koltuk" Association="Self.FK_BiletSatis_Koltuk">
-      <End Role="Koltuk" EntitySet="Koltuk" />
-      <End Role="BiletSatis" EntitySet="BiletSatis" />
-    </AssociationSet>
-    <AssociationSet Name="FK_BiletSatis_OdemeSekli" Association="Self.FK_BiletSatis_OdemeSekli">
-      <End Role="OdemeSekli" EntitySet="OdemeSekli" />
-      <End Role="BiletSatis" EntitySet="BiletSatis" />
-    </AssociationSet>
-    <AssociationSet Name="FK_BiletSatis_Personel" Association="Self.FK_BiletSatis_Personel">
-      <End Role="Personel" EntitySet="Personel" />
+    <AssociationSet Name="FK_BiletSatis_Gise" Association="Self.FK_BiletSatis_Gise">
+      <End Role="Gise" EntitySet="Gise" />
       <End Role="BiletSatis" EntitySet="BiletSatis" />
     </AssociationSet>
     <AssociationSet Name="FK_BiletSatis_Seyirci" Association="Self.FK_BiletSatis_Seyirci">
       <End Role="Seyirci" EntitySet="Seyirci" />
       <End Role="BiletSatis" EntitySet="BiletSatis" />
     </AssociationSet>
+    <AssociationSet Name="FK_Fatura_BiletSatis1" Association="Self.FK_Fatura_BiletSatis1">
+      <End Role="BiletSatis" EntitySet="BiletSatis" />
+      <End Role="Fatura" EntitySet="Fatura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fatura_OdemeSekli" Association="Self.FK_Fatura_OdemeSekli">
+      <End Role="OdemeSekli" EntitySet="OdemeSekli" />
+      <End Role="Fatura" EntitySet="Fatura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fatura_Personel" Association="Self.FK_Fatura_Personel">
+      <End Role="Personel" EntitySet="Personel" />
+      <End Role="Fatura" EntitySet="Fatura" />
+    </AssociationSet>
     <AssociationSet Name="FK_Film_FilmTuru" Association="Self.FK_Film_FilmTuru">
       <End Role="FilmTuru" EntitySet="FilmTuru" />
       <End Role="Film" EntitySet="Film" />
     </AssociationSet>
-    <AssociationSet Name="FK_Gosterim_Film" Association="Self.FK_Gosterim_Film">
-      <End Role="Film" EntitySet="Film" />
+    <AssociationSet Name="FK_Gise_Gosterim" Association="Self.FK_Gise_Gosterim">
       <End Role="Gosterim" EntitySet="Gosterim" />
+      <End Role="Gise" EntitySet="Gise" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gise_Koltuk" Association="Self.FK_Gise_Koltuk">
+      <End Role="Koltuk" EntitySet="Koltuk" />
+      <End Role="Gise" EntitySet="Gise" />
     </AssociationSet>
     <AssociationSet Name="FK_Gosterim_Salon" Association="Self.FK_Gosterim_Salon">
       <End Role="Salon" EntitySet="Salon" />
@@ -336,6 +405,10 @@
     </AssociationSet>
     <AssociationSet Name="FK_Personel_Cinsiyet" Association="Self.FK_Personel_Cinsiyet">
       <End Role="Cinsiyet" EntitySet="Cinsiyet" />
+      <End Role="Personel" EntitySet="Personel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Personel_Login" Association="Self.FK_Personel_Login">
+      <End Role="Login" EntitySet="Login" />
       <End Role="Personel" EntitySet="Personel" />
     </AssociationSet>
     <AssociationSet Name="FK_Personel_Unvan" Association="Self.FK_Personel_Unvan">

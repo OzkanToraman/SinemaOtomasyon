@@ -26,3 +26,17 @@ C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.csprojResolveAssemblyReference.cache
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.dll
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.pdb
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.csprojResolveAssemblyReference.cache
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.dll
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.pdb
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.Repository.dll.config
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.Repository.dll
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.Repository.pdb
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\EntityFramework.dll
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.Core.dll
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.DAL.dll
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.Core.pdb
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.DAL.pdb
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\EntityFramework.xml
+D:\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\EntityFramework.SqlServer.xml

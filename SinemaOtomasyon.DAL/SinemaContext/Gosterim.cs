@@ -17,18 +17,15 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Gosterim()
         {
-            this.BiletSatis = new HashSet<BiletSatis>();
+            this.Gise = new HashSet<Gise>();
         }
     
         public int GosterimID { get; set; }
-        public System.DateTime GosterimTarih { get; set; }
-        public int FilmID { get; set; }
         public int SalonID { get; set; }
         public int SeansID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BiletSatis> BiletSatis { get; set; }
-        public virtual Film Film { get; set; }
+        public virtual ICollection<Gise> Gise { get; set; }
         public virtual Salon Salon { get; set; }
         public virtual Seans Seans { get; set; }
     }

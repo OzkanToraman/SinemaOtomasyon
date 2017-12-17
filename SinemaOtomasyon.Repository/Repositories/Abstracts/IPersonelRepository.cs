@@ -10,6 +10,6 @@ namespace SinemaOtomasyon.Repository.Repositories.Abstracts
 {
     public interface IPersonelRepository : IRepository<Personel>
     {
-        IEnumerable<Personel> Login(string user,string pass);
+       
     }
 }

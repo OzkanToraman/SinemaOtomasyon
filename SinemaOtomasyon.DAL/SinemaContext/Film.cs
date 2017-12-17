@@ -17,7 +17,7 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Film()
         {
-            this.Gosterim = new HashSet<Gosterim>();
+            this.BiletSatis = new HashSet<BiletSatis>();
         }
     
         public int FilmID { get; set; }
@@ -31,8 +31,8 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         public int FilmTurID { get; set; }
         public string Afis { get; set; }
     
-        public virtual FilmTuru FilmTuru { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Gosterim> Gosterim { get; set; }
+        public virtual ICollection<BiletSatis> BiletSatis { get; set; }
+        public virtual FilmTuru FilmTuru { get; set; }
     }
 }

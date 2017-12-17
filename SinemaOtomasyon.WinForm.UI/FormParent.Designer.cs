@@ -43,8 +43,7 @@
             this.Name = "FormParent";
             this.ShowIcon = false;
             this.Text = "ANASAYFA";
-            this.TopMost = true;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.ResumeLayout(false);
 
         }

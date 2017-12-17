@@ -16,4 +16,10 @@ namespace SinemaOtomasyon.Repository.Repositories.Concretes
         {
         }
     }
+
+    public class GosterimModel
+    {
+        public int Id { get; set; }
+        public List<string> koltukList { get; set; }      
+    }
 }

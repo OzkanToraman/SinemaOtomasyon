@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.I1 = new System.Windows.Forms.Button();
+            this.cmsIptalEt = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.iptalEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.I2 = new System.Windows.Forms.Button();
             this.H1 = new System.Windows.Forms.Button();
             this.H2 = new System.Windows.Forms.Button();
@@ -194,13 +196,11 @@
             this.lblSeciliKoltuk = new System.Windows.Forms.Label();
             this.lbKoltuklar = new System.Windows.Forms.ListBox();
             this.lblToplamKoltuk = new System.Windows.Forms.Label();
-            this.cmsIptalEt = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.iptalEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsIptalEt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.cmsIptalEt.SuspendLayout();
             this.SuspendLayout();
             // 
             // I1
@@ -218,6 +218,20 @@
             this.I1.UseVisualStyleBackColor = false;
             this.I1.Click += new System.EventHandler(this.A1_Click);
             this.I1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A1_MouseDown);
+            // 
+            // cmsIptalEt
+            // 
+            this.cmsIptalEt.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.iptalEtToolStripMenuItem});
+            this.cmsIptalEt.Name = "cmsIptalEt";
+            this.cmsIptalEt.Size = new System.Drawing.Size(111, 26);
+            // 
+            // iptalEtToolStripMenuItem
+            // 
+            this.iptalEtToolStripMenuItem.Name = "iptalEtToolStripMenuItem";
+            this.iptalEtToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.iptalEtToolStripMenuItem.Text = "İptal Et";
+            this.iptalEtToolStripMenuItem.Click += new System.EventHandler(this.iptalEtToolStripMenuItem_Click);
             // 
             // I2
             // 
@@ -2649,20 +2663,6 @@
             this.lblToplamKoltuk.TabIndex = 234;
             this.lblToplamKoltuk.Text = "109";
             // 
-            // cmsIptalEt
-            // 
-            this.cmsIptalEt.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.iptalEtToolStripMenuItem});
-            this.cmsIptalEt.Name = "cmsIptalEt";
-            this.cmsIptalEt.Size = new System.Drawing.Size(111, 26);
-            // 
-            // iptalEtToolStripMenuItem
-            // 
-            this.iptalEtToolStripMenuItem.Name = "iptalEtToolStripMenuItem";
-            this.iptalEtToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
-            this.iptalEtToolStripMenuItem.Text = "İptal Et";
-            this.iptalEtToolStripMenuItem.Click += new System.EventHandler(this.iptalEtToolStripMenuItem_Click);
-            // 
             // FormSalon4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2840,12 +2840,12 @@
             this.Text = "Salon 4";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormSalon4_Load);
+            this.cmsIptalEt.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.cmsIptalEt.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

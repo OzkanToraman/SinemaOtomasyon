@@ -17,14 +17,13 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Koltuk()
         {
-            this.BiletSatis = new HashSet<BiletSatis>();
+            this.Gise = new HashSet<Gise>();
         }
     
         public int KoltukID { get; set; }
         public string KoltukAD { get; set; }
-        public bool DoluMu { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BiletSatis> BiletSatis { get; set; }
+        public virtual ICollection<Gise> Gise { get; set; }
     }
 }

@@ -14,21 +14,25 @@ namespace SinemaOtomasyon.DAL.SinemaContext
     
     public partial class BiletSatis
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public BiletSatis()
+        {
+            this.Fatura = new HashSet<Fatura>();
+        }
+    
         public int BiletID { get; set; }
         public decimal BiletFiyat { get; set; }
         public bool Satıldı { get; set; }
         public int SeyirciID { get; set; }
-        public int GosterimID { get; set; }
-        public int PersonelID { get; set; }
-        public int KoltukID { get; set; }
+        public int GiseID { get; set; }
         public int BiletTurID { get; set; }
-        public int OdemeSekliID { get; set; }
+        public int FilmID { get; set; }
     
         public virtual BiletTuru BiletTuru { get; set; }
-        public virtual Gosterim Gosterim { get; set; }
-        public virtual Koltuk Koltuk { get; set; }
-        public virtual OdemeSekli OdemeSekli { get; set; }
-        public virtual Personel Personel { get; set; }
+        public virtual Film Film { get; set; }
+        public virtual Gise Gise { get; set; }
         public virtual Seyirci Seyirci { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Fatura> Fatura { get; set; }
     }
 }
