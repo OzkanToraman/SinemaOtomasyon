@@ -52,6 +52,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,11 +64,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminIslemleri\FormFilmIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminIslemleri\FormFilmIslemleri.Designer.cs">
+      <DependentUpon>FormFilmIslemleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBilet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormBilet.Designer.cs">
       <DependentUpon>FormBilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFatura.Designer.cs">
+      <DependentUpon>FormFatura.cs</DependentUpon>
     </Compile>
     <Compile Include="FormFilmSeansSalonSec.cs">
       <SubType>Form</SubType>
@@ -86,6 +99,12 @@
     </Compile>
     <Compile Include="FormParent.Designer.cs">
       <DependentUpon>FormParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelIslemleri\FormPersonelIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelIslemleri\FormPersonelIslemleri.Designer.cs">
+      <DependentUpon>FormPersonelIslemleri.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -113,6 +132,9 @@
     <Compile Include="Salonlar\FormSalon4.Designer.cs">
       <DependentUpon>FormSalon4.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminIslemleri\FormFilmIslemleri.resx">
+      <DependentUpon>FormFilmIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormBilet.resx">
       <DependentUpon>FormBilet.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormParent.resx">
       <DependentUpon>FormParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelIslemleri\FormPersonelIslemleri.resx">
+      <DependentUpon>FormPersonelIslemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Salonlar\FormSalon2.resx">
       <DependentUpon>FormSalon2.cs</DependentUpon>
@@ -197,6 +222,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\button_onayla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_personel-islemleri.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

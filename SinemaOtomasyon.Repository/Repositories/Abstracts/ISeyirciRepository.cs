@@ -10,5 +10,6 @@ namespace SinemaOtomasyon.Repository.Repositories.Abstracts
 {
     public interface ISeyirciRepository:IRepository<Seyirci>
     {
+        int SonKayit();
     }
 }

@@ -35,6 +35,12 @@ namespace SinemaOtomasyon.WinForm.UI.Ninject
             kernel.Bind<ILoginService>().To<LoginService>();
             kernel.Bind<ISeyirciService>().To<SeyirciService>();
             kernel.Bind<ISeyirciRepository>().To<SeyirciRepository>();
+            kernel.Bind<IFaturaRepository>().To<FaturaRepository>();
+            kernel.Bind<IBiletSatisRepository>().To<BiletSatisRepository>();
+            kernel.Bind<IBiletTuruRepository>().To<BiletTuruRepository>();
+            kernel.Bind<IFilmTuruRepository>().To<FilmTuruRepository>();
+            kernel.Bind<IUnvanRepository>().To<UnvanRepository>();
+            kernel.Bind<ICinsiyetRepository>().To<CinsiyetRepository>();
 
             return kernel;
         }

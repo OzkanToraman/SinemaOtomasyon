@@ -10,7 +10,6 @@
           <ScalarProperty Name="SeyirciID" ColumnName="SeyirciID" />
           <ScalarProperty Name="GiseID" ColumnName="GiseID" />
           <ScalarProperty Name="BiletTurID" ColumnName="BiletTurID" />
-          <ScalarProperty Name="FilmID" ColumnName="FilmID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -99,7 +98,7 @@
           <ScalarProperty Name="LoginID" ColumnName="LoginID" />
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -127,11 +126,20 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="SinemaModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleAD" ColumnName="RoleAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Salon">
       <EntityTypeMapping TypeName="SinemaModel.Salon">
         <MappingFragment StoreEntitySet="Salon">
           <ScalarProperty Name="SalonID" ColumnName="SalonID" />
           <ScalarProperty Name="SalonAD" ColumnName="SalonAD" />
+          <ScalarProperty Name="DoluMu" ColumnName="DoluMu" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

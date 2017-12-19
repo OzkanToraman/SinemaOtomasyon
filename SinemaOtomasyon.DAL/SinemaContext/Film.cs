@@ -24,7 +24,7 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         public bool Vizyonda { get; set; }
         public int FilmTurID { get; set; }
         public string Afis { get; set; }
-        public Nullable<int> SalonID { get; set; }
+        public int SalonID { get; set; }
     
         public virtual FilmTuru FilmTuru { get; set; }
         public virtual Salon Salon { get; set; }

@@ -15,5 +15,10 @@ namespace SinemaOtomasyon.Repository.Repositories.Concretes
         public SeyirciRepository(DbContext Context) : base(Context)
         {
         }
+
+        public int SonKayit()
+        {
+            return _dbContext.Set<Seyirci>().OrderByDescending(x => x.SeyirciID).Select(x => x.SeyirciID).FirstOrDefault();
+        }
     }
 }

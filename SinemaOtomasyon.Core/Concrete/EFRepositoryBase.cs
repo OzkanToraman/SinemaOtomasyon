@@ -53,8 +53,7 @@ namespace SinemaOtomasyon.Core.Concrete
 
         public void Update(T model)
         {
-            var entity = _dbSet.Find(model);
-            _dbContext.Entry(entity).CurrentValues.SetValues(model);
+            _dbContext.Entry(model).State = EntityState.Modified;
             //_dbContext.SaveChanges();
         }
     }

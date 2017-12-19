@@ -39,6 +39,8 @@
             this.btnBiletSatis = new System.Windows.Forms.Button();
             this.pbFilmAfis = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.txtSeans = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFilmAfis)).BeginInit();
             this.SuspendLayout();
@@ -66,14 +68,16 @@
             // cbSeansSec
             // 
             this.cbSeansSec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSeansSec.DropDownWidth = 75;
             this.cbSeansSec.Font = new System.Drawing.Font("Arial", 9F);
             this.cbSeansSec.FormattingEnabled = true;
             this.cbSeansSec.Items.AddRange(new object[] {
             ""});
-            this.cbSeansSec.Location = new System.Drawing.Point(901, 368);
+            this.cbSeansSec.Location = new System.Drawing.Point(1031, 369);
             this.cbSeansSec.Name = "cbSeansSec";
-            this.cbSeansSec.Size = new System.Drawing.Size(154, 23);
+            this.cbSeansSec.Size = new System.Drawing.Size(25, 23);
             this.cbSeansSec.TabIndex = 3;
+            this.cbSeansSec.SelectedIndexChanged += new System.EventHandler(this.cbSeansSec_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -181,6 +185,31 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Afiş :";
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Arial", 10F);
+            this.btnBack.ForeColor = System.Drawing.Color.Black;
+            this.btnBack.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnBack.Location = new System.Drawing.Point(1020, 248);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(35, 36);
+            this.btnBack.TabIndex = 242;
+            this.btnBack.Text = "←";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // txtSeans
+            // 
+            this.txtSeans.Font = new System.Drawing.Font("Arial", 9.25F);
+            this.txtSeans.Location = new System.Drawing.Point(901, 369);
+            this.txtSeans.Multiline = true;
+            this.txtSeans.Name = "txtSeans";
+            this.txtSeans.Size = new System.Drawing.Size(132, 23);
+            this.txtSeans.TabIndex = 243;
+            // 
             // FormFilmSeansSalonSec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,6 +217,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.Controls.Add(this.txtSeans);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pbFilmAfis);
             this.Controls.Add(this.btnBiletSatis);
             this.Controls.Add(this.label5);
@@ -225,5 +256,7 @@
         private System.Windows.Forms.Button btnBiletSatis;
         private System.Windows.Forms.PictureBox pbFilmAfis;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.TextBox txtSeans;
     }
 }

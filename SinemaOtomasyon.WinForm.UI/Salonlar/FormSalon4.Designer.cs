@@ -2426,7 +2426,7 @@
             // 
             this.txtAd.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtAd.Font = new System.Drawing.Font("Arial", 9F);
-            this.txtAd.Location = new System.Drawing.Point(458, 593);
+            this.txtAd.Location = new System.Drawing.Point(458, 594);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(166, 21);
             this.txtAd.TabIndex = 0;
@@ -2700,10 +2700,11 @@
             this.lblTarih.Font = new System.Drawing.Font("Arial", 10F);
             this.lblTarih.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblTarih.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblTarih.Location = new System.Drawing.Point(458, 573);
+            this.lblTarih.Location = new System.Drawing.Point(455, 572);
             this.lblTarih.Name = "lblTarih";
-            this.lblTarih.Size = new System.Drawing.Size(0, 16);
+            this.lblTarih.Size = new System.Drawing.Size(89, 16);
             this.lblTarih.TabIndex = 225;
+            this.lblTarih.Text = "Günün Tarihi";
             // 
             // FormSalon4
             // 

@@ -10,6 +10,7 @@ namespace SinemaOtomasyon.Repository.Repositories.Abstracts
 {
     public interface ILoginRepository : IRepository<Login>
     {
-        Login Giris(string user,string pass);
+        Login Giris(string user, string pass);
     }
+    
 }

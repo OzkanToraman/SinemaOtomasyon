@@ -13,7 +13,11 @@ namespace SinemaOtomasyon.BLL.Services.Validations
 
         public FilmValidator()
         {
-            RuleFor(x => x.FilmAd).NotEmpty().WithMessage("Bu alan boş bırakılamaz.");
+            RuleFor(x => x.FilmAd).NotEmpty().WithMessage("Film adı boş bırakılamaz.");
+            RuleFor(x => x.Yonetmen).NotEmpty().WithMessage("Yonetmen boş bırakılamaz.");
+            RuleFor(x => x.Oyuncular).NotEmpty().WithMessage("Oyuncular boş bırakılamaz.");
+            RuleFor(x => x.FilmSuresi_dk).NotEmpty().WithMessage("Film süresi boş bırakılamaz.");
+            RuleFor(x => x.Vizyonda).NotEmpty().WithMessage("Vizyonda mı boş bırakılamaz.");           
         }
 
         

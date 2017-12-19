@@ -10,7 +10,6 @@
     <Property Name="SeyirciID" Type="int" Nullable="false" />
     <Property Name="GiseID" Type="int" Nullable="false" />
     <Property Name="BiletTurID" Type="int" Nullable="false" />
-    <Property Name="FilmID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="BiletTuru">
     <Key>
@@ -43,14 +42,14 @@
     <Property Name="FilmID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="FilmAd" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Yonetmen" Type="varchar" MaxLength="120" Nullable="false" />
-    <Property Name="Oyuncular" Type="varchar" MaxLength="150" />
+    <Property Name="Oyuncular" Type="varchar" MaxLength="150" Nullable="false" />
     <Property Name="VizyonGrsTarih" Type="date" Nullable="false" />
     <Property Name="VizyonCksTarih" Type="date" Nullable="false" />
     <Property Name="FilmSuresi_dk" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="Vizyonda" Type="bit" Nullable="false" />
     <Property Name="FilmTurID" Type="int" Nullable="false" />
     <Property Name="Afis" Type="varchar(max)" />
-    <Property Name="SalonID" Type="int" />
+    <Property Name="SalonID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="FilmTuru">
     <Key>
@@ -90,7 +89,7 @@
     <Property Name="LoginID" Type="int" Nullable="false" />
     <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Password" Type="varchar" MaxLength="10" Nullable="false" />
-    <Property Name="Role" Type="varchar" MaxLength="50" />
+    <Property Name="RoleID" Type="int" />
   </EntityType>
   <EntityType Name="OdemeSekli">
     <Key>
@@ -112,7 +111,14 @@
     <Property Name="CalismaHali" Type="bit" Nullable="false" />
     <Property Name="UnvanID" Type="int" Nullable="false" />
     <Property Name="CinsiyetID" Type="int" Nullable="false" />
-    <Property Name="Username" Type="varchar" MaxLength="50" />
+    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleAD" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
   <EntityType Name="Salon">
     <Key>
@@ -120,13 +126,14 @@
     </Key>
     <Property Name="SalonID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="SalonAD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DoluMu" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="Seans">
     <Key>
       <PropertyRef Name="SeansID" />
     </Key>
     <Property Name="SeansID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="SeansAD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SeansAD" Type="time" Precision="5" Nullable="false" />
   </EntityType>
   <EntityType Name="Seyirci">
     <Key>
@@ -243,7 +250,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Film_Salon">
-    <End Role="Salon" Type="Self.Salon" Multiplicity="0..1" />
+    <End Role="Salon" Type="Self.Salon" Multiplicity="1" />
     <End Role="Film" Type="Self.Film" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Salon">
@@ -302,6 +309,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Login_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="Login" Type="Self.Login" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="Login">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Personel_Cinsiyet">
     <End Role="Cinsiyet" Type="Self.Cinsiyet" Multiplicity="1" />
     <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
@@ -315,7 +334,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Personel_Login">
-    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <End Role="Login" Type="Self.Login" Multiplicity="1" />
     <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Login">
@@ -351,6 +370,7 @@
     <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="OdemeSekli" EntityType="Self.OdemeSekli" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Personel" EntityType="Self.Personel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Salon" EntityType="Self.Salon" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Seans" EntityType="Self.Seans" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Seyirci" EntityType="Self.Seyirci" Schema="dbo" store:Type="Tables" />
@@ -403,6 +423,10 @@
     <AssociationSet Name="FK_Gosterim_Seans" Association="Self.FK_Gosterim_Seans">
       <End Role="Seans" EntitySet="Seans" />
       <End Role="Gosterim" EntitySet="Gosterim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Login_Role" Association="Self.FK_Login_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="Login" EntitySet="Login" />
     </AssociationSet>
     <AssociationSet Name="FK_Personel_Cinsiyet" Association="Self.FK_Personel_Cinsiyet">
       <End Role="Cinsiyet" EntitySet="Cinsiyet" />

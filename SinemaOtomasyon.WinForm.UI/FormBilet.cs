@@ -17,50 +17,82 @@ namespace SinemaOtomasyon.WinForm.UI
     public partial class FormBilet : Form
     {
         private IGiseRepository _giseRepo;
+        private IFaturaRepository _faturaRepo;
+        private IBiletTuruRepository _biletturRepo;
+        private IBiletSatisRepository _biletSatisRepo;
+        private ISeyirciRepository _seyirciRepo;
+        private IPersonelRepository _personelRepo;
 
         private Seyirci s;
         string filmAd;
         List<string> koltuklar;
         Gosterim gosterim;
-        string biletTuru;
-
+        int biletTur;
+        string kullanici;
+        int sonSeyirciKaydiId,giseId,sonBiletKaydiId;
+        int OdemeSekliID;
 
         public FormBilet()
         {
             InitializeComponent();
         }
 
-        public FormBilet(Seyirci s,string filmAd,List<string> koltuklar,Gosterim gosterim,string biletTuru)
+        public FormBilet(Seyirci s, string filmAd, List<string> koltuklar, Gosterim gosterim, int biletTur)
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
             _giseRepo = container.Get<IGiseRepository>();
+            _faturaRepo = container.Get<IFaturaRepository>();
+            _biletturRepo = container.Get<IBiletTuruRepository>();
+            _biletSatisRepo = container.Get<IBiletSatisRepository>();
+            _seyirciRepo = container.Get<ISeyirciRepository>();
+            _personelRepo = container.Get<IPersonelRepository>();
 
             InitializeComponent();
             this.s = s;
             this.filmAd = filmAd;
             this.koltuklar = koltuklar;
             this.gosterim = gosterim;
-            this.biletTuru = biletTuru;
+            this.biletTur = biletTur;
 
         }
 
         private void FormBilet_Load(object sender, EventArgs e)
         {
+            #region Kullanıcı Bilgileri
+            FormLogin formLogin = new FormLogin();
+            kullanici = FormLogin.Username;
+            #endregion
             #region Salondan gelen bilgiler
             txtAd.Text = s.SeyirciAd;
             txtSoyad.Text = s.SeyirciSoyad;
             txtTelefon.Text = s.SeyirciTelefon;
             txtAdres.Text = s.SeyirciAdres;
             txtSalon.Text = gosterim.Salon.SalonAD;
-            txtSeans.Text = gosterim.Seans.SeansAD;
-            txtBiletTur.Text = biletTuru;
+            txtSeans.Text = gosterim.Seans.SeansAD.ToString();        
+            txtBiletTur.Text = _biletturRepo.GetById(biletTur).BiletTuru1;
             txtFilmAd.Text = filmAd;
+            txtTarih.Text = DateTime.Now.ToShortDateString();
+
 
             int koltukAdet = koltuklar.Count();
             foreach (var koltuk in koltuklar)
             {
                 txtKoltuklar.Text += koltuk.ToString() + " ";
-            } 
+            }
+            #endregion
+            #region Bilet Fiyat Hesabı
+            if (txtBiletTur.Text == "Öğrenci")
+            {
+                txtToplam.Text = (koltukAdet * 6).ToString();
+            }
+            else if (txtBiletTur.Text == "Tam")
+            {
+                txtToplam.Text = (koltukAdet * 10).ToString();
+            }
+            else
+            {
+                txtToplam.Text = (koltukAdet * 7).ToString();
+            }
             #endregion
         }
 
@@ -76,17 +108,80 @@ namespace SinemaOtomasyon.WinForm.UI
             foreach (var item in koltuklar)
             {
                 koltukAd = item.ToString();
-                int giseId = _giseRepo.GetList().Where(x => x.GosterimID == gosterim.GosterimID && x.Koltuk.KoltukAD == koltukAd).Select(x => x.GiseID).FirstOrDefault();
+                giseId = _giseRepo.GetList().Where(x => x.GosterimID == gosterim.GosterimID && x.Koltuk.KoltukAD == koltukAd).Select(x => x.GiseID).FirstOrDefault();
                 _giseRepo.GetById(giseId).DoluMu = true;
-                if (_giseRepo.Save()>0)
+                if (_giseRepo.Save() > 0)
                 {
                     MessageBox.Show("İşlem başarıyla gerçekleşti!");
-                }
-                
+                }            
             }
-            
-            
             /**/
+
+            #region Ödeme Şekli
+            /*OdemeSekliyle alakalı*/
+            if (rbNakit.Checked)
+            {
+               OdemeSekliID = 1;
+            }
+            else
+            {
+               OdemeSekliID = 2;
+            }
+            /**/
+            #endregion
+
+            SeyirciDatabaseEkle();
+            BiletDatabaseEkle();
+            FaturaDatabaseEkle();
+        }
+
+        void SeyirciDatabaseEkle()
+        {
+            Seyirci seyirci = new Seyirci();
+            seyirci.SeyirciAd = txtAd.Text;
+            seyirci.SeyirciSoyad = txtSoyad.Text;
+            seyirci.SeyirciTelefon = txtTelefon.Text;
+            seyirci.SeyirciAdres = txtAdres.Text;
+
+            _seyirciRepo.Add(seyirci);
+
+            if (_seyirciRepo.Save()>0)
+            {
+                sonSeyirciKaydiId = _seyirciRepo.SonKayit();
+                MessageBox.Show("Kayıt başarılı!");
+            }
+        }
+
+        void BiletDatabaseEkle()
+        {
+            BiletSatis satis = new BiletSatis();
+            satis.BiletFiyat = Convert.ToDecimal(txtToplam.Text);
+            satis.Satıldı = true;
+            satis.SeyirciID = sonSeyirciKaydiId;
+            satis.GiseID = giseId;
+            satis.BiletTurID = biletTur;
+
+            _biletSatisRepo.Add(satis);
+            if (_biletSatisRepo.Save()>0)
+            {
+                sonBiletKaydiId = _biletSatisRepo.SonBiletKayitBul();
+                MessageBox.Show("Kayıt başarılı!");
+            }
+        }
+
+        void FaturaDatabaseEkle()
+        {
+            Fatura f = new Fatura();
+            f.OdemeSekliID = OdemeSekliID;
+            f.BiletID = sonBiletKaydiId;
+            f.FaturaTarih = DateTime.Now.Date;
+            #region PersonelID Bulmak
+            Personel p = new Personel();
+            p =_personelRepo.GetList().Where(x => x.Username == kullanici).FirstOrDefault();
+            f.PersoneID = p.PersonelID;
+            #endregion
+            _faturaRepo.Add(f);
+            _faturaRepo.Save();
         }
     }
 }

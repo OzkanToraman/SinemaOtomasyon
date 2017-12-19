@@ -90,3 +90,5 @@ D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\bin\Debug\EntityFramework.SqlServe
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\bin\Debug\FluentValidation.xml
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\bin\Debug\Ninject.xml
 D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.FormBilet.resources
+D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.AdminIslemleri.FormFilmIslemleri.resources
+D:\SinemaOtomasyon\SinemaOtomasyon.WinForm.UI\obj\Debug\SinemaOtomasyon.WinForm.UI.PersonelIslemleri.FormPersonelIslemleri.resources

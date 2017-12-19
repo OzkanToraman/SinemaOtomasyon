@@ -28,6 +28,7 @@ namespace SinemaOtomasyon.WinForm.UI
         private ISalonRepository _salonRepo;
         Film f = new Film();
         int SalonId, SeansId;
+        int filmId;
         public FormFilmSeansSalonSec()
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
@@ -44,8 +45,20 @@ namespace SinemaOtomasyon.WinForm.UI
         {
 
             DataGridViewDoldur();
-            SeansDoldur();
-            SalonDoldur();
+            //SeansDoldur();
+            SeansSaatKontrol();
+
+        }
+
+        private void SeansSaatKontrol()
+        {
+            cbSeansSec.DataSource = _seansRepo.GetList().Where(x => x.SeansAD >= DateTime.Now.TimeOfDay).Select(x => new { id = x.SeansID, ad = x.SeansAD }).ToList();
+            cbSeansSec.DisplayMember = "ad";
+            cbSeansSec.ValueMember = "id";
+            if (cbSeansSec.Items.Count != 0)
+            {
+                txtSeans.Text = cbSeansSec.Text.Substring(0, 5);
+            }
 
         }
 
@@ -62,15 +75,15 @@ namespace SinemaOtomasyon.WinForm.UI
             }).ToList();
 
             dgvFilmler.Columns[0].Visible = false;
-        }
 
+        }
 
         private void SalonDoldur()
         {
-            var salonSorgu = _salonRepo.GetList().Select(x => new
+            var salonSorgu = _filmRepo.GetList().Where(x => x.FilmID == filmId).Select(x => new
             {
-                x.SalonID,
-                x.SalonAD
+                x.Salon.SalonID,
+                x.Salon.SalonAD
             }).ToList();
             cbSalonSec.DataSource = salonSorgu;
             cbSalonSec.DisplayMember = "SalonAD";
@@ -78,57 +91,73 @@ namespace SinemaOtomasyon.WinForm.UI
 
         }
 
-        private void SeansDoldur()
-        {
-            var seansSorgu = _seansRepo.GetList().Select(x => new { id = x.SeansID, ad = x.SeansAD }).ToList();
-            cbSeansSec.DataSource = seansSorgu;
-            cbSeansSec.DisplayMember = "ad";
-            cbSeansSec.ValueMember = "id";
-
-        }
+        //private void SeansDoldur()
+        //{
+        //    var seansSorgu = _seansRepo.GetList().Select(x => new { id = x.SeansID, ad = x.SeansAD }).ToList();
+        //    cbSeansSec.DataSource = seansSorgu;
+        //    cbSeansSec.DisplayMember = "ad";
+        //    cbSeansSec.ValueMember = "id";
+        //    txtSeans.Text = cbSeansSec.Text.Substring(0, 5);
+        //}
 
         private void dgvFilmler_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             //MessageBox.Show("" + (int)dgvFilmler.CurrentRow.Cells[0].Value);
             f = _filmRepo.GetById((int)dgvFilmler.CurrentRow.Cells[0].Value);
+            filmId = f.FilmID;
+
             if (f.Afis != null)
             {
                 pbFilmAfis.SizeMode = PictureBoxSizeMode.StretchImage;
                 pbFilmAfis.Image = Image.FromFile(f.Afis);
             }
 
+            SalonDoldur();
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cbSeansSec_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtSeans.Text = cbSeansSec.Text.Substring(0, 5);
         }
 
         private void btnBiletSatis_Click(object sender, EventArgs e)
         {
-            if (f != null)
+            if (cbSalonSec.Items.Count==0 || cbSeansSec.Items.Count==0)
             {
-                SeansId = (int)cbSeansSec.SelectedValue;
-                SalonId = (int)cbSalonSec.SelectedValue;
-                switch (SalonId)
-                {
-                    case 2:
-                        FormSalon2 frm2 = new FormSalon2();
-                        frm2.ShowDialog();
-                        break;
-                    case 3:
-                        FormSalon3 frm3 = new FormSalon3();
-                        frm3.ShowDialog();
-                        break;
-                    case 4:
-                        FormSalon4 frm4 = new FormSalon4(f, SeansId, SalonId);
-                        frm4.ShowDialog();
-                        break;
-                    default:
-                        break;
-                }
-
-
-
-
+                MessageBox.Show("Lütfen seans ya da salon bilgisi giriniz!");               
             }
-
+            else
+            {
+                if (f != null)
+                {
+                    SeansId = (int)cbSeansSec.SelectedValue;
+                    SalonId = (int)cbSalonSec.SelectedValue;
+                    int id = SalonId;
+                    //switch (SalonId)
+                    //{
+                    //    case 2:
+                    //        FormSalon2 frm2 = new FormSalon2(f, SeansId, SalonId);
+                    //        frm2.ShowDialog();
+                    //        break;
+                    //    case 3:
+                    //        FormSalon3 frm3 = new FormSalon3(f, SeansId, SalonId);
+                    //        frm3.ShowDialog();
+                    //        break;
+                    //    case 4:
+                    //        FormSalon4 frm4 = new FormSalon4(f, SeansId, SalonId);
+                    //        frm4.ShowDialog();
+                    //        break;
+                    //    default:
+                    //        break;
+                    //}
+                }
+            }
         }
 
 

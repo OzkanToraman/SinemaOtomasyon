@@ -14,12 +14,62 @@ namespace SinemaOtomasyon.BLL.Services.Concrete
 {
     public class FilmService : IFilmService
     {
-        protected IFilmRepository _repo;
+        protected IFilmRepository _filmRepo;
 
-        public FilmService(IFilmRepository repo)
+        public FilmService(IFilmRepository filmRepo)
         {
-            _repo = repo;
+            _filmRepo = filmRepo;
         }
-      
+
+        public ResultModel<Film> SaveFilm(Film f)
+        {
+            FilmValidator validator = new FilmValidator();
+            var result = validator.Validate(f);
+
+            if (result.IsValid)
+            {
+                _filmRepo.Add(f);
+                _filmRepo.Save();
+
+                return new ResultModel<Film>
+                {
+                    Errors = null,
+                    IsValid = true,
+                    Message = "Başarıyla kayıt edildi!"
+                };
+            }
+            return new ResultModel<Film>
+            {
+                Errors = result.Errors.Select(x => x.ErrorMessage).ToList(),
+                IsValid = false,
+                Message = "Kayıt işlemi başarısız!"
+            };
+        }
+
+        public ResultModel<Film> UpdateFilm(Film f)
+        {
+            FilmValidator validator = new FilmValidator();
+            var result = validator.Validate(f);
+
+            if (result.IsValid)
+            {
+                _filmRepo.Update(f);
+                _filmRepo.Save();
+
+                return new ResultModel<Film>
+                {
+                    Errors = null,
+                    IsValid = true,
+                    Message = "Başarıyla kayıt edildi!"
+                };
+            }
+            return new ResultModel<Film>
+            {
+                Errors = result.Errors.Select(x => x.ErrorMessage).ToList(),
+                IsValid = false,
+                Message = "Kayıt işlemi başarısız!"
+            };
+        }
     }
 }
+

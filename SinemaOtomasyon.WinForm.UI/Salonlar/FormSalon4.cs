@@ -25,6 +25,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
         private IUnitOfWork _gosterimUOW, _koltukUOW;
 
 
+
         private Film f;
         int SeansId, SalonId, GosterimId;
         string SagTus;
@@ -117,7 +118,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
                     txtAd.Focus();
                 }
                 else
-                {                                      
+                {
                     //for (int i = 0; i < lbKoltuklar.Items.Count; i++)
                     //{
                     //    /*Koltuk Rengi Değiştirme*/
@@ -156,28 +157,26 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
 
                     #region Bilet Tür Bilgisi
                     /*Radiobutton seçim*/
-                    string biletTuru;
+
+                    int biletTur;
                     if (rbOgrenci.Checked)
                     {
-                        biletTuru = "Ogrenci";
+                        biletTur = 2;
                     }
                     else if (rbTam.Checked)
                     {
-                        biletTuru = "Tam";
-                    }
-                    else if (rbUye.Checked)
-                    {
-                        biletTuru = "Üye";
+                        biletTur= 1;
                     }
                     else
                     {
-                        biletTuru = null;
+                        biletTur = 4;
                     }
+
                     /**/
                     #endregion
 
 
-                    FormBilet frm = new FormBilet(seyirci, f.FilmAd, butonlar, gosterim, biletTuru);
+                    FormBilet frm = new FormBilet(seyirci, f.FilmAd, butonlar, gosterim,biletTur);
                     frm.ShowDialog();
 
                 }

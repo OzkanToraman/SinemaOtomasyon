@@ -51,7 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\Abstracts\IBiletSatisRepository.cs" />
+    <Compile Include="Repositories\Abstracts\IBiletTuruRepository.cs" />
+    <Compile Include="Repositories\Abstracts\ICinsiyetRepository.cs" />
+    <Compile Include="Repositories\Abstracts\IFaturaRepository.cs" />
     <Compile Include="Repositories\Abstracts\IFilmRepository.cs" />
+    <Compile Include="Repositories\Abstracts\IFilmTuruRepository.cs" />
     <Compile Include="Repositories\Abstracts\IGiseRepository.cs" />
     <Compile Include="Repositories\Abstracts\IGosterimRepository.cs" />
     <Compile Include="Repositories\Abstracts\IKoltukRepository.cs" />
@@ -60,7 +65,14 @@
     <Compile Include="Repositories\Abstracts\ISalonRepository.cs" />
     <Compile Include="Repositories\Abstracts\ISeansRepository.cs" />
     <Compile Include="Repositories\Abstracts\ISeyirciRepository.cs" />
+    <Compile Include="Repositories\Abstracts\IUnvanRepository.cs" />
+    <Compile Include="Repositories\Concretes\BiletSatisRepository.cs" />
+    <Compile Include="Repositories\Concretes\BiletTuruRepository.cs" />
+    <Compile Include="Repositories\Concretes\CinsiyetRepository.cs" />
+    <Compile Include="Repositories\Concretes\EFRepositoryBase.cs" />
+    <Compile Include="Repositories\Concretes\FaturaRepository.cs" />
     <Compile Include="Repositories\Concretes\FilmRepository.cs" />
+    <Compile Include="Repositories\Concretes\FilmTuruRepository.cs" />
     <Compile Include="Repositories\Concretes\GiseRepository.cs" />
     <Compile Include="Repositories\Concretes\GosterimRepository.cs" />
     <Compile Include="Repositories\Concretes\KoltukRepository.cs" />
@@ -69,6 +81,7 @@
     <Compile Include="Repositories\Concretes\SalonRepository.cs" />
     <Compile Include="Repositories\Concretes\SeansRepository.cs" />
     <Compile Include="Repositories\Concretes\SeyirciRepository.cs" />
+    <Compile Include="Repositories\Concretes\UnvanRepository.cs" />
     <Compile Include="UOW\Abstract\IUnitOfWork.cs" />
     <Compile Include="UOW\Concrete\UnitOfWork.cs" />
   </ItemGroup>

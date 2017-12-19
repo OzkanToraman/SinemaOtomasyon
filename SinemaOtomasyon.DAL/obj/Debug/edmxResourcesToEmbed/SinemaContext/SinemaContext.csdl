@@ -10,7 +10,6 @@
     <Property Name="SeyirciID" Type="Int32" Nullable="false" />
     <Property Name="GiseID" Type="Int32" Nullable="false" />
     <Property Name="BiletTurID" Type="Int32" Nullable="false" />
-    <Property Name="FilmID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="BiletTuru" Relationship="Self.FK_BiletSatis_BiletTuru" FromRole="BiletSatis" ToRole="BiletTuru" />
     <NavigationProperty Name="Gise" Relationship="Self.FK_BiletSatis_Gise" FromRole="BiletSatis" ToRole="Gise" />
     <NavigationProperty Name="Seyirci" Relationship="Self.FK_BiletSatis_Seyirci" FromRole="BiletSatis" ToRole="Seyirci" />
@@ -52,14 +51,14 @@
     <Property Name="FilmID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="FilmAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Yonetmen" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Oyuncular" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Oyuncular" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="VizyonGrsTarih" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="VizyonCksTarih" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="FilmSuresi_dk" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Vizyonda" Type="Boolean" Nullable="false" />
     <Property Name="FilmTurID" Type="Int32" Nullable="false" />
     <Property Name="Afis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="SalonID" Type="Int32" />
+    <Property Name="SalonID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="FilmTuru" Relationship="Self.FK_Film_FilmTuru" FromRole="Film" ToRole="FilmTuru" />
     <NavigationProperty Name="Salon" Relationship="Self.FK_Film_Salon" FromRole="Film" ToRole="Salon" />
   </EntityType>
@@ -109,7 +108,8 @@
     <Property Name="LoginID" Type="Int32" Nullable="false" />
     <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Password" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RoleID" Type="Int32" />
+    <NavigationProperty Name="Role" Relationship="Self.FK_Login_Role" FromRole="Login" ToRole="Role" />
     <NavigationProperty Name="Personel" Relationship="Self.FK_Personel_Login" FromRole="Login" ToRole="Personel" />
   </EntityType>
   <EntityType Name="OdemeSekli">
@@ -133,11 +133,19 @@
     <Property Name="CalismaHali" Type="Boolean" Nullable="false" />
     <Property Name="UnvanID" Type="Int32" Nullable="false" />
     <Property Name="CinsiyetID" Type="Int32" Nullable="false" />
-    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Cinsiyet" Relationship="Self.FK_Personel_Cinsiyet" FromRole="Personel" ToRole="Cinsiyet" />
     <NavigationProperty Name="Fatura" Relationship="Self.FK_Fatura_Personel" FromRole="Personel" ToRole="Fatura" />
     <NavigationProperty Name="Login" Relationship="Self.FK_Personel_Login" FromRole="Personel" ToRole="Login" />
     <NavigationProperty Name="Unvan" Relationship="Self.FK_Personel_Unvan" FromRole="Personel" ToRole="Unvan" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleAD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Login" Relationship="Self.FK_Login_Role" FromRole="Role" ToRole="Login" />
   </EntityType>
   <EntityType Name="Salon">
     <Key>
@@ -145,6 +153,7 @@
     </Key>
     <Property Name="SalonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="SalonAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DoluMu" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="Film" Relationship="Self.FK_Film_Salon" FromRole="Salon" ToRole="Film" />
     <NavigationProperty Name="Gosterim" Relationship="Self.FK_Gosterim_Salon" FromRole="Salon" ToRole="Gosterim" />
   </EntityType>
@@ -153,7 +162,7 @@
       <PropertyRef Name="SeansID" />
     </Key>
     <Property Name="SeansID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="SeansAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SeansAD" Type="Time" Nullable="false" Precision="5" />
     <NavigationProperty Name="Gosterim" Relationship="Self.FK_Gosterim_Seans" FromRole="Seans" ToRole="Gosterim" />
   </EntityType>
   <EntityType Name="Seyirci">
@@ -285,7 +294,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Film_Salon">
-    <End Role="Salon" Type="Self.Salon" Multiplicity="0..1" />
+    <End Role="Salon" Type="Self.Salon" Multiplicity="1" />
     <End Role="Film" Type="Self.Film" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Salon">
@@ -344,8 +353,20 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Login_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="Login" Type="Self.Login" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="Login">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Personel_Login">
-    <End Role="Login" Type="Self.Login" Multiplicity="0..1" />
+    <End Role="Login" Type="Self.Login" Multiplicity="1" />
     <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Login">
@@ -381,6 +402,7 @@
     <EntitySet Name="Login" EntityType="Self.Login" />
     <EntitySet Name="OdemeSekli" EntityType="Self.OdemeSekli" />
     <EntitySet Name="Personel" EntityType="Self.Personel" />
+    <EntitySet Name="Role" EntityType="Self.Role" />
     <EntitySet Name="Salon" EntityType="Self.Salon" />
     <EntitySet Name="Seans" EntityType="Self.Seans" />
     <EntitySet Name="Seyirci" EntityType="Self.Seyirci" />
@@ -437,6 +459,10 @@
     <AssociationSet Name="FK_Gosterim_Seans" Association="Self.FK_Gosterim_Seans">
       <End Role="Seans" EntitySet="Seans" />
       <End Role="Gosterim" EntitySet="Gosterim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Login_Role" Association="Self.FK_Login_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="Login" EntitySet="Login" />
     </AssociationSet>
     <AssociationSet Name="FK_Personel_Login" Association="Self.FK_Personel_Login">
       <End Role="Login" EntitySet="Login" />

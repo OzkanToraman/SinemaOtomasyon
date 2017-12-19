@@ -26,7 +26,6 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         public int SeyirciID { get; set; }
         public int GiseID { get; set; }
         public int BiletTurID { get; set; }
-        public int FilmID { get; set; }
     
         public virtual BiletTuru BiletTuru { get; set; }
         public virtual Gise Gise { get; set; }

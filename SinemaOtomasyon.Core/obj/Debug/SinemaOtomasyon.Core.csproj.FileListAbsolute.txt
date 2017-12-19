@@ -18,3 +18,13 @@ C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\Entit
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.csprojResolveAssemblyReference.cache
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.dll
 C:\Users\Ozkan\Source\Repos\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.pdb
+D:\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\SinemaOtomasyon.Core.dll.config
+D:\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\SinemaOtomasyon.Core.dll
+D:\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\SinemaOtomasyon.Core.pdb
+D:\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\EntityFramework.dll
+D:\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\EntityFramework.xml
+D:\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.csprojResolveAssemblyReference.cache
+D:\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.dll
+D:\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.pdb

@@ -17,9 +17,11 @@ namespace SinemaOtomasyon.WinForm.UI
 {
     public partial class FormLogin : Form
     {
+
+        public static string Username;
         private ILoginRepository _loginRepo;
         private ILoginService _loginService;
-
+        
 
         public FormLogin()
         {
@@ -68,8 +70,11 @@ namespace SinemaOtomasyon.WinForm.UI
                 }
                 else
                 {
-                    MessageBox.Show("Başarılı");
-                    string Role = login.Role;
+                    string Role = login.Role.RoleAD;
+                    Username = login.Username;
+                    FormParent frm = new FormParent();
+                    this.Hide();
+                    frm.Show();         
                 }
                 
             }     

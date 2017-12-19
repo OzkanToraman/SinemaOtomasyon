@@ -88,6 +88,9 @@
     <Compile Include="SinemaContext\Personel.cs">
       <DependentUpon>SinemaContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="SinemaContext\Role.cs">
+      <DependentUpon>SinemaContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="SinemaContext\Salon.cs">
       <DependentUpon>SinemaContext.tt</DependentUpon>
     </Compile>
