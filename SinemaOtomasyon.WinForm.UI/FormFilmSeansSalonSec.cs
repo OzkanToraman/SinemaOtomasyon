@@ -22,6 +22,7 @@ namespace SinemaOtomasyon.WinForm.UI
 {
     public partial class FormFilmSeansSalonSec : Form
     {
+
         private IFilmRepository _filmRepo;
         private IFilmService _filmService;
         private ISeansRepository _seansRepo;
@@ -128,9 +129,9 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void btnBiletSatis_Click(object sender, EventArgs e)
         {
-            if (cbSalonSec.Items.Count==0 || cbSeansSec.Items.Count==0)
+            if (cbSalonSec.Items.Count == 0 || cbSeansSec.Items.Count == 0)
             {
-                MessageBox.Show("Lütfen seans ya da salon bilgisi giriniz!");               
+                MessageBox.Show("Lütfen seans ya da salon bilgisi giriniz!");
             }
             else
             {
@@ -138,24 +139,25 @@ namespace SinemaOtomasyon.WinForm.UI
                 {
                     SeansId = (int)cbSeansSec.SelectedValue;
                     SalonId = (int)cbSalonSec.SelectedValue;
+
                     int id = SalonId;
-                    //switch (SalonId)
-                    //{
-                    //    case 2:
-                    //        FormSalon2 frm2 = new FormSalon2(f, SeansId, SalonId);
-                    //        frm2.ShowDialog();
-                    //        break;
-                    //    case 3:
-                    //        FormSalon3 frm3 = new FormSalon3(f, SeansId, SalonId);
-                    //        frm3.ShowDialog();
-                    //        break;
-                    //    case 4:
-                    //        FormSalon4 frm4 = new FormSalon4(f, SeansId, SalonId);
-                    //        frm4.ShowDialog();
-                    //        break;
-                    //    default:
-                    //        break;
-                    //}
+                    switch (SalonId)
+                    {
+                        case 2:
+                            FormSalon2 frm2 = new FormSalon2(f, SeansId, SalonId);
+                            frm2.ShowDialog();
+                            break;
+                        case 3:
+                            FormSalon3 frm3 = new FormSalon3(f, SeansId, SalonId);
+                            frm3.ShowDialog();
+                            break;
+                        case 4:
+                            FormSalon4 frm4 = new FormSalon4(f, SeansId, SalonId);
+                            frm4.ShowDialog();
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
         }

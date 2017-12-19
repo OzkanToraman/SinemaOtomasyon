@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.A5 = new System.Windows.Forms.Button();
+            this.cmsDelete = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.iptalEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.A6 = new System.Windows.Forms.Button();
             this.A7 = new System.Windows.Forms.Button();
             this.A8 = new System.Windows.Forms.Button();
@@ -47,7 +49,7 @@
             this.B12 = new System.Windows.Forms.Button();
             this.B4 = new System.Windows.Forms.Button();
             this.C5 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
+            this.C4 = new System.Windows.Forms.Button();
             this.C6 = new System.Windows.Forms.Button();
             this.C7 = new System.Windows.Forms.Button();
             this.C8 = new System.Windows.Forms.Button();
@@ -195,13 +197,11 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.cmsDelete = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.iptalEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsDelete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.cmsDelete.SuspendLayout();
             this.SuspendLayout();
             // 
             // A5
@@ -217,6 +217,20 @@
             this.A5.TabIndex = 2;
             this.A5.UseVisualStyleBackColor = false;
             this.A5.Click += new System.EventHandler(this.A5_Click);
+            this.A5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A5_MouseDown);
+            // 
+            // cmsDelete
+            // 
+            this.cmsDelete.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.iptalEtToolStripMenuItem});
+            this.cmsDelete.Name = "cmsDelete";
+            this.cmsDelete.Size = new System.Drawing.Size(111, 26);
+            // 
+            // iptalEtToolStripMenuItem
+            // 
+            this.iptalEtToolStripMenuItem.Name = "iptalEtToolStripMenuItem";
+            this.iptalEtToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.iptalEtToolStripMenuItem.Text = "İptal Et";
             // 
             // A6
             // 
@@ -473,20 +487,20 @@
             this.C5.Click += new System.EventHandler(this.A5_Click);
             this.C5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A5_MouseDown);
             // 
-            // button45
+            // C4
             // 
-            this.button45.BackColor = System.Drawing.Color.Gray;
-            this.button45.ContextMenuStrip = this.cmsDelete;
-            this.button45.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button45.FlatAppearance.BorderSize = 0;
-            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button45.Location = new System.Drawing.Point(409, 311);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(35, 35);
-            this.button45.TabIndex = 2;
-            this.button45.UseVisualStyleBackColor = false;
-            this.button45.Click += new System.EventHandler(this.A5_Click);
-            this.button45.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A5_MouseDown);
+            this.C4.BackColor = System.Drawing.Color.Gray;
+            this.C4.ContextMenuStrip = this.cmsDelete;
+            this.C4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.C4.FlatAppearance.BorderSize = 0;
+            this.C4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C4.Location = new System.Drawing.Point(409, 311);
+            this.C4.Name = "C4";
+            this.C4.Size = new System.Drawing.Size(35, 35);
+            this.C4.TabIndex = 2;
+            this.C4.UseVisualStyleBackColor = false;
+            this.C4.Click += new System.EventHandler(this.A5_Click);
+            this.C4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A5_MouseDown);
             // 
             // C6
             // 
@@ -2145,7 +2159,7 @@
             this.btnBack.TabIndex = 247;
             this.btnBack.Text = "←";
             this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.button49_Click);
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // txtInformation
             // 
@@ -2387,6 +2401,7 @@
             this.btnBiletKes.TabIndex = 276;
             this.btnBiletKes.Text = "Bilet  Ayır";
             this.btnBiletKes.UseVisualStyleBackColor = true;
+            this.btnBiletKes.Click += new System.EventHandler(this.btnBiletKes_Click);
             // 
             // btnUyeOlustur
             // 
@@ -2556,19 +2571,6 @@
             this.label38.TabIndex = 282;
             this.label38.Text = "Soyad:";
             // 
-            // cmsDelete
-            // 
-            this.cmsDelete.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.iptalEtToolStripMenuItem});
-            this.cmsDelete.Name = "cmsDelete";
-            this.cmsDelete.Size = new System.Drawing.Size(111, 26);
-            // 
-            // iptalEtToolStripMenuItem
-            // 
-            this.iptalEtToolStripMenuItem.Name = "iptalEtToolStripMenuItem";
-            this.iptalEtToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
-            this.iptalEtToolStripMenuItem.Text = "İptal Et";
-            // 
             // FormSalon2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2728,7 +2730,7 @@
             this.Controls.Add(this.H2);
             this.Controls.Add(this.H3);
             this.Controls.Add(this.H5);
-            this.Controls.Add(this.button45);
+            this.Controls.Add(this.C4);
             this.Controls.Add(this.G5);
             this.Controls.Add(this.D5);
             this.Controls.Add(this.E5);
@@ -2746,14 +2748,13 @@
             this.Text = "Salon 2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormSalon2_Load);
-            this.Click += new System.EventHandler(this.A5_Click);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A5_MouseDown);
+            this.cmsDelete.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.cmsDelete.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2780,7 +2781,7 @@
         private System.Windows.Forms.Button B12;
         private System.Windows.Forms.Button B4;
         private System.Windows.Forms.Button C5;
-        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.Button C4;
         private System.Windows.Forms.Button C6;
         private System.Windows.Forms.Button C7;
         private System.Windows.Forms.Button C8;

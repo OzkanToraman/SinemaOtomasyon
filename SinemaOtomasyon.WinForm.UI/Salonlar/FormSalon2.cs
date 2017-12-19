@@ -71,18 +71,6 @@ namespace SinemaOtomasyon.WinForm.UI
             lblTarih.Text = DateTime.Now.ToShortDateString();
         }
 
-        private void button55_Click(object sender, EventArgs e)
-        {
-            
-           
-        }
-
-        private void button49_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-
         private void KoltukKontrol()
         {
             IEnumerable<int> koltuklar = new List<int>();
@@ -238,7 +226,6 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void A5_Click(object sender, EventArgs e)
         {
-
             Button btn = (Button)sender;
             if (btn.BackColor == Color.Gray)
             {

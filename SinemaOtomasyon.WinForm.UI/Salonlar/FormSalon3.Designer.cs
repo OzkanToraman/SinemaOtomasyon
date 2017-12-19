@@ -34,6 +34,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.G18 = new System.Windows.Forms.Button();
+            this.cmsDelete = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.iptalEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.F18 = new System.Windows.Forms.Button();
             this.C18 = new System.Windows.Forms.Button();
             this.G17 = new System.Windows.Forms.Button();
@@ -150,8 +152,6 @@
             this.D3 = new System.Windows.Forms.Button();
             this.B3 = new System.Windows.Forms.Button();
             this.A3 = new System.Windows.Forms.Button();
-            this.cmsDelete = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.iptalEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtInformation = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -257,6 +257,18 @@
             this.G18.UseVisualStyleBackColor = false;
             this.G18.Click += new System.EventHandler(this.A3_Click);
             this.G18.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A3_MouseDown);
+            // 
+            // cmsDelete
+            // 
+            this.cmsDelete.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.iptalEtToolStripMenuItem});
+            this.cmsDelete.Name = "cmsDelete";
+            resources.ApplyResources(this.cmsDelete, "cmsDelete");
+            // 
+            // iptalEtToolStripMenuItem
+            // 
+            this.iptalEtToolStripMenuItem.Name = "iptalEtToolStripMenuItem";
+            resources.ApplyResources(this.iptalEtToolStripMenuItem, "iptalEtToolStripMenuItem");
             // 
             // F18
             // 
@@ -1765,18 +1777,6 @@
             this.A3.Click += new System.EventHandler(this.A3_Click);
             this.A3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A3_MouseDown);
             // 
-            // cmsDelete
-            // 
-            this.cmsDelete.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.iptalEtToolStripMenuItem});
-            this.cmsDelete.Name = "cmsDelete";
-            resources.ApplyResources(this.cmsDelete, "cmsDelete");
-            // 
-            // iptalEtToolStripMenuItem
-            // 
-            this.iptalEtToolStripMenuItem.Name = "iptalEtToolStripMenuItem";
-            resources.ApplyResources(this.iptalEtToolStripMenuItem, "iptalEtToolStripMenuItem");
-            // 
             // txtInformation
             // 
             this.txtInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1827,6 +1827,7 @@
             this.btnBack.ForeColor = System.Drawing.Color.Black;
             this.btnBack.Name = "btnBack";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // F1
             // 
@@ -2161,6 +2162,7 @@
             this.btnBiletKes.ForeColor = System.Drawing.Color.Black;
             this.btnBiletKes.Name = "btnBiletKes";
             this.btnBiletKes.UseVisualStyleBackColor = true;
+            this.btnBiletKes.Click += new System.EventHandler(this.btnBiletKes_Click);
             // 
             // btnUyeOlustur
             // 
@@ -2453,7 +2455,6 @@
             this.Name = "FormSalon3";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormSalon3_Load);
-            this.Click += new System.EventHandler(this.A3_Click);
             this.cmsDelete.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
