@@ -46,30 +46,7 @@ namespace SinemaOtomasyon.BLL.Services.Concrete
             };
         }
 
-        public ResultModel<Film> UpdateFilm(Film f)
-        {
-            FilmValidator validator = new FilmValidator();
-            var result = validator.Validate(f);
-
-            if (result.IsValid)
-            {
-                _filmRepo.Update(f);
-                _filmRepo.Save();
-
-                return new ResultModel<Film>
-                {
-                    Errors = null,
-                    IsValid = true,
-                    Message = "Başarıyla kayıt edildi!"
-                };
-            }
-            return new ResultModel<Film>
-            {
-                Errors = result.Errors.Select(x => x.ErrorMessage).ToList(),
-                IsValid = false,
-                Message = "Kayıt işlemi başarısız!"
-            };
-        }
+       
     }
 }
 

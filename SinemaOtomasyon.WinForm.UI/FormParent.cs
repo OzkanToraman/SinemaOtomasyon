@@ -26,20 +26,18 @@ namespace SinemaOtomasyon.WinForm.UI
             InitializeComponent();
         }
 
-        private void FormParent_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void FormParent_Load(object sender, EventArgs e)
         {
-            //int role = _personelRepo.GetList().Where(x => x.Username == FormLogin.Username).Select(x => x.Login.Role.RoleID).FirstOrDefault();
-            //if (role != 1)
-            //{ 
-            //    btnFilmIslemleri.Enabled=false;
-            //    btnGosterimIslemleri.Enabled = false;
-            //    btnPersonelslemleri.Enabled = false;
-            //}
+            #region GirişYapanKullanıcıTürüKontrolü
+            int role = _personelRepo.GetList().Where(x => x.Login.Username == FormLogin.Username).Select(x => x.Login.Role.RoleID).FirstOrDefault();
+            if (role != 1)
+            {
+                btnFilmIslemleri.Enabled = false;
+                btnGosterimIslemleri.Enabled = false;
+                btnPersonelslemleri.Enabled = false;
+            }
+            #endregion
+            lblUsername.Text = FormLogin.Username;
         }
 
         private void btnFilmIslemleri_Click(object sender, EventArgs e)
@@ -58,6 +56,28 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             FormPersonelIslemleri frmPersonel = new FormPersonelIslemleri();
             frmPersonel.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FormParent_Leave(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FormParent_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormLogin frm = new FormLogin();
+            frm.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FormFatura frmFatura = new FormFatura();
+            frmFatura.ShowDialog();
         }
     }
 }

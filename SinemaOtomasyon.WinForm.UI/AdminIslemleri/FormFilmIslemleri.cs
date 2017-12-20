@@ -65,6 +65,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             txtVizyonCikis.Text = dtpVizyonCikis.Value.ToShortDateString();
             dtpVizyonCikis.Enabled = false;
             chkVizyonda.Checked = true;
+            txtSalon.Enabled = false;
             #endregion
 
             DataGridViewDoldur();
@@ -73,11 +74,23 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
 
         private void VizyondanCikicakFilmKontrol()
         {
-            int kontrol = _filmRepo.GetList().Where(x =>x.Vizyonda==true&&x.VizyonCksTarih < DateTime.Now.Date).Select(x => x.SalonID).FirstOrDefault();
-            if (kontrol != 0)
+            #region SalonKontrol
+            int salonkontrol = _filmRepo.GetList().Where(x => x.Vizyonda == true && x.VizyonCksTarih < DateTime.Now.Date).Select(x => x.SalonID).FirstOrDefault();
+            if (salonkontrol != 0)
             {
-                _salonRepo.GetById(kontrol).DoluMu = false;
+                _salonRepo.GetById(salonkontrol).DoluMu = false;
+                _salonRepo.Save();
             }
+            #endregion
+
+            #region FilmKontrol
+            int filmkontrol = _filmRepo.GetList().Where(x => x.Vizyonda == true && x.VizyonCksTarih < DateTime.Now.Date).Select(x => x.FilmID).FirstOrDefault();
+            if (filmkontrol != 0)
+            {
+                _filmRepo.GetById(filmkontrol).Vizyonda = false;
+                _filmRepo.Save();
+            } 
+            #endregion
         }
 
         void DataGridViewDoldur()
@@ -123,13 +136,19 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             txtSalon.Clear();
             cbSalon.DataSource = _salonRepo.GetList().Where(x => x.DoluMu == false).Select(x => new { x.SalonID, x.SalonAD }).ToList();
             cbSalon.DisplayMember = "SalonAD";
-            cbSalon.ValueMember = "SalonID"; 
+            cbSalon.ValueMember = "SalonID";
+            if (cbSalon.Items.Count==0)
+            {
+                MessageBox.Show("Boş gösterim bulunmamaktadır!");
+            }
             #endregion
 
             #region Butona Basıldığında Başlangıç Değerleri
+            chkVizyonda.Enabled = false;
             btnKaydet.Enabled = true;
             btnGuncelle.Enabled = true;
             btnSil.Enabled = true;
+            btnYeni.Enabled = false;
             txtFilmAd.Enabled = true;
             txtOyuncular.Enabled = true;
             txtYonetmen.Enabled = true;
@@ -152,14 +171,19 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             f.Vizyonda = chkVizyonda.Checked;
 
             var result = _filmService.SaveFilm(f);
-            MessageBox.Show(result.IsValid ? result.Message : string.Join("\n", result.Errors));
-            DataGridViewDoldur();
-            Temizle();
+            MessageBox.Show(result.Errors.FirstOrDefault());
+            if (result.IsValid)
+            {
+                DataGridViewDoldur();
+                Temizle();
+                btnYeni.Enabled = true;
+            }          
         }
 
         private void btnGuncelle_Click(object sender, EventArgs e)
-        {
+        {           
             Film f = new Film();
+            f= _filmRepo.GetById((int)dgvFilmler.CurrentRow.Cells[0].Value); 
             f.FilmAd = txtFilmAd.Text;
             f.Yonetmen = txtYonetmen.Text;
             f.Oyuncular = txtOyuncular.Text;
@@ -171,10 +195,12 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             f.Vizyonda = chkVizyonda.Checked;
             f.Afis = txtAfis.Text;
 
-            var result = _filmService.UpdateFilm(f);
-            MessageBox.Show(result.IsValid ? result.Message : string.Join("\n", result.Errors));
-            DataGridViewDoldur();
-            Temizle();
+            if (_filmRepo.Save()>0)
+            {
+                MessageBox.Show("Başarıyla güncellendi");
+                DataGridViewDoldur();
+                Temizle();
+            }      
         }
 
         private void dgvFilmler_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -186,9 +212,11 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             cbSalon.ValueMember = "salonid";
             #endregion
             #region Buton Hareketleri
+            btnYeni.Enabled = true;
             btnKaydet.Enabled = false;
             btnGuncelle.Enabled = true;
             btnSil.Enabled = true;
+            chkVizyonda.Enabled = true;
             #endregion
             #region Alan Kontrolü
             cbSalon.Enabled = false;

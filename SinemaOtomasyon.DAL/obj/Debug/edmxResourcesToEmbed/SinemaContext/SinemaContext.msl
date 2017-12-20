@@ -122,7 +122,7 @@
           <ScalarProperty Name="CalismaHali" ColumnName="CalismaHali" />
           <ScalarProperty Name="UnvanID" ColumnName="UnvanID" />
           <ScalarProperty Name="CinsiyetID" ColumnName="CinsiyetID" />
-          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="LoginID" ColumnName="LoginID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

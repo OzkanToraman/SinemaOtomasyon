@@ -2748,7 +2748,6 @@
             this.Text = "Salon 2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormSalon2_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.A5_MouseDown);
             this.cmsDelete.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

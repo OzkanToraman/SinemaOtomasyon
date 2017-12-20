@@ -11,6 +11,5 @@ namespace SinemaOtomasyon.BLL.Services.Abstract
     public interface IFilmService
     {
         ResultModel<Film> SaveFilm(Film f);
-        ResultModel<Film> UpdateFilm(Film f);
     }
 }

@@ -30,6 +30,8 @@ namespace SinemaOtomasyon.WinForm.UI
         Film f = new Film();
         int SalonId, SeansId;
         int filmId;
+        int height=0;
+
         public FormFilmSeansSalonSec()
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
@@ -48,7 +50,16 @@ namespace SinemaOtomasyon.WinForm.UI
             DataGridViewDoldur();
             //SeansDoldur();
             SeansSaatKontrol();
+            DGVHeight();
+        }
 
+        private void DGVHeight()
+        {
+            for (int i = 0; i < dgvFilmler.Rows.Count+1; i++)
+            {
+                height += 23;
+            }
+            dgvFilmler.Height = height;
         }
 
         private void SeansSaatKontrol()

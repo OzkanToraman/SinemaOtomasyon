@@ -29,7 +29,7 @@ namespace SinemaOtomasyon.WinForm.UI
         Gosterim gosterim;
         int biletTur;
         string kullanici;
-        int sonSeyirciKaydiId,giseId,sonBiletKaydiId;
+        int sonSeyirciKaydiId, giseId, sonBiletKaydiId;
         int OdemeSekliID;
 
         public FormBilet()
@@ -68,7 +68,7 @@ namespace SinemaOtomasyon.WinForm.UI
             txtTelefon.Text = s.SeyirciTelefon;
             txtAdres.Text = s.SeyirciAdres;
             txtSalon.Text = gosterim.Salon.SalonAD;
-            txtSeans.Text = gosterim.Seans.SeansAD.ToString();        
+            txtSeans.Text = gosterim.Seans.SeansAD.ToString();
             txtBiletTur.Text = _biletturRepo.GetById(biletTur).BiletTuru1;
             txtFilmAd.Text = filmAd;
             txtTarih.Text = DateTime.Now.ToShortDateString();
@@ -113,7 +113,7 @@ namespace SinemaOtomasyon.WinForm.UI
                 if (_giseRepo.Save() > 0)
                 {
                     MessageBox.Show("İşlem başarıyla gerçekleşti!");
-                }            
+                }
             }
             /**/
 
@@ -121,11 +121,11 @@ namespace SinemaOtomasyon.WinForm.UI
             /*OdemeSekliyle alakalı*/
             if (rbNakit.Checked)
             {
-               OdemeSekliID = 1;
+                OdemeSekliID = 1;
             }
             else
             {
-               OdemeSekliID = 2;
+                OdemeSekliID = 2;
             }
             /**/
             #endregion
@@ -133,9 +133,21 @@ namespace SinemaOtomasyon.WinForm.UI
             SeyirciDatabaseEkle();
             BiletDatabaseEkle();
             FaturaDatabaseEkle();
+
+            this.Close();
         }
 
-        void SeyirciDatabaseEkle()
+        //bool IslemTamam(bool seyirci, bool bilet, bool fatura)
+        //{
+        //    if (seyirci & bilet & fatura)
+        //    {
+        //        return true;
+        //    }
+        //    else
+        //        return false;
+        //}
+
+        void  SeyirciDatabaseEkle()
         {
             Seyirci seyirci = new Seyirci();
             seyirci.SeyirciAd = txtAd.Text;
@@ -144,15 +156,10 @@ namespace SinemaOtomasyon.WinForm.UI
             seyirci.SeyirciAdres = txtAdres.Text;
 
             _seyirciRepo.Add(seyirci);
+            sonSeyirciKaydiId=_seyirciRepo.SonKayit();
 
-            if (_seyirciRepo.Save()>0)
-            {
-                sonSeyirciKaydiId = _seyirciRepo.SonKayit();
-                MessageBox.Show("Kayıt başarılı!");
-            }
         }
-
-        void BiletDatabaseEkle()
+        void  BiletDatabaseEkle()
         {
             BiletSatis satis = new BiletSatis();
             satis.BiletFiyat = Convert.ToDecimal(txtToplam.Text);
@@ -162,14 +169,14 @@ namespace SinemaOtomasyon.WinForm.UI
             satis.BiletTurID = biletTur;
 
             _biletSatisRepo.Add(satis);
+            sonBiletKaydiId=_biletSatisRepo.SonBiletKayitBul();
             if (_biletSatisRepo.Save()>0)
             {
-                sonBiletKaydiId = _biletSatisRepo.SonBiletKayitBul();
-                MessageBox.Show("Kayıt başarılı!");
+                MessageBox.Show("Bilet satışı başarıyla gerçekleşti!");
             }
+            
         }
-
-        void FaturaDatabaseEkle()
+        void  FaturaDatabaseEkle()
         {
             Fatura f = new Fatura();
             f.OdemeSekliID = OdemeSekliID;
@@ -177,11 +184,19 @@ namespace SinemaOtomasyon.WinForm.UI
             f.FaturaTarih = DateTime.Now.Date;
             #region PersonelID Bulmak
             Personel p = new Personel();
-            p =_personelRepo.GetList().Where(x => x.Username == kullanici).FirstOrDefault();
+            p = _personelRepo.GetList().Where(x => x.Login.Username == kullanici).FirstOrDefault();
             f.PersoneID = p.PersonelID;
             #endregion
             _faturaRepo.Add(f);
             _faturaRepo.Save();
+
+        }
+
+
+        private void FormBilet_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormFilmSeansSalonSec frm = new FormFilmSeansSalonSec();
+            frm.Show();
         }
     }
 }

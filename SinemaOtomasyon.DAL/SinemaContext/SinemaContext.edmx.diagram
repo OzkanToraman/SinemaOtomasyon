@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="0ce9aca8d2824396895534c9b69bb5fb" Name="Diagram1">
+      <Diagram DiagramId="ef63bfa2de314d36a2b39920ad8236e7" Name="Diagram1">
         <EntityTypeShape EntityType="SinemaModel.BiletSatis" Width="1.5" PointX="5.25" PointY="15.125" IsExpanded="true" />
         <EntityTypeShape EntityType="SinemaModel.BiletTuru" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
         <EntityTypeShape EntityType="SinemaModel.Cinsiyet" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />

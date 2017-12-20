@@ -52,14 +52,13 @@
             this.dgvFilmler.AllowUserToResizeColumns = false;
             this.dgvFilmler.AllowUserToResizeRows = false;
             this.dgvFilmler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvFilmler.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvFilmler.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
-            this.dgvFilmler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFilmler.Location = new System.Drawing.Point(278, 368);
             this.dgvFilmler.MultiSelect = false;
             this.dgvFilmler.Name = "dgvFilmler";
             this.dgvFilmler.ReadOnly = true;
             this.dgvFilmler.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgvFilmler.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvFilmler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvFilmler.Size = new System.Drawing.Size(528, 166);
             this.dgvFilmler.TabIndex = 2;
@@ -193,7 +192,7 @@
             this.btnBack.Font = new System.Drawing.Font("Arial", 10F);
             this.btnBack.ForeColor = System.Drawing.Color.Black;
             this.btnBack.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBack.Location = new System.Drawing.Point(1020, 248);
+            this.btnBack.Location = new System.Drawing.Point(1020, 118);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(35, 36);
             this.btnBack.TabIndex = 242;

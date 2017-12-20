@@ -88,6 +88,12 @@
     <Compile Include="FormFilmSeansSalonSec.Designer.cs">
       <DependentUpon>FormFilmSeansSalonSec.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormKullaniciTanimla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKullaniciTanimla.Designer.cs">
+      <DependentUpon>FormKullaniciTanimla.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     <EmbeddedResource Include="FormFilmSeansSalonSec.resx">
       <DependentUpon>FormFilmSeansSalonSec.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormKullaniciTanimla.resx">
+      <DependentUpon>FormKullaniciTanimla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,7 +202,7 @@
       <Name>SinemaOtomasyon.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\SinemaOtomasyon.Repository\SinemaOtomasyon.Repository.csproj">
-      <Project>{CABFE6A1-23C8-40DD-BA1C-470C99E41DCD}</Project>
+      <Project>{cabfe6a1-23c8-40dd-ba1c-470c99e41dcd}</Project>
       <Name>SinemaOtomasyon.Repository</Name>
     </ProjectReference>
   </ItemGroup>

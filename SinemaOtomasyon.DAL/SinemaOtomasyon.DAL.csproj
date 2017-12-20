@@ -151,6 +151,12 @@
       <LastGenOutput>SinemaContext.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SinemaOtomasyon.Core\SinemaOtomasyon.Core.csproj">
+      <Project>{cda6d286-98c4-4d14-997e-d9e1acab6e7f}</Project>
+      <Name>SinemaOtomasyon.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

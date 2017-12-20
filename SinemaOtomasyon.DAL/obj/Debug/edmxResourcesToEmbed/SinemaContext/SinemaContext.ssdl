@@ -84,9 +84,9 @@
   </EntityType>
   <EntityType Name="Login">
     <Key>
-      <PropertyRef Name="Username" />
+      <PropertyRef Name="LoginID" />
     </Key>
-    <Property Name="LoginID" Type="int" Nullable="false" />
+    <Property Name="LoginID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Password" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="RoleID" Type="int" />
@@ -106,12 +106,12 @@
     <Property Name="Ad" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Soyad" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="SicilNo" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Telefon" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Telefon" Type="varchar" MaxLength="50" />
     <Property Name="Adres" Type="varchar" MaxLength="250" Nullable="false" />
     <Property Name="CalismaHali" Type="bit" Nullable="false" />
     <Property Name="UnvanID" Type="int" Nullable="false" />
     <Property Name="CinsiyetID" Type="int" Nullable="false" />
-    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LoginID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Role">
     <Key>
@@ -338,10 +338,10 @@
     <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Login">
-        <PropertyRef Name="Username" />
+        <PropertyRef Name="LoginID" />
       </Principal>
       <Dependent Role="Personel">
-        <PropertyRef Name="Username" />
+        <PropertyRef Name="LoginID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

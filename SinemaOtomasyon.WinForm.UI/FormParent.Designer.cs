@@ -36,6 +36,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnFilmIslemleri
@@ -100,6 +101,7 @@
             this.button5.TabIndex = 0;
             this.button5.Text = "Fatura İşlemleri";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -117,11 +119,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label1.Font = new System.Drawing.Font("Arial", 8.25F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1085, 739);
+            this.label1.Location = new System.Drawing.Point(1085, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(45, 14);
             this.label1.TabIndex = 2;
             this.label1.Text = "Oturum:";
             // 
@@ -129,13 +131,24 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.lblUsername.Font = new System.Drawing.Font("Arial", 8.25F);
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(1130, 739);
+            this.lblUsername.Location = new System.Drawing.Point(1130, 9);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(122, 13);
+            this.lblUsername.Size = new System.Drawing.Size(125, 14);
             this.lblUsername.TabIndex = 3;
             this.lblUsername.Text = "sevda@yenisinema.com";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.btnExit.Location = new System.Drawing.Point(1146, 727);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(109, 23);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Text = "Oturum Kapat";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FormParent
             // 
@@ -144,6 +157,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.button6);
@@ -160,6 +174,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormParent_FormClosing);
             this.Load += new System.EventHandler(this.FormParent_Load);
+            this.Leave += new System.EventHandler(this.FormParent_Leave);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,5 +190,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Button btnExit;
     }
 }

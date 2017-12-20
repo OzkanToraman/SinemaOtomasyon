@@ -23,6 +23,7 @@ namespace SinemaOtomasyon.WinForm.UI.Ninject
         {
             kernel.Bind<DbContext>().To<SinemaContext>();
             kernel.Bind<IPersonelRepository>().To<PersonelRepository>();
+            kernel.Bind<IPersonelService>().To<PersonelService>();
             kernel.Bind<IFilmService>().To<FilmService>();
             kernel.Bind<IFilmRepository>().To<FilmRepository>();
             kernel.Bind<ISeansRepository>().To<SeansRepository>();
@@ -41,6 +42,7 @@ namespace SinemaOtomasyon.WinForm.UI.Ninject
             kernel.Bind<IFilmTuruRepository>().To<FilmTuruRepository>();
             kernel.Bind<IUnvanRepository>().To<UnvanRepository>();
             kernel.Bind<ICinsiyetRepository>().To<CinsiyetRepository>();
+            kernel.Bind<IRoleRepository>().To<RoleRepository>();
 
             return kernel;
         }

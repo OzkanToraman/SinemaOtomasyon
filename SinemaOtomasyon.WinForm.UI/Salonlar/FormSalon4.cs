@@ -178,7 +178,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
 
                     FormBilet frm = new FormBilet(seyirci, f.FilmAd, butonlar, gosterim,biletTur);
                     frm.ShowDialog();
-
+                    this.Close();
                 }
             }
             else

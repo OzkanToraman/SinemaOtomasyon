@@ -1,4 +1,6 @@
 ﻿using Ninject;
+using SinemaOtomasyon.BLL.Services.Abstract;
+using SinemaOtomasyon.BLL.Services.Validations;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
 using SinemaOtomasyon.WinForm.UI.Ninject;
@@ -16,10 +18,12 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
 {
     public partial class FormPersonelIslemleri : Form
     {
-
+        
         private IPersonelRepository _personelRepo;
         private IUnvanRepository _unvanRepo;
         private ICinsiyetRepository _cinsiyetRepo;
+        private IPersonelService _personelService;
+        private ILoginRepository _loginRepo;
 
         public FormPersonelIslemleri()
         {
@@ -27,6 +31,9 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
             _personelRepo = container.Get<IPersonelRepository>();
             _unvanRepo = container.Get<IUnvanRepository>();
             _cinsiyetRepo = container.Get<ICinsiyetRepository>();
+            _personelService = container.Get<IPersonelService>();
+            _loginRepo = container.Get<ILoginRepository>();
+
             InitializeComponent();
         }
 
@@ -41,7 +48,7 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
             cbUnvan.ValueMember = "id";
             #endregion
             #region CinsiyetDoldurma
-            cbCinsiyet.DataSource = _cinsiyetRepo.GetList().Select(x => new { ad=x.CinsiyetAD, id=x.CinsiyetID }).ToList();
+            cbCinsiyet.DataSource = _cinsiyetRepo.GetList().Select(x => new { ad = x.CinsiyetAD, id = x.CinsiyetID }).ToList();
             cbCinsiyet.DisplayMember = "ad";
             cbCinsiyet.ValueMember = "id";
             #endregion
@@ -57,7 +64,7 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
                 x.Soyad,
                 x.SicilNo,
                 x.Unvan.UnvanAD,
-                x.Username
+                x.Login.Username
             }).ToList();
 
             dgvPersonel.Columns[0].Visible = false;
@@ -65,18 +72,23 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
 
         private void btnYeni_Click(object sender, EventArgs e)
         {
+            Temizle();
             #region ButonHareketleri
             btnKaydet.Enabled = true;
             btnGuncelle.Enabled = true;
-            btnSil.Enabled = true; 
+            btnSil.Enabled = true;
+            btnYeni.Enabled = false;
             #endregion
         }
 
         private void dgvPersonel_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            #region Buton Alanları
             btnKaydet.Enabled = false;
             btnGuncelle.Enabled = true;
             btnSil.Enabled = true;
+            btnYeni.Enabled = true;
+            #endregion
 
             Personel p = new Personel();
             p = _personelRepo.GetById((int)dgvPersonel.CurrentRow.Cells[0].Value);
@@ -88,7 +100,84 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
             chkCalisma.Checked = p.CalismaHali;
             cbUnvan.SelectedValue = p.UnvanID;
             cbCinsiyet.SelectedValue = p.CinsiyetID;
-            txtUsername.Text = p.Username;
+            txtUsername.Text = p.Login.Username;
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            Personel personel = new Personel();
+            personel.Ad = txtAd.Text;
+            personel.Soyad = txtSoyad.Text;
+            personel.SicilNo = txtKimlikNo.Text;
+            personel.Telefon = txtTelefon.Text;
+            personel.Adres = txtAdres.Text;
+            personel.CalismaHali = chkCalisma.Checked;
+            personel.UnvanID = (int)cbUnvan.SelectedValue;
+            personel.CinsiyetID = (int)cbCinsiyet.SelectedValue;
+            personel.LoginID = FormKullaniciTanimla.log;
+
+            var result = _personelService.PersonelKayıtKontrol(personel);
+
+            MessageBox.Show(result.Errors.FirstOrDefault());
+                      
+            if (result.IsValid)
+            {
+                DGVDoldur();
+                Temizle();
+                btnYeni.Enabled = true;
+            }
+        }
+
+        private void Temizle()
+        {
+            txtAd.Clear();
+            txtSoyad.Clear();
+            txtTelefon.Clear();
+            txtAdres.Clear();
+            txtKimlikNo.Clear();
+            txtUsername.Clear();
+            chkCalisma.Checked = false;
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            Personel personel = new Personel();
+            personel = _personelRepo.GetById((int)dgvPersonel.CurrentRow.Cells[0].Value);
+            personel.Ad = txtAd.Text;
+            personel.Soyad = txtSoyad.Text;
+            personel.SicilNo = txtKimlikNo.Text;
+            personel.Telefon = txtTelefon.Text;
+            personel.Adres = txtAdres.Text;
+            personel.CalismaHali = chkCalisma.Checked;
+            personel.UnvanID = (int)cbUnvan.SelectedValue;
+            personel.CinsiyetID = (int)cbCinsiyet.SelectedValue;
+            personel.LoginID = FormKullaniciTanimla.log;
+
+            if (_personelRepo.Save()>0)
+            {
+                MessageBox.Show("Başarıyla güncellendi.");
+                DGVDoldur();
+                Temizle();
+                btnYeni.Enabled = true;
+            }
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            _personelRepo.Delete((int)dgvPersonel.CurrentRow.Cells[0].Value);
+            if (_personelRepo.Save() > 0)
+            {
+                MessageBox.Show("Başarıyla kayıt edildi!");
+            }
+
+        }
+
+        private void btnKullanici_Click(object sender, EventArgs e)
+        {
+            FormKullaniciTanimla frmUser = new FormKullaniciTanimla();
+            frmUser.ShowDialog();
+            txtUsername.Text = FormKullaniciTanimla.ad;
+
         }
     }
 }

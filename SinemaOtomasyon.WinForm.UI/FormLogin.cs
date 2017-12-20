@@ -58,11 +58,10 @@ namespace SinemaOtomasyon.WinForm.UI
                 MessageBox.Show(result.Errors.FirstOrDefault().ToString());
             }
             else
-            {
-                //MessageBox.Show(_loginRepo.Giris(txtUser.Text, txtPass.Text));
+            {     
                 Login login = new Login();
-                login = _loginRepo.Giris(txtUser.Text, txtPass.Text);
-                if (login == null)
+                int id= _loginRepo.GetList().Where(x => x.Username == txtUser.Text && x.Password == txtPass.Text).Count();
+                if (login==null)
                 {
                     MessageBox.Show("Hatalı Kullanıcı Adı ya da Şifre!", "HATA");
                     txtUser.Focus();
@@ -78,6 +77,10 @@ namespace SinemaOtomasyon.WinForm.UI
                 }
                 
             }     
+        }
+        private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

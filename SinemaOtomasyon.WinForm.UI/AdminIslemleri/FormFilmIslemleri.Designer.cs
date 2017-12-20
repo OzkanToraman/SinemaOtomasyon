@@ -77,7 +77,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(140, 87);
+            this.label1.Location = new System.Drawing.Point(166, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 15);
             this.label1.TabIndex = 0;
@@ -85,7 +85,7 @@
             // 
             // txtFilmAd
             // 
-            this.txtFilmAd.Location = new System.Drawing.Point(218, 84);
+            this.txtFilmAd.Location = new System.Drawing.Point(244, 125);
             this.txtFilmAd.Name = "txtFilmAd";
             this.txtFilmAd.Size = new System.Drawing.Size(122, 21);
             this.txtFilmAd.TabIndex = 1;
@@ -95,7 +95,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(124, 114);
+            this.label2.Location = new System.Drawing.Point(150, 155);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 15);
             this.label2.TabIndex = 0;
@@ -103,7 +103,7 @@
             // 
             // txtYonetmen
             // 
-            this.txtYonetmen.Location = new System.Drawing.Point(218, 111);
+            this.txtYonetmen.Location = new System.Drawing.Point(244, 152);
             this.txtYonetmen.Name = "txtYonetmen";
             this.txtYonetmen.Size = new System.Drawing.Size(122, 21);
             this.txtYonetmen.TabIndex = 1;
@@ -113,7 +113,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(125, 141);
+            this.label3.Location = new System.Drawing.Point(151, 182);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 15);
             this.label3.TabIndex = 0;
@@ -121,7 +121,7 @@
             // 
             // txtOyuncular
             // 
-            this.txtOyuncular.Location = new System.Drawing.Point(218, 138);
+            this.txtOyuncular.Location = new System.Drawing.Point(244, 179);
             this.txtOyuncular.Name = "txtOyuncular";
             this.txtOyuncular.Size = new System.Drawing.Size(122, 21);
             this.txtOyuncular.TabIndex = 1;
@@ -131,7 +131,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(84, 168);
+            this.label4.Location = new System.Drawing.Point(110, 209);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 15);
             this.label4.TabIndex = 0;
@@ -142,7 +142,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(82, 195);
+            this.label5.Location = new System.Drawing.Point(108, 236);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 15);
             this.label5.TabIndex = 0;
@@ -153,7 +153,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(117, 222);
+            this.label6.Location = new System.Drawing.Point(143, 263);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 15);
             this.label6.TabIndex = 0;
@@ -161,7 +161,7 @@
             // 
             // txtFilmSure
             // 
-            this.txtFilmSure.Location = new System.Drawing.Point(218, 219);
+            this.txtFilmSure.Location = new System.Drawing.Point(244, 260);
             this.txtFilmSure.Name = "txtFilmSure";
             this.txtFilmSure.Size = new System.Drawing.Size(122, 21);
             this.txtFilmSure.TabIndex = 1;
@@ -171,7 +171,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(132, 333);
+            this.label7.Location = new System.Drawing.Point(158, 374);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 15);
             this.label7.TabIndex = 0;
@@ -182,7 +182,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(132, 249);
+            this.label8.Location = new System.Drawing.Point(158, 290);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(55, 15);
             this.label8.TabIndex = 0;
@@ -193,7 +193,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(160, 278);
+            this.label9.Location = new System.Drawing.Point(186, 319);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(30, 15);
             this.label9.TabIndex = 0;
@@ -201,7 +201,7 @@
             // 
             // txtAfis
             // 
-            this.txtAfis.Location = new System.Drawing.Point(218, 275);
+            this.txtAfis.Location = new System.Drawing.Point(244, 316);
             this.txtAfis.Name = "txtAfis";
             this.txtAfis.Size = new System.Drawing.Size(122, 21);
             this.txtAfis.TabIndex = 1;
@@ -211,7 +211,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(145, 305);
+            this.label10.Location = new System.Drawing.Point(171, 346);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 15);
             this.label10.TabIndex = 0;
@@ -220,7 +220,7 @@
             // dtpVizyonGiris
             // 
             this.dtpVizyonGiris.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpVizyonGiris.Location = new System.Drawing.Point(319, 165);
+            this.dtpVizyonGiris.Location = new System.Drawing.Point(345, 206);
             this.dtpVizyonGiris.MinDate = new System.DateTime(2017, 12, 18, 0, 0, 0, 0);
             this.dtpVizyonGiris.Name = "dtpVizyonGiris";
             this.dtpVizyonGiris.Size = new System.Drawing.Size(21, 21);
@@ -231,7 +231,7 @@
             // dtpVizyonCikis
             // 
             this.dtpVizyonCikis.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpVizyonCikis.Location = new System.Drawing.Point(319, 192);
+            this.dtpVizyonCikis.Location = new System.Drawing.Point(345, 233);
             this.dtpVizyonCikis.Name = "dtpVizyonCikis";
             this.dtpVizyonCikis.Size = new System.Drawing.Size(21, 21);
             this.dtpVizyonCikis.TabIndex = 2;
@@ -241,7 +241,7 @@
             // cbFilmTur
             // 
             this.cbFilmTur.FormattingEnabled = true;
-            this.cbFilmTur.Location = new System.Drawing.Point(218, 246);
+            this.cbFilmTur.Location = new System.Drawing.Point(244, 287);
             this.cbFilmTur.Name = "cbFilmTur";
             this.cbFilmTur.Size = new System.Drawing.Size(122, 23);
             this.cbFilmTur.TabIndex = 4;
@@ -251,7 +251,7 @@
             this.cbSalon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSalon.DropDownWidth = 100;
             this.cbSalon.FormattingEnabled = true;
-            this.cbSalon.Location = new System.Drawing.Point(319, 302);
+            this.cbSalon.Location = new System.Drawing.Point(345, 343);
             this.cbSalon.Name = "cbSalon";
             this.cbSalon.Size = new System.Drawing.Size(21, 23);
             this.cbSalon.TabIndex = 4;
@@ -261,9 +261,8 @@
             // 
             this.chkVizyonda.AutoSize = true;
             this.chkVizyonda.BackColor = System.Drawing.Color.Transparent;
-            this.chkVizyonda.Enabled = false;
             this.chkVizyonda.ForeColor = System.Drawing.Color.White;
-            this.chkVizyonda.Location = new System.Drawing.Point(218, 334);
+            this.chkVizyonda.Location = new System.Drawing.Point(244, 375);
             this.chkVizyonda.Name = "chkVizyonda";
             this.chkVizyonda.Size = new System.Drawing.Size(15, 14);
             this.chkVizyonda.TabIndex = 5;
@@ -271,7 +270,7 @@
             // 
             // btnKaydet
             // 
-            this.btnKaydet.Location = new System.Drawing.Point(155, 393);
+            this.btnKaydet.Location = new System.Drawing.Point(181, 434);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(55, 32);
             this.btnKaydet.TabIndex = 6;
@@ -281,7 +280,7 @@
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.Location = new System.Drawing.Point(215, 393);
+            this.btnGuncelle.Location = new System.Drawing.Point(241, 434);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(65, 32);
             this.btnGuncelle.TabIndex = 6;
@@ -291,7 +290,7 @@
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(285, 393);
+            this.btnSil.Location = new System.Drawing.Point(311, 434);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(55, 32);
             this.btnSil.TabIndex = 6;
@@ -307,7 +306,7 @@
             this.dgvFilmler.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvFilmler.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgvFilmler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvFilmler.Location = new System.Drawing.Point(385, 84);
+            this.dgvFilmler.Location = new System.Drawing.Point(411, 125);
             this.dgvFilmler.MultiSelect = false;
             this.dgvFilmler.Name = "dgvFilmler";
             this.dgvFilmler.ReadOnly = true;
@@ -318,7 +317,7 @@
             // 
             // btnYeni
             // 
-            this.btnYeni.Location = new System.Drawing.Point(95, 393);
+            this.btnYeni.Location = new System.Drawing.Point(121, 434);
             this.btnYeni.Name = "btnYeni";
             this.btnYeni.Size = new System.Drawing.Size(55, 32);
             this.btnYeni.TabIndex = 6;
@@ -331,7 +330,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(346, 84);
+            this.label11.Location = new System.Drawing.Point(372, 125);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(12, 15);
             this.label11.TabIndex = 8;
@@ -342,7 +341,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(346, 111);
+            this.label12.Location = new System.Drawing.Point(372, 152);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(12, 15);
             this.label12.TabIndex = 8;
@@ -353,7 +352,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(346, 138);
+            this.label13.Location = new System.Drawing.Point(372, 179);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(12, 15);
             this.label13.TabIndex = 8;
@@ -364,7 +363,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(346, 219);
+            this.label14.Location = new System.Drawing.Point(372, 260);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(12, 15);
             this.label14.TabIndex = 8;
@@ -375,7 +374,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(232, 333);
+            this.label15.Location = new System.Drawing.Point(258, 374);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(12, 15);
             this.label15.TabIndex = 8;
@@ -383,21 +382,21 @@
             // 
             // txtVizyonGiris
             // 
-            this.txtVizyonGiris.Location = new System.Drawing.Point(218, 165);
+            this.txtVizyonGiris.Location = new System.Drawing.Point(244, 206);
             this.txtVizyonGiris.Name = "txtVizyonGiris";
             this.txtVizyonGiris.Size = new System.Drawing.Size(100, 21);
             this.txtVizyonGiris.TabIndex = 9;
             // 
             // txtVizyonCikis
             // 
-            this.txtVizyonCikis.Location = new System.Drawing.Point(218, 192);
+            this.txtVizyonCikis.Location = new System.Drawing.Point(244, 233);
             this.txtVizyonCikis.Name = "txtVizyonCikis";
             this.txtVizyonCikis.Size = new System.Drawing.Size(100, 21);
             this.txtVizyonCikis.TabIndex = 9;
             // 
             // txtFilmAdinaGoreAra
             // 
-            this.txtFilmAdinaGoreAra.Location = new System.Drawing.Point(385, 41);
+            this.txtFilmAdinaGoreAra.Location = new System.Drawing.Point(411, 82);
             this.txtFilmAdinaGoreAra.Name = "txtFilmAdinaGoreAra";
             this.txtFilmAdinaGoreAra.Size = new System.Drawing.Size(122, 21);
             this.txtFilmAdinaGoreAra.TabIndex = 1;
@@ -408,7 +407,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(382, 23);
+            this.label16.Location = new System.Drawing.Point(408, 64);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(117, 15);
             this.label16.TabIndex = 10;
@@ -419,7 +418,7 @@
             this.chkVizyonKontrol.AutoSize = true;
             this.chkVizyonKontrol.BackColor = System.Drawing.Color.Transparent;
             this.chkVizyonKontrol.ForeColor = System.Drawing.Color.White;
-            this.chkVizyonKontrol.Location = new System.Drawing.Point(1058, 45);
+            this.chkVizyonKontrol.Location = new System.Drawing.Point(1084, 86);
             this.chkVizyonKontrol.Name = "chkVizyonKontrol";
             this.chkVizyonKontrol.Size = new System.Drawing.Size(15, 14);
             this.chkVizyonKontrol.TabIndex = 12;
@@ -431,7 +430,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(972, 44);
+            this.label18.Location = new System.Drawing.Point(998, 85);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(84, 15);
             this.label18.TabIndex = 11;
@@ -444,7 +443,7 @@
             // 
             // txtSalon
             // 
-            this.txtSalon.Location = new System.Drawing.Point(218, 302);
+            this.txtSalon.Location = new System.Drawing.Point(244, 343);
             this.txtSalon.Name = "txtSalon";
             this.txtSalon.Size = new System.Drawing.Size(100, 21);
             this.txtSalon.TabIndex = 14;
@@ -454,7 +453,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Location = new System.Drawing.Point(346, 246);
+            this.label17.Location = new System.Drawing.Point(372, 287);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(12, 15);
             this.label17.TabIndex = 8;
@@ -465,7 +464,7 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(346, 302);
+            this.label19.Location = new System.Drawing.Point(372, 343);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(12, 15);
             this.label19.TabIndex = 8;
@@ -476,7 +475,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
-            this.ClientSize = new System.Drawing.Size(1161, 496);
+            this.ClientSize = new System.Drawing.Size(1207, 542);
             this.Controls.Add(this.txtSalon);
             this.Controls.Add(this.chkVizyonKontrol);
             this.Controls.Add(this.label18);

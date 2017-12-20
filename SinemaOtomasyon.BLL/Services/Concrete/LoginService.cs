@@ -27,11 +27,15 @@ namespace SinemaOtomasyon.BLL.Services.Concrete
 
             if (result.IsValid)
             {
+
+                _loginRepo.Add(p);
+                _loginRepo.Save();
+
                 return new ResultModel<Login>
                 {
                     Errors = null,
                     IsValid = true,
-                    Message = "Giriş Başarılı"
+                    Message = "Kayıt Başarılı"
                 };
             }
             return new ResultModel<Login>

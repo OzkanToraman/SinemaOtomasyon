@@ -451,6 +451,7 @@
             this.Name = "FormBilet";
             this.ShowIcon = false;
             this.Text = "Bilet";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBilet_FormClosing);
             this.Load += new System.EventHandler(this.FormBilet_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

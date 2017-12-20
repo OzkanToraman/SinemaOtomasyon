@@ -29,7 +29,7 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         public bool CalismaHali { get; set; }
         public int UnvanID { get; set; }
         public int CinsiyetID { get; set; }
-        public string Username { get; set; }
+        public int LoginID { get; set; }
     
         public virtual Cinsiyet Cinsiyet { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

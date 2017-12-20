@@ -35,6 +35,5 @@ C:\Users\Ozkan\Desktop\backup_projects\SinemaOtomasyon\SinemaOtomasyon.Core\bin\
 C:\Users\Ozkan\Desktop\backup_projects\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Ozkan\Desktop\backup_projects\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\EntityFramework.xml
 C:\Users\Ozkan\Desktop\backup_projects\SinemaOtomasyon\SinemaOtomasyon.Core\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Ozkan\Desktop\backup_projects\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.csprojResolveAssemblyReference.cache
 C:\Users\Ozkan\Desktop\backup_projects\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.dll
 C:\Users\Ozkan\Desktop\backup_projects\SinemaOtomasyon\SinemaOtomasyon.Core\obj\Debug\SinemaOtomasyon.Core.pdb

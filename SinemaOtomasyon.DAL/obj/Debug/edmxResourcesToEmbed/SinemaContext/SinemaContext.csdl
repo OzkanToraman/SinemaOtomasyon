@@ -103,9 +103,9 @@
   </EntityType>
   <EntityType Name="Login">
     <Key>
-      <PropertyRef Name="Username" />
+      <PropertyRef Name="LoginID" />
     </Key>
-    <Property Name="LoginID" Type="Int32" Nullable="false" />
+    <Property Name="LoginID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Password" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="RoleID" Type="Int32" />
@@ -128,12 +128,12 @@
     <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="SicilNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Telefon" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Adres" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="CalismaHali" Type="Boolean" Nullable="false" />
     <Property Name="UnvanID" Type="Int32" Nullable="false" />
     <Property Name="CinsiyetID" Type="Int32" Nullable="false" />
-    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LoginID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Cinsiyet" Relationship="Self.FK_Personel_Cinsiyet" FromRole="Personel" ToRole="Cinsiyet" />
     <NavigationProperty Name="Fatura" Relationship="Self.FK_Fatura_Personel" FromRole="Personel" ToRole="Fatura" />
     <NavigationProperty Name="Login" Relationship="Self.FK_Personel_Login" FromRole="Personel" ToRole="Login" />
@@ -370,10 +370,10 @@
     <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Login">
-        <PropertyRef Name="Username" />
+        <PropertyRef Name="LoginID" />
       </Principal>
       <Dependent Role="Personel">
-        <PropertyRef Name="Username" />
+        <PropertyRef Name="LoginID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

@@ -8,9 +8,7 @@ using System.Threading.Tasks;
 
 namespace SinemaOtomasyon.Repository.Repositories.Abstracts
 {
-    public interface ILoginRepository : IRepository<Login>
+    public interface IRoleRepository:IRepository<Role>
     {
-      
     }
-    
 }

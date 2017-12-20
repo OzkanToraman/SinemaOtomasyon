@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using SinemaOtomasyon.BLL.DTOs;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.BLL.Services.Validations;
+using System.Data.Entity.Validation;
 
 namespace SinemaOtomasyon.BLL.Services.Concrete
 {
@@ -30,7 +31,7 @@ namespace SinemaOtomasyon.BLL.Services.Concrete
             {
                 _personelRepo.Add(personel);
                 _personelRepo.Save();
-
+               
                 return new ResultModel<Personel>
                 {
                     Errors = null,
@@ -43,7 +44,7 @@ namespace SinemaOtomasyon.BLL.Services.Concrete
                 return new ResultModel<Personel>
                 {
                     Errors = Result.Errors.Select(x => x.ErrorMessage).ToList(),
-                    IsValid = true,
+                    IsValid = false,
                     Message = "Kayıt başarısız ! "
                 };
             }

@@ -62,6 +62,7 @@
     <Compile Include="Repositories\Abstracts\IKoltukRepository.cs" />
     <Compile Include="Repositories\Abstracts\ILoginRepository.cs" />
     <Compile Include="Repositories\Abstracts\IPersonelRepository.cs" />
+    <Compile Include="Repositories\Abstracts\IRoleRepository.cs" />
     <Compile Include="Repositories\Abstracts\ISalonRepository.cs" />
     <Compile Include="Repositories\Abstracts\ISeansRepository.cs" />
     <Compile Include="Repositories\Abstracts\ISeyirciRepository.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Repositories\Concretes\KoltukRepository.cs" />
     <Compile Include="Repositories\Concretes\LoginRepository.cs" />
     <Compile Include="Repositories\Concretes\PersonelRepository.cs" />
+    <Compile Include="Repositories\Concretes\RoleRepository.cs" />
     <Compile Include="Repositories\Concretes\SalonRepository.cs" />
     <Compile Include="Repositories\Concretes\SeansRepository.cs" />
     <Compile Include="Repositories\Concretes\SeyirciRepository.cs" />
