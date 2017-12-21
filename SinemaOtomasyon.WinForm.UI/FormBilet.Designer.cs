@@ -33,13 +33,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtFilmAd = new System.Windows.Forms.TextBox();
             this.txtSeans = new System.Windows.Forms.TextBox();
             this.txtSalon = new System.Windows.Forms.TextBox();
             this.txtKoltuklar = new System.Windows.Forms.TextBox();
             this.txtToplam = new System.Windows.Forms.TextBox();
-            this.txtIslemNumarasi = new System.Windows.Forms.TextBox();
             this.btnOnayla = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -122,18 +120,6 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Toplam :";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial", 10F);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label6.Location = new System.Drawing.Point(96, 361);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 16);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "İşlem Numarası :";
-            // 
             // txtFilmAd
             // 
             this.txtFilmAd.Font = new System.Drawing.Font("Arial", 10F);
@@ -178,15 +164,6 @@
             this.txtToplam.ReadOnly = true;
             this.txtToplam.Size = new System.Drawing.Size(145, 23);
             this.txtToplam.TabIndex = 1;
-            // 
-            // txtIslemNumarasi
-            // 
-            this.txtIslemNumarasi.Font = new System.Drawing.Font("Arial", 10F);
-            this.txtIslemNumarasi.Location = new System.Drawing.Point(222, 358);
-            this.txtIslemNumarasi.Name = "txtIslemNumarasi";
-            this.txtIslemNumarasi.ReadOnly = true;
-            this.txtIslemNumarasi.Size = new System.Drawing.Size(145, 23);
-            this.txtIslemNumarasi.TabIndex = 1;
             // 
             // btnOnayla
             // 
@@ -424,7 +401,6 @@
             this.Controls.Add(this.btnOnayla);
             this.Controls.Add(this.txtTarih);
             this.Controls.Add(this.txtBiletTur);
-            this.Controls.Add(this.txtIslemNumarasi);
             this.Controls.Add(this.txtAdres);
             this.Controls.Add(this.txtToplam);
             this.Controls.Add(this.txtKoltuklar);
@@ -435,7 +411,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtFilmAd);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label9);
@@ -467,13 +442,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtFilmAd;
         private System.Windows.Forms.TextBox txtSeans;
         private System.Windows.Forms.TextBox txtSalon;
         private System.Windows.Forms.TextBox txtKoltuklar;
         private System.Windows.Forms.TextBox txtToplam;
-        private System.Windows.Forms.TextBox txtIslemNumarasi;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;

@@ -20,6 +20,28 @@ namespace SinemaOtomasyon.BLL.Services.Concrete
             _loginRepo = loginRepo;
         }
 
+        public ResultModel<Login> Kontrol(Login p)
+        {
+            LoginValidator validator = new LoginValidator();
+            var result = validator.Validate(p);
+
+            if (result.IsValid)
+            {
+                return new ResultModel<Login>
+                {
+                    Errors = null,
+                    IsValid = true,
+                    Message = "Kayıt Başarılı"
+                };
+            }
+            return new ResultModel<Login>
+            {
+                Errors = result.Errors.Select(x => x.ErrorMessage).ToList(),
+                IsValid = false,
+                Message = "Giriş Başarısız"
+            };
+        }
+
         public ResultModel<Login> Login(Login p)
         {
             LoginValidator validator = new LoginValidator();

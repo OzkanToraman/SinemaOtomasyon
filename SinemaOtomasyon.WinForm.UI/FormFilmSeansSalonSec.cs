@@ -1,4 +1,5 @@
 ﻿using Ninject;
+using SinemaOtomasyon.BLL.DTOs;
 using SinemaOtomasyon.BLL.Services.Abstract;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
@@ -27,6 +28,8 @@ namespace SinemaOtomasyon.WinForm.UI
         private IFilmService _filmService;
         private ISeansRepository _seansRepo;
         private ISalonRepository _salonRepo;
+        private IGiseRepository _giseRepo;
+
         Film f = new Film();
         int SalonId, SeansId;
         int filmId;
@@ -39,6 +42,7 @@ namespace SinemaOtomasyon.WinForm.UI
             _filmRepo = container.Get<IFilmRepository>();
             _seansRepo = container.Get<ISeansRepository>();
             _salonRepo = container.Get<ISalonRepository>();
+            _giseRepo = container.Get<IGiseRepository>();
             InitializeComponent();
         }
 
@@ -46,6 +50,21 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void FormFilmSeansSalonSec_Load(object sender, EventArgs e)
         {
+
+            #region ErtesiGunKoltukBoşalır
+            IEnumerable<KoltukBosaltDTO> koltukBosalt = new List<KoltukBosaltDTO>();
+            koltukBosalt = _giseRepo.GetList().Select(x => new KoltukBosaltDTO { GiseId = x.GiseID, Tarih = x.Tarih }).ToList();
+            foreach (var item in koltukBosalt)
+            {
+                if (item.Tarih < DateTime.Now.Date)
+                {
+                    var sorgu = _giseRepo.GetById(item.GiseId);
+                    sorgu.DoluMu = false;
+                    sorgu.Tarih = DateTime.Now.Date;
+                }
+            }
+            _giseRepo.Save();
+            #endregion
 
             DataGridViewDoldur();
             //SeansDoldur();
@@ -103,16 +122,7 @@ namespace SinemaOtomasyon.WinForm.UI
 
         }
 
-        //private void SeansDoldur()
-        //{
-        //    var seansSorgu = _seansRepo.GetList().Select(x => new { id = x.SeansID, ad = x.SeansAD }).ToList();
-        //    cbSeansSec.DataSource = seansSorgu;
-        //    cbSeansSec.DisplayMember = "ad";
-        //    cbSeansSec.ValueMember = "id";
-        //    txtSeans.Text = cbSeansSec.Text.Substring(0, 5);
-        //}
-
-        private void dgvFilmler_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+       private void dgvFilmler_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             //MessageBox.Show("" + (int)dgvFilmler.CurrentRow.Cells[0].Value);
             f = _filmRepo.GetById((int)dgvFilmler.CurrentRow.Cells[0].Value);
@@ -125,12 +135,6 @@ namespace SinemaOtomasyon.WinForm.UI
             }
 
             SalonDoldur();
-
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void cbSeansSec_SelectedIndexChanged(object sender, EventArgs e)

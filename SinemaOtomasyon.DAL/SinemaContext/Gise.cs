@@ -24,6 +24,7 @@ namespace SinemaOtomasyon.DAL.SinemaContext
         public int KoltukID { get; set; }
         public int GosterimID { get; set; }
         public bool DoluMu { get; set; }
+        public System.DateTime Tarih { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BiletSatis> BiletSatis { get; set; }

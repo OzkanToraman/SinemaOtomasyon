@@ -52,7 +52,8 @@ namespace SinemaOtomasyon.WinForm.UI
             Login p = new Login();
             p.Username = txtUser.Text;
             p.Password = txtPass.Text;
-            var result = _loginService.Login(p);
+            var result = _loginService.Kontrol(p);
+
             if (result.IsValid == false)
             {
                 MessageBox.Show(result.Errors.FirstOrDefault().ToString());
@@ -60,7 +61,7 @@ namespace SinemaOtomasyon.WinForm.UI
             else
             {     
                 Login login = new Login();
-                int id= _loginRepo.GetList().Where(x => x.Username == txtUser.Text && x.Password == txtPass.Text).Count();
+                login= _loginRepo.GetList().Where(x => x.Username == txtUser.Text && x.Password == txtPass.Text).FirstOrDefault();
                 if (login==null)
                 {
                     MessageBox.Show("Hatalı Kullanıcı Adı ya da Şifre!", "HATA");

@@ -11,5 +11,6 @@ namespace SinemaOtomasyon.BLL.Services.Abstract
     public interface ILoginService
     {
         ResultModel<Login> Login(Login p);
+        ResultModel<Login> Kontrol(Login p);
     }
 }

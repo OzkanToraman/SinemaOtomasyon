@@ -32,7 +32,7 @@
             this.btnPersonelslemleri = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnGosterimIslemleri = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnFatura = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
@@ -41,15 +41,19 @@
             // 
             // btnFilmIslemleri
             // 
+            this.btnFilmIslemleri.BackColor = System.Drawing.Color.Transparent;
             this.btnFilmIslemleri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnFilmIslemleri.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFilmIslemleri.FlatAppearance.BorderSize = 0;
+            this.btnFilmIslemleri.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnFilmIslemleri.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnFilmIslemleri.Font = new System.Drawing.Font("Arial", 15F);
             this.btnFilmIslemleri.Location = new System.Drawing.Point(280, 165);
             this.btnFilmIslemleri.Name = "btnFilmIslemleri";
             this.btnFilmIslemleri.Size = new System.Drawing.Size(150, 150);
             this.btnFilmIslemleri.TabIndex = 0;
             this.btnFilmIslemleri.Text = "Film İşlemleri";
-            this.btnFilmIslemleri.UseVisualStyleBackColor = true;
+            this.btnFilmIslemleri.UseVisualStyleBackColor = false;
             this.btnFilmIslemleri.Click += new System.EventHandler(this.btnFilmIslemleri_Click_1);
             // 
             // btnPersonelslemleri
@@ -90,18 +94,18 @@
             this.btnGosterimIslemleri.Text = "Gösterim Ayarları";
             this.btnGosterimIslemleri.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnFatura
             // 
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Font = new System.Drawing.Font("Arial", 15F);
-            this.button5.Location = new System.Drawing.Point(557, 445);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 150);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Fatura İşlemleri";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnFatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFatura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFatura.Font = new System.Drawing.Font("Arial", 15F);
+            this.btnFatura.Location = new System.Drawing.Point(557, 445);
+            this.btnFatura.Name = "btnFatura";
+            this.btnFatura.Size = new System.Drawing.Size(150, 150);
+            this.btnFatura.TabIndex = 0;
+            this.btnFatura.Text = "Fatura İşlemleri";
+            this.btnFatura.UseVisualStyleBackColor = true;
+            this.btnFatura.Click += new System.EventHandler(this.btnFatura_Click);
             // 
             // button6
             // 
@@ -119,9 +123,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Arial", 8.25F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1085, 9);
+            this.label1.Location = new System.Drawing.Point(1094, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 14);
             this.label1.TabIndex = 2;
@@ -131,9 +136,10 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblUsername.Font = new System.Drawing.Font("Arial", 8.25F);
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(1130, 9);
+            this.lblUsername.Location = new System.Drawing.Point(1139, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(125, 14);
             this.lblUsername.TabIndex = 3;
@@ -161,7 +167,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnFatura);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnGosterimIslemleri);
             this.Controls.Add(this.btnPersonelslemleri);
@@ -186,7 +192,7 @@
         private System.Windows.Forms.Button btnPersonelslemleri;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnGosterimIslemleri;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnFatura;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblUsername;

@@ -39,7 +39,6 @@
             this.btnBiletSatis = new System.Windows.Forms.Button();
             this.pbFilmAfis = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
             this.txtSeans = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFilmAfis)).BeginInit();
@@ -184,22 +183,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Afiş :";
             // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Arial", 10F);
-            this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBack.Location = new System.Drawing.Point(1020, 118);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(35, 36);
-            this.btnBack.TabIndex = 242;
-            this.btnBack.Text = "←";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // txtSeans
             // 
             this.txtSeans.Font = new System.Drawing.Font("Arial", 9.25F);
@@ -217,7 +200,6 @@
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1264, 761);
             this.Controls.Add(this.txtSeans);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pbFilmAfis);
             this.Controls.Add(this.btnBiletSatis);
             this.Controls.Add(this.label5);
@@ -255,7 +237,6 @@
         private System.Windows.Forms.Button btnBiletSatis;
         private System.Windows.Forms.PictureBox pbFilmAfis;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.TextBox txtSeans;
     }
 }

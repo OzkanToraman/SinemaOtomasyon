@@ -269,6 +269,7 @@
             // 
             this.iptalEtToolStripMenuItem.Name = "iptalEtToolStripMenuItem";
             resources.ApplyResources(this.iptalEtToolStripMenuItem, "iptalEtToolStripMenuItem");
+            this.iptalEtToolStripMenuItem.Click += new System.EventHandler(this.iptalEtToolStripMenuItem_Click);
             // 
             // F18
             // 

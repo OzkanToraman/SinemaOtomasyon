@@ -22,6 +22,7 @@ namespace SinemaOtomasyon.WinForm.UI
         private IGiseRepository _giseRepo;
         private IGosterimRepository _gosterimRepo;
         private IUnitOfWork _gosterimUOW, _koltukUOW;
+        private IBiletSatisRepository _biletSatisRepo;
 
         private Film f;
         int SeansId, SalonId, GosterimId;
@@ -41,6 +42,7 @@ namespace SinemaOtomasyon.WinForm.UI
             _gosterimRepo = container.Get<IGosterimRepository>();
             _gosterimUOW = container.Get<IUnitOfWork>();
             _giseRepo = container.Get<IGiseRepository>();
+            _biletSatisRepo = container.Get<IBiletSatisRepository>();
 
             this.f = f;
             this.SeansId = SeansId;
@@ -68,6 +70,10 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void KoltukKontrol()
         {
+
+
+           
+
             IEnumerable<int> koltuklar = new List<int>();
             koltuklar = _giseRepo.GetList().Where(x => x.GosterimID == GosterimId && x.DoluMu == true).Select(x => x.KoltukID);
             if (koltuklar.Count() != 0)
@@ -78,7 +84,6 @@ namespace SinemaOtomasyon.WinForm.UI
                     Button koltuk = new Button();
                     koltuk = (Button)Controls[koltukAd];
                     koltuk.BackColor = Color.Red;
-
                 }
             }
 
@@ -106,8 +111,63 @@ namespace SinemaOtomasyon.WinForm.UI
         private void btnBiletKes_Click(object sender, EventArgs e)
         {
 
-        }
+            if (lbKoltuklar.Items.Count != 0)
+            {
+                if (string.IsNullOrEmpty(txtAd.Text) && string.IsNullOrEmpty(txtSoyad.Text))
+                {
+                    MessageBox.Show(" Gerekli alanları doldurmalısınız ! ");
+                    txtAd.Focus();
+                }
+                else
+                {
+                   
+                    KoltukSayisiHesapla();
 
+                    #region Seyirci Bilgileri
+
+                    /*Seyirci bilgileri toplanır*/
+                    Seyirci seyirci = new Seyirci();
+                    seyirci.SeyirciAd = txtAd.Text;
+                    seyirci.SeyirciSoyad = txtSoyad.Text;
+                    seyirci.SeyirciTelefon = txtTelefon.Text;
+                    seyirci.SeyirciAdres = txtAdres.Text;
+                    /**/
+                    #endregion
+
+                    #region Gösterim Bilgileri
+                    /*Gosterim Id'sine bağlı Salon ve Seans bilgisi içerir*/
+                    Gosterim gosterim = new Gosterim();
+                    gosterim = _gosterimRepo.GetById(GosterimId);
+                    /**/
+                    #endregion
+
+                    #region Bilet Tür Bilgisi
+                    /*Radiobutton seçim*/
+
+                    int biletTur;
+                    if (rbOgrenci.Checked)
+                    {
+                        biletTur = 2;
+                    }
+                    else if (rbTam.Checked)
+                    {
+                        biletTur = 1;
+                    }
+                    else
+                    {
+                        biletTur = 4;
+                    }
+
+                    /**/
+                    #endregion
+
+
+                    FormBilet frm = new FormBilet(seyirci, f.FilmAd, butonlar, gosterim, biletTur);
+                    frm.ShowDialog();
+                    this.Close();
+                }
+            }
+        }
         private void Temizle()
         {
             txtAd.Clear();
@@ -129,17 +189,21 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             int giseId = _giseRepo.GetList().Where(x => x.GosterimID == GosterimId && x.Koltuk.KoltukAD == SagTus).Select(x => x.GiseID).FirstOrDefault();
             _giseRepo.GetById(giseId).DoluMu = false;
+            #region SatıldıMı ayarları
+            int biletid = _biletSatisRepo.GetList().Where(x => x.GiseID == giseId).Select(x => x.BiletID).FirstOrDefault();
+            _biletSatisRepo.GetById(biletid).Satıldı = false;
+            #endregion
 
-            if (_giseRepo.Save() > 0)
+            if (_giseRepo.Save() > 0&&_biletSatisRepo.Save()>0)
             {
-                MessageBox.Show("iptal edildi");
+                MessageBox.Show("Bilet iptal edildi!");
                 Button koltuk = new Button();
                 koltuk = (Button)Controls[SagTus.ToString()];
                 koltuk.BackColor = Color.Gray;
             }
             else
             {
-                MessageBox.Show("başarısız");
+                MessageBox.Show("İşlem başarısız!");
             }
         }
 

@@ -103,39 +103,46 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void btnOnayla_Click(object sender, EventArgs e)
         {
-            /*Seçilen KoltukId'si bulunur ve veritabanından kontrol edilir.Eşleşen Id'lerin DoluMu özelliği doldurulur.*/
-            string koltukAd;
-            foreach (var item in koltuklar)
+            DialogResult onayla = new DialogResult();
+            onayla = MessageBox.Show("Onaylıyor musunuz ?", "Uyarı", MessageBoxButtons.YesNo);
+
+            if (onayla == DialogResult.Yes)
             {
-                koltukAd = item.ToString();
-                giseId = _giseRepo.GetList().Where(x => x.GosterimID == gosterim.GosterimID && x.Koltuk.KoltukAD == koltukAd).Select(x => x.GiseID).FirstOrDefault();
-                _giseRepo.GetById(giseId).DoluMu = true;
-                if (_giseRepo.Save() > 0)
+                /*Seçilen KoltukId'si bulunur ve veritabanından kontrol edilir.Eşleşen Id'lerin DoluMu özelliği doldurulur.*/
+                string koltukAd;
+                foreach (var item in koltuklar)
                 {
-                    MessageBox.Show("İşlem başarıyla gerçekleşti!");
+                    koltukAd = item.ToString();
+                    giseId = _giseRepo.GetList().Where(x => x.GosterimID == gosterim.GosterimID && x.Koltuk.KoltukAD == koltukAd).Select(x => x.GiseID).FirstOrDefault();
+                    _giseRepo.GetById(giseId).DoluMu = true;
+                    if (_giseRepo.Save() > 0)
+                    {
+                        MessageBox.Show("İşlem başarıyla gerçekleşti!");
+                    }
                 }
-            }
-            /**/
+                /**/
 
-            #region Ödeme Şekli
-            /*OdemeSekliyle alakalı*/
-            if (rbNakit.Checked)
-            {
-                OdemeSekliID = 1;
-            }
-            else
-            {
-                OdemeSekliID = 2;
-            }
-            /**/
-            #endregion
+                #region Ödeme Şekli
+                /*OdemeSekliyle alakalı*/
+                if (rbNakit.Checked)
+                {
+                    OdemeSekliID = 1;
+                }
+                else
+                {
+                    OdemeSekliID = 2;
+                }
+                /**/
+                #endregion
 
-            SeyirciDatabaseEkle();
-            BiletDatabaseEkle();
-            FaturaDatabaseEkle();
+                SeyirciDatabaseEkle();
+                BiletDatabaseEkle();
+                FaturaDatabaseEkle();
 
-            this.Close();
+                this.Close();
+            } 
         }
+
 
         //bool IslemTamam(bool seyirci, bool bilet, bool fatura)
         //{
@@ -147,7 +154,7 @@ namespace SinemaOtomasyon.WinForm.UI
         //        return false;
         //}
 
-        void  SeyirciDatabaseEkle()
+        void SeyirciDatabaseEkle()
         {
             Seyirci seyirci = new Seyirci();
             seyirci.SeyirciAd = txtAd.Text;
@@ -156,10 +163,11 @@ namespace SinemaOtomasyon.WinForm.UI
             seyirci.SeyirciAdres = txtAdres.Text;
 
             _seyirciRepo.Add(seyirci);
-            sonSeyirciKaydiId=_seyirciRepo.SonKayit();
+            _seyirciRepo.Save();
+            sonSeyirciKaydiId = _seyirciRepo.SonKayit();
 
         }
-        void  BiletDatabaseEkle()
+        void BiletDatabaseEkle()
         {
             BiletSatis satis = new BiletSatis();
             satis.BiletFiyat = Convert.ToDecimal(txtToplam.Text);
@@ -169,14 +177,14 @@ namespace SinemaOtomasyon.WinForm.UI
             satis.BiletTurID = biletTur;
 
             _biletSatisRepo.Add(satis);
-            sonBiletKaydiId=_biletSatisRepo.SonBiletKayitBul();
-            if (_biletSatisRepo.Save()>0)
+            if (_biletSatisRepo.Save() > 0)
             {
                 MessageBox.Show("Bilet satışı başarıyla gerçekleşti!");
+                sonBiletKaydiId = _biletSatisRepo.SonBiletKayitBul();
             }
-            
+
         }
-        void  FaturaDatabaseEkle()
+        void FaturaDatabaseEkle()
         {
             Fatura f = new Fatura();
             f.OdemeSekliID = OdemeSekliID;

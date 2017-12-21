@@ -23,6 +23,7 @@ namespace SinemaOtomasyon.WinForm.UI
         private IGiseRepository _giseRepo;
         private IGosterimRepository _gosterimRepo;
         private IUnitOfWork _gosterimUOW, _koltukUOW;
+        private IBiletSatisRepository _biletSatisRepo;
 
 
 
@@ -33,7 +34,7 @@ namespace SinemaOtomasyon.WinForm.UI
 
 
         public FormSalon2()
-        {           
+        {
             InitializeComponent();
         }
 
@@ -45,6 +46,7 @@ namespace SinemaOtomasyon.WinForm.UI
             _gosterimRepo = container.Get<IGosterimRepository>();
             _gosterimUOW = container.Get<IUnitOfWork>();
             _giseRepo = container.Get<IGiseRepository>();
+            _biletSatisRepo = container.Get<IBiletSatisRepository>();
 
             this.f = f;
             this.SeansId = SeansId;
@@ -73,6 +75,7 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void KoltukKontrol()
         {
+
             IEnumerable<int> koltuklar = new List<int>();
             koltuklar = _giseRepo.GetList().Where(x => x.GosterimID == GosterimId && x.DoluMu == true).Select(x => x.KoltukID);
             if (koltuklar.Count() != 0)
@@ -179,7 +182,7 @@ namespace SinemaOtomasyon.WinForm.UI
 
                     FormBilet frm = new FormBilet(seyirci, f.FilmAd, butonlar, gosterim, biletTur);
                     frm.ShowDialog();
-
+                    this.Close();
                 }
             }
             else
@@ -210,8 +213,12 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             int giseId = _giseRepo.GetList().Where(x => x.GosterimID == GosterimId && x.Koltuk.KoltukAD == SagTus).Select(x => x.GiseID).FirstOrDefault();
             _giseRepo.GetById(giseId).DoluMu = false;
+            #region SatıldıMı ayarları
+            int biletid = _biletSatisRepo.GetList().Where(x => x.GiseID == giseId).Select(x => x.BiletID).FirstOrDefault();
+            _biletSatisRepo.GetById(biletid).Satıldı = false;
+            #endregion
 
-            if (_giseRepo.Save() > 0)
+            if (_giseRepo.Save() > 0 && _biletSatisRepo.Save() > 0)
             {
                 MessageBox.Show("iptal edildi");
                 Button koltuk = new Button();

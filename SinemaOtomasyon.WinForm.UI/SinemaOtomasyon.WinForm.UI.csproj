@@ -144,6 +144,9 @@
     <EmbeddedResource Include="FormBilet.resx">
       <DependentUpon>FormBilet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormFatura.resx">
+      <DependentUpon>FormFatura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormFilmSeansSalonSec.resx">
       <DependentUpon>FormFilmSeansSalonSec.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +237,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\button_personel-islemleri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_film-islemleri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Afisler\1450733.jpg" />
+    <Content Include="Resources\Afisler\aile-arasinda-1510556926.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

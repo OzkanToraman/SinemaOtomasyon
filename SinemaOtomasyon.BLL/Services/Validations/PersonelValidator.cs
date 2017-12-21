@@ -20,7 +20,7 @@ namespace SinemaOtomasyon.BLL.Services.Validations
             ////RuleFor(x => x.CalismaHali).NotEmpty().WithMessage("Çalışma hali boş bırakılamaz!");
             ////RuleFor(x => x.UnvanID).NotEmpty().WithMessage("Ünvan boş bırakılamaz!");
             ////RuleFor(x => x.CinsiyetID).NotEmpty().WithMessage("Cinsiyet boş bırakılamaz!");
-            RuleFor(x => x.LoginID).NotEmpty().WithMessage("Kullanıcı adı boş bırakılamaz!");
+            RuleFor(x => x.LoginID).NotEmpty().WithMessage("Kullanıcı ayarlarıdan yeni kullanıcı tanımlayınız!");
         }
     }
 }

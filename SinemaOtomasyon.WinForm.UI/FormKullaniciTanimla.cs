@@ -35,12 +35,31 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void FormKullaniciTanimla_Load(object sender, EventArgs e)
         {
-            cbRole.DataSource= _roleRepo.GetList();
+            btnGuncelle.Enabled = false;
+            btnEkle.Enabled = false;
+            btnSil.Enabled = false;
+            #region Rol Doldur
+            cbRole.DataSource = _roleRepo.GetList();
             cbRole.DisplayMember = "RoleAD";
             cbRole.ValueMember = "RoleID";
+            #endregion
+            DGVDoldur();
         }
 
-        private void btnKaydet_Click(object sender, EventArgs e)
+        private void DGVDoldur()
+        {
+            dgvKullanicilar.DataSource = _loginRepo.GetList().Select(x => new
+            {
+                x.LoginID,
+                x.Username,
+                x.Password,
+                x.Role.RoleAD
+            }).ToList();
+
+            dgvKullanicilar.Columns[0].Visible = false;
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e)
         {
             Login login = new Login();
             login.Username = txtAd.Text;
@@ -59,8 +78,72 @@ namespace SinemaOtomasyon.WinForm.UI
             {
                 MessageBox.Show(result.Errors.FirstOrDefault());
             }
+            
+
            
-           
+        }
+
+        private void btnYeni_Click(object sender, EventArgs e)
+        {
+            btnEkle.Enabled = true;
+            Temizle();
+        }
+
+        private void dgvKullanicilar_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            btnYeni.Enabled = true;
+            btnGuncelle.Enabled = true;
+            btnSil.Enabled = true;
+            btnEkle.Enabled = false;
+            Login l = new Login();
+            l = _loginRepo.GetById((int)dgvKullanicilar.CurrentRow.Cells[0].Value);
+            txtAd.Text = l.Username;
+            txtSifre.Text = l.Password;
+            cbRole.SelectedValue = l.RoleID;
+            lblLoginID.Text = l.LoginID.ToString();
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            btnYeni.Enabled = true;
+            btnGuncelle.Enabled = false;
+            btnSil.Enabled = false;
+            Login l = new Login();
+            l = _loginRepo.GetById(Convert.ToInt32(lblLoginID.Text));
+            l.Username = txtAd.Text;
+            l.Password = txtSifre.Text;
+            l.RoleID =(int)cbRole.SelectedValue;
+            if (_loginRepo.Save()>0)
+            {
+                MessageBox.Show("Başarıyla güncellendi!");
+                DGVDoldur();
+                Temizle();
+                btnYeni.Enabled = true;
+            }
+
+            
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            btnYeni.Enabled = true;
+            btnGuncelle.Enabled = false;
+            btnSil.Enabled = false;
+            _loginRepo.Delete(Convert.ToInt32(lblLoginID.Text));
+            if (_loginRepo.Save() > 0)
+            {
+                MessageBox.Show("Başarıyla silindi!");
+                DGVDoldur();
+                Temizle();
+                btnYeni.Enabled = true;
+            }
+        }
+
+        void Temizle()
+        {
+            txtAd.Clear();
+            txtSifre.Clear();
+
         }
     }
 }

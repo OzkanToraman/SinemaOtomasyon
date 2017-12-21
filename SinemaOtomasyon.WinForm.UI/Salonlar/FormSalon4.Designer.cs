@@ -2402,6 +2402,7 @@
             // 
             // btnUyeOlustur
             // 
+            this.btnUyeOlustur.Enabled = false;
             this.btnUyeOlustur.Font = new System.Drawing.Font("Arial", 9F);
             this.btnUyeOlustur.ForeColor = System.Drawing.Color.Black;
             this.btnUyeOlustur.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -2449,6 +2450,7 @@
             // rbUye
             // 
             this.rbUye.AutoSize = true;
+            this.rbUye.Enabled = false;
             this.rbUye.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rbUye.Location = new System.Drawing.Point(7, 83);
             this.rbUye.Name = "rbUye";

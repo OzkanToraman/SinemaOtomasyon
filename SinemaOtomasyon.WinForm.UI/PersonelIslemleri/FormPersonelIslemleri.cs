@@ -117,14 +117,16 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
             personel.LoginID = FormKullaniciTanimla.log;
 
             var result = _personelService.PersonelKayıtKontrol(personel);
-
-            MessageBox.Show(result.Errors.FirstOrDefault());
-                      
+                                 
             if (result.IsValid)
             {
                 DGVDoldur();
                 Temizle();
                 btnYeni.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show(result.Errors.FirstOrDefault());
             }
         }
 
@@ -135,7 +137,6 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
             txtTelefon.Clear();
             txtAdres.Clear();
             txtKimlikNo.Clear();
-            txtUsername.Clear();
             chkCalisma.Checked = false;
         }
 
@@ -167,7 +168,10 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
             _personelRepo.Delete((int)dgvPersonel.CurrentRow.Cells[0].Value);
             if (_personelRepo.Save() > 0)
             {
-                MessageBox.Show("Başarıyla kayıt edildi!");
+                MessageBox.Show("Silindi!");
+                DGVDoldur();
+                Temizle();
+                btnYeni.Enabled = true;
             }
 
         }

@@ -88,7 +88,7 @@
             this.txtFilmAd.Location = new System.Drawing.Point(244, 125);
             this.txtFilmAd.Name = "txtFilmAd";
             this.txtFilmAd.Size = new System.Drawing.Size(122, 21);
-            this.txtFilmAd.TabIndex = 1;
+            this.txtFilmAd.TabIndex = 0;
             // 
             // label2
             // 
@@ -124,7 +124,7 @@
             this.txtOyuncular.Location = new System.Drawing.Point(244, 179);
             this.txtOyuncular.Name = "txtOyuncular";
             this.txtOyuncular.Size = new System.Drawing.Size(122, 21);
-            this.txtOyuncular.TabIndex = 1;
+            this.txtOyuncular.TabIndex = 2;
             // 
             // label4
             // 
@@ -164,7 +164,7 @@
             this.txtFilmSure.Location = new System.Drawing.Point(244, 260);
             this.txtFilmSure.Name = "txtFilmSure";
             this.txtFilmSure.Size = new System.Drawing.Size(122, 21);
-            this.txtFilmSure.TabIndex = 1;
+            this.txtFilmSure.TabIndex = 5;
             // 
             // label7
             // 
@@ -204,7 +204,7 @@
             this.txtAfis.Location = new System.Drawing.Point(244, 316);
             this.txtAfis.Name = "txtAfis";
             this.txtAfis.Size = new System.Drawing.Size(122, 21);
-            this.txtAfis.TabIndex = 1;
+            this.txtAfis.TabIndex = 7;
             // 
             // label10
             // 
@@ -244,7 +244,7 @@
             this.cbFilmTur.Location = new System.Drawing.Point(244, 287);
             this.cbFilmTur.Name = "cbFilmTur";
             this.cbFilmTur.Size = new System.Drawing.Size(122, 23);
-            this.cbFilmTur.TabIndex = 4;
+            this.cbFilmTur.TabIndex = 6;
             // 
             // cbSalon
             // 
@@ -265,7 +265,7 @@
             this.chkVizyonda.Location = new System.Drawing.Point(244, 375);
             this.chkVizyonda.Name = "chkVizyonda";
             this.chkVizyonda.Size = new System.Drawing.Size(15, 14);
-            this.chkVizyonda.TabIndex = 5;
+            this.chkVizyonda.TabIndex = 9;
             this.chkVizyonda.UseVisualStyleBackColor = false;
             // 
             // btnKaydet
@@ -273,7 +273,7 @@
             this.btnKaydet.Location = new System.Drawing.Point(181, 434);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(55, 32);
-            this.btnKaydet.TabIndex = 6;
+            this.btnKaydet.TabIndex = 11;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
@@ -283,7 +283,7 @@
             this.btnGuncelle.Location = new System.Drawing.Point(241, 434);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(65, 32);
-            this.btnGuncelle.TabIndex = 6;
+            this.btnGuncelle.TabIndex = 12;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
@@ -293,7 +293,7 @@
             this.btnSil.Location = new System.Drawing.Point(311, 434);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(55, 32);
-            this.btnSil.TabIndex = 6;
+            this.btnSil.TabIndex = 13;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
@@ -312,7 +312,7 @@
             this.dgvFilmler.ReadOnly = true;
             this.dgvFilmler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvFilmler.Size = new System.Drawing.Size(688, 241);
-            this.dgvFilmler.TabIndex = 7;
+            this.dgvFilmler.TabIndex = 14;
             this.dgvFilmler.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvFilmler_CellMouseClick);
             // 
             // btnYeni
@@ -320,7 +320,7 @@
             this.btnYeni.Location = new System.Drawing.Point(121, 434);
             this.btnYeni.Name = "btnYeni";
             this.btnYeni.Size = new System.Drawing.Size(55, 32);
-            this.btnYeni.TabIndex = 6;
+            this.btnYeni.TabIndex = 10;
             this.btnYeni.Text = "Yeni";
             this.btnYeni.UseVisualStyleBackColor = true;
             this.btnYeni.Click += new System.EventHandler(this.btnYeni_Click);
@@ -385,21 +385,21 @@
             this.txtVizyonGiris.Location = new System.Drawing.Point(244, 206);
             this.txtVizyonGiris.Name = "txtVizyonGiris";
             this.txtVizyonGiris.Size = new System.Drawing.Size(100, 21);
-            this.txtVizyonGiris.TabIndex = 9;
+            this.txtVizyonGiris.TabIndex = 3;
             // 
             // txtVizyonCikis
             // 
             this.txtVizyonCikis.Location = new System.Drawing.Point(244, 233);
             this.txtVizyonCikis.Name = "txtVizyonCikis";
             this.txtVizyonCikis.Size = new System.Drawing.Size(100, 21);
-            this.txtVizyonCikis.TabIndex = 9;
+            this.txtVizyonCikis.TabIndex = 4;
             // 
             // txtFilmAdinaGoreAra
             // 
             this.txtFilmAdinaGoreAra.Location = new System.Drawing.Point(411, 82);
             this.txtFilmAdinaGoreAra.Name = "txtFilmAdinaGoreAra";
             this.txtFilmAdinaGoreAra.Size = new System.Drawing.Size(122, 21);
-            this.txtFilmAdinaGoreAra.TabIndex = 1;
+            this.txtFilmAdinaGoreAra.TabIndex = 15;
             this.txtFilmAdinaGoreAra.TextChanged += new System.EventHandler(this.txtFilmAdinaGoreAra_TextChanged);
             // 
             // label16
@@ -421,7 +421,7 @@
             this.chkVizyonKontrol.Location = new System.Drawing.Point(1084, 86);
             this.chkVizyonKontrol.Name = "chkVizyonKontrol";
             this.chkVizyonKontrol.Size = new System.Drawing.Size(15, 14);
-            this.chkVizyonKontrol.TabIndex = 12;
+            this.chkVizyonKontrol.TabIndex = 16;
             this.chkVizyonKontrol.UseVisualStyleBackColor = false;
             this.chkVizyonKontrol.CheckedChanged += new System.EventHandler(this.chkVizyonKontrol_CheckedChanged);
             // 
@@ -446,7 +446,7 @@
             this.txtSalon.Location = new System.Drawing.Point(244, 343);
             this.txtSalon.Name = "txtSalon";
             this.txtSalon.Size = new System.Drawing.Size(100, 21);
-            this.txtSalon.TabIndex = 14;
+            this.txtSalon.TabIndex = 8;
             // 
             // label17
             // 

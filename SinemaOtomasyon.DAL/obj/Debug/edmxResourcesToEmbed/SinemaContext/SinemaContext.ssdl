@@ -66,6 +66,7 @@
     <Property Name="KoltukID" Type="int" Nullable="false" />
     <Property Name="GosterimID" Type="int" Nullable="false" />
     <Property Name="DoluMu" Type="bit" Nullable="false" />
+    <Property Name="Tarih" Type="date" Nullable="false" />
   </EntityType>
   <EntityType Name="Gosterim">
     <Key>

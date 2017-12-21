@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace SinemaOtomasyon.Core.Concrete
 {
-    public class EFRepositoryBase<T, TContext> : IRepository<T>
+    public class EFRepositoryBase<T, TContext> : IRepository<T>, IDisposable
         where T : class, new()
         where TContext : DbContext
     {
 
         protected DbContext _dbContext;
         protected DbSet<T> _dbSet;
+        protected bool _disposed = false;
 
 
         public EFRepositoryBase(DbContext Context)
@@ -34,6 +35,26 @@ namespace SinemaOtomasyon.Core.Concrete
             var entity = _dbSet.Find(id);
             _dbSet.Remove(entity);
             //_dbContext.SaveChanges();
+        }
+
+        public void Dispose()
+        {
+            //database bağlantısını kesip kaynakların ram e geri teslimini sağlar.
+            _dbContext.Dispose();
+            //Garbage Collector bu sınıfı ramden kaldırır.
+            GC.SuppressFinalize(this);
+        }
+
+        public void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (_disposed == false)
+                {
+                    Dispose();
+                    _disposed = true;
+                }
+            }
         }
 
         public T GetById(int id)

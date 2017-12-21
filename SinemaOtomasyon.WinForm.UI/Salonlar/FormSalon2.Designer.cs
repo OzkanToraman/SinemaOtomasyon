@@ -231,6 +231,7 @@
             this.iptalEtToolStripMenuItem.Name = "iptalEtToolStripMenuItem";
             this.iptalEtToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.iptalEtToolStripMenuItem.Text = "İptal Et";
+            this.iptalEtToolStripMenuItem.Click += new System.EventHandler(this.iptalEtToolStripMenuItem_Click);
             // 
             // A6
             // 
@@ -2405,6 +2406,7 @@
             // 
             // btnUyeOlustur
             // 
+            this.btnUyeOlustur.Enabled = false;
             this.btnUyeOlustur.Font = new System.Drawing.Font("Arial", 9F);
             this.btnUyeOlustur.ForeColor = System.Drawing.Color.Black;
             this.btnUyeOlustur.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -2452,6 +2454,7 @@
             // rbUye
             // 
             this.rbUye.AutoSize = true;
+            this.rbUye.Enabled = false;
             this.rbUye.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rbUye.Location = new System.Drawing.Point(7, 83);
             this.rbUye.Name = "rbUye";

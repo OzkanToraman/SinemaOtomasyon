@@ -118,7 +118,7 @@
             this.btnSil.Location = new System.Drawing.Point(340, 364);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(55, 32);
-            this.btnSil.TabIndex = 33;
+            this.btnSil.TabIndex = 12;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
@@ -129,7 +129,7 @@
             this.btnGuncelle.Location = new System.Drawing.Point(270, 364);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(65, 32);
-            this.btnGuncelle.TabIndex = 32;
+            this.btnGuncelle.TabIndex = 11;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
@@ -140,7 +140,7 @@
             this.btnYeni.Location = new System.Drawing.Point(150, 364);
             this.btnYeni.Name = "btnYeni";
             this.btnYeni.Size = new System.Drawing.Size(55, 32);
-            this.btnYeni.TabIndex = 31;
+            this.btnYeni.TabIndex = 9;
             this.btnYeni.Text = "Yeni";
             this.btnYeni.UseVisualStyleBackColor = true;
             this.btnYeni.Click += new System.EventHandler(this.btnYeni_Click);
@@ -151,7 +151,7 @@
             this.btnKaydet.Location = new System.Drawing.Point(210, 364);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(55, 32);
-            this.btnKaydet.TabIndex = 30;
+            this.btnKaydet.TabIndex = 10;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
@@ -163,7 +163,7 @@
             this.cbUnvan.Location = new System.Drawing.Point(273, 234);
             this.cbUnvan.Name = "cbUnvan";
             this.cbUnvan.Size = new System.Drawing.Size(122, 23);
-            this.cbUnvan.TabIndex = 27;
+            this.cbUnvan.TabIndex = 5;
             // 
             // label10
             // 
@@ -183,7 +183,7 @@
             this.txtAdres.Location = new System.Drawing.Point(273, 208);
             this.txtAdres.Name = "txtAdres";
             this.txtAdres.Size = new System.Drawing.Size(122, 21);
-            this.txtAdres.TabIndex = 23;
+            this.txtAdres.TabIndex = 4;
             // 
             // label9
             // 
@@ -240,7 +240,7 @@
             this.txtKimlikNo.MaxLength = 11;
             this.txtKimlikNo.Name = "txtKimlikNo";
             this.txtKimlikNo.Size = new System.Drawing.Size(122, 21);
-            this.txtKimlikNo.TabIndex = 21;
+            this.txtKimlikNo.TabIndex = 2;
             // 
             // label3
             // 
@@ -260,7 +260,7 @@
             this.txtSoyad.Location = new System.Drawing.Point(273, 130);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(122, 21);
-            this.txtSoyad.TabIndex = 20;
+            this.txtSoyad.TabIndex = 1;
             // 
             // label2
             // 
@@ -280,7 +280,7 @@
             this.txtAd.Location = new System.Drawing.Point(273, 104);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(122, 21);
-            this.txtAd.TabIndex = 24;
+            this.txtAd.TabIndex = 0;
             // 
             // label1
             // 
@@ -313,7 +313,7 @@
             this.txtTelefon.Mask = "(999) 000-00-00";
             this.txtTelefon.Name = "txtTelefon";
             this.txtTelefon.Size = new System.Drawing.Size(122, 21);
-            this.txtTelefon.TabIndex = 38;
+            this.txtTelefon.TabIndex = 3;
             // 
             // dgvPersonel
             // 
@@ -329,7 +329,7 @@
             this.dgvPersonel.ReadOnly = true;
             this.dgvPersonel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPersonel.Size = new System.Drawing.Size(525, 234);
-            this.dgvPersonel.TabIndex = 39;
+            this.dgvPersonel.TabIndex = 14;
             this.dgvPersonel.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPersonel_CellMouseClick);
             // 
             // label5
@@ -401,7 +401,7 @@
             this.chkCalisma.Location = new System.Drawing.Point(273, 319);
             this.chkCalisma.Name = "chkCalisma";
             this.chkCalisma.Size = new System.Drawing.Size(48, 19);
-            this.chkCalisma.TabIndex = 40;
+            this.chkCalisma.TabIndex = 8;
             this.chkCalisma.Text = "Aktif";
             this.chkCalisma.UseVisualStyleBackColor = false;
             // 
@@ -412,7 +412,7 @@
             this.cbCinsiyet.Location = new System.Drawing.Point(273, 261);
             this.cbCinsiyet.Name = "cbCinsiyet";
             this.cbCinsiyet.Size = new System.Drawing.Size(122, 23);
-            this.cbCinsiyet.TabIndex = 27;
+            this.cbCinsiyet.TabIndex = 6;
             // 
             // btnKullanici
             // 
@@ -420,8 +420,8 @@
             this.btnKullanici.Location = new System.Drawing.Point(870, 364);
             this.btnKullanici.Name = "btnKullanici";
             this.btnKullanici.Size = new System.Drawing.Size(121, 32);
-            this.btnKullanici.TabIndex = 41;
-            this.btnKullanici.Text = "Kullanıcı Tanımla";
+            this.btnKullanici.TabIndex = 13;
+            this.btnKullanici.Text = "Kullanıcı Ayarları";
             this.btnKullanici.UseVisualStyleBackColor = true;
             this.btnKullanici.Click += new System.EventHandler(this.btnKullanici_Click);
             // 
@@ -430,15 +430,16 @@
             this.txtUsername.Font = new System.Drawing.Font("Arial", 9F);
             this.txtUsername.Location = new System.Drawing.Point(273, 289);
             this.txtUsername.Name = "txtUsername";
+            this.txtUsername.ReadOnly = true;
             this.txtUsername.Size = new System.Drawing.Size(122, 21);
-            this.txtUsername.TabIndex = 42;
+            this.txtUsername.TabIndex = 7;
             // 
             // FormPersonelIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
-            this.ClientSize = new System.Drawing.Size(1161, 452);
+            this.ClientSize = new System.Drawing.Size(1161, 499);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnKullanici);
             this.Controls.Add(this.chkCalisma);

@@ -60,7 +60,13 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult onayla = new DialogResult();
+            onayla = MessageBox.Show("Onaylıyor musunuz ?", "Uyarı", MessageBoxButtons.YesNo);
+
+            if (onayla == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void FormParent_Leave(object sender, EventArgs e)
@@ -74,8 +80,9 @@ namespace SinemaOtomasyon.WinForm.UI
             frm.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnFatura_Click(object sender, EventArgs e)
         {
+
             FormFatura frmFatura = new FormFatura();
             frmFatura.ShowDialog();
         }

@@ -78,6 +78,7 @@
     <Property Name="KoltukID" Type="Int32" Nullable="false" />
     <Property Name="GosterimID" Type="Int32" Nullable="false" />
     <Property Name="DoluMu" Type="Boolean" Nullable="false" />
+    <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="0" />
     <NavigationProperty Name="BiletSatis" Relationship="Self.FK_BiletSatis_Gise" FromRole="Gise" ToRole="BiletSatis" />
     <NavigationProperty Name="Gosterim" Relationship="Self.FK_Gise_Gosterim" FromRole="Gise" ToRole="Gosterim" />
     <NavigationProperty Name="Koltuk" Relationship="Self.FK_Gise_Koltuk" FromRole="Gise" ToRole="Koltuk" />

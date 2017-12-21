@@ -73,6 +73,16 @@ namespace SinemaOtomasyon.WinForm.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap button_film_islemleri {
+            get {
+                object obj = ResourceManager.GetObject("button_film-islemleri", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap button_giris {
             get {
                 object obj = ResourceManager.GetObject("button_giris", resourceCulture);

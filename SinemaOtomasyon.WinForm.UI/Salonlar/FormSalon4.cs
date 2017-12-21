@@ -23,8 +23,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
         private IGiseRepository _giseRepo;
         private IGosterimRepository _gosterimRepo;
         private IUnitOfWork _gosterimUOW, _koltukUOW;
-
-
+        private IBiletSatisRepository _biletSatisRepo;
 
         private Film f;
         int SeansId, SalonId, GosterimId;
@@ -45,6 +44,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             _gosterimRepo = container.Get<IGosterimRepository>();
             _gosterimUOW = container.Get<IUnitOfWork>();
             _giseRepo = container.Get<IGiseRepository>();
+            _biletSatisRepo = container.Get<IBiletSatisRepository>();
 
             this.f = f;
             this.SeansId = SeansId;
@@ -68,10 +68,12 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             txtInformation.Text = f.FilmAd + " / " + gosterimBilgi.Salon.SalonAD + " / " + "Seans: " + gosterimBilgi.Seans.SeansAD + " / ";
 
             lblTarih.Text = DateTime.Now.ToShortDateString();
+
+
         }
 
         private void KoltukKontrol()
-        {
+        {          
             IEnumerable<int> koltuklar = new List<int>();
             koltuklar = _giseRepo.GetList().Where(x => x.GosterimID == GosterimId && x.DoluMu == true).Select(x => x.KoltukID);
             if (koltuklar.Count() != 0)
@@ -82,7 +84,6 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
                     Button koltuk = new Button();
                     koltuk = (Button)Controls[koltukAd];
                     koltuk.BackColor = Color.Red;
-
                 }
             }
 
@@ -102,7 +103,6 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             lblToplamKoltuk.Text = Count.ToString();
         }
 
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -119,22 +119,7 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
                 }
                 else
                 {
-                    //for (int i = 0; i < lbKoltuklar.Items.Count; i++)
-                    //{
-                    //    /*Koltuk Rengi Değiştirme*/
-                    //    Button koltuk = new Button();
-                    //    koltuk = (Button)Controls[lbKoltuklar.Items[i].ToString()];
-                    //    koltuk.BackColor = Color.Red;
-                    //    koltuk.FlatAppearance.MouseOverBackColor = Color.Red;
-                    //    /**/
-
-                    //    /*Seçilen KoltukId'si bulunur ve veritabanından kontrol edilir.Eşleşen Id'lerin DoluMu özelliği doldurulur.*/
-                    //    string koltukAd = lbKoltuklar.Items[i].ToString();
-                    //    giseId = _giseRepo.GetList().Where(x => x.GosterimID == GosterimId && x.Koltuk.KoltukAD == koltukAd).Select(x => x.GiseID).FirstOrDefault();
-                    //    //_giseRepo.GetById(giseId).DoluMu = true;
-                    //    /**/
-                    //}
-
+                  
                     KoltukSayisiHesapla();
 
                     #region Seyirci Bilgileri
@@ -210,16 +195,21 @@ namespace SinemaOtomasyon.WinForm.UI.Salonlar
             int giseId = _giseRepo.GetList().Where(x => x.GosterimID == GosterimId && x.Koltuk.KoltukAD == SagTus).Select(x => x.GiseID).FirstOrDefault();
             _giseRepo.GetById(giseId).DoluMu = false;
 
-            if (_giseRepo.Save() > 0)
+            #region SatıldıMı ayarları
+            int biletid = _biletSatisRepo.GetList().Where(x => x.GiseID == giseId).Select(x => x.BiletID).FirstOrDefault();
+            _biletSatisRepo.GetById(biletid).Satıldı = false; 
+            #endregion
+
+            if (_giseRepo.Save() > 0 && _biletSatisRepo.Save()>0)
             {
-                MessageBox.Show("iptal edildi");
+                MessageBox.Show("Bilet iptal edildi");
                 Button koltuk = new Button();
                 koltuk = (Button)Controls[SagTus.ToString()];
                 koltuk.BackColor = Color.Gray;
             }
             else
             {
-                MessageBox.Show("başarısız");
+                MessageBox.Show("İşlem başarısız");
             }
         }
 
