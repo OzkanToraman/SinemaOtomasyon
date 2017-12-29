@@ -17,7 +17,8 @@ namespace SinemaOtomasyon.BLL.Services.Validations
             RuleFor(x => x.Yonetmen).NotEmpty().WithMessage("Yonetmen boş bırakılamaz.");
             RuleFor(x => x.Oyuncular).NotEmpty().WithMessage("Oyuncular boş bırakılamaz.");
             RuleFor(x => x.FilmSuresi_dk).NotEmpty().WithMessage("Film süresi boş bırakılamaz.");
-            RuleFor(x => x.Vizyonda).NotEmpty().WithMessage("Vizyonda mı boş bırakılamaz.");
+            RuleFor(x => x.Afis).NotEmpty().WithMessage("Lütfen bir afiş seçiniz.");
+            //RuleFor(x => x.Vizyonda).NotEmpty().WithMessage("Vizyonda mı boş bırakılamaz.");
             RuleFor(x => x.SalonID).NotEmpty().WithMessage("Salon boş bırakılamaz.");
         }
 

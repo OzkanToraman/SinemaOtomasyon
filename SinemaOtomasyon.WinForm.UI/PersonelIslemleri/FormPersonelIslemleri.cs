@@ -39,6 +39,7 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
 
         private void FormPersonelIslemleri_Load(object sender, EventArgs e)
         {
+            btnYeni.Enabled = true;
             btnKaydet.Enabled = false;
             btnGuncelle.Enabled = false;
             btnSil.Enabled = false;
@@ -179,9 +180,9 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
         private void btnKullanici_Click(object sender, EventArgs e)
         {
             FormKullaniciTanimla frmUser = new FormKullaniciTanimla();
-            frmUser.ShowDialog();
+            frmUser.ShowDialog();            
             txtUsername.Text = FormKullaniciTanimla.ad;
-
+            DGVDoldur();
         }
     }
 }

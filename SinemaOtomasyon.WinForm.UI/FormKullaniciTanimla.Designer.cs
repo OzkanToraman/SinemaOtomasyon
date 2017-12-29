@@ -209,7 +209,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
-            this.ClientSize = new System.Drawing.Size(818, 321);
+            this.ClientSize = new System.Drawing.Size(825, 359);
             this.Controls.Add(this.lblLoginID);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnSil);

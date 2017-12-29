@@ -4,8 +4,6 @@ using SinemaOtomasyon.BLL.Services.Concrete;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
 using SinemaOtomasyon.Repository.Repositories.Concretes;
-using SinemaOtomasyon.Repository.UOW.Abstract;
-using SinemaOtomasyon.Repository.UOW.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -30,7 +28,6 @@ namespace SinemaOtomasyon.WinForm.UI.Ninject
             kernel.Bind<ISalonRepository>().To<SalonRepository>();
             kernel.Bind<IKoltukRepository>().To<KoltukRepository>();
             kernel.Bind<IGosterimRepository>().To<GosterimRepository>();
-            kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
             kernel.Bind<ILoginRepository>().To<LoginRepository>();
             kernel.Bind<IGiseRepository>().To<GiseRepository>();
             kernel.Bind<ILoginService>().To<LoginService>();
@@ -43,6 +40,7 @@ namespace SinemaOtomasyon.WinForm.UI.Ninject
             kernel.Bind<IUnvanRepository>().To<UnvanRepository>();
             kernel.Bind<ICinsiyetRepository>().To<CinsiyetRepository>();
             kernel.Bind<IRoleRepository>().To<RoleRepository>();
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
 
             return kernel;
         }

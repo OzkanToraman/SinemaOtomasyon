@@ -47,7 +47,12 @@ namespace SinemaOtomasyon.WinForm.UI
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnGiris_Click(object sender, EventArgs e)
         {
             Login p = new Login();
             p.Username = txtUser.Text;
@@ -59,10 +64,10 @@ namespace SinemaOtomasyon.WinForm.UI
                 MessageBox.Show(result.Errors.FirstOrDefault().ToString());
             }
             else
-            {     
+            {
                 Login login = new Login();
-                login= _loginRepo.GetList().Where(x => x.Username == txtUser.Text && x.Password == txtPass.Text).FirstOrDefault();
-                if (login==null)
+                login = _loginRepo.Where(x => x.Username == txtUser.Text && x.Password == txtPass.Text).FirstOrDefault();
+                if (login == null)
                 {
                     MessageBox.Show("Hatalı Kullanıcı Adı ya da Şifre!", "HATA");
                     txtUser.Focus();
@@ -74,15 +79,12 @@ namespace SinemaOtomasyon.WinForm.UI
                     Username = login.Username;
                     FormParent frm = new FormParent();
                     this.Hide();
-                    frm.Show();         
+                    frm.Show();
                 }
-                
-            }     
+
+            }
         }
-        private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
+
     }
 }
 

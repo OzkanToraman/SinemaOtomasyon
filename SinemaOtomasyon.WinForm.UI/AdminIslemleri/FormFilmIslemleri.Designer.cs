@@ -69,6 +69,8 @@
             this.txtSalon = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.ofdAfisSec = new System.Windows.Forms.OpenFileDialog();
+            this.btnAfisSec = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -203,7 +205,8 @@
             // 
             this.txtAfis.Location = new System.Drawing.Point(244, 316);
             this.txtAfis.Name = "txtAfis";
-            this.txtAfis.Size = new System.Drawing.Size(122, 21);
+            this.txtAfis.ReadOnly = true;
+            this.txtAfis.Size = new System.Drawing.Size(105, 21);
             this.txtAfis.TabIndex = 7;
             // 
             // label10
@@ -470,12 +473,27 @@
             this.label19.TabIndex = 8;
             this.label19.Text = "*";
             // 
+            // ofdAfisSec
+            // 
+            this.ofdAfisSec.FileName = "openFileDialog1";
+            // 
+            // btnAfisSec
+            // 
+            this.btnAfisSec.Location = new System.Drawing.Point(345, 315);
+            this.btnAfisSec.Name = "btnAfisSec";
+            this.btnAfisSec.Size = new System.Drawing.Size(21, 23);
+            this.btnAfisSec.TabIndex = 17;
+            this.btnAfisSec.Text = ".";
+            this.btnAfisSec.UseVisualStyleBackColor = true;
+            this.btnAfisSec.Click += new System.EventHandler(this.btnAfisSec_Click);
+            // 
             // FormFilmIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.black_patterns_16;
             this.ClientSize = new System.Drawing.Size(1207, 542);
+            this.Controls.Add(this.btnAfisSec);
             this.Controls.Add(this.txtSalon);
             this.Controls.Add(this.chkVizyonKontrol);
             this.Controls.Add(this.label18);
@@ -570,5 +588,7 @@
         private System.Windows.Forms.TextBox txtSalon;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.OpenFileDialog ofdAfisSec;
+        private System.Windows.Forms.Button btnAfisSec;
     }
 }

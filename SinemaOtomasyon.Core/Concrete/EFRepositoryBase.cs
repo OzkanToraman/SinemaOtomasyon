@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace SinemaOtomasyon.Core.Concrete
 {
@@ -62,9 +63,9 @@ namespace SinemaOtomasyon.Core.Concrete
             return _dbSet.Find(id);
         }
 
-        public List<T> GetList()
+        public IEnumerable<T> GetList()
         {
-            return _dbSet.ToList();
+            return _dbSet.AsEnumerable();
         }
 
         public int Save()
@@ -76,6 +77,16 @@ namespace SinemaOtomasyon.Core.Concrete
         {
             _dbContext.Entry(model).State = EntityState.Modified;
             //_dbContext.SaveChanges();
+        }
+
+        public IEnumerable<T> Where(Expression<Func<T, bool>> lambda)
+        {
+            return _dbSet.Where(lambda).AsEnumerable<T>();
+        }
+
+        public IQueryable<T> WhereByQuery(Expression<Func<T, bool>> lambda)
+        {
+            return _dbSet.Where(lambda).AsQueryable<T>();
         }
     }
 }

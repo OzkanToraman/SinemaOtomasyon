@@ -145,5 +145,7 @@ namespace SinemaOtomasyon.WinForm.UI
             txtSifre.Clear();
 
         }
+
+
     }
 }

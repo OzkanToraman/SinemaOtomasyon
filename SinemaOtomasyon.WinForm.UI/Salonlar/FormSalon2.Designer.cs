@@ -2429,7 +2429,6 @@
             // 
             // txtAd
             // 
-            this.txtAd.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtAd.Font = new System.Drawing.Font("Arial", 9F);
             this.txtAd.Location = new System.Drawing.Point(453, 593);
             this.txtAd.Name = "txtAd";
@@ -2489,7 +2488,6 @@
             // 
             // txtSoyad
             // 
-            this.txtSoyad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSoyad.Font = new System.Drawing.Font("Arial", 9F);
             this.txtSoyad.Location = new System.Drawing.Point(453, 620);
             this.txtSoyad.Name = "txtSoyad";

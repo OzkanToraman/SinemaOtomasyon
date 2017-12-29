@@ -107,7 +107,7 @@
     <Property Name="Ad" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Soyad" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="SicilNo" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Telefon" Type="varchar" MaxLength="50" />
+    <Property Name="Telefon" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Adres" Type="varchar" MaxLength="250" Nullable="false" />
     <Property Name="CalismaHali" Type="bit" Nullable="false" />
     <Property Name="UnvanID" Type="int" Nullable="false" />

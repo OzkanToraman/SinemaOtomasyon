@@ -244,6 +244,7 @@
   <ItemGroup>
     <Content Include="Resources\Afisler\1450733.jpg" />
     <Content Include="Resources\Afisler\aile-arasinda-1510556926.jpg" />
+    <None Include="Resources\button_oturumu-kapat.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

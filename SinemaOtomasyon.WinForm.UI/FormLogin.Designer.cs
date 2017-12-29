@@ -32,10 +32,9 @@
             this.txtPass = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pbLogin = new System.Windows.Forms.PictureBox();
+            this.btnGiris = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUser
@@ -85,29 +84,34 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // pbLogin
+            // btnGiris
             // 
-            this.pbLogin.BackColor = System.Drawing.Color.Transparent;
-            this.pbLogin.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.button_giris;
-            this.pbLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbLogin.Location = new System.Drawing.Point(612, 397);
-            this.pbLogin.Name = "pbLogin";
-            this.pbLogin.Size = new System.Drawing.Size(100, 50);
-            this.pbLogin.TabIndex = 5;
-            this.pbLogin.TabStop = false;
-            this.pbLogin.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.btnGiris.BackColor = System.Drawing.Color.Transparent;
+            this.btnGiris.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.button_giris;
+            this.btnGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnGiris.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGiris.FlatAppearance.BorderSize = 0;
+            this.btnGiris.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnGiris.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGiris.Location = new System.Drawing.Point(616, 392);
+            this.btnGiris.Name = "btnGiris";
+            this.btnGiris.Size = new System.Drawing.Size(100, 50);
+            this.btnGiris.TabIndex = 6;
+            this.btnGiris.UseVisualStyleBackColor = false;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.FotoJet;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1132, 506);
-            this.Controls.Add(this.pbLogin);
+            this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtPass);
@@ -123,7 +127,6 @@
             this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,6 +137,6 @@
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pbLogin;
+        private System.Windows.Forms.Button btnGiris;
     }
 }

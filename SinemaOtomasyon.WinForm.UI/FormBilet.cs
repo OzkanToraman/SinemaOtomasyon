@@ -25,7 +25,7 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private Seyirci s;
         string filmAd;
-        List<string> koltuklar;
+        ICollection<string> koltuklar;
         Gosterim gosterim;
         int biletTur;
         string kullanici;
@@ -37,7 +37,7 @@ namespace SinemaOtomasyon.WinForm.UI
             InitializeComponent();
         }
 
-        public FormBilet(Seyirci s, string filmAd, List<string> koltuklar, Gosterim gosterim, int biletTur)
+        public FormBilet(Seyirci s, string filmAd, ICollection<string> koltuklar, Gosterim gosterim, int biletTur)
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
             _giseRepo = container.Get<IGiseRepository>();
@@ -113,12 +113,15 @@ namespace SinemaOtomasyon.WinForm.UI
                 foreach (var item in koltuklar)
                 {
                     koltukAd = item.ToString();
-                    giseId = _giseRepo.GetList().Where(x => x.GosterimID == gosterim.GosterimID && x.Koltuk.KoltukAD == koltukAd).Select(x => x.GiseID).FirstOrDefault();
-                    _giseRepo.GetById(giseId).DoluMu = true;
-                    if (_giseRepo.Save() > 0)
-                    {
-                        MessageBox.Show("İşlem başarıyla gerçekleşti!");
-                    }
+                    giseId = _giseRepo.Where(x => x.GosterimID == gosterim.GosterimID && x.Koltuk.KoltukAD == koltukAd).Select(x => x.GiseID).FirstOrDefault();
+                    Gise g = new Gise();
+                    g = _giseRepo.GetById(giseId);
+                    g.DoluMu = true;
+                    g.Tarih = DateTime.Now.Date;                 
+                }
+                if (_giseRepo.Save() > 0)
+                {
+                    MessageBox.Show("İşlem başarıyla gerçekleşti!");
                 }
                 /**/
 

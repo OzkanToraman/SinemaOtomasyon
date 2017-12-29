@@ -16,24 +16,56 @@ namespace SinemaOtomasyon.WinForm.UI
 {
     public partial class FormFatura : Form
     {
-
+        private IUnitOfWork _uow;
         private IFaturaRepository _faturaRepo;
 
         public FormFatura()
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
             _faturaRepo = container.Get<IFaturaRepository>();
+            _uow = container.Get<IUnitOfWork>();
             InitializeComponent();
         }
 
         private void FormFatura_Load(object sender, EventArgs e)
         {
+            cbBiletSatis.SelectedIndex = 0;
             DGVDoldur();
         }
 
         private void DGVDoldur()
         {
-            dgvFatura.DataSource = _faturaRepo.GetList().OrderByDescending(x => x.FaturaID).Select(x => new
+            //_uow.GetRepo<Fatura>().GetList().Where(x=>x.BiletSatis.Satıldı == true).OrderByDescending(x=>x.FaturaID).Select(x => new
+            //{
+            //    FaturaNo = x.FaturaID,
+            //    PersonelAd = x.Personel.Ad,
+            //    PersonelSoyad = x.Personel.Soyad,
+            //    Odeme = x.OdemeSekli.OdemeSekli1,
+            //    x.BiletSatis.Gise.Gosterim.Salon.SalonAD,
+            //    x.BiletSatis.Gise.Gosterim.Seans.SeansAD,
+            //    x.BiletSatis.Gise.Koltuk.KoltukAD,
+            //    x.BiletSatis.Seyirci.SeyirciAd,
+            //    x.BiletSatis.Seyirci.SeyirciSoyad,
+            //    x.FaturaTarih
+
+            //}).ToList();
+
+            //_faturaRepo.WhereByQuery(x => x.BiletSatis.Satıldı == true).OrderByDescending(x => x.FaturaID).Select(x => new
+            //{
+            //    FaturaNo = x.FaturaID,
+            //    PersonelAd = x.Personel.Ad,
+            //    PersonelSoyad = x.Personel.Soyad,
+            //    Odeme = x.OdemeSekli.OdemeSekli1,
+            //    x.BiletSatis.Gise.Gosterim.Salon.SalonAD,
+            //    x.BiletSatis.Gise.Gosterim.Seans.SeansAD,
+            //    x.BiletSatis.Gise.Koltuk.KoltukAD,
+            //    x.BiletSatis.Seyirci.SeyirciAd,
+            //    x.BiletSatis.Seyirci.SeyirciSoyad,
+            //    x.FaturaTarih
+
+            //}).AsQueryable() ;
+
+            dgvFatura.DataSource = _faturaRepo.GetList().Where(x => x.BiletSatis.Satıldı == true).OrderByDescending(x => x.FaturaID).Select(x => new
             {
                 FaturaNo = x.FaturaID,
                 PersonelAd = x.Personel.Ad,
@@ -43,7 +75,8 @@ namespace SinemaOtomasyon.WinForm.UI
                 x.BiletSatis.Gise.Gosterim.Seans.SeansAD,
                 x.BiletSatis.Gise.Koltuk.KoltukAD,
                 x.BiletSatis.Seyirci.SeyirciAd,
-                x.BiletSatis.Seyirci.SeyirciSoyad
+                x.BiletSatis.Seyirci.SeyirciSoyad,
+                x.FaturaTarih
 
             }).ToList();
         }
@@ -53,27 +86,91 @@ namespace SinemaOtomasyon.WinForm.UI
             if (string.IsNullOrEmpty(txtFaturaNo.Text) == false)
             {
                 int faturaId = Convert.ToInt32(txtFaturaNo.Text);
-                var sorgu = _faturaRepo.GetList().Where(x=>x.FaturaID==faturaId).ToList();
-                    dgvFatura.DataSource = sorgu.Select(x => new
-                    {
-                        FaturaNo = x.FaturaID,
-                        PersonelAd = x.Personel.Ad,
-                        PersonelSoyad = x.Personel.Soyad,
-                        Odeme = x.OdemeSekli.OdemeSekli1,
-                        x.BiletSatis.Gise.Gosterim.Salon.SalonAD,
-                        x.BiletSatis.Gise.Gosterim.Seans.SeansAD,
-                        x.BiletSatis.Gise.Koltuk.KoltukAD,
-                        x.BiletSatis.Seyirci.SeyirciAd,
-                        x.BiletSatis.Seyirci.SeyirciSoyad
+                var sorgu = _faturaRepo.WhereByQuery(x => x.FaturaID == faturaId).AsQueryable();
+                dgvFatura.DataSource = sorgu.Select(x => new
+                {
+                    FaturaNo = x.FaturaID,
+                    PersonelAd = x.Personel.Ad,
+                    PersonelSoyad = x.Personel.Soyad,
+                    Odeme = x.OdemeSekli.OdemeSekli1,
+                    x.BiletSatis.Gise.Gosterim.Salon.SalonAD,
+                    x.BiletSatis.Gise.Gosterim.Seans.SeansAD,
+                    x.BiletSatis.Gise.Koltuk.KoltukAD,
+                    x.BiletSatis.Seyirci.SeyirciAd,
+                    x.BiletSatis.Seyirci.SeyirciSoyad,
+                    x.FaturaTarih,
 
-                    }).ToList();
-                }          
+                }).ToList() ;
+            }
             else
             {
                 DGVDoldur();
             }
+        }
 
+        private void dtpTarih_ValueChanged(object sender, EventArgs e)
+        {
+            txtFaturaNo.Clear();
+            int biletSatildiMi = Convert.ToInt32(lblBiletSatis.Text);
+            var sorgu = _faturaRepo.GetList().Where(x => x.FaturaTarih <= dtpTarih.Value&&x.BiletSatis.Satıldı==Convert.ToBoolean(biletSatildiMi)).OrderByDescending(x => x.FaturaTarih).ToList();
+            dgvFatura.DataSource = sorgu.Select(x => new
+            {
+                FaturaNo = x.FaturaID,
+                PersonelAd = x.Personel.Ad,
+                PersonelSoyad = x.Personel.Soyad,
+                Odeme = x.OdemeSekli.OdemeSekli1,
+                x.BiletSatis.Gise.Gosterim.Salon.SalonAD,
+                x.BiletSatis.Gise.Gosterim.Seans.SeansAD,
+                x.BiletSatis.Gise.Koltuk.KoltukAD,
+                x.BiletSatis.Seyirci.SeyirciAd,
+                x.BiletSatis.Seyirci.SeyirciSoyad,
+                x.FaturaTarih,
 
+            }).ToList();
+        }
+
+        private void cbBiletSatis_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbBiletSatis.SelectedIndex==1)
+            {
+                lblBiletSatis.Text = "0";
+                int biletSatildiMi = Convert.ToInt32(lblBiletSatis.Text);
+                var sorgu = _faturaRepo.GetList().Where(x => x.FaturaTarih <= dtpTarih.Value && x.BiletSatis.Satıldı == Convert.ToBoolean(biletSatildiMi)).OrderByDescending(x => x.FaturaTarih).ToList();
+                dgvFatura.DataSource = sorgu.Select(x => new
+                {
+                    FaturaNo = x.FaturaID,
+                    PersonelAd = x.Personel.Ad,
+                    PersonelSoyad = x.Personel.Soyad,
+                    Odeme = x.OdemeSekli.OdemeSekli1,
+                    x.BiletSatis.Gise.Gosterim.Salon.SalonAD,
+                    x.BiletSatis.Gise.Gosterim.Seans.SeansAD,
+                    x.BiletSatis.Gise.Koltuk.KoltukAD,
+                    x.BiletSatis.Seyirci.SeyirciAd,
+                    x.BiletSatis.Seyirci.SeyirciSoyad,
+                    x.FaturaTarih,
+
+                }).ToList();
+            }
+            else
+            {
+                lblBiletSatis.Text = "1";
+                int biletSatildiMi = Convert.ToInt32(lblBiletSatis.Text);
+                var sorgu = _faturaRepo.GetList().Where(x => x.FaturaTarih <= dtpTarih.Value && x.BiletSatis.Satıldı == Convert.ToBoolean(biletSatildiMi)).OrderByDescending(x => x.FaturaTarih).ToList();
+                dgvFatura.DataSource = sorgu.Select(x => new
+                {
+                    FaturaNo = x.FaturaID,
+                    PersonelAd = x.Personel.Ad,
+                    PersonelSoyad = x.Personel.Soyad,
+                    Odeme = x.OdemeSekli.OdemeSekli1,
+                    x.BiletSatis.Gise.Gosterim.Salon.SalonAD,
+                    x.BiletSatis.Gise.Gosterim.Seans.SeansAD,
+                    x.BiletSatis.Gise.Koltuk.KoltukAD,
+                    x.BiletSatis.Seyirci.SeyirciAd,
+                    x.BiletSatis.Seyirci.SeyirciSoyad,
+                    x.FaturaTarih,
+
+                }).ToList();
+            }
         }
     }
 }

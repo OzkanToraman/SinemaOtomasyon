@@ -18,11 +18,15 @@ namespace SinemaOtomasyon.WinForm.UI
     public partial class FormParent : Form
     {
         private IPersonelRepository _personelRepo;
+        private IFilmRepository _filmRepo;
+        private ISalonRepository _salonRepo;
 
         public FormParent()
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
             _personelRepo = container.Get<IPersonelRepository>();
+            _filmRepo = container.Get<IFilmRepository>();
+            _salonRepo = container.Get<ISalonRepository>();
             InitializeComponent();
         }
 
@@ -37,7 +41,22 @@ namespace SinemaOtomasyon.WinForm.UI
                 btnPersonelslemleri.Enabled = false;
             }
             #endregion
+
+            BosalacakSalonKontrol();
             lblUsername.Text = FormLogin.Username;
+        }
+
+        private void BosalacakSalonKontrol()
+        {
+            var salonkontrol = _filmRepo.GetList().Where(x => x.Vizyonda == true && x.VizyonCksTarih < DateTime.Now.Date).Select(x => new { salonid = x.Salon.SalonID }).ToList();
+            foreach (var salloon in salonkontrol)
+            {
+                _salonRepo.GetById(salloon.salonid).DoluMu = false;
+                if (_salonRepo.Save() > 0)
+                {
+                    MessageBox.Show(salloon.salonid + " numaralı salon boşalmıştır.");
+                }
+            }
         }
 
         private void btnFilmIslemleri_Click(object sender, EventArgs e)

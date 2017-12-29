@@ -41,6 +41,7 @@
             // 
             // btnFilmIslemleri
             // 
+            this.btnFilmIslemleri.AutoEllipsis = true;
             this.btnFilmIslemleri.BackColor = System.Drawing.Color.Transparent;
             this.btnFilmIslemleri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnFilmIslemleri.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -147,13 +148,20 @@
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BackgroundImage = global::SinemaOtomasyon.WinForm.UI.Properties.Resources.button_oturumu_kapat;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Arial", 8.25F);
-            this.btnExit.Location = new System.Drawing.Point(1146, 727);
+            this.btnExit.Location = new System.Drawing.Point(1121, 719);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(109, 23);
+            this.btnExit.Size = new System.Drawing.Size(143, 45);
             this.btnExit.TabIndex = 4;
-            this.btnExit.Text = "Oturum Kapat";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FormParent

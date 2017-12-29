@@ -2180,7 +2180,6 @@
             // 
             // txtAd
             // 
-            this.txtAd.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.txtAd, "txtAd");
             this.txtAd.Name = "txtAd";
             // 
@@ -2217,7 +2216,6 @@
             // 
             // txtSoyad
             // 
-            this.txtSoyad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.txtSoyad, "txtSoyad");
             this.txtSoyad.Name = "txtSoyad";
             // 

@@ -425,6 +425,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormBilet";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bilet";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBilet_FormClosing);
             this.Load += new System.EventHandler(this.FormBilet_Load);

@@ -17,11 +17,12 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
 {
     public partial class FormFilmIslemleri : Form
     {
+        
         private IFilmRepository _filmRepo;
         private IFilmTuruRepository _filmTuruRepo;
         private ISalonRepository _salonRepo;
         private IFilmService _filmService;
-        
+
 
         public FormFilmIslemleri()
         {
@@ -43,7 +44,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
 
             #region Salon Türü Doldurma
             //var doluSalonlar = _filmRepo.GetList().Where(x => x.Vizyonda == true).Select(x => x.SalonID);
-            cbSalon.DataSource= _salonRepo.GetList().Select(x=>new { x.SalonID, x.SalonAD }).ToList();
+            cbSalon.DataSource = _salonRepo.GetList().Select(x => new { x.SalonID, x.SalonAD }).ToList();
             cbSalon.DisplayMember = "SalonAD";
             cbSalon.ValueMember = "SalonID";
             txtSalon.Text = cbSalon.Text;
@@ -60,7 +61,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             dtpVizyonGiris.MinDate = DateTime.Today.Date;
             dtpVizyonCikis.MinDate = dtpVizyonGiris.Value;
             txtVizyonGiris.Enabled = false;
-            txtVizyonCikis.Enabled= false;
+            txtVizyonCikis.Enabled = false;
             txtVizyonGiris.Text = dtpVizyonGiris.Value.ToShortDateString();
             txtVizyonCikis.Text = dtpVizyonCikis.Value.ToShortDateString();
             dtpVizyonCikis.Enabled = false;
@@ -70,6 +71,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
 
             DataGridViewDoldur();
             VizyondanCikicakFilmKontrol();
+
         }
 
         private void VizyondanCikicakFilmKontrol()
@@ -89,7 +91,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             {
                 _filmRepo.GetById(filmkontrol).Vizyonda = false;
                 _filmRepo.Save();
-            } 
+            }
             #endregion
         }
 
@@ -132,12 +134,11 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             #endregion
 
             #region Yeni Film için Salon Kontrolü 
-            //cbSalon.DataSource = _filmRepo.GetList().Where(x=>x.VizyonGrsTarih==DateTime.Now.Date).Select(x => new { salonid = x.Salon.SalonID, salonad = x.Salon.SalonAD }).ToList();
             txtSalon.Clear();
             cbSalon.DataSource = _salonRepo.GetList().Where(x => x.DoluMu == false).Select(x => new { x.SalonID, x.SalonAD }).ToList();
             cbSalon.DisplayMember = "SalonAD";
             cbSalon.ValueMember = "SalonID";
-            if (cbSalon.Items.Count==0)
+            if (cbSalon.Items.Count == 0)
             {
                 MessageBox.Show("Boş gösterim bulunmamaktadır!");
             }
@@ -169,21 +170,27 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             f.FilmTurID = (int)cbFilmTur.SelectedValue;
             f.SalonID = (int)cbSalon.SelectedValue;
             f.Vizyonda = chkVizyonda.Checked;
+            f.Afis = txtAfis.Text;
 
             var result = _filmService.SaveFilm(f);
-            MessageBox.Show(result.Errors.FirstOrDefault());
+
             if (result.IsValid)
             {
+                MessageBox.Show("Film başarıyla eklendi.");
                 DataGridViewDoldur();
                 Temizle();
                 btnYeni.Enabled = true;
-            }          
+            }
+            else
+            {
+                MessageBox.Show(result.Errors.FirstOrDefault());
+            }
         }
 
         private void btnGuncelle_Click(object sender, EventArgs e)
-        {           
+        {
             Film f = new Film();
-            f= _filmRepo.GetById((int)dgvFilmler.CurrentRow.Cells[0].Value); 
+            f = _filmRepo.GetById((int)dgvFilmler.CurrentRow.Cells[0].Value);
             f.FilmAd = txtFilmAd.Text;
             f.Yonetmen = txtYonetmen.Text;
             f.Oyuncular = txtOyuncular.Text;
@@ -195,12 +202,13 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             f.Vizyonda = chkVizyonda.Checked;
             f.Afis = txtAfis.Text;
 
-            if (_filmRepo.Save()>0)
+            if (_filmRepo.Save() > 0)
             {
                 MessageBox.Show("Başarıyla güncellendi");
+                chkVizyonda.Checked = false;
                 DataGridViewDoldur();
                 Temizle();
-            }      
+            }
         }
 
         private void dgvFilmler_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -221,9 +229,9 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             #region Alan Kontrolü
             cbSalon.Enabled = false;
             dtpVizyonGiris.Enabled = false;
-            dtpVizyonCikis.Enabled = false;
+            dtpVizyonCikis.Enabled = true;
             txtVizyonGiris.Enabled = false;
-            txtVizyonCikis.Enabled = false; 
+            txtVizyonCikis.Enabled = false;
             #endregion
 
             int id = (int)dgvFilmler.CurrentRow.Cells[0].Value;
@@ -276,7 +284,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
                     x.VizyonGrsTarih,
                     x.VizyonCksTarih,
                     TurAd = x.FilmTuru.FilmTurAd,
-                    Salon=x.Salon.SalonAD
+                    Salon = x.Salon.SalonAD
                 }).ToList();
             }
             else
@@ -294,7 +302,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
                     Salon = x.Salon.SalonAD
                 }).ToList();
             }
-          
+
         }
 
         private void chkVizyonKontrol_CheckedChanged(object sender, EventArgs e)
@@ -329,12 +337,25 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
                     Salon = x.Salon.SalonAD
                 }).ToList();
             }
-           
+
         }
 
         private void cbSalon_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtSalon.Text = cbSalon.Text;
+        }
+
+        private void btnAfisSec_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.DefaultExt = "jpg";
+            dialog.Title = "Görüntü dosyası seçiniz.";
+            dialog.Filter = "Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*";
+            dialog.InitialDirectory = @"C:\";
+            if (dialog.ShowDialog() == DialogResult.OK) // Test result.
+            {
+                txtAfis.Text = dialog.FileName;
+            }
         }
     }
 }
