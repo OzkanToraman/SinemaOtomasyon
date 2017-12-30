@@ -64,9 +64,8 @@ namespace SinemaOtomasyon.WinForm.UI
                 MessageBox.Show(result.Errors.FirstOrDefault().ToString());
             }
             else
-            {
-                Login login = new Login();
-                login = _loginRepo.Where(x => x.Username == txtUser.Text && x.Password == txtPass.Text).FirstOrDefault();
+            {               
+                Login login = _loginRepo.Where(x => x.Username == txtUser.Text && x.Password == txtPass.Text).FirstOrDefault();
                 if (login == null)
                 {
                     MessageBox.Show("Hatalı Kullanıcı Adı ya da Şifre!", "HATA");
