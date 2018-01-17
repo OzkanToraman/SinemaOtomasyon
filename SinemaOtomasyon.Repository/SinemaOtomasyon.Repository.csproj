@@ -66,7 +66,6 @@
     <Compile Include="Repositories\Abstracts\ISalonRepository.cs" />
     <Compile Include="Repositories\Abstracts\ISeansRepository.cs" />
     <Compile Include="Repositories\Abstracts\ISeyirciRepository.cs" />
-    <Compile Include="Repositories\Abstracts\IUnitOfWork.cs" />
     <Compile Include="Repositories\Abstracts\IUnvanRepository.cs" />
     <Compile Include="Repositories\Concretes\BiletSatisRepository.cs" />
     <Compile Include="Repositories\Concretes\BiletTuruRepository.cs" />
@@ -84,8 +83,9 @@
     <Compile Include="Repositories\Concretes\SalonRepository.cs" />
     <Compile Include="Repositories\Concretes\SeansRepository.cs" />
     <Compile Include="Repositories\Concretes\SeyirciRepository.cs" />
-    <Compile Include="Repositories\Concretes\UnitOfWork.cs" />
     <Compile Include="Repositories\Concretes\UnvanRepository.cs" />
+    <Compile Include="UOW\Abstract\IUnitOfWork.cs" />
+    <Compile Include="UOW\Concrete\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

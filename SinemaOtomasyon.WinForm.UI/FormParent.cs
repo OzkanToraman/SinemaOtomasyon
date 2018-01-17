@@ -1,5 +1,7 @@
 ﻿using Ninject;
+using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
+using SinemaOtomasyon.Repository.UOW.Abstract;
 using SinemaOtomasyon.WinForm.UI.AdminIslemleri;
 using SinemaOtomasyon.WinForm.UI.Ninject;
 using SinemaOtomasyon.WinForm.UI.PersonelIslemleri;
@@ -17,23 +19,24 @@ namespace SinemaOtomasyon.WinForm.UI
 {
     public partial class FormParent : Form
     {
-        private IPersonelRepository _personelRepo;
-        private IFilmRepository _filmRepo;
-        private ISalonRepository _salonRepo;
+
+        private IUnitOfWork _uow;
 
         public FormParent()
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
-            _personelRepo = container.Get<IPersonelRepository>();
-            _filmRepo = container.Get<IFilmRepository>();
-            _salonRepo = container.Get<ISalonRepository>();
+            _uow = container.Get<IUnitOfWork>();
             InitializeComponent();
         }
 
         private void FormParent_Load(object sender, EventArgs e)
         {
             #region GirişYapanKullanıcıTürüKontrolü
-            int role = _personelRepo.GetList().Where(x => x.Login.Username == FormLogin.Username).Select(x => x.Login.Role.RoleID).FirstOrDefault();
+            int role = _uow.GetRepo<Personel>()
+                .Where(x => x.Login.Username == FormLogin.Username)
+                .Select(x => x.Login.Role.RoleID)
+                .FirstOrDefault();
+
             if (role != 1)
             {
                 btnFilmIslemleri.Enabled = false;
@@ -42,30 +45,33 @@ namespace SinemaOtomasyon.WinForm.UI
             }
             #endregion
 
-            BosalacakSalonKontrol();
+            //BosalacakSalonKontrol();
             lblUsername.Text = FormLogin.Username;
         }
 
-        private void BosalacakSalonKontrol()
-        {
-            var salonkontrol = _filmRepo.GetList().Where(x => x.Vizyonda == true && x.VizyonCksTarih < DateTime.Now.Date).Select(x => new { salonid = x.Salon.SalonID }).ToList();
-            foreach (var salloon in salonkontrol)
-            {
-                _salonRepo.GetById(salloon.salonid).DoluMu = false;
-                if (_salonRepo.Save() > 0)
-                {
-                    MessageBox.Show(salloon.salonid + " numaralı salon boşalmıştır.");
-                }
-            }
-        }
+        //private void BosalacakSalonKontrol()
+        //{
+        //    var salonkontrol = _uow.GetRepo<Film>()
+        //        .Where(x => x.Vizyonda == true && x.VizyonCksTarih < DateTime.Now.Date)
+        //        .Select(x => new { salonid = x.Salon.SalonID }).ToList();
 
-        private void btnFilmIslemleri_Click(object sender, EventArgs e)
+        //    foreach (var salloon in salonkontrol)
+        //    {
+        //        _uow.GetRepo<Salon>().GetById(salloon.salonid).DoluMu = false;
+        //        if (_uow.Commit() > 0)
+        //        {
+        //            MessageBox.Show(salloon.salonid + " numaralı salon boşalmıştır.");
+        //        }
+        //    }
+        //}
+
+        private void button3_Click(object sender, EventArgs e)
         {
             FormFilmSeansSalonSec frmFilm = new FormFilmSeansSalonSec();
             frmFilm.ShowDialog();
         }
 
-        private void btnFilmIslemleri_Click_1(object sender, EventArgs e)
+        private void btnFilmIslemleri_Click(object sender, EventArgs e)
         {
             FormFilmIslemleri frmFilmIslemleri = new FormFilmIslemleri();
             frmFilmIslemleri.ShowDialog();

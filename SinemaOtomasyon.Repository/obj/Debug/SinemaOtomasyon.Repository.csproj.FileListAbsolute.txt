@@ -54,3 +54,17 @@ C:\Users\Ozkan\Desktop\backup_projects\SinemaOtomasyon\SinemaOtomasyon.Repositor
 C:\Users\Ozkan\Desktop\backup_projects\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.csprojResolveAssemblyReference.cache
 C:\Users\Ozkan\Desktop\backup_projects\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.dll
 C:\Users\Ozkan\Desktop\backup_projects\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.pdb
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.Repository.dll.config
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.Repository.dll
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.Repository.pdb
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\EntityFramework.dll
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.Core.dll
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.DAL.dll
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.Core.pdb
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\SinemaOtomasyon.DAL.pdb
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\EntityFramework.xml
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.csprojResolveAssemblyReference.cache
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.dll
+C:\Users\ozkn\Desktop\SinemaOtomasyon\SinemaOtomasyon.Repository\obj\Debug\SinemaOtomasyon.Repository.pdb

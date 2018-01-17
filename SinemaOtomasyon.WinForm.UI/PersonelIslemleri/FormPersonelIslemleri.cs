@@ -3,6 +3,7 @@ using SinemaOtomasyon.BLL.Services.Abstract;
 using SinemaOtomasyon.BLL.Services.Validations;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
+using SinemaOtomasyon.Repository.UOW.Abstract;
 using SinemaOtomasyon.WinForm.UI.Ninject;
 using System;
 using System.Collections.Generic;
@@ -20,19 +21,17 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
     {
         
         private IPersonelRepository _personelRepo;
-        private IUnvanRepository _unvanRepo;
-        private ICinsiyetRepository _cinsiyetRepo;
         private IPersonelService _personelService;
         private ILoginRepository _loginRepo;
+        private IUnitOfWork _uow;
 
         public FormPersonelIslemleri()
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
             _personelRepo = container.Get<IPersonelRepository>();
-            _unvanRepo = container.Get<IUnvanRepository>();
-            _cinsiyetRepo = container.Get<ICinsiyetRepository>();
             _personelService = container.Get<IPersonelService>();
             _loginRepo = container.Get<ILoginRepository>();
+            _uow = container.Get<IUnitOfWork>();
 
             InitializeComponent();
         }
@@ -44,12 +43,12 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
             btnGuncelle.Enabled = false;
             btnSil.Enabled = false;
             #region UnvanDoldurma
-            cbUnvan.DataSource = _unvanRepo.GetList().Select(x => new { id = x.UnvanID, ad = x.UnvanAD }).ToList();
+            cbUnvan.DataSource = _uow.GetRepo<Unvan>().GetList().Select(x => new { id = x.UnvanID, ad = x.UnvanAD }).ToList();
             cbUnvan.DisplayMember = "ad";
             cbUnvan.ValueMember = "id";
             #endregion
             #region CinsiyetDoldurma
-            cbCinsiyet.DataSource = _cinsiyetRepo.GetList().Select(x => new { ad = x.CinsiyetAD, id = x.CinsiyetID }).ToList();
+            cbCinsiyet.DataSource = _uow.GetRepo<Cinsiyet>().GetList().Select(x => new { ad = x.CinsiyetAD, id = x.CinsiyetID }).ToList();
             cbCinsiyet.DisplayMember = "ad";
             cbCinsiyet.ValueMember = "id";
             #endregion
@@ -58,7 +57,7 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
 
         private void DGVDoldur()
         {
-            dgvPersonel.DataSource = _personelRepo.GetList().Select(x => new
+            dgvPersonel.DataSource = _uow.GetRepo<Personel>().GetList().Select(x => new
             {
                 x.PersonelID,
                 x.Ad,
@@ -92,7 +91,7 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
             #endregion
 
             Personel p = new Personel();
-            p = _personelRepo.GetById((int)dgvPersonel.CurrentRow.Cells[0].Value);
+            p = _uow.GetRepo<Personel>().GetById((int)dgvPersonel.CurrentRow.Cells[0].Value);
             txtAd.Text = p.Ad;
             txtSoyad.Text = p.Soyad;
             txtKimlikNo.Text = p.SicilNo;
@@ -144,7 +143,7 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
             Personel personel = new Personel();
-            personel = _personelRepo.GetById((int)dgvPersonel.CurrentRow.Cells[0].Value);
+            personel = _uow.GetRepo<Personel>().GetById((int)dgvPersonel.CurrentRow.Cells[0].Value);
             personel.Ad = txtAd.Text;
             personel.Soyad = txtSoyad.Text;
             personel.SicilNo = txtKimlikNo.Text;
@@ -155,7 +154,7 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
             personel.CinsiyetID = (int)cbCinsiyet.SelectedValue;
             personel.LoginID = FormKullaniciTanimla.log;
 
-            if (_personelRepo.Save()>0)
+            if (_uow.Commit()>0)
             {
                 MessageBox.Show("Başarıyla güncellendi.");
                 DGVDoldur();
@@ -167,7 +166,7 @@ namespace SinemaOtomasyon.WinForm.UI.PersonelIslemleri
         private void btnSil_Click(object sender, EventArgs e)
         {
             _personelRepo.Delete((int)dgvPersonel.CurrentRow.Cells[0].Value);
-            if (_personelRepo.Save() > 0)
+            if (_uow.Commit() > 0)
             {
                 MessageBox.Show("Silindi!");
                 DGVDoldur();

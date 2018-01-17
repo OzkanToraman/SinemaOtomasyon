@@ -55,7 +55,7 @@
             this.btnFilmIslemleri.TabIndex = 0;
             this.btnFilmIslemleri.Text = "Film İşlemleri";
             this.btnFilmIslemleri.UseVisualStyleBackColor = false;
-            this.btnFilmIslemleri.Click += new System.EventHandler(this.btnFilmIslemleri_Click_1);
+            this.btnFilmIslemleri.Click += new System.EventHandler(this.btnFilmIslemleri_Click);
             // 
             // btnPersonelslemleri
             // 
@@ -81,7 +81,7 @@
             this.button3.TabIndex = 0;
             this.button3.Text = "Bilet Satış";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.btnFilmIslemleri_Click);
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnGosterimIslemleri
             // 

@@ -16,14 +16,13 @@ namespace SinemaOtomasyon.Core.Abstract
 
         void Delete(int id);
 
-        IEnumerable<T> GetList();
-
-        T GetById(int id);
+        List<T> GetList();
 
         IEnumerable<T> Where(Expression<Func<T, bool>> lambda);
 
         IQueryable<T> WhereByQuery(Expression<Func<T, bool>> lambda);
 
-        int Save();
+        T GetById(int id);
+
     }
 }

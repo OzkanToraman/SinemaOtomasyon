@@ -2,6 +2,7 @@
 using SinemaOtomasyon.BLL.Services.Abstract;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
+using SinemaOtomasyon.Repository.UOW.Abstract;
 using SinemaOtomasyon.WinForm.UI.Ninject;
 using System;
 using System.Collections.Generic;
@@ -19,16 +20,13 @@ namespace SinemaOtomasyon.WinForm.UI
     {
         public static int log;
         public static string ad;
-        private ILoginRepository _loginRepo;
-        private IRoleRepository _roleRepo;
         private ILoginService _loginService;
-
+        private IUnitOfWork _uow;
         public FormKullaniciTanimla()
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
-            _loginRepo = container.Get<ILoginRepository>();
-            _roleRepo = container.Get<IRoleRepository>();
             _loginService = container.Get<ILoginService>();
+            _uow = container.Get<IUnitOfWork>();
 
             InitializeComponent();
         }
@@ -39,7 +37,7 @@ namespace SinemaOtomasyon.WinForm.UI
             btnEkle.Enabled = false;
             btnSil.Enabled = false;
             #region Rol Doldur
-            cbRole.DataSource = _roleRepo.GetList();
+            cbRole.DataSource = _uow.GetRepo<Role>().GetList();
             cbRole.DisplayMember = "RoleAD";
             cbRole.ValueMember = "RoleID";
             #endregion
@@ -48,7 +46,7 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void DGVDoldur()
         {
-            dgvKullanicilar.DataSource = _loginRepo.GetList().Select(x => new
+            dgvKullanicilar.DataSource = _uow.GetRepo<Login>().GetList().Select(x => new
             {
                 x.LoginID,
                 x.Username,
@@ -69,7 +67,7 @@ namespace SinemaOtomasyon.WinForm.UI
             var result = _loginService.Login(login);
             if (result.IsValid)
             {
-                int loginId = _loginRepo.GetList().OrderByDescending(x => x.LoginID).Select(x => x.LoginID).FirstOrDefault();
+                int loginId = _uow.GetRepo<Login>().GetList().OrderByDescending(x => x.LoginID).Select(x => x.LoginID).FirstOrDefault();
                 log = loginId;
                 ad = txtAd.Text;
                 this.Close();
@@ -96,7 +94,7 @@ namespace SinemaOtomasyon.WinForm.UI
             btnSil.Enabled = true;
             btnEkle.Enabled = false;
             Login l = new Login();
-            l = _loginRepo.GetById((int)dgvKullanicilar.CurrentRow.Cells[0].Value);
+            l = _uow.GetRepo<Login>().GetById((int)dgvKullanicilar.CurrentRow.Cells[0].Value);
             txtAd.Text = l.Username;
             txtSifre.Text = l.Password;
             cbRole.SelectedValue = l.RoleID;
@@ -109,11 +107,11 @@ namespace SinemaOtomasyon.WinForm.UI
             btnGuncelle.Enabled = false;
             btnSil.Enabled = false;
             Login l = new Login();
-            l = _loginRepo.GetById(Convert.ToInt32(lblLoginID.Text));
+            l = _uow.GetRepo<Login>().GetById(Convert.ToInt32(lblLoginID.Text));
             l.Username = txtAd.Text;
             l.Password = txtSifre.Text;
             l.RoleID =(int)cbRole.SelectedValue;
-            if (_loginRepo.Save()>0)
+            if (_uow.Commit()>0)
             {
                 MessageBox.Show("Başarıyla güncellendi!");
                 DGVDoldur();
@@ -129,8 +127,8 @@ namespace SinemaOtomasyon.WinForm.UI
             btnYeni.Enabled = true;
             btnGuncelle.Enabled = false;
             btnSil.Enabled = false;
-            _loginRepo.Delete(Convert.ToInt32(lblLoginID.Text));
-            if (_loginRepo.Save() > 0)
+            _uow.GetRepo<Login>().Delete(Convert.ToInt32(lblLoginID.Text));
+            if (_uow.Commit() > 0)
             {
                 MessageBox.Show("Başarıyla silindi!");
                 DGVDoldur();

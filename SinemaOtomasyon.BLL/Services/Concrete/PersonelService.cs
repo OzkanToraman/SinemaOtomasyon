@@ -9,6 +9,7 @@ using SinemaOtomasyon.BLL.DTOs;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.BLL.Services.Validations;
 using System.Data.Entity.Validation;
+using SinemaOtomasyon.Repository.UOW.Abstract;
 
 namespace SinemaOtomasyon.BLL.Services.Concrete
 {
@@ -16,10 +17,12 @@ namespace SinemaOtomasyon.BLL.Services.Concrete
     {
 
         private IPersonelRepository _personelRepo;
+        private IUnitOfWork _uow;
 
-        public PersonelService(IPersonelRepository personelRepo)
+        public PersonelService(IPersonelRepository personelRepo,IUnitOfWork uow)
         {
             _personelRepo = personelRepo;
+            _uow = uow;
         }
 
         public ResultModel<Personel> PersonelKayıtKontrol(Personel personel)
@@ -29,8 +32,8 @@ namespace SinemaOtomasyon.BLL.Services.Concrete
 
             if (Result.IsValid)
             {
-                _personelRepo.Add(personel);
-                _personelRepo.Save();
+                _uow.GetRepo<Personel>().Add(personel);
+                _uow.Commit();
                
                 return new ResultModel<Personel>
                 {

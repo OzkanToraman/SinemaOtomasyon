@@ -2,6 +2,7 @@
 using SinemaOtomasyon.BLL.Services.Abstract;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
+using SinemaOtomasyon.Repository.UOW.Abstract;
 using SinemaOtomasyon.WinForm.UI.Ninject;
 using System;
 using System.Collections.Generic;
@@ -18,33 +19,30 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
     public partial class FormFilmIslemleri : Form
     {
         
-        private IFilmRepository _filmRepo;
-        private IFilmTuruRepository _filmTuruRepo;
-        private ISalonRepository _salonRepo;
+
         private IFilmService _filmService;
+        private IUnitOfWork _uow;
 
 
         public FormFilmIslemleri()
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
-            _filmRepo = container.Get<IFilmRepository>();
-            _filmTuruRepo = container.Get<IFilmTuruRepository>();
-            _salonRepo = container.Get<ISalonRepository>();
             _filmService = container.Get<IFilmService>();
+            _uow = container.Get<IUnitOfWork>();
             InitializeComponent();
         }
 
         private void FormFilmIslemleri_Load(object sender, EventArgs e)
         {
             #region Film Türü Doldurma
-            cbFilmTur.DataSource = _filmTuruRepo.GetList().Select(x => new { filmid = x.FilmTurID, filmad = x.FilmTurAd }).ToList();
+            cbFilmTur.DataSource = _uow.GetRepo<FilmTuru>().GetList().Select(x => new { filmid = x.FilmTurID, filmad = x.FilmTurAd }).ToList();
             cbFilmTur.DisplayMember = "filmad";
             cbFilmTur.ValueMember = "filmid";
             #endregion
 
             #region Salon Türü Doldurma
             //var doluSalonlar = _filmRepo.GetList().Where(x => x.Vizyonda == true).Select(x => x.SalonID);
-            cbSalon.DataSource = _salonRepo.GetList().Select(x => new { x.SalonID, x.SalonAD }).ToList();
+            cbSalon.DataSource = _uow.GetRepo<Salon>().GetList().Select(x => new { x.SalonID, x.SalonAD }).ToList();
             cbSalon.DisplayMember = "SalonAD";
             cbSalon.ValueMember = "SalonID";
             txtSalon.Text = cbSalon.Text;
@@ -77,27 +75,27 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
         private void VizyondanCikicakFilmKontrol()
         {
             #region SalonKontrol
-            int salonkontrol = _filmRepo.GetList().Where(x => x.Vizyonda == true && x.VizyonCksTarih < DateTime.Now.Date).Select(x => x.SalonID).FirstOrDefault();
+            int salonkontrol = _uow.GetRepo<Film>().GetList().Where(x => x.Vizyonda == true && x.VizyonCksTarih < DateTime.Now.Date).Select(x => x.SalonID).FirstOrDefault();
             if (salonkontrol != 0)
             {
-                _salonRepo.GetById(salonkontrol).DoluMu = false;
-                _salonRepo.Save();
+                _uow.GetRepo<Salon>().GetById(salonkontrol).DoluMu = false;
+                _uow.Commit();
             }
             #endregion
 
             #region FilmKontrol
-            int filmkontrol = _filmRepo.GetList().Where(x => x.Vizyonda == true && x.VizyonCksTarih < DateTime.Now.Date).Select(x => x.FilmID).FirstOrDefault();
+            int filmkontrol = _uow.GetRepo<Film>().GetList().Where(x => x.Vizyonda == true && x.VizyonCksTarih < DateTime.Now.Date).Select(x => x.FilmID).FirstOrDefault();
             if (filmkontrol != 0)
             {
-                _filmRepo.GetById(filmkontrol).Vizyonda = false;
-                _filmRepo.Save();
+                _uow.GetRepo<Film>().GetById(filmkontrol).Vizyonda = false;
+                _uow.Commit();
             }
             #endregion
         }
 
         void DataGridViewDoldur()
         {
-            dgvFilmler.DataSource = _filmRepo.GetList().Select(x => new
+            dgvFilmler.DataSource = _uow.GetRepo<Film>().GetList().Select(x => new
             {
                 Id = x.FilmID,
                 Ad = x.FilmAd,
@@ -135,7 +133,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
 
             #region Yeni Film için Salon Kontrolü 
             txtSalon.Clear();
-            cbSalon.DataSource = _salonRepo.GetList().Where(x => x.DoluMu == false).Select(x => new { x.SalonID, x.SalonAD }).ToList();
+            cbSalon.DataSource = _uow.GetRepo<Salon>().GetList().Where(x => x.DoluMu == false).Select(x => new { x.SalonID, x.SalonAD }).ToList();
             cbSalon.DisplayMember = "SalonAD";
             cbSalon.ValueMember = "SalonID";
             if (cbSalon.Items.Count == 0)
@@ -190,7 +188,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
             Film f = new Film();
-            f = _filmRepo.GetById((int)dgvFilmler.CurrentRow.Cells[0].Value);
+            f = _uow.GetRepo<Film>().GetById((int)dgvFilmler.CurrentRow.Cells[0].Value);
             f.FilmAd = txtFilmAd.Text;
             f.Yonetmen = txtYonetmen.Text;
             f.Oyuncular = txtOyuncular.Text;
@@ -202,7 +200,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             f.Vizyonda = chkVizyonda.Checked;
             f.Afis = txtAfis.Text;
 
-            if (_filmRepo.Save() > 0)
+            if (_uow.Commit() > 0)
             {
                 MessageBox.Show("Başarıyla güncellendi");
                 chkVizyonda.Checked = false;
@@ -214,8 +212,8 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
         private void dgvFilmler_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             #region Salon Türü Doldurma
-            //var doluSalonlar = _filmRepo.GetList().Where(x => x.Vizyonda == true).Select(x => x.SalonID);
-            cbSalon.DataSource = _salonRepo.GetList().Select(x => new { salonid = x.SalonID, salonad = x.SalonAD }).ToList();
+            //var doluSalonlar = _uow.GetRepo<Film>().GetList().Where(x => x.Vizyonda == true).Select(x => x.SalonID);
+            cbSalon.DataSource = _uow.GetRepo<Salon>().GetList().Select(x => new { salonid = x.SalonID, salonad = x.SalonAD }).ToList();
             cbSalon.DisplayMember = "salonad";
             cbSalon.ValueMember = "salonid";
             #endregion
@@ -236,7 +234,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
 
             int id = (int)dgvFilmler.CurrentRow.Cells[0].Value;
             Film f = new Film();
-            f = _filmRepo.GetById(id);
+            f = _uow.GetRepo<Film>().GetById(id);
             txtFilmAd.Text = f.FilmAd;
             txtYonetmen.Text = f.Yonetmen;
             txtOyuncular.Text = f.Oyuncular;
@@ -262,8 +260,8 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
 
         private void btnSil_Click(object sender, EventArgs e)
         {
-            _filmRepo.Delete((int)dgvFilmler.CurrentRow.Cells[0].Value);
-            if (_filmRepo.Save() > 0)
+            _uow.GetRepo<Film>().Delete((int)dgvFilmler.CurrentRow.Cells[0].Value);
+            if (_uow.Commit() > 0)
             {
                 MessageBox.Show("Kayıt başarıyla silindi!");
             }
@@ -274,7 +272,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
         {
             if (string.IsNullOrEmpty(txtFilmAdinaGoreAra.Text))
             {
-                dgvFilmler.DataSource = _filmRepo.GetList().Select(x => new
+                dgvFilmler.DataSource = _uow.GetRepo<Film>().GetList().Select(x => new
                 {
                     Id = x.FilmID,
                     Ad = x.FilmAd,
@@ -289,7 +287,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             }
             else
             {
-                dgvFilmler.DataSource = _filmRepo.GetList().Where(x => x.FilmAd.Contains(txtFilmAdinaGoreAra.Text.Substring(0, 1).ToUpper())).Select(x => new
+                dgvFilmler.DataSource = _uow.GetRepo<Film>().GetList().Where(x => x.FilmAd.Contains(txtFilmAdinaGoreAra.Text.Substring(0, 1).ToUpper())).Select(x => new
                 {
                     Id = x.FilmID,
                     Ad = x.FilmAd,
@@ -309,7 +307,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
         {
             if (chkVizyonKontrol.Checked)
             {
-                dgvFilmler.DataSource = _filmRepo.GetList().Where(x => x.Vizyonda == true).Select(x => new
+                dgvFilmler.DataSource = _uow.GetRepo<Film>().GetList().Where(x => x.Vizyonda == true).Select(x => new
                 {
                     Id = x.FilmID,
                     Ad = x.FilmAd,
@@ -324,7 +322,7 @@ namespace SinemaOtomasyon.WinForm.UI.AdminIslemleri
             }
             else
             {
-                dgvFilmler.DataSource = _filmRepo.GetList().Select(x => new
+                dgvFilmler.DataSource = _uow.GetRepo<Film>().GetList().Select(x => new
                 {
                     Id = x.FilmID,
                     Ad = x.FilmAd,

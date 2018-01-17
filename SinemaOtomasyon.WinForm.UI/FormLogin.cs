@@ -2,6 +2,7 @@
 using SinemaOtomasyon.BLL.Services.Abstract;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
+using SinemaOtomasyon.Repository.UOW.Abstract;
 using SinemaOtomasyon.WinForm.UI.Ninject;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace SinemaOtomasyon.WinForm.UI
     {
 
         public static string Username;
-        private ILoginRepository _loginRepo;
+        protected IUnitOfWork _uow;
         private ILoginService _loginService;
         
 
@@ -27,7 +28,7 @@ namespace SinemaOtomasyon.WinForm.UI
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
             _loginService = container.Get<ILoginService>();
-            _loginRepo = container.Get<ILoginRepository>();
+            _uow = container.Get<IUnitOfWork>();
             InitializeComponent();
         }
 
@@ -64,8 +65,11 @@ namespace SinemaOtomasyon.WinForm.UI
                 MessageBox.Show(result.Errors.FirstOrDefault().ToString());
             }
             else
-            {               
-                Login login = _loginRepo.Where(x => x.Username == txtUser.Text && x.Password == txtPass.Text).FirstOrDefault();
+            {
+                Login login = new Login();
+                login = _uow.GetRepo<Login>()
+                    .Where(x => x.Username == txtUser.Text && x.Password == txtPass.Text)
+                    .FirstOrDefault();
                 if (login == null)
                 {
                     MessageBox.Show("Hatalı Kullanıcı Adı ya da Şifre!", "HATA");
@@ -83,7 +87,6 @@ namespace SinemaOtomasyon.WinForm.UI
 
             }
         }
-
     }
 }
 

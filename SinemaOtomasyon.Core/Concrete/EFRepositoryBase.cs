@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 
 namespace SinemaOtomasyon.Core.Concrete
 {
-    public class EFRepositoryBase<T, TContext> : IRepository<T>, IDisposable
+    public class EFRepositoryBase<T, TContext> : IRepository<T>
         where T : class, new()
         where TContext : DbContext
     {
@@ -28,44 +28,24 @@ namespace SinemaOtomasyon.Core.Concrete
         public void Add(T model)
         {
             _dbSet.Add(model);
-            //_dbContext.SaveChanges();
+
         }
 
         public void Delete(int id)
         {
             var entity = _dbSet.Find(id);
             _dbSet.Remove(entity);
-            //_dbContext.SaveChanges();
-        }
 
-        public void Dispose()
-        {
-            //database bağlantısını kesip kaynakların ram e geri teslimini sağlar.
-            _dbContext.Dispose();
-            //Garbage Collector bu sınıfı ramden kaldırır.
-            GC.SuppressFinalize(this);
-        }
-
-        public void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                if (_disposed == false)
-                {
-                    Dispose();
-                    _disposed = true;
-                }
-            }
-        }
+        }      
 
         public T GetById(int id)
         {
             return _dbSet.Find(id);
         }
 
-        public IEnumerable<T> GetList()
+        public List<T> GetList()
         {
-            return _dbSet.AsEnumerable();
+            return _dbSet.ToList();
         }
 
         public int Save()
@@ -76,17 +56,16 @@ namespace SinemaOtomasyon.Core.Concrete
         public void Update(T model)
         {
             _dbContext.Entry(model).State = EntityState.Modified;
-            //_dbContext.SaveChanges();
         }
 
         public IEnumerable<T> Where(Expression<Func<T, bool>> lambda)
         {
-            return _dbSet.Where(lambda).AsEnumerable<T>();
+            return _dbSet.Where(lambda).AsEnumerable();
         }
 
         public IQueryable<T> WhereByQuery(Expression<Func<T, bool>> lambda)
         {
-            return _dbSet.Where(lambda).AsQueryable<T>();
+            return _dbSet.Where(lambda).AsQueryable();
         }
     }
 }

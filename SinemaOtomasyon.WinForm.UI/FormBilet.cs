@@ -1,6 +1,7 @@
 ﻿using Ninject;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
+using SinemaOtomasyon.Repository.UOW.Abstract;
 using SinemaOtomasyon.WinForm.UI.Ninject;
 using System;
 using System.Collections.Generic;
@@ -16,16 +17,12 @@ namespace SinemaOtomasyon.WinForm.UI
 {
     public partial class FormBilet : Form
     {
-        //private IGiseRepository _giseRepo;
-        //private IFaturaRepository _faturaRepo;
-        //private IBiletTuruRepository _biletturRepo;
+        private IUnitOfWork _uow;
         private IBiletSatisRepository _biletSatisRepo;
         private ISeyirciRepository _seyirciRepo;
-        //private IPersonelRepository _personelRepo;
-        private IUnitOfWork _uow;
         private Seyirci s;
         string filmAd;
-        ICollection<string> koltuklar;
+        List<string> koltuklar;
         Gosterim gosterim;
         int biletTur;
         string kullanici;
@@ -37,17 +34,12 @@ namespace SinemaOtomasyon.WinForm.UI
             InitializeComponent();
         }
 
-        public FormBilet(Seyirci s, string filmAd, ICollection<string> koltuklar, Gosterim gosterim, int biletTur)
+        public FormBilet(Seyirci s, string filmAd, List<string> koltuklar, Gosterim gosterim, int biletTur)
         {
             var container = NinjectDependencyContainer.RegisterDependency(new StandardKernel());
-            //_giseRepo = container.Get<IGiseRepository>();
-            //_faturaRepo = container.Get<IFaturaRepository>();
-            //_biletturRepo = container.Get<IBiletTuruRepository>();
+            _uow = container.Get<IUnitOfWork>();
             _biletSatisRepo = container.Get<IBiletSatisRepository>();
             _seyirciRepo = container.Get<ISeyirciRepository>();
-            //_personelRepo = container.Get<IPersonelRepository>();
-            _uow = container.Get<IUnitOfWork>();
-
             InitializeComponent();
             this.s = s;
             this.filmAd = filmAd;
@@ -114,19 +106,16 @@ namespace SinemaOtomasyon.WinForm.UI
                 foreach (var item in koltuklar)
                 {
                     koltukAd = item.ToString();
-                    giseId = _uow
-                        .GetRepo<Gise>()
-                        .Where(x => x.GosterimID == gosterim.GosterimID && x.Koltuk.KoltukAD == koltukAd)
-                        .Select(x => x.GiseID).FirstOrDefault();
-
+                    giseId = _uow.GetRepo<Gise>().Where(x => x.GosterimID == gosterim.GosterimID && x.Koltuk.KoltukAD == koltukAd).Select(x => x.GiseID).FirstOrDefault();
                     Gise g = new Gise();
                     g = _uow.GetRepo<Gise>().GetById(giseId);
                     g.DoluMu = true;
-                    g.Tarih = DateTime.Now.Date;                 
-                }
-                if (_uow.Commit() > 0)
-                {
-                    MessageBox.Show("İşlem başarıyla gerçekleşti!");
+                    g.Tarih = DateTime.Now.Date;
+
+                    if (_uow.Commit() > 0)
+                    {
+                        MessageBox.Show("İşlem başarıyla gerçekleşti!");
+                    }
                 }
                 /**/
 
@@ -148,7 +137,7 @@ namespace SinemaOtomasyon.WinForm.UI
                 FaturaDatabaseEkle();
 
                 this.Close();
-            } 
+            }
         }
 
 
@@ -185,7 +174,7 @@ namespace SinemaOtomasyon.WinForm.UI
             satis.BiletTurID = biletTur;
 
             _uow.GetRepo<BiletSatis>().Add(satis);
-            if (_uow.Commit() > 0)
+            if (_uow.Commit()> 0)
             {
                 MessageBox.Show("Bilet satışı başarıyla gerçekleşti!");
                 sonBiletKaydiId = _biletSatisRepo.SonBiletKayitBul();

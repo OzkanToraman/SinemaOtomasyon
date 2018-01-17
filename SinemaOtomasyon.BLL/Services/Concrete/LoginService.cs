@@ -8,16 +8,18 @@ using SinemaOtomasyon.BLL.DTOs;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
 using SinemaOtomasyon.BLL.Services.Validations;
+using SinemaOtomasyon.Repository.UOW.Abstract;
 
 namespace SinemaOtomasyon.BLL.Services.Concrete
 {
     public class LoginService : ILoginService
     {
 
-        ILoginRepository _loginRepo;
-        public LoginService(ILoginRepository loginRepo)
+        //private ILoginRepository _loginRepo;
+        private IUnitOfWork _uow;
+        public LoginService(IUnitOfWork uow)
         {
-            _loginRepo = loginRepo;
+            _uow = uow;
         }
 
         public ResultModel<Login> Kontrol(Login p)
@@ -49,9 +51,8 @@ namespace SinemaOtomasyon.BLL.Services.Concrete
 
             if (result.IsValid)
             {
-
-                _loginRepo.Add(p);
-                _loginRepo.Save();
+                _uow.GetRepo<Login>().Add(p);
+                _uow.Commit();
 
                 return new ResultModel<Login>
                 {

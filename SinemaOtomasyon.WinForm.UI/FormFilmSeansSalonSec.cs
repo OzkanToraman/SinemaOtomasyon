@@ -4,6 +4,8 @@ using SinemaOtomasyon.BLL.Services.Abstract;
 using SinemaOtomasyon.DAL.SinemaContext;
 using SinemaOtomasyon.Repository.Repositories.Abstracts;
 using SinemaOtomasyon.Repository.Repositories.Concretes;
+using SinemaOtomasyon.Repository.UOW.Abstract;
+using SinemaOtomasyon.Repository.UOW.Concrete;
 using SinemaOtomasyon.WinForm.UI.Ninject;
 using SinemaOtomasyon.WinForm.UI.Salonlar;
 using System;
@@ -31,7 +33,7 @@ namespace SinemaOtomasyon.WinForm.UI
         Film f = new Film();
         int SalonId, SeansId;
         int filmId;
-        int height=0;
+        int height = 0;
 
         public FormFilmSeansSalonSec()
         {
@@ -46,31 +48,16 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void FormFilmSeansSalonSec_Load(object sender, EventArgs e)
         {
-            FilmKontrol();
+
             DataGridViewDoldur();
-            //SeansDoldur();
+            SalonDoldur();
             SeansSaatKontrol();
             DGVHeight();
         }
 
-        private void FilmKontrol()
-        {
-            #region FilmKontrol
-            var filmkontrol = _filmRepo.Where(x => x.Vizyonda == true && x.VizyonCksTarih.Day < DateTime.Now.Day).Select(x => x.FilmID);
-            foreach (var item in filmkontrol)
-            {
-                if (filmkontrol != null)
-                {
-                    _filmRepo.GetById(Convert.ToInt32(item.ToString())).Vizyonda = false;
-                }
-            }
-            _filmRepo.Save();
-            #endregion
-        }
-
         private void DGVHeight()
         {
-            for (int i = 0; i < dgvFilmler.Rows.Count+1; i++)
+            for (int i = 0; i < dgvFilmler.Rows.Count + 1; i++)
             {
                 height += 23;
             }
@@ -91,7 +78,7 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void DataGridViewDoldur()
         {
-            dgvFilmler.DataSource = _filmRepo.Where(x => x.Vizyonda == true).Select(x => new
+            dgvFilmler.DataSource = _filmRepo.GetList().Where(x => x.Vizyonda == true).Select(x => new
             {
                 Id = x.FilmID,
                 Ad = x.FilmAd,
@@ -107,7 +94,7 @@ namespace SinemaOtomasyon.WinForm.UI
 
         private void SalonDoldur()
         {
-            var salonSorgu = _filmRepo.Where(x => x.FilmID == filmId).Select(x => new
+            var salonSorgu = _filmRepo.GetList().Where(x => x.FilmID == filmId).Select(x => new
             {
                 x.Salon.SalonID,
                 x.Salon.SalonAD
@@ -115,10 +102,9 @@ namespace SinemaOtomasyon.WinForm.UI
             cbSalonSec.DataSource = salonSorgu;
             cbSalonSec.DisplayMember = "SalonAD";
             cbSalonSec.ValueMember = "SalonID";
-
         }
 
-       private void dgvFilmler_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void dgvFilmler_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             //MessageBox.Show("" + (int)dgvFilmler.CurrentRow.Cells[0].Value);
             f = _filmRepo.GetById((int)dgvFilmler.CurrentRow.Cells[0].Value);
@@ -128,13 +114,13 @@ namespace SinemaOtomasyon.WinForm.UI
             lblYonetmen.Text = f.Yonetmen;
             lblFilmSuresi.Text = f.FilmSuresi_dk;
             lblFilmTur.Text = f.FilmTuru.FilmTurAd;
-            string afis = f.Afis;
+            //string afis = f.Afis;
 
-            if (afis != null && afis.Substring(afis.Length-3)=="jpg")
-            {
-                pbFilmAfis.SizeMode = PictureBoxSizeMode.StretchImage;
-                pbFilmAfis.Image = Image.FromFile(afis);
-            }
+            //if (afis != null && afis.Substring(afis.Length-3)=="jpg")
+            //{
+            //    pbFilmAfis.SizeMode = PictureBoxSizeMode.StretchImage;
+            //    pbFilmAfis.Image = Image.FromFile(afis);
+            //}
 
             SalonDoldur();
         }
